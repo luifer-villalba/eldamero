@@ -1,21 +1,28 @@
 /* ═══════════════════════════════════════════
-   EL DAMERO - Estilos Globales
+   EL DAMERO - Estilos Globales MEJORADO FINAL
    ═══════════════════════════════════════════ */
 
-/* Importar fuentes de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap&subset=latin');
+/* Importar fuentes de Google Fonts (Optimizado con font-display: swap) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
-    /* Paleta masónica */
-    --damero-black: #0a0a0a;
-    --damero-dark: #1a1a1a;
-    --damero-darker: #252525;
-    --damero-gold: #c9a961;
-    --damero-gold-light: #e8d5b7;
+    /* Colores Base Oscuros */
+    --damero-black: #0c0c0c;
+    --damero-dark: #141414;
+    --damero-darker: #1e1e1e;
+    --damero-border: #2a2a2a;
+
+    /* Colores Acento (Oro) */
+    --damero-gold: #d4b068;
+    --damero-gold-light: #f0dfc5;
+
+    /* Colores de Contenido (damero-white ligeramente más oscuro para menos tensión ocular) */
     --damero-white: #e8e8e8;
-    --damero-gray: #888;
-    --damero-gray-light: #aaa;
-    --damero-border: #333;
+    --damero-gray: #9a9a9a;
+    --damero-gray-light: #bdbdbd;
+
+    /* Patrón Damero */
+    --damero-pattern-color: #282828;
 
     /* Tipografía */
     --font-serif-header: 'Cinzel', serif;
@@ -30,7 +37,7 @@
     --spacing-xl: 3rem;
 
     /* Transiciones */
-    --transition-smooth: all 0.3s ease;
+    --transition-smooth: all 0.3s ease-in-out;
 }
 
 /* ═══════════════════════════════════════════
@@ -41,23 +48,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Transiciones enfocadas para mejor rendimiento */
+    transition: color var(--transition-smooth),
+    background-color var(--transition-smooth),
+    box-shadow var(--transition-smooth);
 }
 
 html {
     font-family: var(--font-serif-body);
     background: var(--damero-black);
     color: var(--damero-white);
-    line-height: 1.6;
-    font-size: 18px; /* Base más grande para Crimson Text */
+    line-height: 1.7;
+    font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 body {
     position: relative;
     padding: var(--spacing-lg);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Patrón damero de fondo */
+/* Patrón damero de fondo - MEJORADO FINAL */
 body::before {
     content: '';
     position: fixed;
@@ -66,15 +79,16 @@ body::before {
     width: 100%;
     height: 100%;
     background-image:
-            linear-gradient(45deg, #1a1a1a 25%, transparent 25%),
-            linear-gradient(-45deg, #1a1a1a 25%, transparent 25%),
-            linear-gradient(45deg, transparent 75%, #1a1a1a 75%),
-            linear-gradient(-45deg, transparent 75%, #1a1a1a 75%);
-    background-size: 60px 60px;
-    background-position: 0 0, 0 30px, 30px -30px, -30px 0;
-    opacity: 0.03;
+            linear-gradient(45deg, var(--damero-pattern-color) 25%, transparent 25%),
+            linear-gradient(-45deg, var(--damero-pattern-color) 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, var(--damero-pattern-color) 75%),
+            linear-gradient(-45deg, transparent 75%, var(--damero-pattern-color) 75%);
+    background-size: 80px 80px;
+    background-position: 0 0, 0 40px, 40px -40px, -40px 0;
+    opacity: 0.08;
     z-index: -1;
     pointer-events: none;
+    background-attachment: fixed;
 }
 
 /* ═══════════════════════════════════════════
@@ -85,44 +99,60 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--damero-gold);
     font-weight: 600;
     font-family: var(--font-serif-header);
+    line-height: 1.2;
+    transition: color 0.2s ease;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Sombra ligeramente más definida */
+    margin-bottom: var(--spacing-md);
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: var(--spacing-md);
+    letter-spacing: 0.1em;
+    margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--damero-border);
+    padding-bottom: var(--spacing-xs);
+}
+
+/* Regla avanzada: Reduce el margen inferior de H2 si le sigue un H3 (agrupamiento) */
+h2:has(+ h3) {
+    margin-bottom: var(--spacing-xs);
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--damero-gray-light);
     margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     letter-spacing: 0.05em;
+    font-weight: 600;
 }
 
 p {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
     text-align: justify;
     font-size: 1rem;
 }
 
 a {
     color: var(--damero-gold);
-    text-decoration: none;
+    text-decoration: underline; /* Subrayado base para accesibilidad */
+    text-decoration-color: transparent; /* Pero invisible por defecto */
     transition: var(--transition-smooth);
 }
 
 a:hover {
     color: var(--damero-gold-light);
+    text-decoration: underline; /* Asegurar subrayado en hover */
+    text-decoration-color: var(--damero-gold-light);
 }
 
 /* ═══════════════════════════════════════════
@@ -130,22 +160,27 @@ a:hover {
    ═══════════════════════════════════════════ */
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 var(--spacing-sm);
 }
 
 .invocacion {
     font-size: 0.9rem;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.35em;
     color: var(--damero-gold);
     text-align: center;
     font-family: var(--font-serif-header);
+    margin: var(--spacing-sm) 0;
+    text-transform: uppercase;
+    opacity: 0.7;
 }
 
 .divider {
     border: none;
     border-top: 1px solid var(--damero-gold);
-    margin: var(--spacing-lg) 0;
+    margin: var(--spacing-xl) 0;
+    opacity: 0.4;
 }
 
 .text-center {
@@ -156,13 +191,24 @@ a:hover {
    Responsive
    ═══════════════════════════════════════════ */
 
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.1em;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
 @media (max-width: 768px) {
     html {
         font-size: 16px;
     }
 
     body {
-        padding: var(--spacing-sm);
+        padding: var(--spacing-md);
     }
 
     h1 {
@@ -171,6 +217,15 @@ a:hover {
 
     h2 {
         font-size: 1.3rem;
+    }
+
+    .invocacion {
+        letter-spacing: 0.2em;
+    }
+
+    body::before {
+        background-size: 60px 60px;
+        background-position: 0 0, 0 30px, 30px -30px, -30px 0;
     }
 }
 
@@ -188,6 +243,7 @@ a:hover {
         color: black !important;
         box-shadow: none !important;
         text-shadow: none !important;
+        transition: none !important;
     }
 
     body {
@@ -199,17 +255,26 @@ a:hover {
     }
 
     a[href]:after {
-        content: none !important;
+        content: " (" attr(href) ")";
+        font-size: 80%;
+        color: #555 !important;
+    }
+
+    a {
+        text-decoration: underline !important;
     }
 
     h1, h2, h3 {
         page-break-after: avoid;
         color: #333 !important;
+        border-bottom: 1px solid #ccc !important;
+        padding-bottom: 0.3rem;
     }
 
     p, ul, ol {
         orphans: 3;
         widows: 3;
+        margin-bottom: 0.5rem;
     }
 
     ul, ol {
@@ -228,7 +293,8 @@ a:hover {
     .search-container,
     button,
     .share-buttons,
-    .internal-links {
+    .internal-links,
+    .divider {
         display: none !important;
     }
 }
