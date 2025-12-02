@@ -7,15 +7,31 @@ import PlanchaCard from '../components/PlanchaCard.astro';
 import Footer from '../components/Footer.astro';
 
 const planchas = await getCollection('planchas');
-// Ordenar por campo 'orden' en lugar de fecha
 const sorted = planchas.sort((a, b) => a.data.orden - b.data.orden);
-
-// Extraer grados únicos
 const grados = [...new Set(planchas.map(p => p.data.grado))].sort();
+
+const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "El Damero",
+    "description": "Del Aprendiz al Maestro: estudio operativo de los tres grados simbólicos de la masonería",
+    "url": "https://eldamero.com",
+    "inLanguage": "es-AR",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://eldamero.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+    }
+};
 ---
 
 <BaseLayout title="El Damero | Planchas Masónicas">
     <Header />
+
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
     {sorted.length > 0 && <FilterBar grados={grados} />}
 

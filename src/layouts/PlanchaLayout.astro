@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 interface Props {
     data: CollectionEntry<'planchas'>['data'];
@@ -18,8 +19,23 @@ const formattedDate = date.toLocaleDateString('es-AR', {
     day: 'numeric'
 });
 
-// SEO description personalizada
+// SEO mejorado
 const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
+const keywords = [
+    tema,
+    grado,
+    'masonería',
+    'Lavagnini',
+    'filosofía hermética',
+    'geometría sagrada',
+    'construcción interior',
+    'manual del maestro',
+    autor,
+    'planchas masónicas'
+].join(', ');
+
+const publishedTime = date.toISOString();
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout
@@ -27,7 +43,20 @@ const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
         description={description}
         type="article"
 >
+    <!-- Meta tags adicionales -->
+    <Fragment slot="head">
+        <meta name="keywords" content={keywords} />
+        <meta name="author" content={autor} />
+        <meta property="article:published_time" content={publishedTime} />
+        <meta property="article:modified_time" content={publishedTime} />
+        <meta property="article:author" content={autor} />
+        <meta property="article:section" content={grado} />
+        <meta property="article:tag" content={tema} />
+    </Fragment>
+
     <div class="plancha-container">
+        <Breadcrumbs grado={grado} title={title} />
+
         <div class="plancha-header">
             <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
 
@@ -51,9 +80,17 @@ const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
             </div>
         </div>
 
-        <div class="plancha-content">
+        <article class="plancha-content">
             <slot />
-        </div>
+        </article>
+
+        <aside class="internal-links">
+            <h3>Explorar más sobre {tema}</h3>
+            <p>
+                Descubre otras <a href="/">planchas sobre {tema}</a> o
+                explora el <a href={`/#${grado.toLowerCase()}`}>grado de {grado}</a>.
+            </p>
+        </aside>
 
         <div class="firmas">
             <div class="firma">
@@ -97,7 +134,7 @@ const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
         </nav>
     </div>
 
-    <!-- JSON-LD Schema para SEO -->
+    <!-- JSON-LD Schema mejorado -->
     <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Article",
@@ -107,9 +144,29 @@ const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
             "@type": "Person",
             "name": autor
         },
-        "datePublished": date.toISOString(),
+        "datePublished": publishedTime,
+        "dateModified": publishedTime,
         "inLanguage": "es-AR",
-        "keywords": [tema, grado, "masonería", "Lavagnini"]
+        "keywords": keywords,
+        "articleSection": grado,
+        "about": {
+            "@type": "Thing",
+            "name": tema,
+            "description": `Estudio masónico sobre ${tema}`
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "El Damero",
+            "url": "https://eldamero.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://eldamero.com/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": canonicalURL.toString()
+        }
     })} />
 </BaseLayout>
 
@@ -220,6 +277,31 @@ const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
 
     .plancha-content :global(strong) {
         color: var(--damero-gold-light);
+    }
+
+    .internal-links {
+        background: rgba(201, 169, 97, 0.05);
+        border-left: 3px solid var(--damero-gold);
+        padding: var(--spacing-md);
+        margin: var(--spacing-lg) 0;
+    }
+
+    .internal-links h3 {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-xs);
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    .internal-links p {
+        margin: 0;
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .internal-links a {
+        color: var(--damero-gold);
+        text-decoration: underline;
     }
 
     .firmas {

@@ -1,0 +1,106 @@
+---
+interface Props {
+    grado: string;
+    title: string;
+}
+
+const { grado, title } = Astro.props;
+const currentUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://eldamero.com"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": grado,
+            "item": `https://eldamero.com/#${grado.toLowerCase()}`
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": title,
+            "item": currentUrl
+        }
+    ]
+};
+---
+
+<nav class="breadcrumbs" aria-label="Navegación de migas de pan">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/" itemprop="item">
+                <span itemprop="name">Inicio</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        <li><span class="separator">→</span></li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href={`/#${grado.toLowerCase()}`} itemprop="item">
+                <span itemprop="name">{grado}</span>
+            </a>
+            <meta itemprop="position" content="2" />
+        </li>
+        <li><span class="separator">→</span></li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name" aria-current="page">{title}</span>
+            <meta itemprop="position" content="3" />
+        </li>
+    </ol>
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+<style>
+    .breadcrumbs {
+        margin-bottom: var(--spacing-md);
+        font-size: 0.85rem;
+    }
+
+    .breadcrumbs ol {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--spacing-xs);
+        list-style: none;
+        padding: 0;
+    }
+
+    .breadcrumbs li {
+        display: flex;
+        align-items: center;
+    }
+
+    .breadcrumbs a {
+        color: var(--damero-gold);
+        text-decoration: none;
+        transition: var(--transition-smooth);
+    }
+
+    .breadcrumbs a:hover {
+        color: var(--damero-gold-light);
+        text-decoration: underline;
+    }
+
+    .breadcrumbs [aria-current="page"] {
+        color: var(--damero-white);
+    }
+
+    .separator {
+        color: var(--damero-border);
+        margin: 0 var(--spacing-xs);
+    }
+
+    @media (max-width: 600px) {
+        .breadcrumbs {
+            font-size: 0.8rem;
+        }
+    }
+</style>

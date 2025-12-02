@@ -46,11 +46,14 @@ const socialImage = new URL(image, Astro.site);
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
 
-    <!-- Favicon (opcional por ahora) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- View Transitions -->
     <ViewTransitions />
+
+    <!-- Slot para meta tags adicionales -->
+    <slot name="head" />
 </head>
 <body>
 <div class="container">

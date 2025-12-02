@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eldamero.com/sitemap-index.xml
+
+# Crawl-delay para ser amigable con bots
+Crawl-delay: 1
