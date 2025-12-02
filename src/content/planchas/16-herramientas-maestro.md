@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 16
+
+tags: ["Muerte Iniciática", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Juicio Interno", "Grado Maestro", "Herramientas"]
 ---
 
 ## Introducción: Del Cincel al Diseño

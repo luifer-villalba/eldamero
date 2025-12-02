@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 11
+
+tags: ["Estrella Flamígera", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Juicio Interno"]
 ---
 
 ## Introducción: La Ley que Sostiene Mundos

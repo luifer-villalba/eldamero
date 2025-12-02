@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 29
+
+tags: ["Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro", "Herramientas"]
 ---
 
 # El Maestro y la Muerte Física: Preparación y Legado Eterno

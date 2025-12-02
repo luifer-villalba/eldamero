@@ -173,3 +173,62 @@ a:hover {
         font-size: 1.3rem;
     }
 }
+
+/* ═══════════════════════════════════════════
+   Modo Impresión Global
+   ═══════════════════════════════════════════ */
+
+@media print {
+    @page {
+        margin: 2cm;
+    }
+
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    body::before {
+        display: none;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+        color: #333 !important;
+    }
+
+    p, ul, ol {
+        orphans: 3;
+        widows: 3;
+    }
+
+    ul, ol {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+
+    /* Ocultar elementos de navegación */
+    .no-print,
+    nav,
+    .filter-bar,
+    .search-container,
+    button,
+    .share-buttons,
+    .internal-links {
+        display: none !important;
+    }
+}

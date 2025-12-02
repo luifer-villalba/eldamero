@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 24
+
+tags: ["Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro", "Herramientas"]
 ---
 
 # El Juramento del Maestro: Responsabilidad y Coherencia

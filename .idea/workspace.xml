@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="898a18f1-728e-4e52-a509-d639c2d7c61a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PlanchaCard.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlanchaCard.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/planchas/00-hiram-muerte-exaltacion.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/00-hiram-muerte-exaltacion.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/planchas/01-juicio-inicial.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/01-juicio-inicial.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/planchas/02-tres-enemigos.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/02-tres-enemigos.md" afterDir="false" />
@@ -19,6 +23,31 @@
       <change beforePath="$PROJECT_DIR$/src/content/planchas/10-musica-principio.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/10-musica-principio.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/planchas/11-astronomia-amor.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/11-astronomia-amor.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/planchas/12-aplicaciones-septenario.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/12-aplicaciones-septenario.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/13-estrella-flamigera.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/13-estrella-flamigera.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/14-delta-luminoso.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/14-delta-luminoso.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/15-camara-del-medio.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/15-camara-del-medio.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/16-herramientas-maestro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/16-herramientas-maestro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/17-nombre-inefable-tres-puntos.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/17-nombre-inefable-tres-puntos.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/18-resurreccion-hiram.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/18-resurreccion-hiram.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/19-mandil-maestro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/19-mandil-maestro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/20-cuadro-logia-tercer-grado.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/20-cuadro-logia-tercer-grado.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/21-octonario-ley-ocho.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/21-octonario-ley-ocho.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/22-templo-interior.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/22-templo-interior.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/23-cadena-de-union.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/23-cadena-de-union.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/24-juramento-del-maestro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/24-juramento-del-maestro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/25-marcha-maestro-profundizacion.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/25-marcha-maestro-profundizacion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/26-gran-obra-maestro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/26-gran-obra-maestro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/27-maestro-arquitecto-destino.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/27-maestro-arquitecto-destino.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/28-transicion-maestro-instructor.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/28-transicion-maestro-instructor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/29-maestro-muerte-fisica.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/29-maestro-muerte-fisica.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/30-sintesis-maestro-simbolo-viviente.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/30-sintesis-maestro-simbolo-viviente.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/31-salario-del-maestro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/31-salario-del-maestro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/32-decada-numero-10.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/32-decada-numero-10.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/planchas/33-integracion-final-plan-personal.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/33-integracion-final-plan-personal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PlanchaLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/PlanchaLayout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/planchas/[slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/planchas/[slug].astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

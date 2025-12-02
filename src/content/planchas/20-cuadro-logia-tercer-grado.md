@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 20
+
+tags: ["Marcha del Maestro", "Muerte Iniciática", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Grado Maestro", "Resurrección"]
 ---
 
 ## Introducción: La Ventana al Drama Sagrado

@@ -7,10 +7,12 @@ const planchasCollection = defineCollection({
         date: z.date(),
         grado: z.string(),
         tema: z.string(),
+        simbolo: z.string().optional(),
         autor: z.string(),
         logia: z.string().optional(),
         valle: z.string().optional(),
-        orden: z.number()
+        orden: z.number(),
+        tags: z.array(z.string()).default([])
     })
 });
 

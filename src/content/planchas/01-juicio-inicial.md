@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 1
+
+tags: ["Pavimento Mosaico", "Muerte Iniciática", "Cámara del Medio", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Juicio Interno"]
 ---
 
 # El Juicio Inicial: La Acusación y la Cámara del Medio

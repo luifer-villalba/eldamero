@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 8
+
+tags: ["Pavimento Mosaico", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Artes Liberales", "Templo Interior", "Cadena de Unión"]
 ---
 
 ## Introducción: Herramientas del Constructor

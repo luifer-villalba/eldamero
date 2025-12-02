@@ -1,0 +1,141 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const planchas = await getCollection('planchas');
+
+// Extraer todos los tags únicos
+const tagsMap = new Map<string, number>();
+
+planchas.forEach(plancha => {
+    const tags = plancha.data.tags || [];
+    tags.forEach(tag => {
+        const count = tagsMap.get(tag) || 0;
+        tagsMap.set(tag, count + 1);
+    });
+});
+
+// Ordenar por nombre
+const sortedTags = Array.from(tagsMap.entries())
+    .sort((a, b) => a[0].localeCompare(b[0]));
+---
+
+<BaseLayout
+        title="Etiquetas | El Damero"
+        description="Explora planchas masónicas por etiquetas y temas"
+>
+    <Header />
+
+    <div class="tags-container">
+        <h1>Etiquetas</h1>
+        <p class="subtitle">Explora las planchas por tema</p>
+
+        {sortedTags.length > 0 ? (
+                <div class="tags-grid">
+                    {sortedTags.map(([tag, count]) => (
+
+                        href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}
+                        class="tag-card"
+                            >
+                                <span class="tag-name">{tag}</span>
+                                <span class="tag-count">{count} plancha{count !== 1 ? 's' : ''}</span>
+                        </a>
+                        ))}
+                </div>
+        ) : (
+                <div class="empty">
+                    <p>Aún no hay etiquetas definidas. Comenzá agregando tags en el frontmatter de tus planchas.</p>
+                </div>
+        )}
+    </div>
+
+    <Footer />
+</BaseLayout>
+
+<style>
+    .tags-container {
+        max-width: 1200px;
+        margin: 0 auto var(--spacing-xl);
+        padding: var(--spacing-lg);
+        background: var(--damero-dark);
+        border: 2px solid var(--damero-gold);
+    }
+
+    h1 {
+        text-align: center;
+        color: var(--damero-gold);
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .subtitle {
+        text-align: center;
+        color: var(--damero-gray);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .tags-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: var(--spacing-md);
+    }
+
+    .tag-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: var(--spacing-md);
+        background: var(--damero-darker);
+        border: 1px solid var(--damero-gold);
+        text-decoration: none;
+        transition: var(--transition-smooth);
+        min-height: 100px;
+    }
+
+    .tag-card:hover {
+        background: var(--damero-gold);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 20px rgba(201, 169, 97, 0.3);
+    }
+
+    .tag-name {
+        font-size: 1.1rem;
+        color: var(--damero-gold);
+        font-weight: bold;
+        margin-bottom: var(--spacing-xs);
+        text-align: center;
+    }
+
+    .tag-card:hover .tag-name {
+        color: var(--damero-black);
+    }
+
+    .tag-count {
+        font-size: 0.85rem;
+        color: var(--damero-gray);
+    }
+
+    .tag-card:hover .tag-count {
+        color: var(--damero-black);
+    }
+
+    .empty {
+        text-align: center;
+        padding: var(--spacing-xl);
+        color: var(--damero-gray);
+        border: 1px dashed var(--damero-gray);
+        background: var(--damero-darker);
+    }
+
+    @media (max-width: 768px) {
+        .tags-grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+
+        .tag-card {
+            min-height: 80px;
+        }
+    }
+</style>

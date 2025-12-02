@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 6
+
+tags: ["Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Cadena de Unión", "Juicio Interno", "Tres Asesinos"]
 ---
 
 ## Introducción: El Primer Tramo del Camino

@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 32
+
+tags: ["Estrella Flamígera", "Geometría Sagrada", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz", "Siete Metales", "Grado Maestro", "Transmutación"]
 ---
 
 # La Década: El Número 10 - Síntesis Pitagórica y Consumación

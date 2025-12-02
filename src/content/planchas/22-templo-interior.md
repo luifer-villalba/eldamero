@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 22
+
+tags: ["Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Artes Liberales", "Templo Interior", "Grado Aprendiz", "Juicio Interno", "Grado Maestro"]
 ---
 
 ## Introducción: Tu Cuerpo es el Templo

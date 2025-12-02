@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 18
+
+tags: ["Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior", "Cadena de Unión", "Grado Aprendiz"]
 ---
 
 ## Introducción: El Misterio Central del Maestro

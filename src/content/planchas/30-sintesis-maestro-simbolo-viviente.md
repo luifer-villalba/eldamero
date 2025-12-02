@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 30
+
+tags: ["Marcha del Maestro", "Estrella Flamígera", "Muerte Iniciática", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Cadena de Unión", "Grado Aprendiz"]
 ---
 
 # Síntesis Final: El Maestro como Símbolo Viviente

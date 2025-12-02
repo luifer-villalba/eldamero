@@ -1,0 +1,110 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import PlanchaCard from '../../components/PlanchaCard.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+    const planchas = await getCollection('planchas');
+
+    const tagsMap = new Map<string, typeof planchas>();
+
+    planchas.forEach(plancha => {
+        const tags = plancha.data.tags || [];
+        tags.forEach(tag => {
+            const slug = tag.toLowerCase().replace(/\s+/g, '-');
+            if (!tagsMap.has(slug)) {
+                tagsMap.set(slug, []);
+            }
+            tagsMap.get(slug)!.push(plancha);
+        });
+    });
+
+    return Array.from(tagsMap.entries()).map(([slug, planchas]) => ({
+        params: { tag: slug },
+        props: {
+            tag: planchas[0].data.tags!.find(t =>
+                t.toLowerCase().replace(/\s+/g, '-') === slug
+            ),
+            planchas: planchas.sort((a, b) => a.data.orden - b.data.orden)
+        }
+    }));
+}
+
+const { tag, planchas } = Astro.props;
+---
+
+<BaseLayout
+        title={`${tag} | Etiquetas | El Damero`}
+        description={`Planchas masónicas sobre ${tag}`}
+>
+    <Header />
+
+    <div class="tag-page">
+        <div class="tag-header">
+            <a href="/tags" class="back-link">← Todas las etiquetas</a>
+            <h1>{tag}</h1>
+            <p class="count">{planchas.length} plancha{planchas.length !== 1 ? 's' : ''}</p>
+        </div>
+
+        <div class="planchas-grid">
+            {planchas.map(plancha => (
+                    <PlanchaCard
+                            title={plancha.data.title}
+                            slug={plancha.slug}
+                            grado={plancha.data.grado}
+                            date={plancha.data.date}
+                            tema={plancha.data.tema}
+                            autor={plancha.data.autor}
+                            orden={plancha.data.orden}
+                    />
+            ))}
+        </div>
+    </div>
+
+    <Footer />
+</BaseLayout>
+
+<style>
+    .tag-page {
+        max-width: 1200px;
+        margin: 0 auto var(--spacing-xl);
+    }
+
+    .tag-header {
+        text-align: center;
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-lg);
+        background: var(--damero-dark);
+        border: 2px solid var(--damero-gold);
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-bottom: var(--spacing-sm);
+        color: var(--damero-gold);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: var(--transition-smooth);
+    }
+
+    .back-link:hover {
+        color: var(--damero-gold-light);
+    }
+
+    h1 {
+        color: var(--damero-gold);
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .count {
+        color: var(--damero-gray);
+        font-size: 0.9rem;
+    }
+
+    .planchas-grid {
+        display: grid;
+        gap: var(--spacing-md);
+    }
+</style>

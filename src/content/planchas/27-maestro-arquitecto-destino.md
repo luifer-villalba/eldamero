@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 27
+
+tags: ["Marcha del Maestro", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Delta Luminoso"]
 ---
 
 # El Maestro como Arquitecto de su Destino: Planificación y Responsabilidad

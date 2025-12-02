@@ -9,7 +9,7 @@ interface Props {
     orden: number;
 }
 
-const { title, slug, grado, date, tema, autor, orden } = Astro.props;
+const {title, slug, grado, date, tema, autor, orden} = Astro.props;
 
 const formattedDate = date.toLocaleDateString('es-AR', {
     year: 'numeric',
@@ -18,7 +18,8 @@ const formattedDate = date.toLocaleDateString('es-AR', {
 });
 ---
 
-<a href={`/planchas/${slug}`} class="plancha-card" data-grado={grado} transition:name={`card-${slug}`}>
+<a href={`/planchas/${slug}`} class="plancha-card" data-grado={grado} data-title={title.toLowerCase()}
+        data-tema={tema.toLowerCase()} transition:name={`card-${slug}`}>
     <div class="card-number">{orden.toString().padStart(2, '0')}</div>
 
     <div class="card-header">

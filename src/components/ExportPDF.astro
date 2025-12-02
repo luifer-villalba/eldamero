@@ -1,0 +1,243 @@
+---
+interface Props {
+    title: string;
+    orden: number;
+}
+
+const { title, orden } = Astro.props;
+---
+
+<button id="export-pdf-btn" class="export-pdf-btn no-print" aria-label="Descargar como PDF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+    <span>Descargar PDF</span>
+</button>
+
+<script define:vars={{ title, orden }}>
+    async function initExportPDF() {
+        const exportBtn = document.getElementById('export-pdf-btn');
+        if (!exportBtn) return;
+
+        exportBtn.addEventListener('click', async () => {
+            try {
+                // Cambiar estado del botón
+                exportBtn.textContent = 'Generando PDF...';
+                exportBtn.setAttribute('disabled', 'true');
+
+                // Importar jsPDF dinámicamente
+                const { jsPDF } = await import('https://cdn.jsdelivr.net/npm/jspdf@2.5.1/+esm');
+
+                const pdf = new jsPDF({
+                    orientation: 'portrait',
+                    unit: 'mm',
+                    format: 'a4'
+                });
+
+                // Configuración
+                const pageWidth = pdf.internal.pageSize.getWidth();
+                const pageHeight = pdf.internal.pageSize.getHeight();
+                const margin = 20;
+                const contentWidth = pageWidth - (margin * 2);
+                let yPos = margin;
+
+                // Función para agregar nueva página si es necesario
+                function checkPageBreak(requiredSpace = 10) {
+                    if (yPos + requiredSpace > pageHeight - margin) {
+                        pdf.addPage();
+                        yPos = margin;
+                        return true;
+                    }
+                    return false;
+                }
+
+                // Función para texto centrado
+                function addCenteredText(text, fontSize, fontStyle = 'normal') {
+                    pdf.setFontSize(fontSize);
+                    pdf.setFont('helvetica', fontStyle);
+                    const textWidth = pdf.getTextWidth(text);
+                    const xPos = (pageWidth - textWidth) / 2;
+                    pdf.text(text, xPos, yPos);
+                }
+
+                // Función para texto normal
+                function addText(text, fontSize, fontStyle = 'normal', indent = 0) {
+                    pdf.setFontSize(fontSize);
+                    pdf.setFont('helvetica', fontStyle);
+                    const lines = pdf.splitTextToSize(text, contentWidth - indent);
+
+                    lines.forEach(line => {
+                        checkPageBreak();
+                        pdf.text(line, margin + indent, yPos);
+                        yPos += fontSize * 0.5;
+                    });
+                }
+
+                // HEADER
+                addCenteredText('A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴', 10);
+                yPos += 8;
+
+                addCenteredText(`Plancha Nº ${orden.toString().padStart(2, '0')}`, 11, 'bold');
+                yPos += 10;
+
+                addCenteredText(title, 14, 'bold');
+                yPos += 12;
+
+                // Línea separadora
+                pdf.setDrawColor(201, 169, 97);
+                pdf.line(margin, yPos, pageWidth - margin, yPos);
+                yPos += 10;
+
+                // CONTENIDO
+                const content = document.querySelector('.plancha-content');
+                if (content) {
+                    const elements = content.children;
+
+                    for (let i = 0; i < elements.length; i++) {
+                        const el = elements[i];
+                        const tagName = el.tagName.toLowerCase();
+
+                        if (tagName === 'h2') {
+                            checkPageBreak(15);
+                            yPos += 5;
+                            addText(el.textContent || '', 12, 'bold');
+                            yPos += 3;
+                        }
+                        else if (tagName === 'h3') {
+                            checkPageBreak(12);
+                            yPos += 3;
+                            addText(el.textContent || '', 11, 'bold');
+                            yPos += 2;
+                        }
+                        else if (tagName === 'p') {
+                            checkPageBreak(10);
+                            addText(el.textContent || '', 10);
+                            yPos += 3;
+                        }
+                        else if (tagName === 'ul' || tagName === 'ol') {
+                            const items = el.querySelectorAll('li');
+                            items.forEach((li, idx) => {
+                                checkPageBreak(8);
+                                const bullet = tagName === 'ul' ? '•' : `${idx + 1}.`;
+                                addText(`${bullet} ${li.textContent}`, 10, 'normal', 5);
+                                yPos += 2;
+                            });
+                        }
+                        else if (tagName === 'blockquote') {
+                            checkPageBreak(10);
+                            pdf.setDrawColor(201, 169, 97);
+                            pdf.line(margin, yPos, margin + 2, yPos + 10);
+                            addText(el.textContent || '', 10, 'italic', 8);
+                            yPos += 3;
+                        }
+                    }
+                }
+
+                // FOOTER
+                checkPageBreak(20);
+                yPos += 10;
+                pdf.line(margin, yPos, pageWidth - margin, yPos);
+                yPos += 8;
+
+                addCenteredText('S∴ F∴ U∴', 10);
+
+                // Números de página
+                const pageCount = pdf.internal.pages.length - 1;
+                for (let i = 1; i <= pageCount; i++) {
+                    pdf.setPage(i);
+                    pdf.setFontSize(9);
+                    pdf.setFont('helvetica', 'normal');
+                    pdf.text(
+                        `Página ${i} de ${pageCount}`,
+                        pageWidth / 2,
+                        pageHeight - 10,
+                        { align: 'center' }
+                    );
+                }
+
+                // Descargar
+                const filename = `plancha-${orden.toString().padStart(2, '0')}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.pdf`;
+                pdf.save(filename);
+
+                // Restaurar botón
+                setTimeout(() => {
+                    exportBtn.textContent = '';
+                    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                    svg.setAttribute('width', '20');
+                    svg.setAttribute('height', '20');
+                    svg.setAttribute('viewBox', '0 0 24 24');
+                    svg.setAttribute('fill', 'none');
+                    svg.setAttribute('stroke', 'currentColor');
+                    svg.setAttribute('stroke-width', '2');
+                    svg.innerHTML = '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>';
+
+                    const span = document.createElement('span');
+                    span.textContent = 'Descargar PDF';
+
+                    exportBtn.appendChild(svg);
+                    exportBtn.appendChild(span);
+                    exportBtn.removeAttribute('disabled');
+                }, 500);
+
+            } catch (error) {
+                console.error('Error generando PDF:', error);
+                alert('Error al generar PDF. Por favor, intenta de nuevo.');
+
+                exportBtn.textContent = '';
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', '20');
+                svg.setAttribute('height', '20');
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.setAttribute('fill', 'none');
+                svg.setAttribute('stroke', 'currentColor');
+                svg.setAttribute('stroke-width', '2');
+                svg.innerHTML = '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>';
+
+                const span = document.createElement('span');
+                span.textContent = 'Descargar PDF';
+
+                exportBtn.appendChild(svg);
+                exportBtn.appendChild(span);
+                exportBtn.removeAttribute('disabled');
+            }
+        });
+    }
+
+    initExportPDF();
+    document.addEventListener('astro:page-load', initExportPDF);
+</script>
+
+<style>
+    .export-pdf-btn {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        margin: var(--spacing-sm) auto 0;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        background: var(--damero-darker);
+        border: 1px solid var(--damero-gold);
+        color: var(--damero-gold);
+        cursor: pointer;
+        font-family: var(--font-serif-body);
+        font-size: 0.9rem;
+        transition: var(--transition-smooth);
+    }
+
+    .export-pdf-btn:hover:not([disabled]) {
+        background: var(--damero-gold);
+        color: var(--damero-black);
+    }
+
+    .export-pdf-btn[disabled] {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    @media print {
+        .export-pdf-btn {
+            display: none;
+        }
+    }
+</style>

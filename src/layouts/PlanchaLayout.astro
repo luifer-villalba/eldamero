@@ -2,16 +2,20 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+import ExportPDF from '../components/ExportPDF.astro';
 
 interface Props {
     data: CollectionEntry<'planchas'>['data'];
     slug: string;
     prev?: CollectionEntry<'planchas'> | null;
     next?: CollectionEntry<'planchas'> | null;
+    headings: { depth: number; slug: string; text: string }[];
 }
 
-const { data, slug, prev, next } = Astro.props;
-const { title, date, grado, tema, autor, logia, valle, orden } = data;
+const { data, slug, prev, next, headings } = Astro.props;
+const { title, date, grado, tema, autor, logia, valle, orden, tags = [] } = data;
 
 const formattedDate = date.toLocaleDateString('es-AR', {
     year: 'numeric',
@@ -31,11 +35,13 @@ const keywords = [
     'construcción interior',
     'manual del maestro',
     autor,
-    'planchas masónicas'
+    'planchas masónicas',
+    ...tags
 ].join(', ');
 
 const publishedTime = date.toISOString();
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const pageUrl = `/planchas/${slug}`;
 ---
 
 <BaseLayout
@@ -54,84 +60,113 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <meta property="article:tag" content={tema} />
     </Fragment>
 
-    <div class="plancha-container">
-        <Breadcrumbs grado={grado} title={title} />
+    <div class="plancha-wrapper">
+        <div class="plancha-container">
+            <Breadcrumbs grado={grado} title={title} />
 
-        <div class="plancha-header">
-            <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
+            <div class="plancha-header">
+                <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
 
-            {logia && <div class="logia-info">R∴ L∴ S∴ {logia}</div>}
-            {valle && <div class="logia-info">Vall∴ de {valle}, {formattedDate}</div>}
+                {logia && <div class="logia-info">R∴ L∴ S∴ {logia}</div>}
+                {valle && <div class="logia-info">Vall∴ de {valle}, {formattedDate}</div>}
 
-            <div class="dirigido">V∴ M∴ • Q∴ H∴ Vig∴ • QQ∴ HH∴ Todos</div>
+                <div class="dirigido">V∴ M∴ • Q∴ H∴ Vig∴ • QQ∴ HH∴ Todos</div>
 
-            <div class="plancha-numero">Plancha Nº {orden.toString().padStart(2, '0')}</div>
-            <h1>{title}</h1>
+                <div class="plancha-numero">Plancha Nº {orden.toString().padStart(2, '0')}</div>
+                <h1>{title}</h1>
 
-            <div class="meta">
-                <div class="meta-item">
-                    <span class="meta-label">Grado:</span>
-                    <span>{grado}</span>
+                <div class="meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Grado:</span>
+                        <span>{grado}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tema:</span>
+                        <span>{tema}</span>
+                    </div>
                 </div>
-                <div class="meta-item">
-                    <span class="meta-label">Tema:</span>
-                    <span>{tema}</span>
-                </div>
-            </div>
-        </div>
 
-        <article class="plancha-content">
-            <slot />
-        </article>
+                <ExportPDF title={title} orden={orden} />
 
-        <aside class="internal-links">
-            <h3>Explorar más sobre {tema}</h3>
-            <p>
-                Descubre otras <a href="/">planchas sobre {tema}</a> o
-                explora el <a href={`/#${grado.toLowerCase()}`}>grado de {grado}</a>.
-            </p>
-        </aside>
-
-        <div class="firmas">
-            <div class="firma">
-                <div class="rango">{autor}</div>
-                <div class="rango">M∴ M∴</div>
-                <div>S∴ F∴ U∴</div>
-            </div>
-        </div>
-
-        <nav class="plancha-nav">
-            <div class="nav-links">
-                {prev ? (
-                        <a href={`/planchas/${prev.slug}`} class="nav-link prev">
-                            <span class="nav-arrow">←</span>
-                            <div class="nav-info">
-                                <span class="nav-label">Anterior</span>
-                                <span class="nav-title">{prev.data.title}</span>
-                            </div>
-                        </a>
-                ) : (
-                        <div class="nav-link disabled"></div>
+                {tags.length > 0 && (
+                        <div class="tags">
+                            {tags.map(tag => (
+                                    <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="tag">
+                                        {tag}
+                                    </a>
+                            ))}
+                        </div>
                 )}
 
-                <a href="/" class="nav-link home">
-                    <span>⌂</span>
-                    <span>Índice</span>
-                </a>
-
-                {next ? (
-                        <a href={`/planchas/${next.slug}`} class="nav-link next">
-                            <div class="nav-info">
-                                <span class="nav-label">Siguiente</span>
-                                <span class="nav-title">{next.data.title}</span>
-                            </div>
-                            <span class="nav-arrow">→</span>
-                        </a>
-                ) : (
-                        <div class="nav-link disabled"></div>
-                )}
+                <button id="print-btn" class="print-btn no-print" aria-label="Imprimir plancha">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg>
+                    <span>Imprimir</span>
+                </button>
             </div>
-        </nav>
+
+            <div class="content-layout">
+                <TableOfContents headings={headings} />
+
+                <article class="plancha-content">
+                    <slot />
+                </article>
+            </div>
+
+            <aside class="internal-links no-print">
+                <h3>Explorar más sobre {tema}</h3>
+                <p>
+                    Descubre otras <a href="/">planchas sobre {tema}</a> o
+                    explora el <a href={`/#${grado.toLowerCase()}`}>grado de {grado}</a>.
+                </p>
+            </aside>
+
+            <ShareButtons title={title} url={pageUrl} />
+
+            <div class="firmas">
+                <div class="firma">
+                    <div class="rango">{autor}</div>
+                    <div class="rango">M∴ M∴</div>
+                    <div>S∴ F∴ U∴</div>
+                </div>
+            </div>
+
+            <nav class="plancha-nav no-print">
+                <div class="nav-links">
+                    {prev ? (
+                            <a href={`/planchas/${prev.slug}`} class="nav-link prev">
+                                <span class="nav-arrow">←</span>
+                                <div class="nav-info">
+                                    <span class="nav-label">Anterior</span>
+                                    <span class="nav-title">{prev.data.title}</span>
+                                </div>
+                            </a>
+                    ) : (
+                            <div class="nav-link disabled"></div>
+                    )}
+
+                    <a href="/" class="nav-link home">
+                        <span>⌂</span>
+                        <span>Índice</span>
+                    </a>
+
+                    {next ? (
+                            <a href={`/planchas/${next.slug}`} class="nav-link next">
+                                <div class="nav-info">
+                                    <span class="nav-label">Siguiente</span>
+                                    <span class="nav-title">{next.data.title}</span>
+                                </div>
+                                <span class="nav-arrow">→</span>
+                            </a>
+                    ) : (
+                            <div class="nav-link disabled"></div>
+                    )}
+                </div>
+            </nav>
+        </div>
     </div>
 
     <!-- JSON-LD Schema mejorado -->
@@ -170,7 +205,26 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     })} />
 </BaseLayout>
 
+<script>
+    function initPrint() {
+        const printBtn = document.getElementById('print-btn');
+        if (printBtn) {
+            printBtn.addEventListener('click', () => {
+                window.print();
+            });
+        }
+    }
+
+    initPrint();
+    document.addEventListener('astro:page-load', initPrint);
+</script>
+
 <style>
+    .plancha-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
     .plancha-container {
         background: var(--damero-dark);
         border: 2px solid var(--damero-gold);
@@ -183,6 +237,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         margin-bottom: var(--spacing-lg);
         padding-bottom: var(--spacing-md);
         border-bottom: 1px solid var(--damero-gold);
+        position: relative;
     }
 
     .invocacion {
@@ -235,8 +290,57 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         font-weight: bold;
     }
 
-    .plancha-content {
+    .tags {
+        display: flex;
+        gap: var(--spacing-xs);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: var(--spacing-sm);
+    }
+
+    .tag {
+        background: rgba(201, 169, 97, 0.1);
+        border: 1px solid var(--damero-gold);
+        padding: 0.25rem 0.75rem;
+        color: var(--damero-gold);
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: var(--transition-smooth);
+    }
+
+    .tag:hover {
+        background: var(--damero-gold);
+        color: var(--damero-black);
+    }
+
+    .print-btn {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        margin: var(--spacing-md) auto 0;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        background: var(--damero-darker);
+        border: 1px solid var(--damero-gold);
+        color: var(--damero-gold);
+        cursor: pointer;
+        font-family: var(--font-serif-body);
+        font-size: 0.9rem;
+        transition: var(--transition-smooth);
+    }
+
+    .print-btn:hover {
+        background: var(--damero-gold);
+        color: var(--damero-black);
+    }
+
+    .content-layout {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: var(--spacing-lg);
         margin: var(--spacing-lg) 0;
+    }
+
+    .plancha-content {
         line-height: 1.8;
     }
 
@@ -393,6 +497,54 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     .nav-title {
         font-size: 0.9rem;
         font-weight: bold;
+    }
+
+    /* MODO IMPRESIÓN */
+    @media print {
+        .no-print,
+        .print-btn,
+        .plancha-nav,
+        .internal-links,
+        .share-buttons {
+            display: none !important;
+        }
+
+        .plancha-container {
+            border: none;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        .content-layout {
+            grid-template-columns: 1fr;
+        }
+
+        .plancha-content :global(p) {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .plancha-content :global(h2) {
+            font-size: 1.1rem;
+            page-break-after: avoid;
+        }
+
+        .plancha-content :global(h3) {
+            page-break-after: avoid;
+        }
+
+        .firmas {
+            page-break-before: avoid;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .content-layout {
+            grid-template-columns: 1fr;
+        }
     }
 
     @media (max-width: 768px) {

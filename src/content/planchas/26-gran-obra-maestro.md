@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 26
+
+tags: ["Estrella Flamígera", "Muerte Iniciática", "Leyenda de Hiram", "Templo Interior", "Artes Liberales", "Cadena de Unión", "Grado Maestro", "Transmutación"]
 ---
 
 # La Gran Obra del Maestro: Alquimia de Vida Total

@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 0
+
+tags: ["Salario del Maestro", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior", "Grado Aprendiz"]
 ---
 
 # La Muerte y Exaltación de Hiram Abiff: El Misterio Central del Maestro

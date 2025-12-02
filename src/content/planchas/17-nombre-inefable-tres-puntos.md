@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 17
+
+tags: ["Estrella Flamígera", "Geometría Sagrada", "Leyenda de Hiram", "Templo Interior", "Grado Aprendiz", "Grado Maestro", "Construcción", "Hiram Abif"]
 ---
 
 ## Introducción: El Sello más Pequeño

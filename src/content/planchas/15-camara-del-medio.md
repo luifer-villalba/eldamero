@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 15
+
+tags: ["Salario del Maestro", "Estrella Flamígera", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Artes Liberales", "Templo Interior"]
 ---
 
 ## Introducción: Retorno al Centro

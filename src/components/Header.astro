@@ -14,6 +14,12 @@ const {
     <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
     <h1>{title}</h1>
     {subtitle && <p class="subtitle">{subtitle}</p>}
+
+    <nav class="header-nav">
+        <a href="/" class="nav-link">Planchas</a>
+        <a href="/tags" class="nav-link">Etiquetas</a>
+        <a href="/glosario" class="nav-link">Glosario</a>
+    </nav>
 </header>
 
 <style>
@@ -36,6 +42,51 @@ const {
         font-size: 1.1rem;
         color: var(--damero-gray-light);
         font-style: italic;
-        margin: 0;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-md);
+    }
+
+    .nav-link {
+        color: var(--damero-gold);
+        text-decoration: none;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border: 1px solid var(--damero-gold);
+        transition: var(--transition-smooth);
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .nav-link:hover {
+        background: var(--damero-gold);
+        color: var(--damero-black);
+    }
+
+    @media print {
+        .header-nav {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .subtitle {
+            font-size: 0.95rem;
+        }
+
+        .header-nav {
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+
+        .nav-link {
+            font-size: 0.85rem;
+        }
     }
 </style>

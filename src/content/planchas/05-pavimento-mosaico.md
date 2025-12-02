@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 5
+
+tags: ["Filosofía Hermética", "Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior"]
 ---
 
 ## Introducción: La Partida de Tu Vida

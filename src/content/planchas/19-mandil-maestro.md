@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 19
+
+tags: ["Muerte Iniciática", "Geometría Sagrada", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro", "Resurrección", "Renacimiento"]
 ---
 
 ## Introducción: La Armadura Invisible del Maestro

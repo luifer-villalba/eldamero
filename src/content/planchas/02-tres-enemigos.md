@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 2
+
+tags: ["Salario del Maestro", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Juicio Interno", "Tres Asesinos", "Grado Maestro"]
 ---
 
 ## Introducción: El Crimen Perpetuo

@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 23
+
+tags: ["Marcha del Maestro", "Estrella Flamígera", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz"]
 ---
 
 # La Cadena de Unión: Circuito Energético del Maestro

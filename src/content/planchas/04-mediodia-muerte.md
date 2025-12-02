@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 4
+
+tags: ["Marcha del Maestro", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior", "Juicio Interno", "Tres Asesinos"]
 ---
 
 ## Introducción: El Mediodía del Alma

@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 10
+
+tags: ["Grado Maestro", "Siete Metales", "Herramientas", "Septenario", "Escuadra", "Compás", "Vibración Armónica", "Sinfonía Universal"]
 ---
 
 ## Introducción: La Sinfonía del Ser

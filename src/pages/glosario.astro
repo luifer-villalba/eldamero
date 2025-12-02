@@ -1,0 +1,286 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import glosarioData from '../data/glosario.json';
+
+const sortedGlosario = glosarioData.sort((a, b) =>
+    a.termino.localeCompare(b.termino)
+);
+
+// Agrupar por letra inicial
+const groupedByLetter = sortedGlosario.reduce((acc, item) => {
+    const letter = item.termino[0].toUpperCase();
+    if (!acc[letter]) acc[letter] = [];
+    acc[letter].push(item);
+    return acc;
+}, {} as Record<string, typeof sortedGlosario>);
+
+const letters = Object.keys(groupedByLetter).sort();
+---
+
+<BaseLayout
+        title="Glosario Masónico | El Damero"
+        description="Glosario de términos y símbolos masónicos para comprender las planchas"
+>
+    <Header />
+
+    <div class="glosario-container">
+        <div class="glosario-header">
+            <h1>Glosario Masónico</h1>
+            <p class="subtitle">Términos y símbolos fundamentales</p>
+        </div>
+
+        <div class="search-box">
+            <input
+                    type="text"
+                    id="glosario-search"
+                    placeholder="Buscar término..."
+                    autocomplete="off"
+            />
+        </div>
+
+        <nav class="letter-nav">
+            {letters.map(letter => (
+                    <a href={`#letter-${letter}`} class="letter-link">{letter}</a>
+            ))}
+        </nav>
+
+        <div class="glosario-content">
+            {letters.map(letter => (
+                    <section class="letter-section" id={`letter-${letter}`}>
+                        <h2 class="letter-heading">{letter}</h2>
+                        <dl class="terms-list">
+                            {groupedByLetter[letter].map(item => (
+                                    <div class="term-item" data-term={item.termino.toLowerCase()}>
+                                        <dt class="term">{item.termino}</dt>
+                                        <dd class="definition">{item.definicion}</dd>
+                                    </div>
+                            ))}
+                        </dl>
+                    </section>
+            ))}
+        </div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+            <p>No se encontraron términos con ese criterio</p>
+        </div>
+    </div>
+
+    <Footer />
+</BaseLayout>
+
+<script>
+    function initGlosarioSearch() {
+        const searchInput = document.getElementById('glosario-search') as HTMLInputElement;
+        const termItems = document.querySelectorAll('.term-item');
+        const letterSections = document.querySelectorAll('.letter-section');
+        const noResults = document.getElementById('no-results');
+
+        if (!searchInput) return;
+
+        searchInput.addEventListener('input', (e) => {
+            const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+            if (!query) {
+                termItems.forEach(item => {
+                    (item as HTMLElement).style.display = '';
+                });
+                letterSections.forEach(section => {
+                    (section as HTMLElement).style.display = '';
+                });
+                if (noResults) noResults.style.display = 'none';
+                return;
+            }
+
+            let visibleCount = 0;
+
+            letterSections.forEach(section => {
+                const sectionTerms = section.querySelectorAll('.term-item');
+                let sectionHasVisible = false;
+
+                sectionTerms.forEach(item => {
+                    const term = item.getAttribute('data-term') || '';
+                    const definitionText = item.querySelector('.definition')?.textContent?.toLowerCase() || '';
+
+                    if (term.includes(query) || definitionText.includes(query)) {
+                        (item as HTMLElement).style.display = '';
+                        sectionHasVisible = true;
+                        visibleCount++;
+                    } else {
+                        (item as HTMLElement).style.display = 'none';
+                    }
+                });
+
+                (section as HTMLElement).style.display = sectionHasVisible ? '' : 'none';
+            });
+
+            if (noResults) {
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+        });
+    }
+
+    initGlosarioSearch();
+    document.addEventListener('astro:page-load', initGlosarioSearch);
+</script>
+
+<style>
+    .glosario-container {
+        max-width: 1000px;
+        margin: 0 auto var(--spacing-xl);
+    }
+
+    .glosario-header {
+        text-align: center;
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-lg);
+        background: var(--damero-dark);
+        border: 2px solid var(--damero-gold);
+    }
+
+    h1 {
+        color: var(--damero-gold);
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .subtitle {
+        color: var(--damero-gray);
+        font-size: 0.95rem;
+    }
+
+    .search-box {
+        margin-bottom: var(--spacing-md);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #glosario-search {
+        width: 100%;
+        padding: var(--spacing-sm);
+        background: var(--damero-darker);
+        border: 2px solid var(--damero-gold);
+        color: var(--damero-white);
+        font-family: var(--font-serif-body);
+        font-size: 1rem;
+        outline: none;
+        transition: var(--transition-smooth);
+    }
+
+    #glosario-search:focus {
+        border-color: var(--damero-gold-light);
+        box-shadow: 0 0 15px rgba(201, 169, 97, 0.3);
+    }
+
+    #glosario-search::placeholder {
+        color: var(--damero-gray);
+    }
+
+    .letter-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-xs);
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-sm);
+        background: var(--damero-dark);
+        border: 1px solid var(--damero-border);
+    }
+
+    .letter-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background: var(--damero-darker);
+        border: 1px solid var(--damero-gold);
+        color: var(--damero-gold);
+        text-decoration: none;
+        font-weight: bold;
+        transition: var(--transition-smooth);
+    }
+
+    .letter-link:hover {
+        background: var(--damero-gold);
+        color: var(--damero-black);
+    }
+
+    .glosario-content {
+        background: var(--damero-dark);
+        border: 2px solid var(--damero-gold);
+        padding: var(--spacing-lg);
+    }
+
+    .letter-section {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .letter-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .letter-heading {
+        font-size: 2rem;
+        color: var(--damero-gold);
+        margin-bottom: var(--spacing-md);
+        padding-bottom: var(--spacing-xs);
+        border-bottom: 2px solid var(--damero-gold);
+        font-family: var(--font-serif-header);
+    }
+
+    .terms-list {
+        margin: 0;
+    }
+
+    .term-item {
+        margin-bottom: var(--spacing-md);
+        padding-bottom: var(--spacing-md);
+        border-bottom: 1px solid var(--damero-border);
+    }
+
+    .term-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .term {
+        font-weight: bold;
+        color: var(--damero-gold-light);
+        font-size: 1.1rem;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .definition {
+        color: var(--damero-white);
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .no-results {
+        text-align: center;
+        padding: var(--spacing-xl);
+        color: var(--damero-gray);
+        background: var(--damero-dark);
+        border: 2px solid var(--damero-border);
+        margin-top: var(--spacing-md);
+    }
+
+    @media (max-width: 768px) {
+        .glosario-container {
+            padding: 0 var(--spacing-sm);
+        }
+
+        .letter-link {
+            width: 32px;
+            height: 32px;
+            font-size: 0.9rem;
+        }
+
+        .letter-heading {
+            font-size: 1.5rem;
+        }
+    }
+</style>

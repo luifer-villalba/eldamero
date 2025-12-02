@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 21
+
+tags: ["Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Artes Liberales", "Templo Interior", "Grado Aprendiz", "Siete Metales"]
 ---
 
 ## Introducción: El Número Que No Termina

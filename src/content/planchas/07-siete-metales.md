@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 7
+
+tags: ["Salario del Maestro", "Marcha del Maestro", "Pavimento Mosaico", "Leyenda de Hiram", "Cámara del Medio", "Templo Interior", "Cadena de Unión", "Delta Luminoso"]
 ---
 
 ## Introducción: El Taller Alquímico

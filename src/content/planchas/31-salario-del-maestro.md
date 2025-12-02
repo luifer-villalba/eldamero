@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 31
+
+tags: ["Salario del Maestro", "Cámara del Medio", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro"]
 ---
 
 # El Salario del Maestro: Amor, Servicio y Recompensa Interna

@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 13
+
+tags: ["Estrella Flamígera", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Maestro", "Resurrección"]
 ---
 
 ## Introducción: La Geometría de la Luz

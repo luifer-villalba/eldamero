@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 33
+
+tags: ["Salario del Maestro", "Marcha del Maestro", "Estrella Flamígera", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero"]
 ---
 
 # Integración Final: Plan Personal del Maestro - Los 33 Días Encarnados

@@ -1,0 +1,145 @@
+---
+interface Props {
+    headings: { depth: number; slug: string; text: string }[];
+}
+
+const { headings } = Astro.props;
+
+// Solo mostrar si hay 3+ headings
+const shouldShow = headings.length >= 3;
+---
+
+{shouldShow && (
+<aside class="toc-container">
+    <nav class="toc">
+        <h2 class="toc-title">Contenido</h2>
+        <ul class="toc-list">
+            {headings.map(heading => (
+                    <li class={`toc-item toc-level-${heading.depth}`}>
+                        <a href={`#${heading.slug}`} class="toc-link">
+                            {heading.text}
+                        </a>
+                    </li>
+            ))}
+        </ul>
+    </nav>
+</aside>
+    )}
+
+<script>
+    function initTOC() {
+        const tocLinks = document.querySelectorAll('.toc-link');
+        const headings = document.querySelectorAll('h2[id], h3[id]');
+
+        if (!tocLinks.length || !headings.length) return;
+
+        // Highlight activo en scroll
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        tocLinks.forEach(link => link.classList.remove('active'));
+                        const activeLink = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+                        activeLink?.classList.add('active');
+                    }
+                });
+            },
+            { rootMargin: '-100px 0px -66%' }
+        );
+
+        headings.forEach(heading => observer.observe(heading));
+    }
+
+    initTOC();
+    document.addEventListener('astro:page-load', initTOC);
+</script>
+
+<style>
+    .toc-container {
+        position: sticky;
+        top: var(--spacing-lg);
+        max-height: calc(100vh - var(--spacing-xl));
+        overflow-y: auto;
+        background: rgba(26, 26, 26, 0.8);
+        border: 1px solid var(--damero-gold);
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .toc-title {
+        font-family: var(--font-serif-header);
+        font-size: 1rem;
+        color: var(--damero-gold);
+        margin-bottom: var(--spacing-sm);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .toc-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .toc-item {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .toc-level-2 {
+        margin-left: 0;
+    }
+
+    .toc-level-3 {
+        margin-left: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+
+    .toc-link {
+        color: var(--damero-gray-light);
+        text-decoration: none;
+        display: block;
+        padding: 0.25rem 0;
+        transition: var(--transition-smooth);
+        border-left: 2px solid transparent;
+        padding-left: var(--spacing-xs);
+    }
+
+    .toc-link:hover {
+        color: var(--damero-gold);
+        border-left-color: var(--damero-gold);
+    }
+
+    .toc-link.active {
+        color: var(--damero-gold);
+        border-left-color: var(--damero-gold);
+        font-weight: bold;
+    }
+
+    /* Scrollbar custom */
+    .toc-container::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .toc-container::-webkit-scrollbar-track {
+        background: var(--damero-dark);
+    }
+
+    .toc-container::-webkit-scrollbar-thumb {
+        background: var(--damero-gold);
+        border-radius: 3px;
+    }
+
+    @media print {
+        .toc-container {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .toc-container {
+            position: relative;
+            top: 0;
+            max-height: none;
+        }
+    }
+</style>

@@ -1,0 +1,175 @@
+---
+// Componente de búsqueda en vivo
+---
+
+<div class="search-container">
+    <div class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input
+                type="text"
+                id="search-input"
+                placeholder="Buscar por título, tema o contenido..."
+                autocomplete="off"
+        />
+        <button id="clear-search" class="clear-btn" aria-label="Limpiar búsqueda">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+    function initSearch() {
+        const searchInput = document.getElementById('search-input') as HTMLInputElement;
+        const clearBtn = document.getElementById('clear-search') as HTMLButtonElement;
+        const resultsDiv = document.getElementById('search-results') as HTMLDivElement;
+        const planchaCards = document.querySelectorAll('.plancha-card');
+
+        if (!searchInput) return;
+
+        let searchTimeout: number;
+
+        searchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+            clearBtn.style.display = query ? 'flex' : 'none';
+
+            searchTimeout = window.setTimeout(() => {
+                if (!query) {
+                    resultsDiv.innerHTML = '';
+                    planchaCards.forEach(card => {
+                        (card as HTMLElement).style.display = '';
+                    });
+                    return;
+                }
+
+                let matchCount = 0;
+                planchaCards.forEach(card => {
+                    const title = card.getAttribute('data-title')?.toLowerCase() || '';
+                    const tema = card.getAttribute('data-tema')?.toLowerCase() || '';
+                    const grado = card.getAttribute('data-grado')?.toLowerCase() || '';
+
+                    const matches = title.includes(query) || tema.includes(query) || grado.includes(query);
+
+                    if (matches) {
+                        (card as HTMLElement).style.display = '';
+                        matchCount++;
+                    } else {
+                        (card as HTMLElement).style.display = 'none';
+                    }
+                });
+
+                resultsDiv.innerHTML = matchCount
+                    ? `<p>${matchCount} plancha${matchCount !== 1 ? 's' : ''} encontrada${matchCount !== 1 ? 's' : ''}</p>`
+                    : '<p class="no-results">No se encontraron planchas con ese criterio</p>';
+            }, 300);
+        });
+
+        clearBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            clearBtn.style.display = 'none';
+            resultsDiv.innerHTML = '';
+            planchaCards.forEach(card => {
+                (card as HTMLElement).style.display = '';
+            });
+            searchInput.focus();
+        });
+    }
+
+    // Init en carga inicial
+    initSearch();
+
+    // Reinit en cada navegación con View Transitions
+    document.addEventListener('astro:page-load', initSearch);
+</script>
+
+<style>
+    .search-container {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .search-wrapper {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: var(--spacing-sm);
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--damero-gold);
+        pointer-events: none;
+    }
+
+    #search-input {
+        width: 100%;
+        padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) 3rem;
+        background: var(--damero-darker);
+        border: 2px solid var(--damero-gold);
+        color: var(--damero-white);
+        font-family: var(--font-serif-body);
+        font-size: 1rem;
+        outline: none;
+        transition: var(--transition-smooth);
+    }
+
+    #search-input:focus {
+        border-color: var(--damero-gold-light);
+        box-shadow: 0 0 15px rgba(201, 169, 97, 0.3);
+    }
+
+    #search-input::placeholder {
+        color: var(--damero-gray);
+    }
+
+    .clear-btn {
+        position: absolute;
+        right: var(--spacing-sm);
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: var(--damero-gray);
+        cursor: pointer;
+        padding: 0.25rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition-smooth);
+    }
+
+    .clear-btn:hover {
+        color: var(--damero-gold);
+    }
+
+    .search-results {
+        text-align: center;
+        margin-top: var(--spacing-sm);
+        font-size: 0.9rem;
+        color: var(--damero-gray);
+    }
+
+    .search-results p {
+        margin: 0;
+    }
+
+    .no-results {
+        color: var(--damero-gray-light);
+    }
+
+    @media (max-width: 768px) {
+        #search-input {
+            font-size: 0.9rem;
+            padding-right: 2.5rem;
+        }
+    }
+</style>

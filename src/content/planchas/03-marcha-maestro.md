@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 3
+
+tags: ["Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Artes Liberales", "Templo Interior"]
 ---
 
 ## Introducción: Caminar Sobre el Cadáver

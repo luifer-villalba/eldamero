@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import SearchBar from '../components/SearchBar.astro';
 import FilterBar from '../components/FilterBar.astro';
 import PlanchaCard from '../components/PlanchaCard.astro';
 import Footer from '../components/Footer.astro';
@@ -33,7 +34,12 @@ const websiteSchema = {
 
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
-    {sorted.length > 0 && <FilterBar grados={grados} />}
+    {sorted.length > 0 && (
+            <>
+                <SearchBar />
+                <FilterBar grados={grados} />
+            </>
+    )}
 
     <div class="planchas-grid">
         {sorted.length > 0 ? (

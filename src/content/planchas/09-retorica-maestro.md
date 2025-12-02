@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 9
+
+tags: ["Cámara del Medio", "Templo Interior", "Grado Aprendiz", "Grado Maestro", "Siete Metales", "Resurrección", "Renacimiento", "Construcción"]
 ---
 
 ## Introducción: La Palabra como Herramienta

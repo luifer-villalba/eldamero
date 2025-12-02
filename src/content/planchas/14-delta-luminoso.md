@@ -8,6 +8,8 @@ autor: "LFV"
 logia: "LDV N° 152"
 valle: "Asunción"
 orden: 14
+
+tags: ["Geometría Sagrada", "Templo Interior", "Grado Aprendiz", "Delta Luminoso", "Grado Maestro", "Construcción", "Conciencia", "Símbolos"]
 ---
 
 ## Introducción: La Geometría de la Conciencia
