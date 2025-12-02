@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="898a18f1-728e-4e52-a509-d639c2d7c61a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/00-hiram-muerte-exaltacion.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/00-hiram-muerte-exaltacion.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/01-juicio-inicial.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/01-juicio-inicial.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/02-tres-enemigos.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/02-tres-enemigos.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/03-marcha-maestro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/03-marcha-maestro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/04-mediodia-muerte.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/04-mediodia-muerte.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/05-pavimento-mosaico.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/05-pavimento-mosaico.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/06-integracion-semanal.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/06-integracion-semanal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/07-siete-metales.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/07-siete-metales.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/08-siete-artes-liberales.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/08-siete-artes-liberales.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/09-retorica-maestro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/09-retorica-maestro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/10-musica-principio.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/10-musica-principio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/11-astronomia-amor.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/11-astronomia-amor.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/planchas/12-aplicaciones-septenario.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/planchas/12-aplicaciones-septenario.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/PlanchaLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/PlanchaLayout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/planchas/[slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/planchas/[slug].astro" afterDir="false" />
-    </list>
+    <list default="true" id="898a18f1-728e-4e52-a509-d639c2d7c61a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1764551755736</updated>
       <workItem from="1764551756902" duration="2686000" />
-      <workItem from="1764632056065" duration="5558000" />
+      <workItem from="1764632056065" duration="6114000" />
     </task>
     <servers />
   </component>

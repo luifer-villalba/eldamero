@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import '../styles/global.css';
 
 interface Props {
     title: string;
@@ -10,7 +11,7 @@ interface Props {
 
 const {
     title,
-    description = "Planchas y Trazados de Lavagnini - Estudio del Manual del Maestro Masón",
+    description = "Del Aprendiz al Maestro: estudio operativo de los tres grados simbólicos que descodifica símbolos, herramientas y enseñanzas de Lavagnini para aplicarlos tanto en la vida profana como en el trabajo de logia. Un recorrido por la geometría sagrada y la filosofía hermética enfocado en la construcción interior práctica, sin especulación.",
     image = "/og-image.png",
     type = "website"
 } = Astro.props;
@@ -47,8 +48,6 @@ const socialImage = new URL(image, Astro.site);
 
     <!-- Favicon (opcional por ahora) -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <link rel="stylesheet" href="/src/styles/global.css" />
 
     <!-- View Transitions -->
     <ViewTransitions />
