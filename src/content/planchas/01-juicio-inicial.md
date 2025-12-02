@@ -7,6 +7,7 @@ simbolo: "Mandil Blanco, Manos Limpias, Cámara del Medio"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 1
 ---
 
 ## Introducción: El Umbral del Magisterio

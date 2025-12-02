@@ -7,6 +7,7 @@ simbolo: "Cuadrados Blanco y Negro, Las Dos Columnas, Centro Ecuánime"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 5
 ---
 
 ## Introducción: La Partida de Tu Vida

@@ -7,6 +7,7 @@ simbolo: "Metales en Uso, Artes en Acción, Transmutación Real"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 12
 ---
 
 ## Introducción: Del Concepto a la Realidad

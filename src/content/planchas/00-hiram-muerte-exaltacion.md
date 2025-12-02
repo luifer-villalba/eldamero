@@ -7,6 +7,7 @@ simbolo: "Hiram Abiff, el Féretro, los Tres Enemigos"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 0
 ---
 
 ## Introducción

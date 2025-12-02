@@ -7,6 +7,7 @@ simbolo: "Mediodía Solar, Los Tres Golpes, El Cadáver, La Palabra Perdida"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 4
 ---
 
 ## Introducción: El Mediodía del Alma

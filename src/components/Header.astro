@@ -1,0 +1,41 @@
+---
+interface Props {
+    title?: string;
+    subtitle?: string;
+}
+
+const {
+    title = "El Damero",
+    subtitle = "Un viaje operativo desde el Aprendiz hasta el Maestro, explorando los tres grados simbólicos a través de Lavagnini. Cada plancha descodifica símbolos, herramientas y enseñanzas masónicas, conectándolas con dos realidades: el trabajo en logia y la vida profana diaria. Geometría, hermetismo y construcción interior sin mambo, solo práctica."
+} = Astro.props;
+---
+
+<header class="masonic-header">
+    <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
+    <h1>{title}</h1>
+    {subtitle && <p class="subtitle">{subtitle}</p>}
+</header>
+
+<style>
+    .masonic-header {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+        padding-bottom: var(--spacing-lg);
+        border-bottom: 2px solid var(--damero-gold);
+    }
+
+    .invocacion {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    h1 {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        color: var(--damero-gray-light);
+        font-style: italic;
+        margin: 0;
+    }
+</style>

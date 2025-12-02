@@ -1,176 +1,36 @@
 ---
 import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import FilterBar from '../components/FilterBar.astro';
+import PlanchaCard from '../components/PlanchaCard.astro';
+import Footer from '../components/Footer.astro';
 
 const planchas = await getCollection('planchas');
-const sorted = planchas.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+// Ordenar por campo 'orden' en lugar de fecha
+const sorted = planchas.sort((a, b) => a.data.orden - b.data.orden);
+
+// Extraer grados únicos
+const grados = [...new Set(planchas.map(p => p.data.grado))].sort();
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>El Damero | Planchas Masónicas</title>
-    <style is:global>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<BaseLayout title="El Damero | Planchas Masónicas">
+    <Header />
 
-        html {
-            font-family: 'Georgia', serif;
-            background: #0a0a0a;
-            color: #e8e8e8;
-            line-height: 1.6;
-        }
-
-        body {
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 2px solid #c9a961;
-        }
-
-        .invocacion {
-            font-size: 1rem;
-            letter-spacing: 0.3em;
-            color: #c9a961;
-            margin-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #c9a961;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #aaa;
-            font-style: italic;
-        }
-
-        .planchas-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .plancha-card {
-            background: #1a1a1a;
-            border: 1px solid #c9a961;
-            padding: 1.5rem;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        .plancha-card:hover {
-            background: #252525;
-            box-shadow: 0 0 15px rgba(201, 169, 97, 0.3);
-            border-color: #e8d5b7;
-        }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 0.5rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .card-title {
-            font-size: 1.3rem;
-            color: #c9a961;
-            margin-bottom: 0.5rem;
-        }
-
-        .card-meta {
-            display: flex;
-            gap: 1rem;
-            font-size: 0.85rem;
-            color: #888;
-            flex-wrap: wrap;
-        }
-
-        .meta-badge {
-            background: rgba(201, 169, 97, 0.1);
-            border: 1px solid #c9a961;
-            padding: 0.25rem 0.75rem;
-            color: #c9a961;
-            border-radius: 3px;
-        }
-
-        .card-tema {
-            color: #aaa;
-            margin-top: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .card-autor {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #333;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
-        .empty {
-            text-align: center;
-            padding: 3rem;
-            color: #666;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            .card-title {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="header">
-        <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
-        <h1>El Damero</h1>
-        <p class="subtitle">Planchas y Trazados de Lavagnini</p>
-    </div>
+    {sorted.length > 0 && <FilterBar grados={grados} />}
 
     <div class="planchas-grid">
         {sorted.length > 0 ? (
             sorted.map(plancha => (
-                    <a href={`/planchas/${plancha.slug}`} class="plancha-card">
-                        <div class="card-header">
-                            <h2 class="card-title">{plancha.data.title}</h2>
-                            <span class="meta-badge">{plancha.data.grado}</span>
-                        </div>
-                        <div class="card-meta">
-                            <span>📅 {plancha.data.date.toLocaleDateString('es-AR', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
-                            {plancha.data.tema && <span>🔹 {plancha.data.tema}</span>}
-                        </div>
-                        <div class="card-tema">
-                            Tema: <strong>{plancha.data.tema}</strong>
-                        </div>
-                        <div class="card-autor">
-                            Por: {plancha.data.autor}
-                        </div>
-                    </a>
+                    <PlanchaCard
+                            title={plancha.data.title}
+                            slug={plancha.slug}
+                            grado={plancha.data.grado}
+                            date={plancha.data.date}
+                            tema={plancha.data.tema}
+                            autor={plancha.data.autor}
+                            orden={plancha.data.orden}
+                    />
             ))
         ) : (
                 <div class="empty">
@@ -178,6 +38,22 @@ const sorted = planchas.sort((a, b) => b.data.date.getTime() - a.data.date.getTi
                 </div>
         )}
     </div>
-</div>
-</body>
-</html>
+
+    <Footer />
+</BaseLayout>
+
+<style>
+    .planchas-grid {
+        display: grid;
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .empty {
+        text-align: center;
+        padding: var(--spacing-xl);
+        color: var(--damero-gray);
+        border: 1px dashed var(--damero-gray);
+        background: var(--damero-dark);
+    }
+</style>

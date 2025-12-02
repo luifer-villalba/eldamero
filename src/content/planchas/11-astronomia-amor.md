@@ -7,6 +7,7 @@ simbolo: "Gravitación, Astro Radiante, Orbita Equilibrada, Centro Solar"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 11
 ---
 
 ## Introducción: La Ley que Sostiene Mundos

@@ -4,20 +4,23 @@ import PlanchaLayout from '../../layouts/PlanchaLayout.astro';
 
 export async function getStaticPaths() {
     const planchas = await getCollection('planchas');
-    return planchas.map(plancha => ({
-        params: { slug: plancha.slug },
-        props: { plancha },
-    }));
+    const sorted = planchas.sort((a, b) => a.data.orden - b.data.orden);
+
+    return sorted.map((plancha, index) => {
+        const prev = index > 0 ? sorted[index - 1] : null;
+        const next = index < sorted.length - 1 ? sorted[index + 1] : null;
+
+        return {
+            params: { slug: plancha.slug },
+            props: { plancha, prev, next }
+        };
+    });
 }
 
-interface Props {
-    plancha: any;
-}
-
-const { plancha } = Astro.props;
+const { plancha, prev, next } = Astro.props;
 const { Content } = await plancha.render();
 ---
 
-<PlanchaLayout data={plancha.data} slug={plancha.slug}>
+<PlanchaLayout data={plancha.data} slug={plancha.slug} prev={prev} next={next}>
     <Content />
 </PlanchaLayout>

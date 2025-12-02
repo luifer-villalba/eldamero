@@ -7,6 +7,7 @@ simbolo: "Acusación, Tres Enemigos, Marcha, Pavimento, Muerte"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 6
 ---
 
 ## Introducción: El Primer Tramo del Camino

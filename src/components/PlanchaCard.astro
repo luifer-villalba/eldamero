@@ -1,0 +1,179 @@
+---
+interface Props {
+    title: string;
+    slug: string;
+    grado: string;
+    date: Date;
+    tema: string;
+    autor: string;
+    orden: number;
+}
+
+const { title, slug, grado, date, tema, autor, orden } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('es-AR', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+});
+---
+
+<a href={`/planchas/${slug}`} class="plancha-card" data-grado={grado} transition:name={`card-${slug}`}>
+    <div class="card-number">{orden.toString().padStart(2, '0')}</div>
+
+    <div class="card-header">
+        <h2 class="card-title">{title}</h2>
+        <span class="meta-badge">{grado}</span>
+    </div>
+
+    <div class="card-meta">
+        <span>📅 {formattedDate}</span>
+        <span>🔹 {tema}</span>
+    </div>
+
+    <div class="card-tema">
+        Tema: <strong>{tema}</strong>
+    </div>
+
+    <div class="card-autor">
+        Por: {autor}
+    </div>
+</a>
+
+<style>
+    .plancha-card {
+        background: var(--damero-dark);
+        border: 1px solid var(--damero-gold);
+        padding: var(--spacing-md);
+        text-decoration: none;
+        color: inherit;
+        transition: var(--transition-smooth);
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-number {
+        position: absolute;
+        bottom: var(--spacing-xs);
+        right: var(--spacing-sm);
+        font-size: 4rem;
+        font-weight: bold;
+        color: rgba(201, 169, 97, 0.08);
+        line-height: 1;
+        pointer-events: none;
+        z-index: 0;
+        font-family: var(--font-mono);
+    }
+
+    .plancha-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(201, 169, 97, 0.1),
+                transparent
+        );
+        transition: left 0.5s ease;
+        z-index: 0;
+    }
+
+    .plancha-card:hover::before {
+        left: 100%;
+    }
+
+    .plancha-card:hover {
+        background: var(--damero-darker);
+        box-shadow: 0 0 20px rgba(201, 169, 97, 0.3);
+        border-color: var(--damero-gold-light);
+        transform: translateY(-2px);
+    }
+
+    .plancha-card:hover .card-number {
+        color: rgba(201, 169, 97, 0.15);
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: var(--spacing-xs);
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+        position: relative;
+        z-index: 1;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+        color: var(--damero-gold);
+        margin: 0;
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .meta-badge {
+        background: rgba(201, 169, 97, 0.15);
+        border: 1px solid var(--damero-gold);
+        padding: 0.25rem 0.75rem;
+        color: var(--damero-gold);
+        border-radius: 3px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+    .card-meta {
+        display: flex;
+        gap: var(--spacing-sm);
+        font-size: 0.85rem;
+        color: var(--damero-gray);
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card-tema {
+        color: var(--damero-gray-light);
+        margin-top: var(--spacing-xs);
+        font-size: 0.95rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card-tema strong {
+        color: var(--damero-white);
+    }
+
+    .card-autor {
+        margin-top: var(--spacing-sm);
+        padding-top: var(--spacing-sm);
+        border-top: 1px solid var(--damero-border);
+        font-size: 0.9rem;
+        color: var(--damero-gray);
+        position: relative;
+        z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+        .card-number {
+            font-size: 3rem;
+            bottom: 0;
+            right: var(--spacing-xs);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            min-width: 100%;
+        }
+
+        .meta-badge {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>

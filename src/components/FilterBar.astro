@@ -1,0 +1,115 @@
+---
+interface Props {
+    grados: string[];
+}
+
+const { grados } = Astro.props;
+---
+
+<div class="filter-bar">
+    <label for="grado-filter" class="filter-label">
+        Filtrar por grado:
+    </label>
+    <select id="grado-filter" class="filter-select">
+        <option value="todos">Todos los grados</option>
+        {grados.map(grado => (
+                <option value={grado}>{grado}</option>
+        ))}
+    </select>
+</div>
+
+<script>
+    document.addEventListener('astro:page-load', () => {
+        const select = document.getElementById('grado-filter') as HTMLSelectElement;
+        const cards = document.querySelectorAll('.plancha-card');
+
+        if (!select || !cards.length) return;
+
+        select.addEventListener('change', (e) => {
+            const selectedGrado = (e.target as HTMLSelectElement).value;
+
+            cards.forEach(card => {
+                const cardElement = card as HTMLElement;
+                const cardGrado = cardElement.dataset.grado;
+
+                if (selectedGrado === 'todos' || cardGrado === selectedGrado) {
+                    cardElement.style.display = 'block';
+                    // Animación de entrada
+                    cardElement.style.animation = 'fadeIn 0.3s ease';
+                } else {
+                    cardElement.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    .filter-bar {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-md);
+        background: var(--damero-dark);
+        border: 1px solid var(--damero-gold);
+        flex-wrap: wrap;
+    }
+
+    .filter-label {
+        color: var(--damero-gold);
+        font-size: 0.95rem;
+        font-weight: bold;
+    }
+
+    .filter-select {
+        background: var(--damero-black);
+        color: var(--damero-white);
+        border: 1px solid var(--damero-gold);
+        padding: 0.5rem 1rem;
+        font-family: var(--font-serif);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: var(--transition-smooth);
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .filter-select:hover {
+        border-color: var(--damero-gold-light);
+        box-shadow: 0 0 10px rgba(201, 169, 97, 0.2);
+    }
+
+    .filter-select:focus {
+        outline: 2px solid var(--damero-gold);
+        outline-offset: 2px;
+    }
+
+    .filter-select option {
+        background: var(--damero-dark);
+        color: var(--damero-white);
+        padding: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .filter-bar {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .filter-select {
+            width: 100%;
+        }
+    }
+</style>

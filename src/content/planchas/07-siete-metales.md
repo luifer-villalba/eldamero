@@ -7,6 +7,7 @@ simbolo: "Plomo, Cobre, Hierro, Estaño, Mercurio, Plata, Oro - Crisol Alquímic
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 7
 ---
 
 ## Introducción: El Taller Alquímico

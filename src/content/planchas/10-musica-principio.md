@@ -7,6 +7,7 @@ simbolo: "Palabra Creativa, Verbo Divino, Poder Constructivo"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 10
 ---
 
 ## Introducción: La Palabra como Herramienta

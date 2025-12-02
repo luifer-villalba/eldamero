@@ -7,6 +7,7 @@ simbolo: "Regla, Escuadra, Mallete - Puerta Sur, Occidente, Oriente"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 2
 ---
 
 ## Introducción: El Crimen Perpetuo

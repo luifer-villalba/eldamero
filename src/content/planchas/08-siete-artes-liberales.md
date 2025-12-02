@@ -7,6 +7,7 @@ simbolo: "Trivium (Gramática, Lógica, Retórica) - Quadrivium (Aritmética, Ge
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 8
 ---
 
 ## Introducción: Herramientas del Constructor

@@ -7,6 +7,7 @@ simbolo: "Ocho Pasos, Pavimento Mosaico, Escuadra Oblicua, Cuatro Direcciones"
 autor: "LFV"
 logia: "Leonardo da Vinci N° 152"
 valle: "Asunción"
+orden: 3
 ---
 
 ## Introducción: Caminar Sobre el Cadáver
