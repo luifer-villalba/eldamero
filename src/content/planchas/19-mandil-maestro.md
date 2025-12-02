@@ -66,7 +66,7 @@ La **letra M** que aparece en algunos mandiles tiene triple significado:
 
 1. **Maestro:** Rango iniciático, responsabilidad de transmisión
 2. **Muerte (Mors):** Aceptación de la mortalidad
-3. **Memento Mori:** "Recuerda que morirás" — urgencia existencial
+3. **Memento Mori:** "Recuerda que morirás", urgencia existencial
 
 Lavagnini enfatiza: el Maestro lleva la M **no como morbidez depresiva**, sino como **recordatorio de impermanencia radical**.
 
@@ -236,7 +236,7 @@ En todos los casos, salís diferente porque **no reaccionaste, actuaste**.
 
 ---
 
-### Ejemplo 2: Conflicto de Pareja — Conversación Delicada
+### Ejemplo 2: Conflicto de Pareja, Conversación Delicada
 
 **La situación:**
 
@@ -262,7 +262,7 @@ Tu miedo: "Explotará", "Se enojará", "Me dirá que soy controlador", "Se irá"
     - "Esta conversación es importante, pero no es todo. Nuestra relación trasciende este momento"
     - Te quita dramatismo, gana perspectiva
 
-3. **La M — Memento Mori:**
+3. **La M, Memento Mori:**
     - "¿Quiero que mi último recuerdo juntos sea esto sin decir? No."
     - "¿Tengo 50 años más para resolver esto lentamente o es ahora?"
     - La mortalidad te vuelve honesto

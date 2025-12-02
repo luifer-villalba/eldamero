@@ -74,7 +74,7 @@ El amor verdadero del Maestro **no posee**. **Orbita en equilibrio**.
 
 ### Centro de Gravitación, No Satélite
 
-Lavagnini describe la transformación del Maestro: *"Cesa de ser—por esta Divina expansión de su Ser, que lo asemeja a un Astro radiante—el esclavo de las limitaciones exteriores a las cuales se hallan supeditados los hombres, víctimas de su propio egoísmo, y ya de ellas libertado, se convierte en Redentor y Liberador de los demás."*
+Lavagnini describe la transformación del Maestro: *"Cesa de ser, por esta Divina expansión de su Ser, que lo asemeja a un Astro radiante, el esclavo de las limitaciones exteriores a las cuales se hallan supeditados los hombres, víctimas de su propio egoísmo, y ya de ellas libertado, se convierte en Redentor y Liberador de los demás."*
 
 **Qué significa exactamente:**
 
@@ -320,7 +320,7 @@ Los **Siete Metales** te purifican internamente.
 
 Las **Siete Artes** te dan herramientas.
 
-Culminan en **Astronomía—Amor Operativo** que estructura todo lo anterior.
+Culminan en **Astronomía, Amor Operativo** que estructura todo lo anterior.
 
 Sin Astronomía:
 - Los metales se oxidan

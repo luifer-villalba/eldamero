@@ -120,7 +120,7 @@ Mismo equipo, mismo plazo, diferentes aplicación del Septenario.
 
 Eso es poder operativo.
 
-## Caso 2: Conflicto de Pareja—Diagnóstico de Metales
+## Caso 2: Conflicto de Pareja, Diagnóstico de Metales
 
 ### El Contexto Real
 
@@ -185,7 +185,7 @@ O descubrís que la relación no puede evolucionar. Pero al menos sabés que **h
 
 Eso es maestría en relaciones.
 
-## Caso 3: Decisión Laboral Mayor—Trivium en Acción
+## Caso 3: Decisión Laboral Mayor, Trivium en Acción
 
 ### El Contexto Real
 
@@ -248,7 +248,7 @@ Opción 3: Negocian forma intermedia (mudanza pero con viajes frecuentes, escuel
 
 Eso es Retórica verdadera: crear desde armonía, no desde imposición.
 
-## Caso 4: Caos Diario—Música en Tu Rutina
+## Caso 4: Caos Diario, Música en Tu Rutina
 
 ### El Contexto Real
 
@@ -293,7 +293,7 @@ Con música (ritmo) en tu vida, **automáticamente construyes mejor, te relacion
 
 No es motivación. Es física vibratoria.
 
-## Caso 5: Relación Tóxica—Astronomía y Centro de Gravitación
+## Caso 5: Relación Tóxica, Astronomía y Centro de Gravitación
 
 ### El Contexto Real
 

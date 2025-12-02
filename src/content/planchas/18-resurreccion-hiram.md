@@ -166,7 +166,7 @@ Esta cadena es **real**, no romántica. Es transmisión de conciencia. Cada vez 
 
 ## Aplicación Profana: Los Cinco Puntos en Crisis Reales
 
-### Crisis Tipo 1: Despido Laboral — Muerte de Identidad
+### Crisis Tipo 1: Despido Laboral, Muerte de Identidad
 
 **La situación:**
 
@@ -186,7 +186,7 @@ Analizan técnicamente. "Tengo X ahorros, puedo buscar otro trabajo en 3 meses, 
 
 Usa los **Cinco Puntos de la Maestría**:
 
-**Paso 1: Pie con Pie — Enraizamiento Total en la Realidad**
+**Paso 1: Pie con Pie, Enraizamiento Total en la Realidad**
 
 No niegues lo que pasó. No minimices. Enraízate:
 
@@ -194,7 +194,7 @@ No niegues lo que pasó. No minimices. Enraízate:
 - Siente los pies en el suelo. Estás vivo. Tienes cuerpo, mente, capacidad.
 - La pregunta: "¿Quién soy sin ese trabajo?" (el verdadero terror)
 
-**Paso 2: Rodilla con Rodilla — Estabilidad en el Dolor**
+**Paso 2: Rodilla con Rodilla, Estabilidad en el Dolor**
 
 No rechaces el dolor. Estabilízate en él:
 
@@ -202,7 +202,7 @@ No rechaces el dolor. Estabilízate en él:
 - Rodilla con rodilla = reconoce que otros han pasado por esto. No eres único en tu dolor.
 - La pregunta: "¿Qué versión de mí murió?" (identidad laboral)
 
-**Paso 3: Pecho con Pecho — Apertura del Corazón**
+**Paso 3: Pecho con Pecho, Apertura del Corazón**
 
 Aquí es donde la mayoría se quiebra. Pero el Maestro va más adentro:
 
@@ -211,7 +211,7 @@ Aquí es donde la mayoría se quiebra. Pero el Maestro va más adentro:
 - O: "Descubrí que mi valor no está en mi posición".
 - Pecho con pecho = reconoce qué verdad guardaba escondida ese "fracaso".
 
-**Paso 4: Mano con Mano — Acción Coordinada**
+**Paso 4: Mano con Mano, Acción Coordinada**
 
 Ahora sí, actúa. Pero desde claridad, no desde pánico:
 
@@ -220,7 +220,7 @@ Ahora sí, actúa. Pero desde claridad, no desde pánico:
 - Una acción: actualizar CV, buscar mentor, estudiar algo nuevo, explorar un campo diferente
 - La diferencia: actúas desde reconstrucción, no desde supervivencia
 
-**Paso 5: Mano en Espalda — Confianza, Apoyo, Comunidad**
+**Paso 5: Mano en Espalda, Confianza, Apoyo, Comunidad**
 
 El último paso que muchos olvidan:
 
@@ -241,7 +241,7 @@ No volverá "todo a la normalidad". Pero habrás **transmutado** la crisis:
 
 ---
 
-### Crisis Tipo 2: Ruptura de Pareja — Muerte del Nosotros
+### Crisis Tipo 2: Ruptura de Pareja, Muerte del Nosotros
 
 **La situación:**
 
@@ -293,7 +293,7 @@ No olvidarás a esa persona. Pero habrás **transmutado** el dolor:
 
 ---
 
-### Crisis Tipo 3: Enfermedad o Pérdida — Muerte de la Ilusión de Control
+### Crisis Tipo 3: Enfermedad o Pérdida, Muerte de la Ilusión de Control
 
 **La situación:**
 

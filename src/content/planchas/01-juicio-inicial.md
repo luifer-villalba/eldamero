@@ -26,7 +26,7 @@ Lavagnini enfatiza: *"Su conciencia, el mandil cuya blancura se examina primero,
 
 Pero ¿mancha de qué? Del complicidad con los Tres Asesinos de Hiram. Y aquí está lo crucial: **los Tres Asesinos actúan a través de ti**.
 
-### El Primer Asesino: La Ignorancia — Regla de Veinticuatro Pulgadas
+### El Primer Asesino: La Ignorancia, Regla de Veinticuatro Pulgadas
 
 La Ignorancia mata el brazo izquierdo de Hiram: su **voluntad de actuar conscientemente**.
 
@@ -41,7 +41,7 @@ Lavagnini menciona que en los grados azules recibiste herramientas: el mallete (
 
 **Test de Ignorancia**: ¿Puedes explicar a un Aprendiz por qué cada palabra del ritual importa? Si no, eres ignorante de lo que enseñas.
 
-### El Segundo Asesino: El Fanatismo — Escuadra
+### El Segundo Asesino: El Fanatismo, Escuadra
 
 El Fanatismo mata el pecho de Hiram: su **corazón abierto, su capacidad de escuchar**.
 
@@ -56,7 +56,7 @@ La escuadra es instrumento de rectitud. Pero usado fanáticamente, se vuelve arm
 
 **Test de Fanatismo**: ¿Puedes escuchar a un H∴ con diferente trasfondo masónico y admitir que él tiene razón en algo? Si no, eres fanático.
 
-### El Tercer Asesino: La Ambición — Mallete
+### El Tercer Asesino: La Ambición, Mallete
 
 La Ambición mata la frente de Hiram: su **claridad intelectual, su propósito puro**.
 
@@ -293,7 +293,7 @@ La acusación es justa. No viene de afuera: viene de tus propios actos. El juez 
 
 El mandil blanco no se lava afuera. Se lava adentro, en la Cámara del Medio, donde nadie te ve excepto tú mismo y la Verdad.
 
-Si logras pasar este juicio inicial—no con perfección, sino con honestidad—entonces sí, podrás ser exaltado. No porque seas digno. Porque aprendiste que la dignidad viene de la coherencia, y la coherencia viene del trabajo constante en la Cámara del Medio.
+Si logras pasar este juicio inicial, no con perfección, sino con honestidad, entonces sí, podrás ser exaltado. No porque seas digno. Porque aprendiste que la dignidad viene de la coherencia, y la coherencia viene del trabajo constante en la Cámara del Medio.
 
 Hiram murió porque lo atacaron. Tú morirás simbólicamente porque reconocerás que fuiste cómplice de tu propio asesinato, a través de la Ignorancia, el Fanatismo y la Ambición.
 

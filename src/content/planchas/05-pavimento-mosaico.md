@@ -12,7 +12,7 @@ orden: 5
 tags: ["Filosofía Hermética", "Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior"]
 ---
 
-Visualicen, mis QQ∴ HH∴, el piso de la Logia. Cuadrados blancos y negros alternados. Como un tablero de ajedrez. Pero no es un tablero cualquiera—es *el* tablero donde se juega la partida de tu vida.
+Visualicen, mis QQ∴ HH∴, el piso de la Logia. Cuadrados blancos y negros alternados. Como un tablero de ajedrez. Pero no es un tablero cualquiera, es *el* tablero donde se juega la partida de tu vida.
 
 Lavagnini escribe: *"Este lugar central se encuentra pavimentado de cuadrados blancos y negros, dispuestos alternativamente, como en un tablero de ajedrez, representando la unidad y continuidad de los opuestos"*.
 
@@ -31,7 +31,7 @@ Lavagnini escribe: *"Como sobre el tablero del ajedrez, aquí se juegan todas la
 
 Pero cuidado: estos NO son *absolutos*. Son *relativos*. Lo que hoy es blanco (éxito) mañana puede ser negro (orgullo que ciega). Lo que hoy es negro (fracaso) mañana puede ser blanco (lección que salva).
 
-**Conexión masónica:** Las dos columnas—Jachín y Boaz—están a los lados del pavimento. Son los *jugadores* (dualidad activa). El pavimento es el *juego* (manifestación de esa dualidad). Vos sos el *observador* que puede mover las piezas.
+**Conexión masónica:** Las dos columnas, Jachín y Boaz, están a los lados del pavimento. Son los *jugadores* (dualidad activa). El pavimento es el *juego* (manifestación de esa dualidad). Vos sos el *observador* que puede mover las piezas.
 
 **Enseñanza Clave:** No podés eliminar el negro. No podés quedarte solo en el blanco. El Maestro *camina* sobre ambos sin *quedar atrapado* en ninguno.
 
@@ -49,7 +49,7 @@ Imaginá que estás parado exactamente en el centro del tablero de ajedrez. Blan
 
 Vos sos el *observador* que permanece fijo mientras el juego se despliega alrededor. Desde esa posición central, podés mover cualquier pieza en cualquier dirección. Pero si te identificás con una pieza, pierdes la perspectiva del tablero completo.
 
-**En tu vida:** Cuando estás en el centro—ecuánime—podés ver clara la estrategia de la vida. Cuando estás identificado con una pieza (tu éxito, tu fracaso, tu dolor, tu placer), eres ciego.
+**En tu vida:** Cuando estás en el centro, ecuánime, podés ver clara la estrategia de la vida. Cuando estás identificado con una pieza (tu éxito, tu fracaso, tu dolor, tu placer), eres ciego.
 
 ### La Ilusión del Mal
 
@@ -62,7 +62,7 @@ Lavagnini dice algo revolucionario, casi blasfemo para mentalidad religiosa trad
 - **El Bien** = Realidad única, el Ser
 - **El Mal** = ilusión de separación del Ser, ausencia de bien
 
-En hermetismo, el mal no tiene existencia propia—es como la oscuridad, que no existe en sí misma sino como *ausencia* de luz.
+En hermetismo, el mal no tiene existencia propia, es como la oscuridad, que no existe en sí misma sino como *ausencia* de luz.
 
 **Enseñanza Práctica:** Cuando percibís "mal" en tu vida (dolor, conflicto, pérdida), preguntate: ¿Qué *bien* está ausente aquí?
 
@@ -96,7 +96,7 @@ Un Maestro que solo tiene fuerza sin belleza es un tirano. Un Maestro que solo t
 
 ### El Damero: Tu Plataforma de Aprendizaje
 
-El nombre de este espacio, **eldamero.com**, no es casual. Damero es otra palabra para pavimento mosaico—ese tablero de cuadrados alternados donde se juega la vida.
+El nombre de este espacio, **eldamero.com**, no es casual. Damero es otra palabra para pavimento mosaico, ese tablero de cuadrados alternados donde se juega la vida.
 
 **Descodificación de Nombre:**
 
@@ -113,7 +113,7 @@ Este sitio no te sacará del pavimento. Solo te enseñará a *jugar mejor* sobre
 
 ## Aplicación Práctica: Vida Profana
 
-**Ejercicio Diario—Tu Pavimento Mosaico Personal:**
+**Ejercicio Diario, Tu Pavimento Mosaico Personal:**
 
 Identifica tu "tablero de ajedrez" en diferentes áreas de la vida.
 
@@ -176,7 +176,7 @@ Si permaneces ecuánime durante días de dolor: eres Maestro.
 
 ## Aplicación Práctica: Vida Masónica
 
-**Durante Cada Tenida—Práctica del Pavimento:**
+**Durante Cada Tenida, Práctica del Pavimento:**
 
 ### Al Entrar al Templo
 
@@ -213,7 +213,7 @@ La ecuanimidad NO es desapego emocional. Es participación completa sin identifi
 
 - **Orden 0:** Hiram muere (dualidad: vida/muerte)
 - **Orden 1:** Juicio de conciencia (blanco/negro en tu interior)
-- **Orden 2:** Los Tres Enemigos (ignorancia, fanatismo, ambición—todas oscuridades)
+- **Orden 2:** Los Tres Enemigos (ignorancia, fanatismo, ambición, todas oscuridades)
 - **Orden 3:** Marcha del Maestro (movimiento por los cuadrantes)
 - **Orden 4:** Mediodía de la muerte (ciclos de luz/oscuridad)
 - **Orden 5 (esta):** El pavimento (dualidad sostenida)
@@ -240,7 +240,7 @@ Lavagnini lo resume: *"Las victorias sonríen más fácilmente a quien sepa cons
 
 **Desapasionado NO es insensible.** Desapasionado es NO ser *esclavo* de las pasiones. Puedes sentir placer en blanco y dolor en negro, pero no quedas atrapado en ellos.
 
-El Maestro siente todo—pero vive en el centro.
+El Maestro siente todo, pero vive en el centro.
 
 ## Pregunta para Reflexión Personal
 
@@ -248,6 +248,6 @@ El Maestro siente todo—pero vive en el centro.
 
 Ese es tu siguiente campo de transmutación.
 
-Cuando logres jugar conscientemente en esa área, habrás dado un paso de verdadero Maestro. No en el ritual—en la vida real.
+Cuando logres jugar conscientemente en esa área, habrás dado un paso de verdadero Maestro. No en el ritual, en la vida real.
 
 Eso es lo que importa.

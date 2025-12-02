@@ -26,11 +26,11 @@ La mayoría de la gente vive en disonancia perpetua: notas que luchan entre sí,
 
 ### Definición Operativa
 
-Lavagnini define: *"La Música enseña la 'conexión armónica' que une a todos los seres en la Sinfonía Universal—unidad en la multiplicidad."*
+Lavagnini define: *"La Música enseña la 'conexión armónica' que une a todos los seres en la Sinfonía Universal, unidad en la multiplicidad."*
 
 **Descodificación Profunda:**
 
-La Música no son notas aisladas. Es la *relación entre notas*. Un Do aislado es solo sonido. Do-Mi-Sol es acorde—es creación de realidad nueva que no existía en las notas individuales.
+La Música no son notas aisladas. Es la *relación entre notas*. Un Do aislado es solo sonido. Do-Mi-Sol es acorde, es creación de realidad nueva que no existía en las notas individuales.
 
 Así es la vida del Maestro: no eres nota aislada. Eres **parte de sinfonía mayor**. Tu armonía con otros crea realidades que ninguno podría crear solo.
 
@@ -104,7 +104,7 @@ No es magia literaria. Es **demostración de ley operativa**: Cuando vibrás en 
 
 Los árboles no literalmente "se acercan". Representa cambio en la realidad.
 
-Las rocas no "escuchan música". Representan lo inmóvil, lo denso, lo que parece inalcanzable—y sin embargo, la armonía lo transforma.
+Las rocas no "escuchan música". Representan lo inmóvil, lo denso, lo que parece inalcanzable, y sin embargo, la armonía lo transforma.
 
 El río no se "detiene". La armonía crea espacio donde fluye diferente.
 
@@ -132,7 +132,7 @@ Con armonía (Orfeo afinado):
 - Entrás sereno, genuinamente interesado en solución común > el otro baja defensas > negocia desde colaboración
 - Resultado: ambos ganan
 
-No cambió nada objetivamente. Cambió tu **vibración interior**—tu música interna.
+No cambió nada objetivamente. Cambió tu **vibración interior**, tu música interna.
 
 **Situación: Conflicto familiar**
 

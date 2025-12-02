@@ -86,8 +86,10 @@ const websiteSchema = {
        ═══════════════════════════════════════════ */
     .search-wrapper,
     .filter-wrapper {
-        background-color: var(--damero-darker);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        /* CAMBIO CLAVE: Fondo transparente */
+        background-color: transparent;
+        /* Ajustamos la sombra para que se note sobre el fondo unificado */
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
     }
 
     .filter-wrapper {

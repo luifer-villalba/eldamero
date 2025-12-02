@@ -12,11 +12,11 @@ orden: 2
 tags: ["Salario del Maestro", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Juicio Interno", "Tres Asesinos", "Grado Maestro"]
 ---
 
-Visualicen, mis QQ∴ HH∴, a Hiram al mediodía. El Sol en su cenit. El Maestro solo en el Templo, orando. Tres compañeros lo esperan en las tres puertas. Cada uno con un instrumento de construcción. Pero hoy, esos instrumentos no construyen—destruyen.
+Visualicen, mis QQ∴ HH∴, a Hiram al mediodía. El Sol en su cenit. El Maestro solo en el Templo, orando. Tres compañeros lo esperan en las tres puertas. Cada uno con un instrumento de construcción. Pero hoy, esos instrumentos no construyen, destruyen.
 
 Lavagnini pregunta: *"¿Quién puede confesarse, efectivamente, inmune de toda complicidad con estos tres constantes enemigos de la Institución?"*
 
-La pregunta no es retórica. Es un espejo. Porque los tres asesinos no vienen de afuera—viven adentro. Y todos los días, con la mejor intención, los alimentamos.
+La pregunta no es retórica. Es un espejo. Porque los tres asesinos no vienen de afuera, viven adentro. Y todos los días, con la mejor intención, los alimentamos.
 
 ## Anatomía del Crimen Interior
 
@@ -39,7 +39,7 @@ Lavagnini escribe: *"¿Quién puede decir que no ha tramado con la ignorancia, a
 
 **Conexión masónica:** Como Aprendiz aprendiste la regla para medir tu trabajo. Pero si medís sin comprender, la regla se vuelve dogma. El dogma paraliza el brazo derecho (acción) y la garganta (expresión de la verdad).
 
-**Antídoto:** Lavagnini es claro: *"Perseguir la Ignorancia por medio del estudio, la meditación, la instrucción"*. No basta leer—hay que entender. No basta entender—hay que enseñar. El conocimiento sin comunicación es ignorancia guardada.
+**Antídoto:** Lavagnini es claro: *"Perseguir la Ignorancia por medio del estudio, la meditación, la instrucción"*. No basta leer, hay que entender. No basta entender, hay que enseñar. El conocimiento sin comunicación es ignorancia guardada.
 
 ### El Segundo Enemigo: El Fanatismo
 
@@ -58,11 +58,11 @@ Lavagnini pregunta: *"¿Quién está libre de la intolerancia, vibrando con la e
 - Creemos que nuestra verdad es LA verdad
 - Cerramos la puerta a nuevas perspectivas
 
-**Conexión masónica:** Como Compañero aprendiste la escuadra para verificar tu trabajo. Pero la escuadra masónica tiene compás arriba—la comprensión amplia que abraza. Sin compás, la escuadra golpea el corazón (principio fraternal).
+**Conexión masónica:** Como Compañero aprendiste la escuadra para verificar tu trabajo. Pero la escuadra masónica tiene compás arriba, la comprensión amplia que abraza. Sin compás, la escuadra golpea el corazón (principio fraternal).
 
 **Inferencia basada en contexto masónico:** El fanatismo nace del miedo a que nuestra estructura mental se derrumbe. Por eso defendemos con pasión (hierro) lo que en realidad desconocemos. Es Ignorancia disfrazada de certeza.
 
-**Antídoto:** Lavagnini dice: *"Abrir nuestro corazón a la tolerancia por medio del compás de una más amplia comprensión"*. El compás rodea la escuadra. La comprensión contiene el juicio. La tolerancia no es debilidad—es fuerza que abraza.
+**Antídoto:** Lavagnini dice: *"Abrir nuestro corazón a la tolerancia por medio del compás de una más amplia comprensión"*. El compás rodea la escuadra. La comprensión contiene el juicio. La tolerancia no es debilidad, es fuerza que abraza.
 
 ### El Tercer Enemigo: La Ambición
 
@@ -81,11 +81,11 @@ Lavagnini pregunta: *"¿Quién ha dominado su ambición, y está cierto de no co
 - Ponemos nuestro ego antes que la Obra
 - Medimos éxito por reconocimiento externo
 
-**Conexión masónica:** El mallete del Venerable Maestro dirige la Logia. Pero si lo usas para imponer tu voluntad (no la del G∴A∴D∴U∴), el mallete mata a Hiram en la frente—sede de la inteligencia superior.
+**Conexión masónica:** El mallete del Venerable Maestro dirige la Logia. Pero si lo usas para imponer tu voluntad (no la del G∴A∴D∴U∴), el mallete mata a Hiram en la frente, sede de la inteligencia superior.
 
-**Enseñanza clave:** Lavagnini señala que los tres asesinos se identifican en la raíz "yubel", que significa "río" o "señal"—la corriente de la vida y de los intereses materiales. La ambición es el río que arrastra todo hacia lo material, lejos del espíritu.
+**Enseñanza clave:** Lavagnini señala que los tres asesinos se identifican en la raíz "yubel", que significa "río" o "señal", la corriente de la vida y de los intereses materiales. La ambición es el río que arrastra todo hacia lo material, lejos del espíritu.
 
-**Antídoto:** Lavagnini escribe: *"Esforzarse para que nuestra actividad sea constantemente inspirada por el Amor y dirigida al Bien de la Orden"*. Amor—salario del Maestro. No es sentimentalismo. Es la voluntad dedicada al servicio.
+**Antídoto:** Lavagnini escribe: *"Esforzarse para que nuestra actividad sea constantemente inspirada por el Amor y dirigida al Bien de la Orden"*. Amor, salario del Maestro. No es sentimentalismo. Es la voluntad dedicada al servicio.
 
 ## La Paradoja Central
 

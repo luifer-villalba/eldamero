@@ -26,7 +26,7 @@ Visualizá: dentro tuyo hay un Templo en construcción permanente. Cada pensamie
 
 Lavagnini mapea el Templo de Salomón sobre la estructura completa de tu ser humano, de forma vertical (ascendente):
 
-**ATRIO/PÓRTICO (Nivel Inferior — Cuerpo Físico)**
+**ATRIO/PÓRTICO (Nivel Inferior, Cuerpo Físico)**
 
 Ubicación simbólica: la planta baja del Templo, acceso desde el mundo exterior.
 
@@ -54,7 +54,7 @@ Corresponde a:
 
 ---
 
-**SANCTUARIO/HEKAL (Nivel Intermedio — Mente y Emociones)**
+**SANCTUARIO/HEKAL (Nivel Intermedio, Mente y Emociones)**
 
 Ubicación simbólica: la sala principal del Templo, donde ocurre el trabajo cotidiano.
 
@@ -84,7 +84,7 @@ Corresponde a:
 
 ---
 
-**SANCTASANCTÓRUM/DEBIR (Nivel Superior — Espíritu y Esencia)**
+**SANCTASANCTÓRUM/DEBIR (Nivel Superior, Espíritu y Esencia)**
 
 Ubicación simbólica: la cámara más interior del Templo, donde habita lo sagrado.
 
@@ -150,7 +150,7 @@ El Maestro es el que **completa el ciclo**: sensación → procesamiento → acc
 
 Las dos columnas a entrada del Templo representan dos polaridades que viven **dentro de ti**:
 
-**BOAZ (Columna Izquierda — Principio Receptor/Femenino)**
+**BOAZ (Columna Izquierda, Principio Receptor/Femenino)**
 
 Significado del nombre: "En él hay fuerza" (paradójicamente, es la columna receptiva)
 
@@ -175,7 +175,7 @@ Corresponde a:
 
 ---
 
-**JAKIN (Columna Derecha — Principio Activo/Masculino)**
+**JAKIN (Columna Derecha, Principio Activo/Masculino)**
 
 Significado del nombre: "Dios establecerá" (acción, establecimiento)
 
@@ -201,7 +201,7 @@ Corresponde a:
 
 ---
 
-**EL CENTRO EQUILIBRADO — El Maestro**
+**EL CENTRO EQUILIBRADO, El Maestro**
 
 El Maestro no es ni todo Boaz ni todo Jakin. **Alterna conscientemente**:
 ```
@@ -584,7 +584,7 @@ Pregúntate: *"¿Cuán opaco está mi velo? ¿Mi personalidad oculta o expresa m
 
 ---
 
-### Ejercicio 2: Equilibrio de Columnas — Boaz y Jakin en Tu Semana
+### Ejercicio 2: Equilibrio de Columnas, Boaz y Jakin en Tu Semana
 
 **Duración:** 10 minutos, 1x por semana (mejor los viernes)
 

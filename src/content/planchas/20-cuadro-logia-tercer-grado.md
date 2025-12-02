@@ -90,31 +90,31 @@ No es pesimismo. Es **realismo sagrado** que libera.
 
 Lavagnini interpreta el Cuadro no como fotografía estática sino como **proceso dinámico**. Si lo recorres mentalmente en secuencia, es el "viaje del héroe" aplicado al Maestro:
 
-**Acto I — Inicio (Superior, antes representado):**
+**Acto I, Inicio (Superior, antes representado):**
 - Hiram vivo, trabajando, en el apogeo
 - Herramientas intactas
 - Proyecto en marcha
 - Ilusión de invulnerabilidad
 
-**Acto II — Crisis/Asesinato (Centro):**
+**Acto II, Crisis/Asesinato (Centro):**
 - Los tres compañeros atacan
 - Herramientas se rompen
 - Caos, violencia, incomprensión
 - Colapso de lo que parecía sólido
 
-**Acto III — Descenso (Inferior):**
+**Acto III, Descenso (Inferior):**
 - Entierro, tumba, oscuridad
 - Aceptación de la muerte
 - Descomposición, fin de la forma
 - Soledad completa en la tumba
 
-**Acto IV — Resurrección (Superior nuevamente, pero transformado):**
+**Acto IV, Resurrección (Superior nuevamente, pero transformado):**
 - Acacia floreciendo
 - Escalera permitiendo ascenso
 - Búsqueda y hallazgo del cuerpo
 - Levantamiento a nueva vida
 
-**Acto V — Continuación (Presente eterno):**
+**Acto V, Continuación (Presente eterno):**
 - Cada Maestro que mira el Cuadro es Hiram
 - Cada Maestro que sube es el que fue levantado
 - El ciclo continúa, infinito
@@ -276,7 +276,7 @@ Actualiza el Cuadro. Es documento vivo, no fósil.
 
 ## Aplicación Profana: Usar el Cuadro en Crisis Reales
 
-### Ejemplo 1: Crisis de Identidad — Cuando Tu "Hiram" Muere
+### Ejemplo 1: Crisis de Identidad, Cuando Tu "Hiram" Muere
 
 **La situación:**
 
@@ -343,7 +343,7 @@ No desaparece el duelo. Pero **transmutó en dirección**. Ya no estás paraliza
 
 ---
 
-### Ejemplo 2: Memento Mori Nocturno — Evaluación Existencial Diaria
+### Ejemplo 2: Memento Mori Nocturno, Evaluación Existencial Diaria
 
 Este es un ejercicio del Maestro antes de dormir. No es depresión: es **claridad existencial**.
 
@@ -413,7 +413,7 @@ Verás cómo tus días se cargan de significado. Ya no son tiempo que "pasa". So
 
 ---
 
-### Ejemplo 3: Crisis de Duelo — La Muerte de Alguien Cercano
+### Ejemplo 3: Crisis de Duelo, La Muerte de Alguien Cercano
 
 **La situación:**
 

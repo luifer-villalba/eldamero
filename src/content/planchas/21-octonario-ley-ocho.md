@@ -1,5 +1,5 @@
 ---
-title: "El Octonario: La Ley del Ocho — Regeneración y Ciclos Superiores"
+title: "El Octonario: La Ley del Ocho, Regeneración y Ciclos Superiores"
 date: 2025-12-02
 grado: "Maestro"
 tema: "Número de Regeneración, Puerta al Siguiente Plano, Octava Musical"
@@ -121,7 +121,7 @@ Llegás a la maestría en tu campo, pero sabés que nunca termina.
 
 *Acción concreta:* Aprendizaje permanente, humildad, búsqueda de lo no-conocido.
 
-**PASO 8: Integración Final — El Octavo Paso que Multiplica**
+**PASO 8: Integración Final, El Octavo Paso que Multiplica**
 
 No es nuevo aprendizaje. Es **síntesis de los siete en un sistema único que trasciende**.
 

@@ -1,5 +1,5 @@
 ---
-title: "La Cámara del Medio: Profundización — El Salario del Maestro"
+title: "La Cámara del Medio: Profundización, El Salario del Maestro"
 date: 2025-12-02
 grado: "Maestro"
 tema: "Centro Interior, Acceso Directo, Salario del Conocimiento"

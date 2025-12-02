@@ -12,7 +12,7 @@ orden: 8
 tags: ["Pavimento Mosaico", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Artes Liberales", "Templo Interior", "Cadena de Unión"]
 ---
 
-Mis QQ∴ HH∴, las Siete Artes Liberales no son "materias académicas" para el Maestro. Son **herramientas de construcción** tan operativas como el mallete o la escuadra. Con ellas construyes no solo templos físicos, sino templos interiores—estructuras de conciencia que perduran.
+Mis QQ∴ HH∴, las Siete Artes Liberales no son "materias académicas" para el Maestro. Son **herramientas de construcción** tan operativas como el mallete o la escuadra. Con ellas construyes no solo templos físicos, sino templos interiores, estructuras de conciencia que perduran.
 
 Se dividen en dos grupos:
 
@@ -31,11 +31,11 @@ Esto significa: No puedes hablar con poder hasta que domines armonía (Música) 
 
 Las Siete Artes están distribuidas en los grados de forma lógica:
 
-**Aprendiz domina:** Gramática—aprende a *leer* el templo
+**Aprendiz domina:** Gramática, aprende a *leer* el templo
 
-**Compañero domina:** Lógica + inicio de Aritmética y Geometría—aprende a *conectar* símbolos y *construir* formas
+**Compañero domina:** Lógica + inicio de Aritmética y Geometría, aprende a *conectar* símbolos y *construir* formas
 
-**Maestro domina:** Retórica + Música + Astronomía—aprende a *crear* con el verbo y manifestar con amor universal
+**Maestro domina:** Retórica + Música + Astronomía, aprende a *crear* con el verbo y manifestar con amor universal
 
 ## El Trivium: Dominio del Verbo
 
@@ -99,7 +99,7 @@ Las Siete Artes están distribuidas en los grados de forma lógica:
 
 Lavagnini escribe algo revolucionario: *"La Retórica es la identificación individual de la conciencia con el Verbo Divino que mora en nosotros."*
 
-**Clave Operativa:** Para que tu palabra sea creativa, debe inspirarse en Música (armonía) y Astronomía (ley universal). Sin esto, es "ornada y vana palabrería"—ruido bonito pero vacío.
+**Clave Operativa:** Para que tu palabra sea creativa, debe inspirarse en Música (armonía) y Astronomía (ley universal). Sin esto, es "ornada y vana palabrería", ruido bonito pero vacío.
 
 **Enseñanza Profunda:** No todos pueden hablar. La mayoría simplemente emite sonidos. El Maestro *genera* realidad con sus palabras porque primero integró Música (armonía interior) y Astronomía (comprensión de ley universal).
 
@@ -107,7 +107,7 @@ Lavagnini escribe algo revolucionario: *"La Retórica es la identificación indi
 
 - **Habla desde principio geométrico**: Tus palabras construyen o destruyen relaciones.
 - Ejemplo 1: En conflicto laboral, si hablas desde ira (caos), escalas el conflicto. Si hablas desde claridad (geometría), resuelves.
-- Ejemplo 2: En entrevista de trabajo, no impresionas por palabras bonitas—impresionas por **claridad + confianza + propósito**. Eso es Retórica pura.
+- Ejemplo 2: En entrevista de trabajo, no impresionas por palabras bonitas, impresionas por **claridad + confianza + propósito**. Eso es Retórica pura.
 - Tu palabra tiene **peso**: úsala conscientemente.
 
 **Caso Práctico:** Tienes que despedir a un empleado. Retórica de aprendiz: explicaciones largas, justificaciones. Retórica de Maestro: claridad directa, respeto, oportunidad de entender, próximos pasos claros. Menos palabras, más poder.
@@ -115,7 +115,7 @@ Lavagnini escribe algo revolucionario: *"La Retórica es la identificación indi
 **Aplicación Masónica:**
 
 - El M∴ habla en Logia con **autoridad operativa** > sus palabras no son opiniones, son actos constructivos
-- Cuando el V∴M∴ abre la Logia, no "dice palabras"—*crea* el Templo con su habla
+- Cuando el V∴M∴ abre la Logia, no "dice palabras", *crea* el Templo con su habla
 - La palabra perdida de Hiram no es un sonido > es la **capacidad del Maestro de crear con el verbo**
 
 **Transmutación:** Esta semana, practica la Retórica. Habla menos, pero mejor. Antes de hablar, preguntate: ¿Esto construye o destruye? ¿Viene de armonía o de caos?
@@ -140,13 +140,13 @@ El número 7 no es "siete años de experiencia". Es el **dominio del septenario 
 - Los números revelan estructura oculta en lo aparentemente caótico.
 - Ejemplo: En negocios, hay ciclos. Si reconoces que hay ciclo de 3 años (crecimiento/estabilidad/contracción), puedes prepararte.
 
-**Caso Práctico:** Tienes proyecto. Aritmética dice: "El número 3 aparece aquí (3 socios, 3 fases). El número 3 requiere balance—cuidado con el triangularismo destructivo". Es diferente a solo "hay 3 socios".
+**Caso Práctico:** Tienes proyecto. Aritmética dice: "El número 3 aparece aquí (3 socios, 3 fases). El número 3 requiere balance, cuidado con el triangularismo destructivo". Es diferente a solo "hay 3 socios".
 
 **Aplicación Masónica:**
 
 - La edad simbólica del M∴ es 7 años > no significa "siete años de reloj", sino dominio del septenario (comprendiste los 7 metales, las 7 artes, la ley de 7)
 - Los 3 golpes, 5 pasos, 7 artes: cada número es una **ley universal**, no una medida estadística
-- El triángulo del Delta: 3 no es "tres ángulos"—es la manifestación visible del ternario invisible
+- El triángulo del Delta: 3 no es "tres ángulos", es la manifestación visible del ternario invisible
 
 **Transmutación:** Esta semana, observa los números en tu vida. ¿Hay patrón? ¿Qué principio expresa ese número?
 
@@ -158,7 +158,7 @@ El número 7 no es "siete años de experiencia". Es el **dominio del septenario 
 
 **Inferencia Masónica:** La Geometría es el "segundo día" de la creación en el relato hermético. El espacio aparece. Las formas toman cuerpo. El Templo es geometría viva.
 
-**Enseñanza Profunda:** Todo lo que ves es geometría. Tu cuerpo, el Templo, el universo—todo expresa principios geométricos. Si entiendes geometría, entiendes cómo se crea.
+**Enseñanza Profunda:** Todo lo que ves es geometría. Tu cuerpo, el Templo, el universo, todo expresa principios geométricos. Si entiendes geometría, entiendes cómo se crea.
 
 **Aplicación Profana:**
 
@@ -172,7 +172,7 @@ El número 7 no es "siete años de experiencia". Es el **dominio del septenario 
 
 - El piso del Templo no es "decoración bonita" > es **geometría sagrada** que estructura la conciencia de los HH∴
 - El Delta radiante: triángulo = manifestación visible del ternario numérico invisible
-- Las proporciones del Templo no son arbitrarias—siguen geometría sagrada
+- Las proporciones del Templo no son arbitrarias, siguen geometría sagrada
 
 **Transmutación:** Esta semana, observa geometrías. ¿Cómo está estructurado tu espacio? ¿Te sirve esa forma?
 
@@ -192,13 +192,13 @@ Lavagnini escribe: *"Como todo es vibración, y toda vibración es sonido musica
 - Las **conversaciones** tienen melodía: tono, pausa, crescendo, decrescendo. Podés "desafinar" completamente en una reunión con un comentario discordante.
 - Tu **energía** tiene ciclos: mañana, mediodía, tarde. Respetar esa música natural es clave.
 
-**Caso Práctico:** En equipo hay tensión. Música dice: "Falta armonía". No es problema de contenido—es problema de *ritmo*. ¿Alguien siempre interrumpe? ¿Alguien nunca habla? Desacuerdo total.
+**Caso Práctico:** En equipo hay tensión. Música dice: "Falta armonía". No es problema de contenido, es problema de *ritmo*. ¿Alguien siempre interrumpe? ¿Alguien nunca habla? Desacuerdo total.
 
 **Aplicación Masónica:**
 
 - El ritual es **música operativa**: golpes de mallete, pausas, entonaciones > romper el ritmo es romper la armonía del Templo
 - La construcción individual es **sinfonía**: cada virtud, cada metal es una nota. Deben **acordar** entre sí
-- La apertura y cierre de Logia tienen ritmo específico—no es decoración, es **estructura armónica**
+- La apertura y cierre de Logia tienen ritmo específico, no es decoración, es **estructura armónica**
 
 **Transmutación:** Esta semana, escucha. ¿Cuál es el ritmo de tu vida? ¿Estás en armonía con tu naturaleza?
 
@@ -230,23 +230,23 @@ Lavagnini escribe algo profundo: *"El estudio de la Construcción de los mundos,
 
 ## Aplicación Práctica: Vida Profana
 
-### Práctica Diaria—El Trivium
+### Práctica Diaria, El Trivium
 
 **Cada día trabaja una secuencia:**
 
-1. **Mañana—Gramática (Observación):**
+1. **Mañana, Gramática (Observación):**
     - Observa patrones sin juzgar
     - Pregunta: "¿Qué leo en esta situación?"
 
-2. **Mediodía—Lógica (Conexión):**
+2. **Mediodía, Lógica (Conexión):**
     - Conecta lo observado
     - Pregunta: "¿Cómo se relaciona esto con lo que ya sé?"
 
-3. **Tarde—Retórica (Creación):**
+3. **Tarde, Retórica (Creación):**
     - Habla desde claridad
     - Pregunta: "¿Cómo digo esto de forma que construya?"
 
-### Práctica Semanal—El Quadrivium
+### Práctica Semanal, El Quadrivium
 
 - **Lunes:** Aritmética (¿Qué principios operan aquí?)
 - **Martes:** Geometría (¿Cómo está estructurado esto?)

@@ -18,7 +18,7 @@ Lavagnini dedica pasajes fundamentales a una verdad que invierte toda noción mu
 
 El texto es contundente: "No se debe buscar un salario exterior o interior como en los grados precedentes, por constituir éste una identidad con aquél: el mismo Servicio, y el Amor que en él se expresa ha de ser el salario del Maestro."
 
-Visualizá: mientras los Aprendices reciben su salario cerca de la Primera Columna (fundamentos), y los Compañeros cerca de la Segunda Columna (construcción), los Maestros lo reciben en la **Cámara del Medio** — un lugar superior, secreto, donde el tesoro es la Palabra misma que transmite conocimiento.
+Visualizá: mientras los Aprendices reciben su salario cerca de la Primera Columna (fundamentos), y los Compañeros cerca de la Segunda Columna (construcción), los Maestros lo reciben en la **Cámara del Medio**, un lugar superior, secreto, donde el tesoro es la Palabra misma que transmite conocimiento.
 
 ## El Salario en los Tres Grados: Arquitectura Evolutiva
 
@@ -59,11 +59,11 @@ El Texto del Libro de los Reyes describe: Hiram fundió dos columnas de bronce h
 
 **Interpretación de Lavagnini:**
 
-Los Aprendices y Compañeros **permanecen junto a las Columnas**. Reciben su salario "dentro" de ellas — es decir, dentro de los límites del trabajo externo y de la instrucción sistemática.
+Los Aprendices y Compañeros **permanecen junto a las Columnas**. Reciben su salario "dentro" de ellas, es decir, dentro de los límites del trabajo externo y de la instrucción sistemática.
 
 El tesoro junto a las Columnas es **oculto pero accesible**: están los instrumentos del trabajo que se hace sobre las piedras. La instrucción se guarda ahí, como recurso material y mental.
 
-**Pero solo los Maestros ingresan en la Cámara del Medio** — ese lugar secreto que está "más allá de las Columnas y por encima de ellas". Allí se guarda **el secreto de la formación de las Columnas mismas**. No solo el trabajo, sino la arquitectura del trabajo.
+**Pero solo los Maestros ingresan en la Cámara del Medio**, ese lugar secreto que está "más allá de las Columnas y por encima de ellas". Allí se guarda **el secreto de la formación de las Columnas mismas**. No solo el trabajo, sino la arquitectura del trabajo.
 
 La **Cámara del Medio** no es lugar físico. Es **estado de conciencia superior**: comprensión de por qué se trabaja, no solo cómo.
 
@@ -126,7 +126,7 @@ El Maestro que sirve conscientemente sabe: "Cuando muera mi cuerpo, mi obra cont
 
 ## Cámara del Medio: Donde se Recibe el Salario
 
-Lavagnini enfatiza que el Maestro recibe su salario **en la Cámara del Medio** — estado de conciencia que está por encima y más allá del dualismo de las Columnas.
+Lavagnini enfatiza que el Maestro recibe su salario **en la Cámara del Medio**, estado de conciencia que está por encima y más allá del dualismo de las Columnas.
 
 **Interpretación operativa:**
 
@@ -203,7 +203,7 @@ Hazlo una vez a la semana. Gradualmente, la presencia se expande a todo el traba
 
 ### La Cámara del Medio Personal
 
-El salario del Maestro no se recibe en Logia física, sino en tu **Cámara del Medio interna** — ese espacio donde trasciende dualismo.
+El salario del Maestro no se recibe en Logia física, sino en tu **Cámara del Medio interna**, ese espacio donde trasciende dualismo.
 
 **Práctica semanal:**
 

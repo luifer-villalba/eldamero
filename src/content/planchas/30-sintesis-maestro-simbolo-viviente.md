@@ -272,4 +272,4 @@ Vos también: no sos estudiante del grado de Maestro. **Sos el grado de Maestro 
 
 ---
 
-**FIN DEL CICLO DE 30 PLANCHAS — COMIENZO DE LA GRAN OBRA**
+**FIN DEL CICLO DE 30 PLANCHAS, COMIENZO DE LA GRAN OBRA**

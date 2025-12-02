@@ -16,7 +16,7 @@ Mis QQ∴ HH∴,
 
 Cuando fuiste exaltado al grado de Maestro, viviste la leyenda de Hiram Abiff. No fue un paseo simbólico. Fuiste golpeado, encerrado en un féretro, buscado durante días, y finalmente levantado de la muerte. Esta plancha es recordatorio de qué pasó y **por qué es el misterio más importante que enfrentarás**.
 
-Visualizá: el féretro. Tú dentro. Oscuridad total. Tres golpes resonando en tu cuerpo. Luego, el silencio de la muerte. Luego, manos que te buscan, que finalmente te encuentran, que te levantan con ese toque de maestro — ese agarre de garra que siente como si la carne se desprendiera de los huesos.
+Visualizá: el féretro. Tú dentro. Oscuridad total. Tres golpes resonando en tu cuerpo. Luego, el silencio de la muerte. Luego, manos que te buscan, que finalmente te encuentran, que te levantan con ese toque de maestro, ese agarre de garra que siente como si la carne se desprendiera de los huesos.
 
 Eso no es teatro. Es **iniciación a la muerte real mediante vivencia del cuerpo**.
 
@@ -36,9 +36,9 @@ Tres compañeros celosos decidieron obtener los secretos de maestro por la fuerz
 
 Se armaron con tres herramientas especializadas:
 
-- **El primero: Regla de veinticuatro pulgadas** (golpe al brazo izquierdo — la acción, la voluntad de hacer)
-- **El segundo: Escuadra** (golpe al pecho — el corazón, la intención, la conciencia)
-- **El tercero: Mallete** (golpe mortal a la frente — el intelecto, la claridad)
+- **El primero: Regla de veinticuatro pulgadas** (golpe al brazo izquierdo, la acción, la voluntad de hacer)
+- **El segundo: Escuadra** (golpe al pecho, el corazón, la intención, la conciencia)
+- **El tercero: Mallete** (golpe mortal a la frente, el intelecto, la claridad)
 
 Hiram intentó escapar. Se dirigió al occidente (el lado de la muerte simbólica). Lo alcanzaron en una puerta de emergencia. Los tres golpes cayeron en sucesión rápida. Hiram cayó muerto.
 
@@ -62,9 +62,9 @@ Esto representa el momento donde la personalidad (tu ego, tu identidad social) e
 
 Fuiste despojado del mandil de compañero. Temporalmente, retrocediste. Esto representa que en la muerte, **pierdes todos los grados, todas las posiciones, todo lo que construiste externamente**.
 
-Un CEO, un maestro reconocido, un padre respetado — en la muerte, todos pierden los títulos simultáneamente. Eres reducido a nada.
+Un CEO, un maestro reconocido, un padre respetado, en la muerte, todos pierden los títulos simultáneamente. Eres reducido a nada.
 
-### Momento 3: La Cámara del Medio — Rostro a Rostro con la Muerte
+### Momento 3: La Cámara del Medio, Rostro a Rostro con la Muerte
 
 Entraste a oscuras. Viste una calavera iluminada sobre un cadáver. Se te hicieron preguntas sobre la vida y la muerte. No eran filosóficas: eran **existenciales**.
 
@@ -72,7 +72,7 @@ Entraste a oscuras. Viste una calavera iluminada sobre un cadáver. Se te hicier
 
 Este es el momento donde la mente consciente **toca el abismo**. Ve la calavera y siente miedo primordial. Eso es necesario. Sin ese miedo, no hay transformación real.
 
-### Momento 4: El Ataque — Los Tres Golpes
+### Momento 4: El Ataque, Los Tres Golpes
 
 Los tres asesinos te atacaron tal como atacaron a Hiram. Los golpes fueron **físicos**, no metafóricos.
 
@@ -82,7 +82,7 @@ Los tres asesinos te atacaron tal como atacaron a Hiram. Los golpes fueron **fí
 
 En ese momento, **caíste**. Fuiste colocado en el féretro "muerto". Los tres asesinos te escondieron bajo hojas. Eras el cadáver de Hiram.
 
-### Momento 5: La Búsqueda — Los Nueve Maestros
+### Momento 5: La Búsqueda, Los Nueve Maestros
 
 Durante días, los nueve maestros te buscaron. Tú permaneciste "muerto" en el féretro, escondido, invisible.
 
@@ -90,15 +90,15 @@ Esto representa algo crucial: cuando caes a la muerte (crisis, pérdida, fracaso
 
 Los nueve no son externos. Son tus mejores intenciones, tu verdadera voluntad, tu Individualidad luchando por recuperar tu Ideal perdido (Hiram).
 
-### Momento 6: El Levantamiento — El Toque de Maestro
+### Momento 6: El Levantamiento, El Toque de Maestro
 
-Finalmente te encontraron. Te levantaron con el **toque de maestro** — ese agarre especial en forma de garra.
+Finalmente te encontraron. Te levantaron con el **toque de maestro**, ese agarre especial en forma de garra.
 
 Lavagnini es explícito: no es casual que la mano forme garra. Representa que **la carne se desprende de los huesos durante descomposición**. Es recognition brutal de que el cuerpo se disuelve, pero que algo en ti permanece vivo.
 
 Cuando recibes ese toque, tu cuerpo siente la muerte íntima. Y luego, la resurrección.
 
-### Momento 7: La Exaltación — "El Hijo de la Viuda"
+### Momento 7: La Exaltación, "El Hijo de la Viuda"
 
 Fuiste presentado como "el hijo de la viuda", resucitado, iniciado en el misterio de la **vida que trasciende la muerte física**.
 
@@ -176,7 +176,7 @@ En la vida profana, experimentas constantemente "muertes pequeñas" de la person
 
 **Muerte y resurrección**: Durante semanas (el equivalente a "los nueve días de búsqueda"), permaneces en el féretro psicológico: sin identidad clara, sin rol social, sin definición.
 
-Luego, **levantamiento**: Descubres que tu valor no era el cargo. Era tu capacidad. Tu Individualidad persiste. Encuentras nuevo trabajo — a veces mejor — porque ahora basas identidad en quién eres, no en qué haces.
+Luego, **levantamiento**: Descubres que tu valor no era el cargo. Era tu capacidad. Tu Individualidad persiste. Encuentras nuevo trabajo, a veces mejor, porque ahora basas identidad en quién eres, no en qué haces.
 
 **La pregunta masónica**: ¿Quién eres sin tu empleo? Eso es tu Individualidad.
 

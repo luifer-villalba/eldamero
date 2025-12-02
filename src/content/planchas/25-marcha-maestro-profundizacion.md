@@ -25,7 +25,7 @@ Lavagnini mapea los 8 pasos a las **8 etapas del Octonario**:
 1. **Reconocimiento**: Veo la tumba (la muerte, mi finitud)
 2. **Aceptación**: Decido pisarla (no huir, enfrentar)
 3. **Descenso**: Me aproximo al centro de la muerte
-4. **Inmersión**: Piso el punto más profundo (muerte simbólica total) — **PUNTO CRÍTICO**
+4. **Inmersión**: Piso el punto más profundo (muerte simbólica total), **PUNTO CRÍTICO**
 5. **Resurrección**: Empiezo a salir del centro
 6. **Ascenso**: Me alejo de la tumba
 7. **Integración**: He atravesado la muerte y vivo

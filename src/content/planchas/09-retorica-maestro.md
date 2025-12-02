@@ -20,7 +20,7 @@ Imaginá tus palabras como cincel y mallete en tus manos. Cada frase que pronunc
 
 Lavagnini escribe: *"Saber hablar, expresando en palabras el Verbo de la Vida, es verdaderamente la característica del Magisterio."*
 
-No es un adorno. Es la **marca distintiva** del Maestro. Si no puedes hablar con poder creativo, no eres Maestro—eres un aprendiz avanzado disfrazado.
+No es un adorno. Es la **marca distintiva** del Maestro. Si no puedes hablar con poder creativo, no eres Maestro, eres un aprendiz avanzado disfrazado.
 
 ## La Palabra como Poder Operativo
 
@@ -66,7 +66,7 @@ Lavagnini escribe: *"La aplicación de la música a la retórica hace que la Pal
 
 Tus palabras deben **armonizar** diferencias, no polarizarlas. La palabra del Maestro reconcilia opuestos sin negarlos.
 
-No es "todos están de acuerdo"—es "todos ven cómo sus diferencias contribuyen al mismo objetivo".
+No es "todos están de acuerdo", es "todos ven cómo sus diferencias contribuyen al mismo objetivo".
 
 **Enseñanza Profunda:**
 
@@ -94,7 +94,7 @@ Y luego lo aclara: Astronomía = Gravitación Universal = **Amor** (en sentido p
 
 **Inferencia Masónica:**
 
-La palabra del Maestro debe emanar de **amor operativo**—voluntad de servir, de elevar, de construir—no de ego, ambición o necesidad de control.
+La palabra del Maestro debe emanar de **amor operativo**, voluntad de servir, de elevar, de construir, no de ego, ambición o necesidad de control.
 
 Si hablas desde orgullo, tus palabras **repelen** (gravedad negativa). Si hablas desde amor verdadero, **atraés** (gravitación positiva).
 
@@ -137,7 +137,7 @@ Lavagnini describe al Maestro así: *"Maestro es quien se ha establecido en la F
 
 **Ejemplo Anti-Maestro:**
 
-Un H∴ da plancha usando términos esotéricos complejos. Impresiona a algunos. Pero el Aprendiz no entiende nada. No es Maestro—es erudito ventajista.
+Un H∴ da plancha usando términos esotéricos complejos. Impresiona a algunos. Pero el Aprendiz no entiende nada. No es Maestro, es erudito ventajista.
 
 **Ejemplo Maestro:**
 
@@ -155,7 +155,7 @@ Un M∴ da plancha sobre "Individualidad vs. Personalidad" sin usar esos términ
 
 **Ejemplo de Profundidad:**
 
-"El amor masónico no es sentimiento—es voluntad constante de ver al otro mejor de lo que él se ve a sí mismo". Una frase. Actúa. Cambia perspectiva.
+"El amor masónico no es sentimiento, es voluntad constante de ver al otro mejor de lo que él se ve a sí mismo". Una frase. Actúa. Cambia perspectiva.
 
 **Enseñanza Profunda:**
 
@@ -208,7 +208,7 @@ Alguien dice: "Nunca voy a poder aprender esto".
 
 Palabra de orador: "Claro que puedes, solo tienes que intentar". (Vacío)
 
-Palabra de Maestro: "Vi cómo resolviste aquel problema. Usaste exactamente esa capacidad. Aquí es lo mismo". (Resurrección—ves lo que él no ve de sí mismo)
+Palabra de Maestro: "Vi cómo resolviste aquel problema. Usaste exactamente esa capacidad. Aquí es lo mismo". (Resurrección, ves lo que él no ve de sí mismo)
 
 **Caso 2: Esperanza Muerta**
 
@@ -216,7 +216,7 @@ Alguien ha fracasado varias veces.
 
 Palabra de orador: "No te desanimes, la próxima será diferente". (Falsa consolación)
 
-Palabra de Maestro: "Cada fracaso fue maestro. Mira lo que aprendiste en cada uno". (Resurrección—transmuta dolor en sabiduría)
+Palabra de Maestro: "Cada fracaso fue maestro. Mira lo que aprendiste en cada uno". (Resurrección, transmuta dolor en sabiduría)
 
 **Caso 3: Propósito Perdido**
 
@@ -224,7 +224,7 @@ Alguien trabaja mecánicamente sin sentido.
 
 Palabra de orador: "Tu trabajo es importante". (Abstracto)
 
-Palabra de Maestro: "Con tu precisión en eso, estás construyendo algo que otros no podrían construir. Sin eso, el Templo tiene grietas. Eso importa". (Resurrección—ve la grandeza en lo cotidiano)
+Palabra de Maestro: "Con tu precisión en eso, estás construyendo algo que otros no podrían construir. Sin eso, el Templo tiene grietas. Eso importa". (Resurrección, ve la grandeza en lo cotidiano)
 
 ### En Contexto Masónico
 
@@ -354,13 +354,13 @@ Mis QQ∴ HH∴, la Retórica del Maestro no se mide en aplausos.
 
 Se mide en **construcción efectiva**.
 
-Una palabra bien dicha—desde armonía, desde amor, desde profundidad—puede:
+Una palabra bien dicha, desde armonía, desde amor, desde profundidad, puede:
 - Levantar a un hermano de la tumba del desánimo
 - Resucitar esperanza dormida
 - Despertar potencial oculto
 - Unir lo que estaba dividido
 
-Una palabra mal dicha—desde ego, desde caos, desde superficialidad—puede:
+Una palabra mal dicha, desde ego, desde caos, desde superficialidad, puede:
 - Enterrar más hondo
 - Matar esperanza
 - Ocultar potencial

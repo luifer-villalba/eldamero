@@ -26,13 +26,13 @@ Imaginate siete metales en un crisol ardiente. Cada uno es un aspecto tuyo:
 - Tu lujuria esclava (cobre sin amor)
 - Tu pereza paralizante (plomo sin prudencia)
 
-El fuego del crisol es tu entusiasmo consciente—tu voluntad de transformación. La piedra filosofal es tu discernimiento despierto. El alquimista eres vos.
+El fuego del crisol es tu entusiasmo consciente, tu voluntad de transformación. La piedra filosofal es tu discernimiento despierto. El alquimista eres vos.
 
-Lavagnini lo aclara: *"Todos estos metales se encuentran dentro de nosotros, constituyendo las cualidades positivas y negativas—virtudes y vicios—de nuestra personalidad, las que deben transmutarse de su polaridad inferior en superior."*
+Lavagnini lo aclara: *"Todos estos metales se encuentran dentro de nosotros, constituyendo las cualidades positivas y negativas, virtudes y vicios, de nuestra personalidad, las que deben transmutarse de su polaridad inferior en superior."*
 
 ## Los Siete Metales: Descodificación Completa
 
-Cada metal tiene **correspondencia planetaria**, **virtud** (estado puro) y **vicio** (degeneración). La clave fundamental: **no destruir, sino purificar**. No eliminas la ira—la transmutás en fortaleza. No niegas la pasión—la elevas en amor consciente.
+Cada metal tiene **correspondencia planetaria**, **virtud** (estado puro) y **vicio** (degeneración). La clave fundamental: **no destruir, sino purificar**. No eliminas la ira, la transmutás en fortaleza. No niegas la pasión, la elevas en amor consciente.
 
 ### Metal 1: Plomo > Saturno > Prudencia vs. Pereza
 
@@ -44,7 +44,7 @@ Cada metal tiene **correspondencia planetaria**, **virtud** (estado puro) y **vi
 
 El plomo es el **más denso de los metales**. Representa la gravedad que te ancla (prudencia constructiva) o te hunde (parálisis destructiva).
 
-**Enseñanza Profunda:** El plomo no es "malo". Es pesado. La pesantez usada conscientemente es **anclaje**—raíces fuertes. La pesantez inconsciente es **lastre**—cadenas que no puedes romper.
+**Enseñanza Profunda:** El plomo no es "malo". Es pesado. La pesantez usada conscientemente es **anclaje**, raíces fuertes. La pesantez inconsciente es **lastre**, cadenas que no puedes romper.
 
 **Aplicación Profana:**
 
@@ -71,7 +71,7 @@ El plomo es el **más denso de los metales**. Representa la gravedad que te ancl
 
 El cobre es rojo, cercano al oro por su color. Es el **amor que eleva** o la **pasión que esclaviza**. La diferencia es intención: ¿construyes o consumes?
 
-**Enseñanza Profunda:** Venus es la diosa del amor y la guerra. No es dulzura—es *creación poderosa*. La lujuria es amor sin discernimiento, pasión sin propósito.
+**Enseñanza Profunda:** Venus es la diosa del amor y la guerra. No es dulzura, es *creación poderosa*. La lujuria es amor sin discernimiento, pasión sin propósito.
 
 **Aplicación Profana:**
 
@@ -98,7 +98,7 @@ El cobre es rojo, cercano al oro por su color. Es el **amor que eleva** o la **p
 
 El hierro es el **metal del trabajo**. Forja herramientas útiles o armas de destrucción según la intención.
 
-**Enseñanza Profunda:** Marte no es enemigo—es energía. Canalizada, construye. Descontrolada, destruye. El problema no es la ira—es la *ira ciega*.
+**Enseñanza Profunda:** Marte no es enemigo, es energía. Canalizada, construye. Descontrolada, destruye. El problema no es la ira, es la *ira ciega*.
 
 **Aplicación Profana:**
 
@@ -152,7 +152,7 @@ El estaño **liga otros metales**. Es el cemento del ser. Sin estaño puro, los 
 
 El mercurio **amalgama todos los metales**. Es espejo claro o espejo distorsionado.
 
-**Enseñanza Profunda:** La envidia corroe porque convierte tu visión en falsa. Ya no ves a otros—ves tu carencia reflejada en su abundancia.
+**Enseñanza Profunda:** La envidia corroe porque convierte tu visión en falsa. Ya no ves a otros, ves tu carencia reflejada en su abundancia.
 
 **Aplicación Profana:**
 
@@ -164,7 +164,7 @@ El mercurio **amalgama todos los metales**. Es espejo claro o espejo distorsiona
 **Aplicación Masónica:**
 
 - El M∴ debe ser espejo horizontal (justicia imparcial entre HH∴), no curvado por envidia de otro
-- Mercurio es la **piedra filosofal**—conciencia que transmuta todo
+- Mercurio es la **piedra filosofal**, conciencia que transmuta todo
 - La sabiduría masónica: celebrar la elevación de otros porque eleva toda la Orden
 
 **Transmutación Semanal:** La próxima vez que sientas envidia, practica la pregunta: ¿Qué puedo aprender?
@@ -305,7 +305,7 @@ Es un **taller alquímico**.
 
 El crisol es tu vida diaria. Las dificultades son el fuego. La resistencia de otros es la fricción. El tiempo es la paciencia necesaria. La piedra filosofal es tu conciencia despierta.
 
-No se trata de eliminar tus defectos—eso es imposible mientras vivas. Se trata de **elevarlos a su estado de perfección**. El plomo perfeccionado no es menos valioso que el oro: ambos, purificados, son **incorruptibles**.
+No se trata de eliminar tus defectos, eso es imposible mientras vivas. Se trata de **elevarlos a su estado de perfección**. El plomo perfeccionado no es menos valioso que el oro: ambos, purificados, son **incorruptibles**.
 
 La diferencia entre un vicio y una virtud no es que uno existe y otro no.
 
