@@ -11,62 +11,97 @@ const {
 ---
 
 <header class="masonic-header">
-    <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
-    <h1>{title}</h1>
-    {subtitle && <p class="subtitle">{subtitle}</p>}
+    <div class="container header-inner-content">
+        <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
+        <h1>{title}</h1>
+        {subtitle && <p class="subtitle">{subtitle}</p>}
 
-    <nav class="header-nav">
-        <a href="/" class="nav-link">Planchas</a>
-        <a href="/tags" class="nav-link">Etiquetas</a>
-        <a href="/glosario" class="nav-link">Glosario</a>
-    </nav>
+        <nav class="header-nav">
+            <a href="/" class="nav-link">Planchas</a>
+            <a href="/tags" class="nav-link">Etiquetas</a>
+            <a href="/glosario" class="nav-link">Glosario</a>
+        </nav>
+    </div>
 </header>
 
 <style>
+    /* ═══════════════════════════════════════════
+       Estilos del Header - COHESIÓN VERTICAL FINAL
+       ═══════════════════════════════════════════ */
     .masonic-header {
         text-align: center;
-        margin-bottom: var(--spacing-xl);
-        padding-bottom: var(--spacing-lg);
-        border-bottom: 2px solid var(--damero-gold);
+        background-color: var(--damero-darker);
+        margin-top: var(--spacing-sm);
+        border-top: 1px solid var(--damero-border);
+
+        /* Eliminamos padding-bottom y margin-bottom aquí.
+           La banda debe ser visualmente continua. */
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
+    .header-inner-content {
+        /* Movemos el padding inferior para asegurar el espacio después de la nav */
+        padding-top: var(--spacing-lg);
+        padding-bottom: var(--spacing-xl); /* MÁS espacio inferior para separar del contenido */
+
+        /* ELIMINAMOS EL MARGEN INFERIOR Y EL DOBLE BORDE */
+        margin-bottom: 0;
+        border-bottom: none;
+
+        /* Usamos una SOMBRA PESADA que actúa como un grueso separador grabado */
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.7), 0 1px 0 0 var(--damero-border);
+    }
+
+    /* Invocación: Elevación Sutil */
     .invocacion {
-        margin-bottom: var(--spacing-sm);
+        font-family: var(--font-serif-header);
+        color: var(--damero-gold);
+        letter-spacing: 0.35em;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-bottom: var(--spacing-xs);
+        opacity: 0.6;
     }
 
     h1 {
         margin-bottom: var(--spacing-sm);
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 5px rgba(204, 170, 102, 0.1);
     }
 
     .subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: var(--damero-gray-light);
         font-style: italic;
         margin: 0 auto;
-        max-width: 800px;
+        max-width: 700px;
+        line-height: 1.5;
+        margin-bottom: var(--spacing-lg);
     }
 
+    /* Navegación: Minimalismo y Fundación de Enlaces */
     .header-nav {
         display: flex;
         justify-content: center;
         gap: var(--spacing-md);
-        margin-top: var(--spacing-md);
+        margin-top: var(--spacing-lg);
     }
 
     .nav-link {
-        color: var(--damero-gold);
+        color: var(--damero-gray-light);
         text-decoration: none;
-        padding: var(--spacing-xs) var(--spacing-sm);
-        border: 1px solid var(--damero-gold);
+        padding: var(--spacing-xs) var(--spacing-xs);
         transition: var(--transition-smooth);
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.1em;
+        font-family: var(--font-serif-header);
     }
 
     .nav-link:hover {
-        background: var(--damero-gold);
-        color: var(--damero-black);
+        color: var(--damero-gold);
+        text-decoration: underline;
+        text-decoration-color: var(--damero-gold);
     }
 
     @media print {
@@ -77,16 +112,17 @@ const {
 
     @media (max-width: 768px) {
         .subtitle {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .header-nav {
-            flex-direction: column;
-            gap: var(--spacing-xs);
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
         }
 
         .nav-link {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
         }
     }
 </style>

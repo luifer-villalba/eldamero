@@ -11,15 +11,21 @@ interface Props {
 
 const {title, slug, grado, date, tema, autor, orden} = Astro.props;
 
+// Usaremos 'long' para el mes para una apariencia más formal.
 const formattedDate = date.toLocaleDateString('es-AR', {
     year: 'numeric',
-    month: 'short',
+    month: 'long',
     day: 'numeric'
 });
 ---
 
-<a href={`/planchas/${slug}`} class="plancha-card" data-grado={grado} data-title={title.toLowerCase()}
-        data-tema={tema.toLowerCase()} transition:name={`card-${slug}`}>
+<a href={`/planchas/${slug}`}
+   class="plancha-card"
+   data-grado={grado}
+   data-title={title.toLowerCase()}
+   data-tema={tema.toLowerCase()}
+   transition:name={`card-${slug}`}>
+
     <div class="card-number">{orden.toString().padStart(2, '0')}</div>
 
     <div class="card-header">
@@ -28,45 +34,50 @@ const formattedDate = date.toLocaleDateString('es-AR', {
     </div>
 
     <div class="card-meta">
-        <span>📅 {formattedDate}</span>
-        <span>🔹 {tema}</span>
-    </div>
-
-    <div class="card-tema">
-        Tema: <strong>{tema}</strong>
+        <span title="Fecha de Trazado">📅 {formattedDate}</span>
+        <span title="Tema Principal">📚 {tema}</span>
     </div>
 
     <div class="card-autor">
-        Por: {autor}
+        Por: <strong class="card-autor-name">{autor}</strong>
     </div>
 </a>
 
 <style>
+    /* ═══════════════════════════════════════════
+       Estilos de la Tarjeta (Arte Real)
+       ═══════════════════════════════════════════ */
     .plancha-card {
         background: var(--damero-dark);
-        border: 1px solid var(--damero-gold);
+        border: 1px solid var(--damero-border); /* Borde más sutil por defecto */
         padding: var(--spacing-md);
         text-decoration: none;
         color: inherit;
         transition: var(--transition-smooth);
-        display: block;
+        display: flex; /* Usamos flex para controlar mejor la altura */
+        flex-direction: column;
         position: relative;
         overflow: hidden;
+        min-height: 180px; /* Asegura una altura mínima uniforme */
+
+        /* Brillo sutil inicial */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
 
     .card-number {
         position: absolute;
         bottom: var(--spacing-xs);
         right: var(--spacing-sm);
-        font-size: 4rem;
+        font-size: 5rem; /* Más grande para mayor impacto visual */
         font-weight: bold;
-        color: rgba(201, 169, 97, 0.08);
+        color: rgba(201, 169, 97, 0.06); /* Menos opaco, más sutil */
         line-height: 1;
         pointer-events: none;
         z-index: 0;
-        font-family: var(--font-mono);
+        font-family: var(--font-serif-header); /* Usamos Cinzel para formalidad */
     }
 
+    /* Efecto Hover: Swipe y Elevación */
     .plancha-card::before {
         content: '';
         position: absolute;
@@ -74,10 +85,11 @@ const formattedDate = date.toLocaleDateString('es-AR', {
         left: -100%;
         width: 100%;
         height: 100%;
+        /* Gradiente más sutil */
         background: linear-gradient(
                 90deg,
                 transparent,
-                rgba(201, 169, 97, 0.1),
+                rgba(204, 170, 102, 0.1), /* Usando la nueva variable de oro */
                 transparent
         );
         transition: left 0.5s ease;
@@ -90,20 +102,21 @@ const formattedDate = date.toLocaleDateString('es-AR', {
 
     .plancha-card:hover {
         background: var(--damero-darker);
-        box-shadow: 0 0 20px rgba(201, 169, 97, 0.3);
-        border-color: var(--damero-gold-light);
-        transform: translateY(-2px);
+        /* Sombra dorada al hacer hover */
+        box-shadow: 0 4px 15px rgba(204, 170, 102, 0.4);
+        border-color: var(--damero-gold);
+        transform: translateY(-5px); /* Elevación más notable */
     }
 
     .plancha-card:hover .card-number {
-        color: rgba(201, 169, 97, 0.15);
+        color: rgba(204, 170, 102, 0.1); /* Sutil aumento de opacidad */
     }
 
     .card-header {
         display: flex;
         justify-content: space-between;
         align-items: start;
-        margin-bottom: var(--spacing-xs);
+        margin-bottom: var(--spacing-sm); /* Más espacio después del título */
         flex-wrap: wrap;
         gap: var(--spacing-sm);
         position: relative;
@@ -111,70 +124,80 @@ const formattedDate = date.toLocaleDateString('es-AR', {
     }
 
     .card-title {
-        font-size: 1.3rem;
-        color: var(--damero-gold);
+        font-size: 1.4rem; /* Ligeramente más grande */
+        color: var(--damero-gold-light); /* Color más claro para que resalte más rápido */
         margin: 0;
         flex: 1;
         min-width: 200px;
+        line-height: 1.2;
     }
 
     .meta-badge {
-        background: rgba(201, 169, 97, 0.15);
+        background: var(--damero-dark);
         border: 1px solid var(--damero-gold);
-        padding: 0.25rem 0.75rem;
+        padding: 0.3rem 0.8rem;
         color: var(--damero-gold);
-        border-radius: 3px;
-        font-size: 0.85rem;
+        border-radius: 4px; /* Ligeramente más redondeado */
+        font-size: 0.8rem;
         white-space: nowrap;
+        font-family: var(--font-serif-header); /* Usa Cinzel */
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
 
+    /* Meta: Fecha y Tema */
     .card-meta {
         display: flex;
-        gap: var(--spacing-sm);
-        font-size: 0.85rem;
-        color: var(--damero-gray);
+        flex-direction: column; /* Apila la fecha y el tema */
+        gap: var(--spacing-xs);
+        font-size: 0.9rem;
+        color: var(--damero-gray-light); /* Mejor contraste */
         flex-wrap: wrap;
         position: relative;
         z-index: 1;
+        margin-bottom: var(--spacing-sm);
+        flex-grow: 1; /* Empuja el autor hacia abajo */
     }
 
-    .card-tema {
-        color: var(--damero-gray-light);
-        margin-top: var(--spacing-xs);
-        font-size: 0.95rem;
-        position: relative;
-        z-index: 1;
-    }
-
-    .card-tema strong {
-        color: var(--damero-white);
-    }
-
+    /* Autor: Base formal */
     .card-autor {
-        margin-top: var(--spacing-sm);
+        margin-top: auto; /* Empuja a la base */
         padding-top: var(--spacing-sm);
         border-top: 1px solid var(--damero-border);
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         color: var(--damero-gray);
         position: relative;
         z-index: 1;
     }
 
+    .card-autor-name {
+        color: var(--damero-white); /* Destaca el nombre del autor */
+        font-weight: 600;
+        font-family: var(--font-serif-header);
+    }
+
     @media (max-width: 600px) {
+        .plancha-card {
+            min-height: 160px;
+        }
+
         .card-number {
-            font-size: 3rem;
-            bottom: 0;
-            right: var(--spacing-xs);
+            font-size: 4rem;
         }
 
         .card-title {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             min-width: 100%;
         }
 
         .meta-badge {
-            width: 100%;
+            width: auto;
             text-align: center;
+        }
+
+        .card-header {
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 </style>

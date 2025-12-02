@@ -28,9 +28,11 @@ const sortedTags = Array.from(tagsMap.entries())
 >
     <Header />
 
-    <div class="tags-container">
-        <h1>Etiquetas</h1>
-        <p class="subtitle">Explora las planchas por tema</p>
+    <div class="container">
+        <div class="tags-header">
+            <h1>Etiquetas</h1>
+            <p class="subtitle">Explora las planchas por tema</p>
+        </div>
 
         {sortedTags.length > 0 ? (
                 <div class="tags-grid">
@@ -41,8 +43,8 @@ const sortedTags = Array.from(tagsMap.entries())
                             >
                                 <span class="tag-name">{tag}</span>
                                 <span class="tag-count">{count} plancha{count !== 1 ? 's' : ''}</span>
-                        </a>
-                        ))}
+                            </a>
+                    ))}
                 </div>
         ) : (
                 <div class="empty">
@@ -55,30 +57,31 @@ const sortedTags = Array.from(tagsMap.entries())
 </BaseLayout>
 
 <style>
-    .tags-container {
-        max-width: 1200px;
-        margin: 0 auto var(--spacing-xl);
-        padding: var(--spacing-lg);
-        background: var(--damero-dark);
-        border: 2px solid var(--damero-gold);
+    /* El contenedor ahora es el .container global y no tiene borde */
+    .tags-header {
+        margin-bottom: var(--spacing-lg);
     }
 
     h1 {
         text-align: center;
-        color: var(--damero-gold);
+        /* Usamos el Cinzel de la global.css */
         margin-bottom: var(--spacing-xs);
+        /* Restauramos el letter-spacing del global.css */
+        letter-spacing: 0.1em;
     }
 
     .subtitle {
         text-align: center;
         color: var(--damero-gray);
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: var(--spacing-xl); /* Más espacio después del subtítulo */
+        font-style: italic;
     }
 
     .tags-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: var(--spacing-md);
+        margin-bottom: var(--spacing-xl);
     }
 
     .tag-card {
@@ -87,29 +90,38 @@ const sortedTags = Array.from(tagsMap.entries())
         align-items: center;
         justify-content: center;
         padding: var(--spacing-md);
-        background: var(--damero-darker);
-        border: 1px solid var(--damero-gold);
+        background: var(--damero-dark); /* Fondo sutil para separar */
+
+        /* Borde más sutil que antes */
+        border: 1px solid var(--damero-border);
+
         text-decoration: none;
         transition: var(--transition-smooth);
         min-height: 100px;
     }
 
+    /* HOVER: Iluminación Sutil (Efecto Resplandor) */
     .tag-card:hover {
-        background: var(--damero-gold);
-        transform: translateY(-3px);
-        box-shadow: 0 5px 20px rgba(201, 169, 97, 0.3);
+        background: var(--damero-darker); /* Fondo solo ligeramente más oscuro en hover */
+        transform: translateY(-2px);
+        /* El brillo dorado ahora es el foco del hover */
+        box-shadow: 0 0 10px rgba(204, 170, 102, 0.5);
+        border-color: var(--damero-gold);
     }
 
     .tag-name {
-        font-size: 1.1rem;
+        font-size: 1.15rem; /* Ligeramente más grande */
         color: var(--damero-gold);
-        font-weight: bold;
+        font-weight: 600;
         margin-bottom: var(--spacing-xs);
         text-align: center;
+        font-family: var(--font-serif-header); /* Autoridad visual */
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
 
     .tag-card:hover .tag-name {
-        color: var(--damero-black);
+        color: var(--damero-gold-light); /* Brillo del texto en hover */
     }
 
     .tag-count {
@@ -118,7 +130,7 @@ const sortedTags = Array.from(tagsMap.entries())
     }
 
     .tag-card:hover .tag-count {
-        color: var(--damero-black);
+        color: var(--damero-gray-light); /* Mejor contraste de texto en hover */
     }
 
     .empty {
@@ -131,7 +143,7 @@ const sortedTags = Array.from(tagsMap.entries())
 
     @media (max-width: 768px) {
         .tags-grid {
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
         }
 
         .tag-card {

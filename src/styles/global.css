@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   EL DAMERO - Estilos Globales MEJORADO FINAL
+   EL DAMERO - Estilos Globales: OBRA FINAL CON CORRECCIÓN DE ANCHO
    ═══════════════════════════════════════════ */
 
 /* Importar fuentes de Google Fonts (Optimizado con font-display: swap) */
@@ -7,22 +7,22 @@
 
 :root {
     /* Colores Base Oscuros */
-    --damero-black: #0c0c0c;
-    --damero-dark: #141414;
-    --damero-darker: #1e1e1e;
+    --damero-black: #0c0c0c; /* Fondo Absoluto */
+    --damero-dark: #141414; /* Color de Fondo Principal (Body) */
+    --damero-darker: #1c1c1c; /* Fondo de Componentes (Plancha) - MÁS OSCURO */
     --damero-border: #2a2a2a;
 
-    /* Colores Acento (Oro) */
-    --damero-gold: #d4b068;
+    /* Colores Acento (Oro - Ajustado para ser más rico) */
+    --damero-gold: #ccaa66;
     --damero-gold-light: #f0dfc5;
 
-    /* Colores de Contenido (damero-white ligeramente más oscuro para menos tensión ocular) */
+    /* Colores de Contenido (Ligeramente menos brillante para modo oscuro) */
     --damero-white: #e8e8e8;
     --damero-gray: #9a9a9a;
     --damero-gray-light: #bdbdbd;
 
-    /* Patrón Damero */
-    --damero-pattern-color: #282828;
+    /* Patrón Damero (Gris oscuro para mejor contraste) */
+    --damero-pattern-color: #242424;
 
     /* Tipografía */
     --font-serif-header: 'Cinzel', serif;
@@ -30,11 +30,11 @@
     --font-mono: 'Courier New', monospace;
 
     /* Espaciado */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
+    --spacing-xs: 0.5rem; /* 8px */
+    --spacing-sm: 1rem;   /* 16px */
+    --spacing-md: 1.5rem; /* 24px */
+    --spacing-lg: 2rem;   /* 32px */
+    --spacing-xl: 3rem;   /* 48px */
 
     /* Transiciones */
     --transition-smooth: all 0.3s ease-in-out;
@@ -48,7 +48,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Transiciones enfocadas para mejor rendimiento */
     transition: color var(--transition-smooth),
     background-color var(--transition-smooth),
     box-shadow var(--transition-smooth);
@@ -58,19 +57,22 @@ html {
     font-family: var(--font-serif-body);
     background: var(--damero-black);
     color: var(--damero-white);
-    line-height: 1.7;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.8;
     scroll-behavior: smooth;
 }
 
 body {
     position: relative;
-    padding: var(--spacing-lg);
+    /* CORRECCIÓN FINAL: Body solo tiene padding vertical en escritorio,
+       permitiendo que los fondos del Footer y Header se extiendan al 100%. */
+    padding: var(--spacing-lg) 0;
     min-height: 100vh;
     overflow-x: hidden;
+    background: var(--damero-dark);
 }
 
-/* Patrón damero de fondo - MEJORADO FINAL */
+/* Patrón damero de fondo - MÁS SUTIL */
 body::before {
     content: '';
     position: fixed;
@@ -85,14 +87,14 @@ body::before {
             linear-gradient(-45deg, transparent 75%, var(--damero-pattern-color) 75%);
     background-size: 80px 80px;
     background-position: 0 0, 0 40px, 40px -40px, -40px 0;
-    opacity: 0.08;
+    opacity: 0.05;
     z-index: -1;
     pointer-events: none;
     background-attachment: fixed;
 }
 
 /* ═══════════════════════════════════════════
-   Tipografía
+   Tipografía (Focus en Legibilidad y Dimensión)
    ═══════════════════════════════════════════ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -106,23 +108,22 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     font-weight: 700;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Sombra ligeramente más definida */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 5px rgba(204, 170, 102, 0.1);
     margin-bottom: var(--spacing-md);
 }
 
 h2 {
     font-size: 1.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
     border-bottom: 1px solid var(--damero-border);
     padding-bottom: var(--spacing-xs);
 }
 
-/* Regla avanzada: Reduce el margen inferior de H2 si le sigue un H3 (agrupamiento) */
 h2:has(+ h3) {
     margin-bottom: var(--spacing-xs);
 }
@@ -143,16 +144,18 @@ p {
 }
 
 a {
-    color: var(--damero-gold);
-    text-decoration: underline; /* Subrayado base para accesibilidad */
-    text-decoration-color: transparent; /* Pero invisible por defecto */
+    /* BAJO CONTRASTE: Usamos un gris cálido para que los enlaces no compitan con el H1 */
+    color: var(--damero-gray-light);
+    text-decoration: underline;
+    text-decoration-color: transparent;
     transition: var(--transition-smooth);
 }
 
 a:hover {
-    color: var(--damero-gold-light);
-    text-decoration: underline; /* Asegurar subrayado en hover */
-    text-decoration-color: var(--damero-gold-light);
+    /* El dorado se reserva para el hover, guiando la interactividad */
+    color: var(--damero-gold);
+    text-decoration: underline;
+    text-decoration-color: var(--damero-gold);
 }
 
 /* ═══════════════════════════════════════════
@@ -162,15 +165,16 @@ a:hover {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 var(--spacing-sm);
+    /* CORRECCIÓN FINAL: El container maneja el padding horizontal en desktop */
+    padding: 0 var(--spacing-lg);
 }
 
 .invocacion {
     font-size: 0.9rem;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.3em;
     color: var(--damero-gold);
-    text-align: center;
     font-family: var(--font-serif-header);
+    text-align: center;
     margin: var(--spacing-sm) 0;
     text-transform: uppercase;
     opacity: 0.7;
@@ -188,16 +192,78 @@ a:hover {
 }
 
 /* ═══════════════════════════════════════════
-   Responsive
+   Componentes (La Plancha/Tarjeta - Con Mayor Brillo de Enfoque)
+   ═══════════════════════════════════════════ */
+
+.plancha-card {
+    background-color: var(--damero-darker);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) auto;
+    border: 2px solid var(--damero-gold);
+    box-shadow: 0 0 18px rgba(204, 170, 102, 0.5),
+    0 0 8px rgba(204, 170, 102, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+.plancha-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.plancha-card .subtitulo {
+    font-style: italic;
+    color: var(--damero-gray-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.plancha-card .separador-interno {
+    border: none;
+    border-top: 1px solid var(--damero-gold);
+    margin: var(--spacing-lg) 0;
+    opacity: 0.6;
+}
+
+/* Estilo para el botón "Maestro" - Tipo Sello/Relieve */
+.plancha-card .tag-button {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--damero-gold);
+    color: var(--damero-gold);
+    font-family: var(--font-serif-header);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-sm);
+    text-decoration: none;
+    background-color: transparent;
+    transition: var(--transition-smooth);
+}
+
+.plancha-card .tag-button:hover {
+    background-color: var(--damero-gold);
+    color: var(--damero-darker);
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ═══════════════════════════════════════════
+   Responsive (Con Padding Mínimo Ajustado)
    ═══════════════════════════════════════════ */
 
 @media (max-width: 992px) {
     h1 {
         font-size: 2.2rem;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.08em;
     }
     h2 {
         font-size: 1.5rem;
+    }
+
+    .container {
+        /* Padding lateral intermedio para tablets */
+        padding: 0 var(--spacing-md);
     }
 }
 
@@ -208,11 +274,23 @@ a:hover {
     }
 
     body {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm) 0;
+    }
+
+    .container {
+        /* Padding lateral ajustado (12px) para que el texto respire. */
+        padding: 0 0.75rem;
+    }
+
+    .plancha-card {
+        padding: var(--spacing-md) 0.75rem;
+        margin: var(--spacing-md) 0;
+        max-width: none;
     }
 
     h1 {
         font-size: 1.8rem;
+        letter-spacing: 0.05em;
     }
 
     h2 {
@@ -228,6 +306,23 @@ a:hover {
         background-position: 0 0, 0 30px, 30px -30px, -30px 0;
     }
 }
+
+
+/* Padding mínimo para pantallas muy pequeñas (ancho < 420px) */
+@media (max-width: 420px) {
+    body {
+        padding: 0.5rem 0;
+    }
+
+    .container {
+        padding: 0 var(--spacing-xs);
+    }
+
+    .plancha-card {
+        padding: var(--spacing-sm) var(--spacing-xs);
+    }
+}
+
 
 /* ═══════════════════════════════════════════
    Modo Impresión Global
@@ -262,6 +357,12 @@ a:hover {
 
     a {
         text-decoration: underline !important;
+    }
+
+    .plancha-card {
+        border: 1px solid #999 !important;
+        box-shadow: none !important;
+        margin: 1rem 0 !important;
     }
 
     h1, h2, h3 {

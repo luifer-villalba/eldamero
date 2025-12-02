@@ -1,35 +1,108 @@
 <footer class="site-footer">
-    <div class="footer-divider"></div>
-    <p class="footer-text">
-        S∴ F∴ U∴
-    </p>
-    <p class="footer-meta">
-        El Damero · {new Date().getFullYear()}
-    </p>
+    <div class="footer-inner container">
+
+        <p class="footer-proclamation">
+            "Ordo ab Chao"
+        </p>
+
+        <div class="footer-divider"></div>
+
+        <p class="footer-text invocacion-final">
+            S∴ F∴ U∴
+        </p>
+
+        <p class="footer-meta">
+            El Damero · {new Date().getFullYear()}
+        </p>
+
+        <div class="footer-seal">
+            &clubs;
+        </div>
+    </div>
 </footer>
 
 <style>
+    /* ═══════════════════════════════════════════
+       Estilos del Footer - COHESIÓN Y PROPORCIÓN (Corrección de Centrado)
+       ═══════════════════════════════════════════ */
+
     .site-footer {
+        background-color: var(--damero-darker);
         margin-top: var(--spacing-xl);
+        padding: var(--spacing-lg) 0;
+        /* Mantener text-align: center en el padre */
         text-align: center;
+        box-shadow: inset 0 8px 10px -10px rgba(0, 0, 0, 0.7);
+        position: relative;
     }
 
-    .footer-divider {
-        width: 100px;
-        height: 2px;
-        background: var(--damero-gold);
-        margin: 0 auto var(--spacing-md);
+    .footer-inner {
+        padding-top: 0;
+        padding-bottom: 0;
+        /* APLICAR text-align: center también al contenedor interno para asegurar */
+        text-align: center;
+        /* Aseguramos que el contenedor interno use el ancho completo disponible
+           para que el text-align center sea efectivo */
+        width: 100%;
     }
 
-    .footer-text {
+    /* Proclamación en Latín (Máxima Autoridad) */
+    .footer-proclamation {
         color: var(--damero-gold);
-        letter-spacing: 0.2em;
-        font-size: 0.9rem;
+        font-family: var(--font-serif-header);
+        font-size: 1.2rem;
+        letter-spacing: 0.15em;
         margin-bottom: var(--spacing-xs);
+        text-shadow: 0 0 5px rgba(204, 170, 102, 0.4);
+        opacity: 0.85;
+        /* Aseguramos que se comporte como un bloque que respeta el centrado */
+        display: block;
     }
 
+    /* Divisor Arquitectónico Mejorado */
+    .footer-divider {
+        width: 150px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent 5%, var(--damero-gold) 50%, transparent 95%);
+        margin: var(--spacing-xs) auto var(--spacing-md);
+        opacity: 0.8;
+    }
+
+    /* Invocación Final (Soberanía) */
+    .footer-text {
+        color: var(--damero-gold-light);
+        letter-spacing: 0.4em;
+        font-family: var(--font-serif-header);
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        opacity: 0.95;
+        display: block;
+    }
+
+    /* Meta y Derechos */
     .footer-meta {
         color: var(--damero-gray);
-        font-size: 0.85rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        margin-top: var(--spacing-xs);
+        text-transform: uppercase;
+        display: block;
+    }
+
+    /* Sello de Tradición (Elemento Decorativo Sutil) */
+    .footer-seal {
+        color: var(--damero-gold);
+        font-size: 2rem;
+        position: absolute;
+        bottom: 5px;
+        right: var(--spacing-lg);
+        opacity: 0.1;
+        user-select: none;
+        pointer-events: none;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 </style>

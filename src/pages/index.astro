@@ -7,6 +7,7 @@ import FilterBar from '../components/FilterBar.astro';
 import PlanchaCard from '../components/PlanchaCard.astro';
 import Footer from '../components/Footer.astro';
 
+// 1. Desestructuración para obtener 'data' directamente en el map
 const planchas = await getCollection('planchas');
 const sorted = planchas.sort((a, b) => a.data.orden - b.data.orden);
 const grados = [...new Set(planchas.map(p => p.data.grado))].sort();
@@ -29,31 +30,46 @@ const websiteSchema = {
 };
 ---
 
-<BaseLayout title="El Damero | Planchas Masónicas">
+<BaseLayout title="El Damero | El Damero | Planchas Masónicas">
     <Header />
 
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
     {sorted.length > 0 && (
             <>
-                <SearchBar />
-                <FilterBar grados={grados} />
+                {/* ═══════════════════════════════════════════ */}
+                {/* CORRECCIÓN: SearchBar y FilterBar envueltos para fondo de 100% */}
+                {/* ═══════════════════════════════════════════ */}
+
+                <div class="search-wrapper">
+                    <div class="container">
+                        <SearchBar />
+                    </div>
+                </div>
+
+                <div class="filter-wrapper">
+                    <div class="container">
+                        <FilterBar grados={grados} />
+                    </div>
+                </div>
             </>
     )}
 
-    <div class="planchas-grid">
+    <div class="container planchas-grid-container">
         {sorted.length > 0 ? (
-            sorted.map(plancha => (
+                <div class="planchas-grid">
+                    {sorted.map(({ data, slug }) => ( // <- MEJORA: Desestructuración
                     <PlanchaCard
-                            title={plancha.data.title}
-                            slug={plancha.slug}
-                            grado={plancha.data.grado}
-                            date={plancha.data.date}
-                            tema={plancha.data.tema}
-                            autor={plancha.data.autor}
-                            orden={plancha.data.orden}
-                    />
-            ))
+                                    title={data.title}
+                                    slug={slug}
+                                    grado={data.grado}
+                                    date={data.date}
+                                    tema={data.tema}
+                                    autor={data.autor}
+                                    orden={data.orden}
+                            />
+                    ))}
+                </div>
         ) : (
                 <div class="empty">
                     <p>Sin planchas aún. Comenzá a agregar tus trazados.</p>
@@ -65,17 +81,40 @@ const websiteSchema = {
 </BaseLayout>
 
 <style>
+    /* ═══════════════════════════════════════════
+       Estilos de los Wrappers (Fondo 100%)
+       ═══════════════════════════════════════════ */
+    .search-wrapper,
+    .filter-wrapper {
+        background-color: var(--damero-darker);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .filter-wrapper {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    /* ═══════════════════════════════════════════
+       Estilos del Grid
+       ═══════════════════════════════════════════ */
+    .planchas-grid-container {
+        padding-top: var(--spacing-lg);
+    }
+
     .planchas-grid {
         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: var(--spacing-md);
         margin-bottom: var(--spacing-xl);
     }
 
+    /* El diseño de la caja "empty" ahora usa el color más oscuro (damero-darker) */
     .empty {
         text-align: center;
         padding: var(--spacing-xl);
         color: var(--damero-gray);
         border: 1px dashed var(--damero-gray);
-        background: var(--damero-dark);
+        background: var(--damero-darker); /* CORREGIDO: Usamos el mismo color que las bandas */
+        border-radius: 5px;
     }
 </style>
