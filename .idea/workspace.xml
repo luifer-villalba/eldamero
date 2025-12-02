@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="898a18f1-728e-4e52-a509-d639c2d7c61a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/planchas/[slug].astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1764551755736</updated>
       <workItem from="1764551756902" duration="2686000" />
-      <workItem from="1764632056065" duration="1940000" />
+      <workItem from="1764632056065" duration="3088000" />
     </task>
     <servers />
   </component>
