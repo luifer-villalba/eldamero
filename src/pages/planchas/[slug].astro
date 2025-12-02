@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import PlanchaLayout from '../../layouts/PlanchaLayout.astro';
+
+export async function getStaticPaths() {
+    const planchas = await getCollection('planchas');
+    return planchas.map(plancha => ({
+        params: { slug: plancha.slug },
+        props: { plancha },
+    }));
+}
+
+interface Props {
+    plancha: any;
+}
+
+const { plancha } = Astro.props;
+const { Content } = await plancha.render();
+---
+
+<PlanchaLayout data={plancha.data} slug={plancha.slug}>
+    <Content />
+</PlanchaLayout>
