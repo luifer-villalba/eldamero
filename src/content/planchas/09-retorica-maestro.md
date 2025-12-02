@@ -1,11 +1,11 @@
 ---
 title: "La Retórica del Maestro: El Verbo Operativo"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Retórica Masónica"
 simbolo: "Palabra Creativa, Verbo Divino, Poder Constructivo"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 9
 ---
@@ -48,7 +48,7 @@ Cuando hablas desde verdad profunda (no desde opinión), tus palabras conectan c
 
 **Ejemplo Real:**
 
-Un político da discurso de una hora. Hermosas palabras. Applausos. Nadie recuerda nada una semana después.
+Un político da discurso de una hora. Hermosas palabras. Aplausos. Nadie recuerda nada una semana después.
 
 Un Maestro dice una frase corta: "Aquello que construiste con tus manos, construyelo también con tu conciencia". Una frase. Recuerdas por años. Cambia cómo ves tu trabajo.
 
@@ -75,12 +75,12 @@ Si hablas desde música interna (ritmo, armonía, equilibrio), tu palabra tiene 
 **Aplicación Profana:**
 
 En conflicto laboral:
-- Palabra sin música: "Ustedes tienen razón, pero el otro está equivocado". → Escala conflicto
-- Palabra con música: "Veo puntos válidos en ambos. Veamos cómo integrarlos". → Armonía
+- Palabra sin música: "Ustedes tienen razón, pero el otro está equivocado". > Escala conflicto
+- Palabra con música: "Veo puntos válidos en ambos. Veamos cómo integrarlos". > Armonía
 
 En pareja:
-- Sin música: Cada frase busca "ganar" → diálogo se vuelve guerra
-- Con música: Cada frase busca "comprender" → conflicto se transforma en conexión
+- Sin música: Cada frase busca "ganar" > diálogo se vuelve guerra
+- Con música: Cada frase busca "comprender" > conflicto se transforma en conexión
 
 **Caso Práctico en Logia:**
 
@@ -110,8 +110,8 @@ Una palabra simple pero emanada de amor despierta el corazón.
 
 Tienes que corregir a alguien:
 
-- Desde irritación/ego: "Cometiste error. Eres incompetente". → Genera defensa, resentimiento
-- Desde amor: "Vi que esto no salió. Veo tu potencial aquí. Ayudame a entender qué pasó". → Genera apertura, aprendizaje
+- Desde irritación/ego: "Cometiste error. Eres incompetente". > Genera defensa, resentimiento
+- Desde amor: "Vi que esto no salió. Veo tu potencial aquí. Ayudame a entender qué pasó". > Genera apertura, aprendizaje
 
 En liderazgo:
 - Sin amor: Das órdenes. Obedecen por miedo.
@@ -244,7 +244,7 @@ Si es palabra operativa, es magia blanca.
 | **Preparación** | Memoriza discurso | Conexión con Fuente |
 | **Lenguaje** | Adornado, complejo | Sencillo y profundo |
 | **Meta** | Convencer a todos | Llegar al que puede escuchar |
-| **Efecto en Oyente** | Entusiasmo temporal | Transformación duladera |
+| **Efecto en Oyente** | Entusiasmo temporal | Transformación duradera |
 | **Verdad Contenida** | Variable, según audiencia | Absoluta, misma para todos |
 | **Feedback Esperado** | Aplausos, reconocimiento | Silencio reflexivo |
 | **Impacto Medible** | Inmediato y observable | Lento y profundo |
@@ -256,13 +256,13 @@ Si es palabra operativa, es magia blanca.
 Antes de abrir la boca en conversación importante, preguntate:
 
 **1. ¿Es armónico? (Música)**
-- ¿Mis palabras construyen puentes o levanta muros?
+- ¿Mis palabras construyen puentes o levantan muros?
 - ¿Sintetizo diferentes perspectivas o polarizo?
 - ¿Hay ritmo, o es caos verbal?
 
 **2. ¿Es amoroso? (Astronomía)**
 - ¿Hablo desde atracción (servicio) o repulsión (control)?
-- ¿Intención es elevar al otro o elevame a mí?
+- ¿Intención es elevar al otro o elevarme a mí?
 - ¿Hay genuino interés en bienestar del otro?
 
 **3. ¿Es sencillo y profundo?**

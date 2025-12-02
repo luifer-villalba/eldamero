@@ -1,11 +1,11 @@
 ---
 title: "La Marcha del Maestro: Ocho Pasos Sobre la Muerte"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Marcha del Maestro"
 simbolo: "Ocho Pasos, Pavimento Mosaico, Escuadra Oblicua, Cuatro Direcciones"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 3
 ---
@@ -84,7 +84,7 @@ Lavagnini es muy claro: *"Purificación completa de todo egoísmo o ambición, y
 
 **Descodificación:** El Maestro no es un estoico (frío y desapegado). Es un servidor (cálido con propósito divino). La frialdad del Norte debe *calentarse* con el Amor del Oriente. Aquí es donde el conocimiento se transforma en sabiduría.
 
-**Enseñanza práctica:** La ambición en el Oriente ya no busca *tuyo*—busca *lo universal*. No es debilidad. Es fuerza dedicada al servicio. El Maestro que llega al Oriente no abandona su poder mental (Norte)—lo *consagra*.
+**Enseñanza práctica:** La ambición en el Oriente ya no busca *lo tuyo*—busca *lo universal*. No es debilidad. Es fuerza dedicada al servicio. El Maestro que llega al Oriente no abandona su poder mental (Norte)—lo *consagra*.
 
 **En tu vida profana:** ¿Tu control es frialdad (distancia, separación) o serenidad (paz con propósito)? La diferencia es crucial: la frialdad *separa*, la serenidad *une*. Un jefe frío intimida. Un maestro sereno inspira.
 
@@ -132,7 +132,7 @@ Al entrar al Templo, camina mentalmente la marcha mientras observas sus símbolo
 
 - **Al mirar al Norte:** Recordá que el juicio sin amor es frialdad, muerte del espíritu. La Razón sola congela.
 
-- **Al mirar al Oriente (donde está el V∴M∴):** Recordá que ahí nace la Vida. El Venerable Maestro no es un juez distant—es un símbolo del Principio Creador que ama lo que crea.
+- **Al mirar al Oriente (donde está el V∴M∴):** Recordá que ahí nace la Vida. El Venerable Maestro no es un juez distante—es un símbolo del Principio Creador que ama lo que crea.
 
 Esta marcha mental, hecha con conciencia, es *verdadera* iniciación. La ceremonia externa solo *representa* lo que haces internamente.
 

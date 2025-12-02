@@ -1,11 +1,11 @@
 ---
 title: "Los Siete Metales: Alquimia de Virtudes y Vicios"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Los Siete Metales"
 simbolo: "Plomo, Cobre, Hierro, Estaño, Mercurio, Plata, Oro - Crisol Alquímico"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 7
 ---
@@ -26,7 +26,7 @@ Imaginate siete metales en un crisol ardiente. Cada uno es un aspecto tuyo:
 - Tu lujuria esclava (cobre sin amor)
 - Tu pereza paralizante (plomo sin prudencia)
 
-El fuego del crisol es tu entusiasmo consciente—tu voluntad de transformación. La piedra filosofal es tu discernimiento desperto. El alquimista eres vos.
+El fuego del crisol es tu entusiasmo consciente—tu voluntad de transformación. La piedra filosofal es tu discernimiento despierto. El alquimista eres vos.
 
 Lavagnini lo aclara: *"Todos estos metales se encuentran dentro de nosotros, constituyendo las cualidades positivas y negativas—virtudes y vicios—de nuestra personalidad, las que deben transmutarse de su polaridad inferior en superior."*
 
@@ -34,7 +34,7 @@ Lavagnini lo aclara: *"Todos estos metales se encuentran dentro de nosotros, con
 
 Cada metal tiene **correspondencia planetaria**, **virtud** (estado puro) y **vicio** (degeneración). La clave fundamental: **no destruir, sino purificar**. No eliminas la ira—la transmutás en fortaleza. No niegas la pasión—la elevas en amor consciente.
 
-### Metal 1: Plomo ↔ Saturno ↔ Prudencia vs. Pereza
+### Metal 1: Plomo > Saturno > Prudencia vs. Pereza
 
 **Elemento:** Tierra pesada
 
@@ -55,13 +55,13 @@ El plomo es el **más denso de los metales**. Representa la gravedad que te ancl
 
 **Aplicación Masónica:**
 
-- El H∴ que siempre "analiza" pero nunca actúa en Logia → plomo degenerado (pereza)
+- El H∴ que siempre "analiza" pero nunca actúa en Logia > plomo degenerado (pereza)
 - La marcha del M∴ (ocho pasos lentos y medidos) requiere paciencia activa (plomo puro)
-- Las columnas del Templo → peso consciente, cimiento firme
+- Las columnas del Templo > peso consciente, cimiento firme
 
 **Transmutación Semanal:** Identifica dónde eres perezoso. Convierte esa pesantez en prudencia. Toma una decisión postergada con análisis real (no impulsivo).
 
-### Metal 2: Cobre ↔ Venus ↔ Amor vs. Lujuria
+### Metal 2: Cobre > Venus > Amor vs. Lujuria
 
 **Elemento:** Fuego transformado en forma
 
@@ -82,13 +82,13 @@ El cobre es rojo, cercano al oro por su color. Es el **amor que eleva** o la **p
 
 **Aplicación Masónica:**
 
-- Las dos columnas (J y B) y la fuente de Hiram eran de cobre → **amor operativo**, no emocional
+- Las dos columnas (J y B) y la fuente de Hiram eran de cobre > **amor operativo**, no emocional
 - El salario del M∴ es amor, pero no es sentimentalismo difuso: es **voluntad constructora colectiva**
 - La fraternidad masónica: amor sin lujuria (codependencia)
 
 **Transmutación Semanal:** Donde sientas apego/posesión (lujuria), introduce libertad consciente. Prueba amar sin necesitar.
 
-### Metal 3: Hierro ↔ Marte ↔ Fortaleza vs. Cólera
+### Metal 3: Hierro > Marte > Fortaleza vs. Cólera
 
 **Elemento:** Fuego puro, voluntad activa
 
@@ -109,13 +109,13 @@ El hierro es el **metal del trabajo**. Forja herramientas útiles o armas de des
 
 **Aplicación Masónica:**
 
-- El mallete es de hierro simbólicamente → úsalo con propósito (construcción), no con ego (destrucción)
+- El mallete es de hierro simbólicamente > úsalo con propósito (construcción), no con ego (destrucción)
 - La marcha sobre el pavimento mosaico: avanza sin arrollar a otros
 - La corrección fraterna en Logia: hierro puro (verdad que duele) vs. cólera (ataque personal)
 
 **Transmutación Semanal:** La próxima vez que sientas cólera, preguntate: ¿Hay una fortaleza legítima aquí? ¿Cómo expreso esto sin atacar?
 
-### Metal 4: Estaño ↔ Júpiter ↔ Justicia vs. Gula
+### Metal 4: Estaño > Júpiter > Justicia vs. Gula
 
 **Elemento:** Aire cristalizado, cohesión
 
@@ -136,13 +136,13 @@ El estaño **liga otros metales**. Es el cemento del ser. Sin estaño puro, los 
 
 **Aplicación Masónica:**
 
-- La intemperancia es el enemigo oculto del iniciado → debilita el templo interior
+- La intemperancia es el enemigo oculto del iniciado > debilita el templo interior
 - El banquete masónico: símbolo de fraternidad y abundancia compartida, no descontrol
 - La Logia debe ser cohesiva (estaño puro), no fragmentada por codicia de poder
 
 **Transmutación Semanal:** Identifica dónde guleas (sin satisfacción real). Prueba la moderación consciente. Observa si la satisfacción aumenta.
 
-### Metal 5: Mercurio ↔ Mercurio ↔ Sabiduría vs. Envidia
+### Metal 5: Mercurio > Mercurio > Sabiduría vs. Envidia
 
 **Elemento:** Aire-Agua, reflejo y movimiento
 
@@ -169,7 +169,7 @@ El mercurio **amalgama todos los metales**. Es espejo claro o espejo distorsiona
 
 **Transmutación Semanal:** La próxima vez que sientas envidia, practica la pregunta: ¿Qué puedo aprender?
 
-### Metal 6: Plata ↔ Luna ↔ Esperanza vs. Avaricia
+### Metal 6: Plata > Luna > Esperanza vs. Avaricia
 
 **Elemento:** Agua cristalizada, receptividad fecunda
 
@@ -190,13 +190,13 @@ La plata se acerca al oro pero no alcanza su perfección. Es **fe activa en lo q
 
 **Aplicación Masónica:**
 
-- La plata cubre simbólicamente el piso de la Cámara del Medio → esperanza en el trabajo colectivo
+- La plata cubre simbólicamente el piso de la Cámara del Medio > esperanza en el trabajo colectivo
 - Judas ejemplo de metal degenerado: vendió su maestro por plata
 - La colecta masónica: avaricia vs. esperanza en la providencia colectiva
 
-**Transmutación Semanal:** Donde hoyes avaricia, introduce generosidad consciente. Observa si la abundancia aumenta o disminuye.
+**Transmutación Semanal:** Donde hoy avaricia, introduce generosidad consciente. Observa si la abundancia aumenta o disminuye.
 
-### Metal 7: Oro ↔ Sol ↔ Fe vs. Orgullo
+### Metal 7: Oro > Sol > Fe vs. Orgullo
 
 **Elemento:** Luz pura, espíritu manifestado
 
@@ -218,7 +218,7 @@ El oro es el **principio solar**. Ilumina o ciega según el ángulo.
 **Aplicación Masónica:**
 
 - El Delta con el ojo: fe en el G∴A∴D∴U∴, no idolatría del ego
-- El oro puro no se oxida → fe incorruptible del M∴ ante crisis
+- El oro puro no se oxida > fe incorruptible del M∴ ante crisis
 - La discreción masónica: oro verdadero no necesita brillar, simplemente es
 
 **Transmutación Semanal:** Donde sientas orgullo, practica la humildad real (no falsa). Reconoce que tu logro es 90% circunstancia, 10% esfuerzo.
@@ -288,7 +288,7 @@ No es palabra que recitas. Es **compromiso que vives**.
 
 ## Conexión con el Septenario
 
-Los Siete Metales son la primera parte del Septenario (siete símboles activos). Los siguientes serán:
+Los Siete Metales son la primera parte del Septenario (siete símbolos activos). Los siguientes serán:
 
 - Los Siete Metales (estos) = **lo que transmutas de ti**
 - Los Siete Planetas = **lo que manifiestas hacia afuera**
@@ -303,7 +303,7 @@ La Cámara del Medio no es un premio.
 
 Es un **taller alquímico**.
 
-El crisol es tu vida diaria. Las dificultades son el fuego. La resistencia de otros es la fricción. El tiempo es el paciencia necesaria. La piedra filosofal es tu conciencia despierta.
+El crisol es tu vida diaria. Las dificultades son el fuego. La resistencia de otros es la fricción. El tiempo es la paciencia necesaria. La piedra filosofal es tu conciencia despierta.
 
 No se trata de eliminar tus defectos—eso es imposible mientras vivas. Se trata de **elevarlos a su estado de perfección**. El plomo perfeccionado no es menos valioso que el oro: ambos, purificados, son **incorruptibles**.
 

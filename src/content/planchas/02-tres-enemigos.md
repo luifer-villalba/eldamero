@@ -1,11 +1,11 @@
 ---
 title: "Los Tres Enemigos de Hiram: Ignorancia, Fanatismo y Ambición"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Los Tres Enemigos"
 simbolo: "Regla, Escuadra, Mallete - Puerta Sur, Occidente, Oriente"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 2
 ---

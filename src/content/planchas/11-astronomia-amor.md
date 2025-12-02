@@ -1,11 +1,11 @@
 ---
 title: "La Astronomía: Gravitación Universal y Amor Operativo"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Astronomía como Ley de los Astros"
 simbolo: "Gravitación, Astro Radiante, Orbita Equilibrada, Centro Solar"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 11
 ---
@@ -38,7 +38,7 @@ Los astros no están unidos por cadenas. No están sujetos por fuerza bruta. Se 
 
 Cuando dos seres (o cosas) se atraen mutuamente, orbitan sin colisionar. Mantienen distancia. Mantienen movimiento. Permanecen libres.
 
-Cuando dos seres no se atraen (o se repelen), pierden orbita. O colisionan, o se dispersan.
+Cuando dos seres no se atraen (o se repelen), pierden órbita. O colisionan, o se dispersan.
 
 **La Ley:**
 
@@ -52,19 +52,19 @@ No es poesía. Es física.
 **Posesión (lo que NO es amor):**
 - Un cuerpo intenta retener otro por fuerza
 - Resultado: Colisión o escape
-- Dinámicay destructiva
+- Dinámica destructiva
 
 **Orbita Equilibrada (lo que ES amor verdadero):**
 - Dos cuerpos se atraen mutuamente
 - Se mantienen a distancia óptima
 - Giran alrededor de centro común sin perder libertad
-- Dinámicay constructiva
+- Dinámica constructiva
 
 **Aplicación en Relaciones Humanas:**
 
 Pareja en **posesión**: "Te amo pero no puedo vivir sin ti". Codependencia. Colisión o escape.
 
-Pareja en **orbita**: "Te amo y mantengo mi libertad. Orbitamos juntos alrededor de propósito común". Construcción mutua.
+Pareja en **órbita**: "Te amo y mantengo mi libertad. Orbitamos juntos alrededor de propósito común". Construcción mutua.
 
 **Clave Masónica:**
 
@@ -120,7 +120,7 @@ Resultado: Vida radiante. Atrae a quienes necesitan esa luz.
 
 Dos profesionales en misma industria.
 
-**Satélite:** Cambia de estrategia cada vez que un "experto" dice algo diferente. Nunca consolida. Siempre dudando. Quema energía en orbita caótica alrededor de opiniones ajenas.
+**Satélite:** Cambia de estrategia cada vez que un "experto" dice algo diferente. Nunca consolida. Siempre dudando. Quema energía en órbita caótica alrededor de opiniones ajenas.
 
 **Astro:** Decide su norte. Aprende de expertos pero desde su propio eje. Consolida. Atrae clientes porque irradia certeza. Construye.
 
@@ -225,13 +225,13 @@ Lavagnini escribe algo hermoso: *"El Maestro deviene un verdadero filósofo, en 
 
 ### El Problema: Sabiduría sin Amor
 
-Un intelectual brillante que descubre verdades profundas pero las comunica con frialdad → genera rechazo.
+Un intelectual brillante que descubre verdades profundas pero las comunica con frialdad > genera rechazo.
 
 Su sabiduría es real pero inerte. Verdad sin poder de transformación.
 
 ### El Problema: Amor sin Sabiduría
 
-Una persona amorosa que inspira pero carece de claridad → genera confusión.
+Una persona amorosa que inspira pero carece de claridad > genera confusión.
 
 Su amor es real pero difuso. Buena intención sin dirección.
 
@@ -276,9 +276,9 @@ Con Astronomía, la Música se convierte en **construcción que perdura**.
 
 **Ejemplo:**
 
-Empresa bien estructura (Geometría) con buenos procesos (Música) pero sin amor verdadero (Astronomía) → sobrevive pero no prospera.
+Empresa bien estructurada (Geometría) con buenos procesos (Música) pero sin amor verdadero (Astronomía) > sobrevive pero no prospera.
 
-Empresa con estructura + música + amor operativo → crece, atrae talento, impacta mundo.
+Empresa con estructura + música + amor operativo > crece, atrae talento, impacta mundo.
 
 ## Aplicación Práctica: Ejercicio Semanal
 
@@ -308,9 +308,9 @@ Identifica una relación (familiar, laboral, amistad) que necesita atención.
 
 Luego, **cambia una interacción** esta semana:
 
-- En lugar de "te necesito" → "construyamos juntos"
-- En lugar de "debes" → "podríamos"
-- En lugar de control → colaboración
+- En lugar de "te necesito" > "construyamos juntos"
+- En lugar de "debes" > "podríamos"
+- En lugar de control > colaboración
 
 Observa qué ocurre.
 
@@ -370,9 +370,9 @@ Esa es tu próxima obra.
 
 Con esto, has completado la Obra del Maestro Constructor:
 
-1. **Siete Metales** — Purificación interior
-2. **Siete Artes** — Herramientas operativas
-3. **Astronomía** — Ley que une todo
+1. **Siete Metales** > Purificación interior
+2. **Siete Artes** > Herramientas operativas
+3. **Astronomía** > Ley que une todo
 
 Ahora viene la **Resurrección de Hiram en ti mismo**.
 

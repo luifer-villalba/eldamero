@@ -1,11 +1,11 @@
 ---
 title: "Aplicaciones Operativas del Septenario: Del Concepto a la Acción"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Implementación Práctica del Septenario"
 simbolo: "Metales en Uso, Artes en Acción, Transmutación Real"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 12
 ---
@@ -50,9 +50,9 @@ Sin juzgar, observás:
 **Pregunta:** ¿Cómo se relacionan los problemas?
 
 Conectás:
-- Retrasos → falta de claridad en objetivos
-- Conflictos → miedo de ser culpabilizados
-- Defensiva → ausencia de confianza en el líder
+- Retrasos > falta de claridad en objetivos
+- Conflictos > miedo de ser culpabilizados
+- Defensiva > ausencia de confianza en el líder
 
 **Raíz identificada:** NO es un problema de entregables. Es un **problema de comunicación y confianza**.
 
@@ -74,7 +74,7 @@ Conectás:
 
 Identificás tres causas raíz:
 1. **Falta de recursos** (tiempo/herramientas)
-2. **Mala comunicación** (objetivos unclear)
+2. **Mala comunicación** (objetivos poco claros)
 3. **Estrés sin contención** (nadie preguntó "¿estás bien?")
 
 Con esto claro, ves que es un **problema de sistema**, no de personas.
@@ -85,7 +85,7 @@ Con esto claro, ves que es un **problema de sistema**, no de personas.
 
 - **Reuniones:** En lugar de una larga, tres cortas (15 min c/u). Ritmo más manejable.
 - **Roles:** En lugar de ambigüedad, una matriz de responsabilidades clara.
-- **Espacios:** Un lugar para "preocupaciones" → alguien cuida a quien está estresado.
+- **Espacios:** Un lugar para "preocupaciones" > alguien cuida a quien está estresado.
 
 **Efecto:** La forma física (estructura) cambió. Automáticamente, el comportamiento se adapta.
 
@@ -181,7 +181,7 @@ Cuando transmutás tus metales, la dinámica cambia **automáticamente**.
 
 Tu pareja siente que no estás atacando. Puede escuchar. Puede cambiar también.
 
-O descubres que la relación no puede evolucionar. Pero al menos sabes que **hiciste tu trabajo interior**.
+O descubrís que la relación no puede evolucionar. Pero al menos sabés que **hiciste tu trabajo interior**.
 
 Eso es maestría en relaciones.
 
@@ -191,7 +191,7 @@ Eso es maestría en relaciones.
 
 Te ofrecen un ascenso. Mejor salario, desarrollo profesional. Pero implica mudanza. Tu familia tiene raíces aquí. Escuela de hijos, comunidad.
 
-Opción A (Sin Septenario): Reaccionas emocionalmente o desde miedo. Decides mal.
+Opción A (Sin Septenario): Reaccionás emocionalmente o desde miedo. Decidís mal.
 
 Opción B (Con Septenario): Aplicás el Trivium sistemáticamente.
 
@@ -252,7 +252,7 @@ Eso es Retórica verdadera: crear desde armonía, no desde imposición.
 
 ### El Contexto Real
 
-Tu día es caótico. Despiertas ansiosos. Desayuno rápido. Trabajo sin pausas. Comida en el escritorio. Más trabajo. Noche cansado. Duermes mal. Repite.
+Tu día es caótico. Despiertas ansioso. Desayuno rápido. Trabajo sin pausas. Comida en el escritorio. Más trabajo. Noche cansado. Duermes mal. Repite.
 
 Síntoma: Agotamiento, irritabilidad, nada se disfruta.
 
@@ -354,9 +354,9 @@ Ahora que sos astro:
 
 ### Efecto
 
-**Antes:** Sufres en la oscuridad, esperando que te ilumine.
+**Antes:** Sufrís en la oscuridad, esperando que te ilumine.
 
-**Después:** Irrадías. Y si se acerca, es porque vio tu luz. Si no, encontrás a otros astros que orbitan en equilibrio contigo.
+**Después:** Irradías. Y si se acerca, es porque vio tu luz. Si no, encontrás a otros astros que orbitan en equilibrio contigo.
 
 Eso es Astronomía: gravitación mutua, no dependencia.
 
@@ -404,7 +404,8 @@ Un maestro que aplica imperfectamente es más efectivo que un erudito perfecto q
 
 **¿Qué situación actual tuya necesita del Septenario?**
 
-No es pregunta teórica. Es **invitación a trabajar ahora mismo**. Hoy. Con lo que tenés frente a ti. Toma una decisión pendiente, un conflicto sin resolver, una rutina que no funciona. 
+No es pregunta teórica. Es **invitación a trabajar ahora mismo**. Hoy. Con lo que tenés frente a ti. Toma una decisión pendiente, un conflicto sin resolver, una rutina que no funciona.
+
 Aplica **una sola herramienta** del Septenario. Observá qué ocurre. Ese es tu próximo paso de Maestro. No en el ritual.
 
 En la vida real. Ese es el trabajo que importa.

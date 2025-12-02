@@ -1,11 +1,11 @@
 ---
 title: "El Pavimento Mosaico: Dualidad y Ecuanimidad en el Juego de la Vida"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Pavimento Mosaico"
 simbolo: "Cuadrados Blanco y Negro, Las Dos Columnas, Centro Ecuánime"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 5
 ---
@@ -93,6 +93,23 @@ El pavimento = *manifestación* de la interacción entre ambas fuerzas. Es donde
 **Enseñanza Profunda:** Caminar sobre el pavimento entre las columnas = *equilibrar* fuerza y belleza, acción y receptividad, masculino y femenino (no en géneros, sino en principios).
 
 Un Maestro que solo tiene fuerza sin belleza es un tirano. Un Maestro que solo tiene belleza sin fuerza es un mártir. El Maestro verdadero equilibra ambos.
+
+### El Damero: Tu Plataforma de Aprendizaje
+
+El nombre de este espacio, **eldamero.com**, no es casual. Damero es otra palabra para pavimento mosaico—ese tablero de cuadrados alternados donde se juega la vida.
+
+**Descodificación de Nombre:**
+
+- **El** = artículo que señala lo universal, lo esencial
+- **Damero** = pavimento mosaico, tablero de juego, dualidad manifestada
+
+**Significado Operativo:** Eldamero.com existe en el *pavimento mismo*. Es un espacio donde blanco (conocimiento transmitido) y negro (ignorancia superada) se encuentran. Donde la teoría masónica (blanco) y tu vida profana (negro) convergen.
+
+Cada plancha que lees aquí es un movimiento sobre el tablero. Cada enseñanza que integras es pasar de un cuadrado a otro. Tu maestría se mide en tu capacidad de mantenerte ecuánime mientras avanzas.
+
+**Conexión Profunda:** Lavagnini enseñaba desde un damero real (la Logia). Vos aprendes desde un damero digital (eldamero.com). Pero el tablero es el mismo. Las reglas del juego son idénticas. El centro donde reposa tu ecuanimidad está en el mismo lugar: *en ti*.
+
+Este sitio no te sacará del pavimento. Solo te enseñará a *jugar mejor* sobre él.
 
 ## Aplicación Práctica: Vida Profana
 
@@ -192,14 +209,14 @@ Desde allí:
 
 La ecuanimidad NO es desapego emocional. Es participación completa sin identificación ciega.
 
-## Conexión con Planchas Anteriores
+## Conexión con Órdenes Anteriores
 
-- **Plancha 1:** Hiram muere (dualidad: vida/muerte)
-- **Plancha 2:** Juicio de conciencia (blanco/negro en tu interior)
-- **Plancha 3:** Los Tres Enemigos (ignorancia, fanatismo, ambición—todas oscuridades)
-- **Plancha 4:** Marcha del Maestro (movimiento por los cuadrantes)
-- **Plancha 5:** Mediodía de la muerte (ciclos de luz/oscuridad)
-- **Plancha 6 (esta):** El pavimento (dualidad sostenida)
+- **Orden 0:** Hiram muere (dualidad: vida/muerte)
+- **Orden 1:** Juicio de conciencia (blanco/negro en tu interior)
+- **Orden 2:** Los Tres Enemigos (ignorancia, fanatismo, ambición—todas oscuridades)
+- **Orden 3:** Marcha del Maestro (movimiento por los cuadrantes)
+- **Orden 4:** Mediodía de la muerte (ciclos de luz/oscuridad)
+- **Orden 5 (esta):** El pavimento (dualidad sostenida)
 
 Ahora entiende: el pavimento es el escenario donde ocurren TODAS las otras enseñanzas. Es el suelo bajo tus pies, siempre.
 

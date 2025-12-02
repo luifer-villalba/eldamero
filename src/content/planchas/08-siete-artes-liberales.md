@@ -1,11 +1,11 @@
 ---
 title: "Las Siete Artes Liberales: Herramientas del Maestro Constructor"
-date: 2025-12-01
+date: 2025-12-02
 grado: "Maestro"
 tema: "Las Siete Artes Liberales"
 simbolo: "Trivium (Gramática, Lógica, Retórica) - Quadrivium (Aritmética, Geometría, Música, Astronomía)"
 autor: "LFV"
-logia: "Leonardo da Vinci N° 152"
+logia: "LDV N° 152"
 valle: "Asunción"
 orden: 8
 ---
@@ -16,8 +16,8 @@ Mis QQ∴ HH∴, las Siete Artes Liberales no son "materias académicas" para el
 
 Se dividen en dos grupos:
 
-- **Trivium** (3): Gramática, Lógica, Retórica → Dominio del Mundo de las Ideas y Palabras
-- **Quadrivium** (4): Aritmética, Geometría, Música, Astronomía → Dominio del Mundo de los Principios y Formas
+- **Trivium** (3): Gramática, Lógica, Retórica > Dominio del Mundo de las Ideas y Palabras
+- **Quadrivium** (4): Aritmética, Geometría, Música, Astronomía > Dominio del Mundo de los Principios y Formas
 
 **Visualización Mental:**
 
@@ -39,7 +39,7 @@ Las Siete Artes están distribuidas en los grados de forma lógica:
 
 ## El Trivium: Dominio del Verbo
 
-### Arte 1: Gramática ↔ Aprendiz ↔ Lectura de Signos
+### Arte 1: Gramática > Aprendiz > Lectura de Signos
 
 **Definición:** Estudio de los signos que representan ideas. El mundo físico como alfabeto del espíritu.
 
@@ -59,13 +59,13 @@ Las Siete Artes están distribuidas en los grados de forma lógica:
 
 **Aplicación Masónica:**
 
-- En ritual: El Aprendiz copia gestos sin entender completamente → está aprendiendo el alfabeto del ritual
+- En ritual: El Aprendiz copia gestos sin entender completamente > está aprendiendo el alfabeto del ritual
 - Lectura del pavimento mosaico: blanco/negro = dualidad expresada en forma geométrica
 - Lectura de los símbolos del grado: cada uno es una frase, aprende a descifrarla
 
 **Transmutación:** Esta semana, practica la Gramática. Observa sin opinar. Lee las situaciones sin juzgar. ¿Qué información nueva obtienes?
 
-### Arte 2: Lógica ↔ Compañero ↔ Conexión de Nombres y Relaciones
+### Arte 2: Lógica > Compañero > Conexión de Nombres y Relaciones
 
 **Definición:** Estudio de los *logos* (la Palabra) que conectan las cosas. Construcción de un sistema mental coherente.
 
@@ -85,13 +85,13 @@ Las Siete Artes están distribuidas en los grados de forma lógica:
 
 **Aplicación Masónica:**
 
-- El hueco entre las columnas contiene las herramientas → **lógica estructural**: las ideas necesitan instrumentos
-- Paso del Compañero: lateral, zigzagueante → lógica dialéctica (tesis/antítesis que generan síntesis)
+- El hueco entre las columnas contiene las herramientas > **lógica estructural**: las ideas necesitan instrumentos
+- Paso del Compañero: lateral, zigzagueante > lógica dialéctica (tesis/antítesis que generan síntesis)
 - Construcción del Templo: cada piedra **conecta** con las otras, no existen aisladas
 
 **Transmutación:** Esta semana, practica la Lógica. Busca conexiones. ¿Cómo se relacionan los eventos? ¿Hay patrón? ¿Qué causa qué?
 
-### Arte 3: Retórica ↔ Maestro ↔ Creación con la Palabra
+### Arte 3: Retórica > Maestro > Creación con la Palabra
 
 **Definición:** Capacidad de **hablar** de forma que manifiesta el Verbo interior. No es "hablar bien" en sentido ornamental. Es **crear con la palabra**.
 
@@ -114,15 +114,15 @@ Lavagnini escribe algo revolucionario: *"La Retórica es la identificación indi
 
 **Aplicación Masónica:**
 
-- El M∴ habla en Logia con **autoridad operativa** → sus palabras no son opiniones, son actos constructivos
+- El M∴ habla en Logia con **autoridad operativa** > sus palabras no son opiniones, son actos constructivos
 - Cuando el V∴M∴ abre la Logia, no "dice palabras"—*crea* el Templo con su habla
-- La palabra perdida de Hiram no es un sonido → es la **capacidad del Maestro de crear con el verbo**
+- La palabra perdida de Hiram no es un sonido > es la **capacidad del Maestro de crear con el verbo**
 
 **Transmutación:** Esta semana, practica la Retórica. Habla menos, pero mejor. Antes de hablar, preguntate: ¿Esto construye o destruye? ¿Viene de armonía o de caos?
 
 ## El Quadrivium: Dominio de los Principios
 
-### Arte 4: Aritmética ↔ Principios Eternos / Números
+### Arte 4: Aritmética > Principios Eternos / Números
 
 **Definición:** Conocimiento de los Principios Eternos expresados en números. Los números NO son cantidades, son **arquetipos**.
 
@@ -144,13 +144,13 @@ El número 7 no es "siete años de experiencia". Es el **dominio del septenario 
 
 **Aplicación Masónica:**
 
-- La edad simbólica del M∴ es 7 años → no significa "siete años de reloj", sino dominio del septenario (comprendiste los 7 metales, las 7 artes, la ley de 7)
+- La edad simbólica del M∴ es 7 años > no significa "siete años de reloj", sino dominio del septenario (comprendiste los 7 metales, las 7 artes, la ley de 7)
 - Los 3 golpes, 5 pasos, 7 artes: cada número es una **ley universal**, no una medida estadística
 - El triángulo del Delta: 3 no es "tres ángulos"—es la manifestación visible del ternario invisible
 
 **Transmutación:** Esta semana, observa los números en tu vida. ¿Hay patrón? ¿Qué principio expresa ese número?
 
-### Arte 5: Geometría ↔ Manifestación Espacial / Formas
+### Arte 5: Geometría > Manifestación Espacial / Formas
 
 **Definición:** Génesis de la **forma** como expresión de los principios numéricos en el espacio.
 
@@ -170,13 +170,13 @@ El número 7 no es "siete años de experiencia". Es el **dominio del septenario 
 
 **Aplicación Masónica:**
 
-- El piso del Templo no es "decoración bonita" → es **geometría sagrada** que estructura la conciencia de los HH∴
+- El piso del Templo no es "decoración bonita" > es **geometría sagrada** que estructura la conciencia de los HH∴
 - El Delta radiante: triángulo = manifestación visible del ternario numérico invisible
 - Las proporciones del Templo no son arbitrarias—siguen geometría sagrada
 
 **Transmutación:** Esta semana, observa geometrías. ¿Cómo está estructurado tu espacio? ¿Te sirve esa forma?
 
-### Arte 6: Música ↔ Armonía / Conexión Temporal
+### Arte 6: Música > Armonía / Conexión Temporal
 
 **Definición:** Divina Armonía que conecta **todas las cosas** en el tiempo. Matemática que suena.
 
@@ -196,13 +196,13 @@ Lavagnini escribe: *"Como todo es vibración, y toda vibración es sonido musica
 
 **Aplicación Masónica:**
 
-- El ritual es **música operativa**: golpes de mallete, pausas, entonaciones → romper el ritmo es romper la armonía del Templo
+- El ritual es **música operativa**: golpes de mallete, pausas, entonaciones > romper el ritmo es romper la armonía del Templo
 - La construcción individual es **sinfonía**: cada virtud, cada metal es una nota. Deben **acordar** entre sí
 - La apertura y cierre de Logia tienen ritmo específico—no es decoración, es **estructura armónica**
 
 **Transmutación:** Esta semana, escucha. ¿Cuál es el ritmo de tu vida? ¿Estás en armonía con tu naturaleza?
 
-### Arte 7: Astronomía ↔ Ley de los Astros / Gravitación Universal
+### Arte 7: Astronomía > Ley de los Astros / Gravitación Universal
 
 **Definición:** Ley que rige la construcción de los mundos. En esencia profunda: **Amor como gravitación universal**.
 
@@ -214,16 +214,16 @@ Lavagnini escribe algo profundo: *"El estudio de la Construcción de los mundos,
 
 **Aplicación Profana:**
 
-- Tu **"gravedad personal"** → ¿Atraés a la gente o los repelés?
+- Tu **"gravedad personal"** > ¿Atraés a la gente o los repelés?
 - El amor como **fuerza estructurante**: relaciones sanas "orbitan" en equilibrio (no colisiones), cada uno mantiene su órbita pero gira alrededor de centro común.
-- Liderazgo verdadero: no es control → es ser un "astro" que atrae por gravedad natural.
+- Liderazgo verdadero: no es control > es ser un "astro" que atrae por gravedad natural.
 
-**Caso Práctico:** En empresa hay rotación alta. Astronomía pregunta: "¿Cuál es tu gravedad como líder?" ¿Atraés talento y lo rtienes? ¿O repelés sin darte cuenta?
+**Caso Práctico:** En empresa hay rotación alta. Astronomía pregunta: "¿Cuál es tu gravedad como líder?" ¿Atraés talento y lo retienes? ¿O repelés sin darte cuenta?
 
 **Aplicación Masónica:**
 
 - El M∴ se convierte en **astro radiante**: ya no es esclavo de fuerzas externas, es centro de gravitación
-- La Cámara del Medio es el **sistema solar del Templo** → los Maestros son planetas que irradian en equilibrio
+- La Cámara del Medio es el **sistema solar del Templo** > los Maestros son planetas que irradian en equilibrio
 - La fraternidad masónica funciona por gravitación mutua (amor), no por obligación (cadena)
 
 **Transmutación:** Esta semana, observa: ¿Cuál es tu gravedad? ¿Qué atraés y qué repelés?
@@ -259,13 +259,13 @@ Lavagnini escribe algo profundo: *"El estudio de la Construcción de los mundos,
 
 ¿En qué arte sos más débil?
 
-- **Débil en Gramática** → No observas bien. Actúas sin información.
-- **Débil en Lógica** → Ves los datos pero no entiendes conexiones. Saltas a conclusiones.
-- **Débil en Retórica** → Hablas mucho pero sin impacto. Tus palabras no construyen.
-- **Débil en Aritmética** → No ves principios. Tratas cada situación como única.
-- **Débil en Geometría** → No estructuras bien. Todo es caos.
-- **Débil en Música** → No respetas ritmos. Desafinas en grupos.
-- **Débil en Astronomía** → No atraés. Tu gravedad es débil.
+- **Débil en Gramática** > No observas bien. Actúas sin información.
+- **Débil en Lógica** > Ves los datos pero no entiendes conexiones. Saltas a conclusiones.
+- **Débil en Retórica** > Hablas mucho pero sin impacto. Tus palabras no construyen.
+- **Débil en Aritmética** > No ves principios. Tratas cada situación como única.
+- **Débil en Geometría** > No estructuras bien. Todo es caos.
+- **Débil en Música** > No respetas ritmos. Desafinas en grupos.
+- **Débil en Astronomía** > No atraés. Tu gravedad es débil.
 
 ### Durante el Ritual
 
