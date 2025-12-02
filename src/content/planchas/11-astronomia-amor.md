@@ -12,8 +12,6 @@ orden: 11
 tags: ["Estrella Flamígera", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Juicio Interno"]
 ---
 
-## Introducción: La Ley que Sostiene Mundos
-
 Mis QQ∴ HH∴, la Astronomía para el Maestro **no es "ciencia de estrellas"**. No se trata de planetas, galaxias, órbitas matemáticas.
 
 Es el conocimiento de la **Ley de los Astros** = **Gravitación Universal** = **Amor**.

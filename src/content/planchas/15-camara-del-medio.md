@@ -12,8 +12,6 @@ orden: 15
 tags: ["Salario del Maestro", "Estrella Flamígera", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Artes Liberales", "Templo Interior"]
 ---
 
-## Introducción: Retorno al Centro
-
 Mis QQ∴ HH∴,
 
 Ya trabajamos la Cámara del Medio en nuestros primeros pasos, pero Lavagnini dedica capítulos enteros a revelar sus dimensiones más profundas. Ahora que avanzaste en otros símbolos, podemos volver con nuevas herramientas de interpretación. La Cámara del Medio no es solo "el lugar donde se paga el salario": es el **sanctasanctórum** del Maestro, el espacio interior donde se recibe la recompensa del trabajo bien hecho.

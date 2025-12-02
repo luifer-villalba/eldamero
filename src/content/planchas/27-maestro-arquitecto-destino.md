@@ -12,8 +12,6 @@ orden: 27
 tags: ["Marcha del Maestro", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Delta Luminoso"]
 ---
 
-# El Maestro como Arquitecto de su Destino: Planificación y Responsabilidad
-
 Mis QQ∴ HH∴,
 
 Lavagnini cierra esta fase con una enseñanza radical: el Maestro **no espera que le diseñen la vida**. Él mismo es el arquitecto. Como Hiram trazaba los planos del Templo, vos trazás los planos de tu existencia.

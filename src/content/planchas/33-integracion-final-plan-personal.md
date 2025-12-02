@@ -12,8 +12,6 @@ orden: 33
 tags: ["Salario del Maestro", "Marcha del Maestro", "Estrella Flamígera", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero"]
 ---
 
-# Integración Final: Plan Personal del Maestro - Los 33 Días Encarnados
-
 Mis QQ∴ HH∴,
 
 Hemos recorrido **33 planchas** en 33 días de estudio masónico operativo. Cada una reveló un aspecto del grado de Maestro: símbolos, transmutaciones, responsabilidades, preparación para la muerte, integración en símbolo viviente, sabiduría de la década.

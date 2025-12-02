@@ -2,9 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import TableOfContents from '../components/TableOfContents.astro';
 import ShareButtons from '../components/ShareButtons.astro';
-import ExportPDF from '../components/ExportPDF.astro';
 
 interface Props {
     data: CollectionEntry<'planchas'>['data'];
@@ -14,34 +12,17 @@ interface Props {
     headings: { depth: number; slug: string; text: string }[];
 }
 
-const { data, slug, prev, next, headings } = Astro.props;
-const { title, date, grado, tema, autor, logia, valle, orden, tags = [] } = data;
+const { data, slug, prev, next } = Astro.props;
+const { title, date, grado, tema, autor, tags = [], orden } = data;
 
-const formattedDate = date.toLocaleDateString('es-AR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-});
-
-// SEO mejorado
 const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
-const keywords = [
-    tema,
-    grado,
-    'masonería',
-    'Lavagnini',
-    'filosofía hermética',
-    'geometría sagrada',
-    'construcción interior',
-    'manual del maestro',
-    autor,
-    'planchas masónicas',
-    ...tags
-].join(', ');
-
+const keywords = [tema, grado, 'masonería', 'Lavagnini', autor, ...tags].join(', ');
 const publishedTime = date.toISOString();
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const pageUrl = `/planchas/${slug}`;
+
+// Máximo 3 tags
+const displayTags = tags.slice(0, 3);
 ---
 
 <BaseLayout
@@ -49,154 +30,93 @@ const pageUrl = `/planchas/${slug}`;
         description={description}
         type="article"
 >
-    <!-- Meta tags adicionales -->
     <Fragment slot="head">
         <meta name="keywords" content={keywords} />
         <meta name="author" content={autor} />
         <meta property="article:published_time" content={publishedTime} />
-        <meta property="article:modified_time" content={publishedTime} />
         <meta property="article:author" content={autor} />
         <meta property="article:section" content={grado} />
         <meta property="article:tag" content={tema} />
     </Fragment>
 
     <div class="plancha-wrapper">
-        <div class="plancha-container">
-            <Breadcrumbs grado={grado} title={title} />
+        <Breadcrumbs grado={grado} title={title} />
 
-            <div class="plancha-header">
-                <div class="invocacion">A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴</div>
+        <article class="plancha">
+            <!-- HEADER LIMPIO -->
+            <header>
+                <div class="header-meta">
+                    <span class="numero">Plancha Nº {orden.toString().padStart(2, '0')}</span>
+                    <span class="grado">{grado}</span>
+                </div>
 
-                {logia && <div class="logia-info">R∴ L∴ S∴ {logia}</div>}
-                {valle && <div class="logia-info">Vall∴ de {valle}, {formattedDate}</div>}
-
-                <div class="dirigido">V∴ M∴ • Q∴ H∴ Vig∴ • QQ∴ HH∴ Todos</div>
-
-                <div class="plancha-numero">Plancha Nº {orden.toString().padStart(2, '0')}</div>
                 <h1>{title}</h1>
 
-                <div class="meta">
-                    <div class="meta-item">
-                        <span class="meta-label">Grado:</span>
-                        <span>{grado}</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Tema:</span>
-                        <span>{tema}</span>
-                    </div>
-                </div>
+                <p class="tema">{tema}</p>
+            </header>
 
-                <ExportPDF title={title} orden={orden} />
-
-                {tags.length > 0 && (
-                        <div class="tags">
-                            {tags.map(tag => (
-                                    <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="tag">
-                                        {tag}
-                                    </a>
-                            ))}
-                        </div>
-                )}
-
-                <button id="print-btn" class="print-btn no-print" aria-label="Imprimir plancha">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                        <rect x="6" y="14" width="12" height="8"></rect>
-                    </svg>
-                    <span>Imprimir</span>
-                </button>
+            <!-- CONTENIDO -->
+            <div class="contenido">
+                <slot />
             </div>
 
-            <div class="content-layout">
-                <TableOfContents headings={headings} />
+            <!-- TAGS AL FINAL (máximo 3) -->
+            {displayTags.length > 0 && (
+                    <footer class="tags-footer">
+                        {displayTags.map(tag => (
+                                <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="tag">
+                                    {tag}
+                                </a>
+                        ))}
+                    </footer>
+            )}
 
-                <article class="plancha-content">
-                    <slot />
-                </article>
+            <!-- FIRMA -->
+            <div class="firma">
+                <div class="autor">{autor}</div>
+                <div class="rango">M∴ M∴</div>
+                <div class="despedida">S∴ F∴ U∴</div>
             </div>
 
-            <aside class="internal-links no-print">
-                <h3>Explorar más sobre {tema}</h3>
-                <p>
-                    Descubre otras <a href="/">planchas sobre {tema}</a> o
-                    explora el <a href={`/#${grado.toLowerCase()}`}>grado de {grado}</a>.
-                </p>
-            </aside>
-
-            <ShareButtons title={title} url={pageUrl} />
-
-            <div class="firmas">
-                <div class="firma">
-                    <div class="rango">{autor}</div>
-                    <div class="rango">M∴ M∴</div>
-                    <div>S∴ F∴ U∴</div>
-                </div>
-            </div>
-
+            <!-- NAVEGACIÓN -->
             <nav class="plancha-nav no-print">
-                <div class="nav-links">
-                    {prev ? (
-                            <a href={`/planchas/${prev.slug}`} class="nav-link prev">
-                                <span class="nav-arrow">←</span>
-                                <div class="nav-info">
-                                    <span class="nav-label">Anterior</span>
-                                    <span class="nav-title">{prev.data.title}</span>
-                                </div>
-                            </a>
-                    ) : (
-                            <div class="nav-link disabled"></div>
-                    )}
+                {prev ? (
+                        <a href={`/planchas/${prev.slug}`} class="nav-link prev">
+                            <span class="arrow">←</span>
+                            <span class="nav-title">{prev.data.title}</span>
+                        </a>
+                ) : <div class="nav-placeholder"></div>}
 
-                    <a href="/" class="nav-link home">
-                        <span>⌂</span>
-                        <span>Índice</span>
-                    </a>
+                <a href="/" class="nav-link home">
+                    <span>⌂</span>
+                </a>
 
-                    {next ? (
-                            <a href={`/planchas/${next.slug}`} class="nav-link next">
-                                <div class="nav-info">
-                                    <span class="nav-label">Siguiente</span>
-                                    <span class="nav-title">{next.data.title}</span>
-                                </div>
-                                <span class="nav-arrow">→</span>
-                            </a>
-                    ) : (
-                            <div class="nav-link disabled"></div>
-                    )}
-                </div>
+                {next ? (
+                        <a href={`/planchas/${next.slug}`} class="nav-link next">
+                            <span class="nav-title">{next.data.title}</span>
+                            <span class="arrow">→</span>
+                        </a>
+                ) : <div class="nav-placeholder"></div>}
             </nav>
-        </div>
+        </article>
     </div>
 
-    <!-- JSON-LD Schema mejorado -->
+    <!-- JSON-LD Schema -->
     <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": title,
         "description": description,
-        "author": {
-            "@type": "Person",
-            "name": autor
-        },
+        "author": { "@type": "Person", "name": autor },
         "datePublished": publishedTime,
-        "dateModified": publishedTime,
         "inLanguage": "es-AR",
         "keywords": keywords,
         "articleSection": grado,
-        "about": {
-            "@type": "Thing",
-            "name": tema,
-            "description": `Estudio masónico sobre ${tema}`
-        },
+        "about": { "@type": "Thing", "name": tema },
         "publisher": {
             "@type": "Organization",
             "name": "El Damero",
-            "url": "https://eldamero.com",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://eldamero.com/logo.png"
-            }
+            "url": "https://eldamero.com"
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -205,106 +125,124 @@ const pageUrl = `/planchas/${slug}`;
     })} />
 </BaseLayout>
 
-<script>
-    function initPrint() {
-        const printBtn = document.getElementById('print-btn');
-        if (printBtn) {
-            printBtn.addEventListener('click', () => {
-                window.print();
-            });
-        }
-    }
-
-    initPrint();
-    document.addEventListener('astro:page-load', initPrint);
-</script>
-
 <style>
     .plancha-wrapper {
-        max-width: 1400px;
+        max-width: 1100px;
         margin: 0 auto;
+        padding: var(--spacing-lg);
     }
 
-    .plancha-container {
+    .plancha {
         background: var(--damero-dark);
         border: 2px solid var(--damero-gold);
         padding: var(--spacing-xl);
-        box-shadow: 0 0 30px rgba(201, 169, 97, 0.2);
     }
 
-    .plancha-header {
+    /* ========== HEADER LIMPIO ========== */
+    header {
         text-align: center;
-        margin-bottom: var(--spacing-lg);
-        padding-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-xl);
+        padding-bottom: var(--spacing-lg);
         border-bottom: 1px solid var(--damero-gold);
-        position: relative;
     }
 
-    .invocacion {
-        margin-bottom: var(--spacing-sm);
-    }
-
-    .logia-info {
+    .header-meta {
+        display: flex;
+        gap: var(--spacing-md);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--spacing-md);
         font-size: 0.85rem;
         color: var(--damero-gray);
-        margin-bottom: var(--spacing-xs);
     }
 
-    .dirigido {
-        font-style: italic;
-        color: var(--damero-gray-light);
-        margin-bottom: var(--spacing-sm);
-        font-size: 0.95rem;
-    }
-
-    .plancha-numero {
-        font-size: 0.9rem;
-        color: var(--damero-gold);
+    .numero {
         letter-spacing: 0.2em;
-        margin-bottom: var(--spacing-xs);
-        font-weight: bold;
+        font-weight: 600;
+    }
+
+    .grado {
+        padding: 4px 12px;
+        border: 1px solid var(--damero-gold);
+        color: var(--damero-gold);
     }
 
     h1 {
-        margin-bottom: var(--spacing-sm);
-        font-size: 1.8rem;
-    }
-
-    .meta {
-        display: flex;
-        gap: var(--spacing-lg);
-        font-size: 0.9rem;
-        color: var(--damero-gray);
-        margin-top: var(--spacing-sm);
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .meta-item {
-        display: flex;
-        gap: var(--spacing-xs);
-    }
-
-    .meta-label {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: var(--spacing-md) 0;
         color: var(--damero-gold);
-        font-weight: bold;
     }
 
-    .tags {
+    .tema {
+        color: var(--damero-gray);
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+    /* ========== CONTENIDO ========== */
+    .contenido {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .contenido :global(p) {
+        margin-bottom: var(--spacing-md);
+        text-align: justify;
+    }
+
+    .contenido :global(h2) {
+        color: var(--damero-gold);
+        margin-top: var(--spacing-lg);
+        margin-bottom: var(--spacing-sm);
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .contenido :global(h3) {
+        color: var(--damero-gray-light);
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+        font-size: 1.1rem;
+    }
+
+    .contenido :global(ul),
+    .contenido :global(ol) {
+        margin-left: var(--spacing-lg);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .contenido :global(li) {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .contenido :global(em) {
+        color: var(--damero-gold);
+        font-style: italic;
+    }
+
+    .contenido :global(strong) {
+        color: var(--damero-gold-light);
+    }
+
+    /* ========== TAGS AL FINAL ========== */
+    .tags-footer {
         display: flex;
-        gap: var(--spacing-xs);
+        gap: var(--spacing-sm);
         justify-content: center;
-        flex-wrap: wrap;
-        margin-top: var(--spacing-sm);
+        margin: var(--spacing-xl) 0;
+        padding-top: var(--spacing-md);
+        border-top: 1px solid var(--damero-gold);
     }
 
     .tag {
-        background: rgba(201, 169, 97, 0.1);
+        font-size: 0.8rem;
+        padding: 4px 12px;
         border: 1px solid var(--damero-gold);
-        padding: 0.25rem 0.75rem;
         color: var(--damero-gold);
         text-decoration: none;
-        font-size: 0.85rem;
         transition: var(--transition-smooth);
     }
 
@@ -313,128 +251,39 @@ const pageUrl = `/planchas/${slug}`;
         color: var(--damero-black);
     }
 
-    .print-btn {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-xs);
-        margin: var(--spacing-md) auto 0;
-        padding: var(--spacing-xs) var(--spacing-sm);
-        background: var(--damero-darker);
-        border: 1px solid var(--damero-gold);
-        color: var(--damero-gold);
-        cursor: pointer;
-        font-family: var(--font-serif-body);
-        font-size: 0.9rem;
-        transition: var(--transition-smooth);
-    }
-
-    .print-btn:hover {
-        background: var(--damero-gold);
-        color: var(--damero-black);
-    }
-
-    .content-layout {
-        display: grid;
-        grid-template-columns: 250px 1fr;
-        gap: var(--spacing-lg);
-        margin: var(--spacing-lg) 0;
-    }
-
-    .plancha-content {
-        line-height: 1.8;
-    }
-
-    .plancha-content :global(p) {
-        margin-bottom: var(--spacing-sm);
-        text-align: justify;
-    }
-
-    .plancha-content :global(h2) {
-        color: var(--damero-gold);
-        margin-top: var(--spacing-md);
-        margin-bottom: var(--spacing-sm);
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-
-    .plancha-content :global(h3) {
-        color: var(--damero-gray-light);
-        margin-top: var(--spacing-sm);
-        font-size: 1rem;
-    }
-
-    .plancha-content :global(ul),
-    .plancha-content :global(ol) {
-        margin-left: var(--spacing-lg);
-        margin-bottom: var(--spacing-sm);
-    }
-
-    .plancha-content :global(li) {
-        margin-bottom: var(--spacing-xs);
-    }
-
-    .plancha-content :global(em) {
-        color: var(--damero-gold);
-        font-style: italic;
-    }
-
-    .plancha-content :global(strong) {
-        color: var(--damero-gold-light);
-    }
-
-    .internal-links {
-        background: rgba(201, 169, 97, 0.05);
-        border-left: 3px solid var(--damero-gold);
-        padding: var(--spacing-md);
-        margin: var(--spacing-lg) 0;
-    }
-
-    .internal-links h3 {
-        font-size: 1rem;
-        margin-bottom: var(--spacing-xs);
-        text-transform: none;
-        letter-spacing: normal;
-    }
-
-    .internal-links p {
-        margin: 0;
-        font-size: 0.95rem;
-        text-align: left;
-    }
-
-    .internal-links a {
-        color: var(--damero-gold);
-        text-decoration: underline;
-    }
-
-    .firmas {
-        margin-top: var(--spacing-xl);
-        padding-top: var(--spacing-lg);
-        border-top: 1px solid var(--damero-gold);
-        text-align: center;
-        font-size: 0.9rem;
-    }
-
+    /* ========== FIRMA ========== */
     .firma {
-        margin-bottom: var(--spacing-sm);
+        text-align: center;
+        margin: var(--spacing-xl) 0;
+        padding-top: var(--spacing-md);
+        border-top: 1px solid var(--damero-gold);
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .autor {
+        color: var(--damero-gold);
+        font-weight: 600;
     }
 
     .rango {
         color: var(--damero-gold);
-        font-weight: bold;
+        font-size: 0.85rem;
     }
 
+    .despedida {
+        color: var(--damero-gray);
+        font-size: 0.85rem;
+    }
+
+    /* ========== NAVEGACIÓN ========== */
     .plancha-nav {
-        margin-top: var(--spacing-lg);
-        padding-top: var(--spacing-sm);
-    }
-
-    .nav-links {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
         gap: var(--spacing-sm);
-        align-items: center;
+        margin-top: var(--spacing-xl);
+        padding-top: var(--spacing-md);
+        border-top: 1px solid var(--damero-gold);
     }
 
     .nav-link {
@@ -446,12 +295,12 @@ const pageUrl = `/planchas/${slug}`;
         color: var(--damero-gold);
         text-decoration: none;
         transition: var(--transition-smooth);
-        min-height: 60px;
+        font-size: 0.9rem;
     }
 
-    .nav-link.disabled {
-        border-color: var(--damero-border);
-        opacity: 0.3;
+    .nav-link:hover {
+        background: var(--damero-gold);
+        color: var(--damero-black);
     }
 
     .nav-link.prev {
@@ -460,128 +309,74 @@ const pageUrl = `/planchas/${slug}`;
 
     .nav-link.next {
         justify-content: flex-end;
-        grid-column: 3;
     }
 
     .nav-link.home {
         justify-content: center;
-        flex-direction: column;
-        gap: 0.25rem;
-        font-size: 0.9rem;
-        grid-column: 2;
+        font-size: 1.2rem;
     }
 
-    .nav-link:not(.disabled):hover {
-        background: var(--damero-gold);
-        color: var(--damero-black);
-    }
-
-    .nav-arrow {
-        font-size: 1.5rem;
+    .arrow {
+        font-size: 1.2rem;
         line-height: 1;
     }
 
-    .nav-info {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-    }
-
-    .nav-label {
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        opacity: 0.8;
-    }
-
     .nav-title {
-        font-size: 0.9rem;
-        font-weight: bold;
+        font-size: 0.85rem;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
-    /* MODO IMPRESIÓN */
-    @media print {
-        .no-print,
-        .print-btn,
-        .plancha-nav,
-        .internal-links,
-        .share-buttons {
-            display: none !important;
-        }
-
-        .plancha-container {
-            border: none;
-            box-shadow: none;
-            padding: 0;
-        }
-
-        .content-layout {
-            grid-template-columns: 1fr;
-        }
-
-        .plancha-content :global(p) {
-            text-align: left;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-        }
-
-        .plancha-content :global(h2) {
-            font-size: 1.1rem;
-            page-break-after: avoid;
-        }
-
-        .plancha-content :global(h3) {
-            page-break-after: avoid;
-        }
-
-        .firmas {
-            page-break-before: avoid;
-        }
+    .nav-placeholder {
+        visibility: hidden;
     }
 
-    @media (max-width: 1024px) {
-        .content-layout {
-            grid-template-columns: 1fr;
-        }
-    }
-
+    /* ========== RESPONSIVE ========== */
     @media (max-width: 768px) {
-        .plancha-container {
+        .plancha {
             padding: var(--spacing-md);
         }
 
         h1 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
 
-        .meta {
+        .header-meta {
             flex-direction: column;
             gap: var(--spacing-xs);
         }
 
-        .nav-links {
+        .plancha-nav {
             grid-template-columns: 1fr;
             gap: var(--spacing-xs);
         }
 
-        .nav-link.prev,
-        .nav-link.next,
         .nav-link.home {
-            grid-column: 1;
+            order: -1;
         }
 
-        .nav-link.prev {
-            order: 1;
+        .nav-title {
+            max-width: none;
+        }
+    }
+
+    /* ========== IMPRESIÓN ========== */
+    @media print {
+        .no-print,
+        .plancha-nav,
+        .tags-footer {
+            display: none !important;
         }
 
-        .nav-link.home {
-            order: 2;
+        .plancha {
+            border: none;
+            padding: 0;
         }
 
-        .nav-link.next {
-            order: 3;
+        .contenido :global(p) {
+            text-align: left;
         }
     }
 </style>

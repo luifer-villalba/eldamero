@@ -12,8 +12,6 @@ orden: 14
 tags: ["Geometría Sagrada", "Templo Interior", "Grado Aprendiz", "Delta Luminoso", "Grado Maestro", "Construcción", "Conciencia", "Símbolos"]
 ---
 
-## Introducción: La Geometría de la Conciencia
-
 Mis QQ∴ HH∴,
 
 El Delta Luminoso es el triángulo radiante con un ojo en su centro, colocado en Oriente sobre el trono del Venerable Maestro. Visualizalo: un triángulo equilátero perfecto, rodeado de rayos de luz, y en su centro, un ojo abierto que todo lo contempla. No es vigilancia punitiva: es **conciencia omnipresente**, el testigo interno que nunca duerme.

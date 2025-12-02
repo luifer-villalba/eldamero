@@ -12,8 +12,6 @@ orden: 0
 tags: ["Salario del Maestro", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior", "Grado Aprendiz"]
 ---
 
-# La Muerte y Exaltación de Hiram Abiff: El Misterio Central del Maestro
-
 Mis QQ∴ HH∴,
 
 Cuando fuiste exaltado al grado de Maestro, viviste la leyenda de Hiram Abiff. No fue un paseo simbólico. Fuiste golpeado, encerrado en un féretro, buscado durante días, y finalmente levantado de la muerte. Esta plancha es recordatorio de qué pasó y **por qué es el misterio más importante que enfrentarás**.

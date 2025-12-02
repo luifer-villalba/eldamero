@@ -12,8 +12,6 @@ orden: 18
 tags: ["Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior", "Cadena de Unión", "Grado Aprendiz"]
 ---
 
-## Introducción: El Misterio Central del Maestro
-
 Mis QQ∴ HH∴,
 
 Ya trabajamos la muerte de Hiram en nuestros primeros pasos, pero Lavagnini dedica capítulos enteros a su **resurrección simbólica**, el momento donde el Maestro muerto renace en cada iniciado del tercer grado. No es metáfora dulce: es **operación alquímica**, el núcleo vivo del grado de Maestro.

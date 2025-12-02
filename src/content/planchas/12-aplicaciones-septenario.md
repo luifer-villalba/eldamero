@@ -12,8 +12,6 @@ orden: 12
 tags: ["Salario del Maestro", "Geometría Sagrada", "Grado Aprendiz", "Siete Metales", "Grado Maestro", "Transmutación", "Septenario", "Alquimia"]
 ---
 
-## Introducción: Del Concepto a la Realidad
-
 Mis QQ∴ HH∴, hemos recorrido el Septenario en teoría:
 
 - **Siete Metales:** Purificación interior

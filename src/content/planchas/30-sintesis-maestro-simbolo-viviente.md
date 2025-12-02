@@ -12,8 +12,6 @@ orden: 30
 tags: ["Marcha del Maestro", "Estrella Flamígera", "Muerte Iniciática", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Cadena de Unión", "Grado Aprendiz"]
 ---
 
-# Síntesis Final: El Maestro como Símbolo Viviente
-
 Mis QQ∴ HH∴,
 
 Llegamos al final del recorrido por el Manual del Maestro de Lavagnini. Esta última plancha no introduce símbolos nuevos: **integra todos los anteriores**. El Maestro, al final, no es colección de conocimientos sino **símbolo viviente**, templo ambulante donde circula luz.

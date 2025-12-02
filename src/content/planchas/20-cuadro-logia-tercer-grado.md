@@ -12,8 +12,6 @@ orden: 20
 tags: ["Marcha del Maestro", "Muerte Iniciática", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Grado Maestro", "Resurrección"]
 ---
 
-## Introducción: La Ventana al Drama Sagrado
-
 Mis QQ∴ HH∴,
 
 El Cuadro de Logia (o Tapiz) del grado de Maestro es radicalmente distinto al de Aprendiz y Compañero. Mientras aquellos mostraban herramientas y columnas en ascenso, este muestra una **escena dramática de catástrofe y trascendencia**: el asesinato de Hiram, su tumba, símbolos mortuorios, una rama de acacia floreciendo sobre la muerte.

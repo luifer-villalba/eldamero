@@ -12,8 +12,6 @@ orden: 17
 tags: ["Estrella Flamígera", "Geometría Sagrada", "Leyenda de Hiram", "Templo Interior", "Grado Aprendiz", "Grado Maestro", "Construcción", "Hiram Abif"]
 ---
 
-## Introducción: El Sello más Pequeño
-
 Mis QQ∴ HH∴,
 
 En el grado de Maestro aparece un símbolo discreto pero omnipresente: los **tres puntos** dispuestos en triángulo (∴). Los ves en cada abreviatura masónica (V∴ M∴, Q∴ H∴, S∴ F∴ U∴), pero Lavagnini revela que no son mero adorno tipográfico: son un **sello sagrado**, un recordatorio geométrico del Nombre Inefable.

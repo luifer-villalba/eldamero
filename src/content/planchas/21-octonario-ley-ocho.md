@@ -12,8 +12,6 @@ orden: 21
 tags: ["Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Artes Liberales", "Templo Interior", "Grado Aprendiz", "Siete Metales"]
 ---
 
-## Introducción: El Número Que No Termina
-
 Mis QQ∴ HH∴,
 
 Después del Septenario (7 Metales purificados, 7 Artes Liberales dominadas, 7 escalones ascendidos), Lavagnini introduce el **Octonario**: la Ley del Ocho, el número de la regeneración cósmica y el equilibrio perfecto.

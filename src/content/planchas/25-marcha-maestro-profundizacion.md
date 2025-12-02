@@ -12,8 +12,6 @@ orden: 25
 tags: ["Marcha del Maestro", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Grado Maestro", "Resurrección", "Renacimiento"]
 ---
 
-# La Marcha del Maestro: Profundización y Operatividad
-
 Mis QQ∴ HH∴,
 
 Ya trabajamos la Marcha del Maestro en plancha anterior, pero Lavagnini dedica secciones adicionales a revelar sus capas más profundas. La Marcha de 8 pasos sobre la muerte no es solo coreografía ritual: es **meditación en movimiento**, un mandala que se recorre con el cuerpo.

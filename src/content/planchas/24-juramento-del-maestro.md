@@ -12,8 +12,6 @@ orden: 24
 tags: ["Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro", "Herramientas"]
 ---
 
-# El Juramento del Maestro: Responsabilidad y Coherencia
-
 Mis QQ∴ HH∴,
 
 El Juramento del Maestro es distinto al de Aprendiz y Compañero. Lavagnini explica: en los dos primeros grados, jurás **obedecer** (al V∴ M∴, a los Landmarks, a los rituales). En el tercero, jurás **responsabilizarte**. Ya no sos alumno: sos constructor autónomo.

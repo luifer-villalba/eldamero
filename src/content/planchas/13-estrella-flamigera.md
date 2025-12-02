@@ -12,8 +12,6 @@ orden: 13
 tags: ["Estrella Flamígera", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Maestro", "Resurrección"]
 ---
 
-## Introducción: La Geometría de la Luz
-
 Mis QQ∴ HH∴,
 
 La Estrella Flamígera es uno de los símbolos más luminosos y centrales del grado de Maestro. Visualizá una estrella de cinco puntas radiante, con llamas que emanan de cada vértice, y en su centro, la letra G. No es un mero ornamento: es la representación geométrica del hombre perfeccionado, del Maestro que ha integrado sus cinco sentidos, sus cinco virtudes, y se ha convertido en luz para sí mismo y para los demás.

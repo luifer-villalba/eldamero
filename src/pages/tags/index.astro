@@ -35,9 +35,9 @@ const sortedTags = Array.from(tagsMap.entries())
         {sortedTags.length > 0 ? (
                 <div class="tags-grid">
                     {sortedTags.map(([tag, count]) => (
-
-                        href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}
-                        class="tag-card"
+                            <a
+                                    href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}
+                                    class="tag-card"
                             >
                                 <span class="tag-name">{tag}</span>
                                 <span class="tag-count">{count} plancha{count !== 1 ? 's' : ''}</span>

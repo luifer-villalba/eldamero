@@ -12,8 +12,6 @@ orden: 7
 tags: ["Salario del Maestro", "Marcha del Maestro", "Pavimento Mosaico", "Leyenda de Hiram", "Cámara del Medio", "Templo Interior", "Cadena de Unión", "Delta Luminoso"]
 ---
 
-## Introducción: El Taller Alquímico
-
 Mis QQ∴ HH∴, en la Cámara del Medio, el Maestro recibe su palabra de paso vinculada al forjador de metales. No se trata de metalurgia física. Es **alquimia espiritual**: transmutar los siete metales interiores (virtudes y vicios) de su estado impuro a su perfección incorruptible.
 
 **Visualización Mental:**

@@ -12,8 +12,6 @@ orden: 23
 tags: ["Marcha del Maestro", "Estrella Flamígera", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz"]
 ---
 
-# La Cadena de Unión: Circuito Energético del Maestro
-
 Mis QQ∴ HH∴,
 
 La Cadena de Unión es el ritual donde los HH∴ se toman de las manos formando un círculo. Lavagnini revela que no es solo un gesto fraternal: es un **circuito energético**, una geometría de poder colectivo. Visualizá: un círculo perfecto de manos entrelazadas, sin principio ni fin, donde la energía fluye sin interrupción.

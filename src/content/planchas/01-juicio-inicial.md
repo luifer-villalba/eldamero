@@ -12,8 +12,6 @@ orden: 1
 tags: ["Pavimento Mosaico", "Muerte Iniciática", "Cámara del Medio", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Juicio Interno"]
 ---
 
-# El Juicio Inicial: La Acusación y la Cámara del Medio
-
 Mis QQ∴ HH∴,
 
 Visualizá al Compañero que llega al umbral de la Tercera Cámara. No lo reciben con honores ni felicitaciones. Lo esperan como **jueces inexorables**. Una acusación pesa sobre él: un crimen misterioso acaba de cometerse. Aún no sabe qué crimen ni por qué lo acusan.

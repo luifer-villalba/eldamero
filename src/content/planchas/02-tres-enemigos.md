@@ -12,8 +12,6 @@ orden: 2
 tags: ["Salario del Maestro", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Juicio Interno", "Tres Asesinos", "Grado Maestro"]
 ---
 
-## Introducción: El Crimen Perpetuo
-
 Visualicen, mis QQ∴ HH∴, a Hiram al mediodía. El Sol en su cenit. El Maestro solo en el Templo, orando. Tres compañeros lo esperan en las tres puertas. Cada uno con un instrumento de construcción. Pero hoy, esos instrumentos no construyen—destruyen.
 
 Lavagnini pregunta: *"¿Quién puede confesarse, efectivamente, inmune de toda complicidad con estos tres constantes enemigos de la Institución?"*

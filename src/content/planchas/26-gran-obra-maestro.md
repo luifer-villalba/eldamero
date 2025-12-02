@@ -12,8 +12,6 @@ orden: 26
 tags: ["Estrella Flamígera", "Muerte Iniciática", "Leyenda de Hiram", "Templo Interior", "Artes Liberales", "Cadena de Unión", "Grado Maestro", "Transmutación"]
 ---
 
-# La Gran Obra del Maestro: Alquimia de Vida Total
-
 Mis QQ∴ HH∴,
 
 Lavagnini culmina el manual con el concepto central: la **Gran Obra**. No es una obra física (aunque puede manifestarse en logros externos). Es la **construcción de tu Ser perfecto**, el proyecto de toda una vida. Visualizá: un arquitecto diseñando su obra maestra, pero la obra sos vos mismo.

@@ -12,8 +12,6 @@ orden: 32
 tags: ["Estrella Flamígera", "Geometría Sagrada", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz", "Siete Metales", "Grado Maestro", "Transmutación"]
 ---
 
-# La Década: El Número 10 - Síntesis Pitagórica y Consumación
-
 Mis QQ∴ HH∴,
 
 Lavagnini culmina su Manual con el misterio final: el **Número 10**, la Década. No es un número más en la progresión. Es la **consumación de todos los anteriores**, el retorno a la Unidad en nivel superior.

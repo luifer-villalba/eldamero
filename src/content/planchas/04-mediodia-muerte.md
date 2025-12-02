@@ -12,8 +12,6 @@ orden: 4
 tags: ["Marcha del Maestro", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior", "Juicio Interno", "Tres Asesinos"]
 ---
 
-## Introducción: El Mediodía del Alma
-
 Visualicen, mis QQ∴ HH∴, el momento exacto: mediodía. El Sol en su máxima altura. Hiram orando solo en el Templo. Los tres compañeros esperan en las tres puertas. Regla, escuadra, mallete listos.
 
 Lavagnini escribe: *"Eligieron el mediodía, el momento en que el Sol, habiendo alcanzado el cenit, empieza a declinar hacia el occidente"*.

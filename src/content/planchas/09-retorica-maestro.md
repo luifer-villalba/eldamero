@@ -12,8 +12,6 @@ orden: 9
 tags: ["Cámara del Medio", "Templo Interior", "Grado Aprendiz", "Grado Maestro", "Siete Metales", "Resurrección", "Renacimiento", "Construcción"]
 ---
 
-## Introducción: La Palabra como Herramienta
-
 Mis QQ∴ HH∴, la Retórica **no es oratoria**. El orador profano adorna palabras para impresionar, para cautivar, para convencer. El Maestro **crea con la palabra**. Su retórica es el poder de manifestar el Verbo interior, la capacidad de hablar en armonía con el Principio Geométrico Constructor del Universo.
 
 **Visualización Mental:**

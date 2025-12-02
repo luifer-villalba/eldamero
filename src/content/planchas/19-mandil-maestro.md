@@ -12,8 +12,6 @@ orden: 19
 tags: ["Muerte Iniciática", "Geometría Sagrada", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro", "Resurrección", "Renacimiento"]
 ---
 
-## Introducción: La Armadura Invisible del Maestro
-
 Mis QQ∴ HH∴,
 
 El mandil del Maestro se distingue del de Aprendiz y Compañero por su **decoración simbólica**: bordes azules, rosetas en las esquinas, la letra "M", y a veces símbolos de mortalidad (calavera, huesos cruzados). Lavagnini explica que no es solo un uniforme de rango: es un **mapa simbólico** de la jornada del Maestro, una inscripción visible de muerte y resurrección.

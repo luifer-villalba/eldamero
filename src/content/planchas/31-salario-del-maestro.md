@@ -12,8 +12,6 @@ orden: 31
 tags: ["Salario del Maestro", "Cámara del Medio", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro"]
 ---
 
-# El Salario del Maestro: Amor, Servicio y Recompensa Interna
-
 Mis QQ∴ HH∴,
 
 Lavagnini dedica pasajes fundamentales a una verdad que invierte toda noción mundana de compensación: **el Salario del Maestro no se busca afuera, sino que es el Servicio mismo**, encarnado en Amor.

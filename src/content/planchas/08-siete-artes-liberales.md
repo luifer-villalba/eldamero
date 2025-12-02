@@ -12,8 +12,6 @@ orden: 8
 tags: ["Pavimento Mosaico", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Artes Liberales", "Templo Interior", "Cadena de Unión"]
 ---
 
-## Introducción: Herramientas del Constructor
-
 Mis QQ∴ HH∴, las Siete Artes Liberales no son "materias académicas" para el Maestro. Son **herramientas de construcción** tan operativas como el mallete o la escuadra. Con ellas construyes no solo templos físicos, sino templos interiores—estructuras de conciencia que perduran.
 
 Se dividen en dos grupos:

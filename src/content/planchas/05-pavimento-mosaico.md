@@ -12,8 +12,6 @@ orden: 5
 tags: ["Filosofía Hermética", "Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior"]
 ---
 
-## Introducción: La Partida de Tu Vida
-
 Visualicen, mis QQ∴ HH∴, el piso de la Logia. Cuadrados blancos y negros alternados. Como un tablero de ajedrez. Pero no es un tablero cualquiera—es *el* tablero donde se juega la partida de tu vida.
 
 Lavagnini escribe: *"Este lugar central se encuentra pavimentado de cuadrados blancos y negros, dispuestos alternativamente, como en un tablero de ajedrez, representando la unidad y continuidad de los opuestos"*.

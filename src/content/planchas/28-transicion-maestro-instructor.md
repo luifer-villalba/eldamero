@@ -12,8 +12,6 @@ orden: 28
 tags: ["Estrella Flamígera", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro", "Herramientas"]
 ---
 
-# La Transición del Maestro a Instructor: Transmisión y Legado
-
 Mis QQ∴ HH∴,
 
 Lavagnini cierra con una enseñanza clave: el grado de Maestro **no es el final del camino**, es el principio de una nueva función: **enseñar**. El Maestro que no transmite lo que aprendió **viola su Juramento** (punto 4: instruir a los menores).

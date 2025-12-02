@@ -12,8 +12,6 @@ orden: 6
 tags: ["Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Cadena de Unión", "Juicio Interno", "Tres Asesinos"]
 ---
 
-## Introducción: El Primer Tramo del Camino
-
 Mis QQ∴ HH∴, completamos la primera semana. Seis planchas. Seis llaves:
 
 1. **La Muerte y Exaltación de Hiram** > El misterio central

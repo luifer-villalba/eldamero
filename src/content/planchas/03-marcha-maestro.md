@@ -12,8 +12,6 @@ orden: 3
 tags: ["Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Artes Liberales", "Templo Interior"]
 ---
 
-## Introducción: Caminar Sobre el Cadáver
-
 Visualicen, mis QQ∴ HH∴, el pavimento mosaico. Blanco y negro alternados. En el centro, el cuerpo de Hiram. Y vos, aspirante a Maestro, debés pasar sobre él. No rodearlo. No evitarlo. Sobre él.
 
 Lavagnini escribe: *"Ocho son los pasos de la Marcha del Maestro, por medio de la cual pasa uno sobre la muerte por medio del sacrificio de la personalidad"*.

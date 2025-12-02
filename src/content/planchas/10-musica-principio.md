@@ -12,8 +12,6 @@ orden: 10
 tags: ["Grado Maestro", "Siete Metales", "Herramientas", "Septenario", "Escuadra", "Compás", "Vibración Armónica", "Sinfonía Universal"]
 ---
 
-## Introducción: La Sinfonía del Ser
-
 Mis QQ∴ HH∴, la Música no es "arte sonoro" para el Maestro. Es el **principio que conecta todas las cosas en el tiempo**. Es la ley invisible que mantiene unido el universo visible.
 
 Lavagnini escribe: *"Como todo es vibración, y toda vibración es sonido musical, la misma Construcción del Universo es una Obra Musical."*

@@ -12,8 +12,6 @@ orden: 29
 tags: ["Muerte Iniciática", "Leyenda de Hiram", "Cámara del Medio", "Templo Interior", "Cadena de Unión", "Grado Aprendiz", "Grado Maestro", "Herramientas"]
 ---
 
-# El Maestro y la Muerte Física: Preparación y Legado Eterno
-
 Mis QQ∴ HH∴,
 
 Lavagnini cierra el manual con el tema que atraviesa todo el tercer grado: la **muerte real**, no solo simbólica. El Maestro que trabajó toda su vida con la muerte de Hiram **se prepara para su propia muerte física**.

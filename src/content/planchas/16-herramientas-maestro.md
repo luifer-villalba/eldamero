@@ -12,8 +12,6 @@ orden: 16
 tags: ["Muerte Iniciática", "Leyenda de Hiram", "Grado Compañero", "Templo Interior", "Grado Aprendiz", "Juicio Interno", "Grado Maestro", "Herramientas"]
 ---
 
-## Introducción: Del Cincel al Diseño
-
 Mis QQ∴ HH∴,
 
 El Aprendiz trabaja con mazo y cincel (golpear la piedra bruta, destruir lo innecesario). El Compañero con escuadra y compás (dar forma exacta, simetría). El Maestro... ¿con qué trabaja?

@@ -12,8 +12,6 @@ orden: 22
 tags: ["Geometría Sagrada", "Leyenda de Hiram", "Grado Compañero", "Artes Liberales", "Templo Interior", "Grado Aprendiz", "Juicio Interno", "Grado Maestro"]
 ---
 
-## Introducción: Tu Cuerpo es el Templo
-
 Mis QQ∴ HH∴,
 
 Lavagnini dedica capítulos enteros al concepto del **Templo Interior**: la verdadera construcción del Maestro no es de piedra externa sino de **conciencia interna**. El Templo de Salomón no fue construido hace 3000 años solamente para gloria política. Fue construido como **mapa arquitectónico de tu propio ser**.
