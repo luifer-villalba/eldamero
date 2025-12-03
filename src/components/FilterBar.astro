@@ -7,109 +7,285 @@ const { grados } = Astro.props;
 ---
 
 <div class="filter-bar">
-    <label for="grado-filter" class="filter-label">
-        Filtrar por grado:
-    </label>
-    <select id="grado-filter" class="filter-select">
-        <option value="todos">Todos los grados</option>
+    <div class="filter-header">
+        <span class="filter-label">Filtrar por grado:</span>
+        <button id="reset-filters" class="reset-btn" aria-label="Limpiar filtros">
+            Limpiar
+        </button>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-grado="todos">
+            Todos
+        </button>
         {grados.map(grado => (
-                <option value={grado}>{grado}</option>
+                <button class="filter-btn" data-grado={grado.toLowerCase()}>
+                    {grado}
+                </button>
         ))}
-    </select>
+    </div>
 </div>
 
 <script>
-    document.addEventListener('astro:page-load', () => {
-        const select = document.getElementById('grado-filter') as HTMLSelectElement;
+    function initFilterBar() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const resetBtn = document.getElementById('reset-filters') as HTMLButtonElement;
         const cards = document.querySelectorAll('.plancha-card');
 
-        if (!select || !cards.length) return;
+        if (!filterBtns.length || !cards.length) return;
 
-        select.addEventListener('change', (e) => {
-            const selectedGrado = (e.target as HTMLSelectElement).value;
+        // Función para aplicar filtro
+        const applyFilter = (selectedGrado: string) => {
+            selectedGrado = selectedGrado.toLowerCase();
 
             cards.forEach(card => {
                 const cardElement = card as HTMLElement;
-                const cardGrado = cardElement.dataset.grado;
+                const cardGrado = cardElement.getAttribute('data-grado')?.toLowerCase() || '';
+                const shouldShow = selectedGrado === 'todos' || cardGrado === selectedGrado;
 
-                if (selectedGrado === 'todos' || cardGrado === selectedGrado) {
-                    cardElement.style.display = 'block';
-                    // Animación de entrada
-                    cardElement.style.animation = 'fadeIn 0.3s ease';
+                if (shouldShow) {
+                    cardElement.style.display = '';
+                    cardElement.style.animation = 'none';
+                    void (cardElement as any).offsetHeight; // Trigger reflow
+                    cardElement.style.animation = 'fadeInScale 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
                 } else {
-                    cardElement.style.display = 'none';
+                    cardElement.style.opacity = '0';
+                    cardElement.style.pointerEvents = 'none';
+                    setTimeout(() => {
+                        cardElement.style.display = 'none';
+                        cardElement.style.opacity = '1';
+                        cardElement.style.pointerEvents = 'auto';
+                    }, 150);
+                }
+            });
+
+            // Update button states
+            filterBtns.forEach(btn => {
+                const btnGrado = btn.getAttribute('data-grado')?.toLowerCase() || '';
+                btn.classList.toggle('active', btnGrado === selectedGrado);
+            });
+        };
+
+        // Click handler para botones de filtro
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const selectedGrado = btn.getAttribute('data-grado') || '';
+                if (selectedGrado) {
+                    applyFilter(selectedGrado);
                 }
             });
         });
-    });
+
+        // Reset button
+        if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+                applyFilter('todos');
+            });
+        }
+
+        // Keyboard accessibility
+        filterBtns.forEach(btn => {
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    btn.click();
+                }
+            });
+        });
+    }
+
+    // Init en carga y View Transitions
+    initFilterBar();
+    document.addEventListener('astro:page-load', initFilterBar);
 </script>
 
 <style>
+    /* ═══════════════════════════════════════════
+       CONTENEDOR PRINCIPAL
+       ═══════════════════════════════════════════ */
+
     .filter-bar {
         display: flex;
-        align-items: center;
-        gap: var(--spacing-sm);
-        margin-bottom: var(--spacing-lg);
+        flex-direction: column;
+        gap: var(--spacing-md);
         padding: var(--spacing-md);
-        background: var(--damero-dark);
-        border: 1px solid var(--damero-gold);
-        flex-wrap: wrap;
+        background: var(--damero-charcoal);
+        border: 1px solid var(--damero-line);
+        border-radius: var(--radius-md);
+    }
+
+    /* ─────────────────────────────────────────
+       HEADER: Label + Reset Button
+       ───────────────────────────────────────── */
+
+    .filter-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-md);
     }
 
     .filter-label {
-        color: var(--damero-gold);
-        font-size: 0.95rem;
-        font-weight: bold;
+        color: var(--damero-gold-primary);
+        font-size: 0.9rem;
+        font-weight: var(--fw-semibold);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
     }
 
-    .filter-select {
-        background: var(--damero-black);
-        color: var(--damero-white);
-        border: 1px solid var(--damero-gold);
-        padding: 0.5rem 1rem;
-        font-family: var(--font-serif);
-        font-size: 0.95rem;
+    .reset-btn {
+        background: none;
+        border: 1px solid var(--damero-line);
+        color: var(--damero-gray-dark);
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
         cursor: pointer;
-        transition: var(--transition-smooth);
-        flex: 1;
-        min-width: 200px;
+        border-radius: var(--radius-xs);
+        transition: all var(--transition-fast);
+        font-weight: var(--fw-semibold);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
     }
 
-    .filter-select:hover {
-        border-color: var(--damero-gold-light);
-        box-shadow: 0 0 10px rgba(201, 169, 97, 0.2);
+    .reset-btn:hover {
+        border-color: var(--damero-gold-primary);
+        color: var(--damero-gold-primary);
+        background: rgba(212, 175, 55, 0.08);
     }
 
-    .filter-select:focus {
-        outline: 2px solid var(--damero-gold);
+    .reset-btn:active {
+        transform: scale(0.98);
+    }
+
+    /* ─────────────────────────────────────────
+       BOTONES DE FILTRO
+       ───────────────────────────────────────── */
+
+    .filter-buttons {
+        display: flex;
+        gap: var(--spacing-sm);
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        background: var(--damero-dark);
+        border: 1px solid var(--damero-line);
+        color: var(--damero-gray-light);
+        padding: 0.6rem 1.2rem;
+        font-family: var(--font-serif-body);
+        font-size: 0.95rem;
+        font-weight: var(--fw-semibold);
+        cursor: pointer;
+        border-radius: var(--radius-md);
+        transition: all var(--transition-smooth);
+        position: relative;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+    }
+
+    /* Estado: Hover */
+    .filter-btn:hover {
+        border-color: var(--damero-gold-primary);
+        background: var(--damero-charcoal);
+        color: var(--damero-gold-primary);
+        box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+        transform: translateY(-2px);
+    }
+
+    /* Estado: Active/Selected */
+    .filter-btn.active {
+        background: var(--damero-gold-primary);
+        color: var(--damero-black);
+        border-color: var(--damero-gold-primary);
+        box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+        font-weight: var(--fw-bold);
+    }
+
+    .filter-btn.active:hover {
+        background: var(--damero-gold-accent);
+        color: var(--damero-black);
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Focus visible para accessibility */
+    .filter-btn:focus-visible {
+        outline: 2px solid var(--damero-gold-primary);
         outline-offset: 2px;
     }
 
-    .filter-select option {
-        background: var(--damero-dark);
-        color: var(--damero-white);
-        padding: 0.5rem;
+    .filter-btn:active {
+        transform: translateY(-1px);
     }
 
-    @keyframes fadeIn {
+    /* ─────────────────────────────────────────
+       ANIMACIÓN DE ENTRADA
+       ───────────────────────────────────────── */
+
+    @keyframes fadeInScale {
         from {
             opacity: 0;
-            transform: translateY(10px);
+            transform: scale(0.95);
         }
         to {
             opacity: 1;
-            transform: translateY(0);
+            transform: scale(1);
         }
     }
 
-    @media (max-width: 600px) {
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════════ */
+
+    @media (max-width: 768px) {
         .filter-bar {
-            flex-direction: column;
-            align-items: stretch;
+            padding: var(--spacing-sm);
+            gap: var(--spacing-sm);
         }
 
-        .filter-select {
+        .filter-header {
+            gap: var(--spacing-sm);
+        }
+
+        .filter-label {
+            font-size: 0.85rem;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        .filter-buttons {
+            gap: 0.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .filter-bar {
+            padding: var(--spacing-sm);
+        }
+
+        .filter-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-xs);
+        }
+
+        .reset-btn {
+            align-self: flex-end;
+            padding: 0.35rem 0.7rem;
+            font-size: 0.75rem;
+        }
+
+        .filter-buttons {
             width: 100%;
+            justify-content: flex-start;
+        }
+
+        .filter-btn {
+            padding: 0.45rem 0.9rem;
+            font-size: 0.85rem;
+            flex: 0 1 auto;
         }
     }
 </style>

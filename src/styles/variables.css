@@ -1,0 +1,96 @@
+/* ═══════════════════════════════════════════════════════════════════
+   EL DAMERO — Sistema de Variables CSS Premium
+   Paleta moderna + tipografía + espaciado editorial
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+    /* ───────────────────────────────────────────
+       COLORES: Paleta Moderna + Masónica
+       ─────────────────────────────────────────── */
+
+    /* Neutrales Base */
+    --damero-black: #0d0d0d;           /* Ultra dark, fondo principal */
+    --damero-charcoal: #1a1a1a;        /* Fondo alternativo, componentes */
+    --damero-dark: #252525;            /* Hover, bordes */
+
+    /* Oro Refinado (Hierro/Cobre Masónico) */
+    --damero-gold-primary: #d4af37;    /* Oro puro, headers principales */
+    --damero-gold-accent: #e8d4b8;     /* Highlight suave, secondary text */
+    --damero-gold-dark: #8b7500;       /* Accent oscuro, separadores */
+
+    /* Grises Premium (Gama Completa) */
+    --damero-gray-dark: #4a4a4a;       /* Texto secundario, subtle */
+    --damero-gray-mid: #6b6b6b;        /* Descripción, meta */
+    --damero-gray-light: #c8c8c8;      /* Texto principal, body */
+    --damero-gray-pale: #e8e8e8;       /* Casi blanco, contraste máximo */
+
+    /* Líneas y Bordes */
+    --damero-line: rgba(212, 175, 55, 0.15);     /* Divisores oro sutil */
+    --damero-line-dark: rgba(200, 200, 200, 0.1); /* Divisores grises sutiles */
+
+    /* ───────────────────────────────────────────
+       TIPOGRAFÍA
+       ─────────────────────────────────────────── */
+
+    --font-serif-header: 'Cinzel', serif;
+    --font-serif-body: 'Crimson Text', serif;
+    --font-mono: 'Courier New', monospace;
+
+    /* Pesos */
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* ───────────────────────────────────────────
+       ESPACIADO: Sistema Modular
+       ─────────────────────────────────────────── */
+
+    --spacing-xs: 0.5rem;      /* 8px */
+    --spacing-sm: 1rem;        /* 16px */
+    --spacing-md: 1.5rem;      /* 24px */
+    --spacing-lg: 2rem;        /* 32px */
+    --spacing-xl: 3rem;        /* 48px */
+    --spacing-2xl: 4rem;       /* 64px */
+
+    /* ───────────────────────────────────────────
+       TRANSICIONES y ANIMACIONES
+       ─────────────────────────────────────────── */
+
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.2, 0, 0.8, 1);
+
+    /* ───────────────────────────────────────────
+       SOMBRAS Premium
+       ─────────────────────────────────────────── */
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(212, 175, 55, 0.12);
+    --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.5);
+
+    /* ───────────────────────────────────────────
+       RADIO de Esquinas
+       ─────────────────────────────────────────── */
+
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+
+    /* ───────────────────────────────────────────
+       TAMAÑOS de Contenedor
+       ─────────────────────────────────────────── */
+
+    --container-max: 1200px;
+    --container-padding: 2rem;
+
+    /* Responsive padding */
+    @media (max-width: 768px) {
+        --container-padding: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+        --container-padding: 1rem;
+    }
+}

@@ -1,5 +1,6 @@
 ---
 // Componente de búsqueda en vivo
+// Busca en: title, tema, grado de los cards
 ---
 
 <div class="search-container">
@@ -11,7 +12,7 @@
         <input
                 type="text"
                 id="search-input"
-                placeholder="Buscar por título, tema o contenido..."
+                placeholder="Buscar por título, tema o grado..."
                 autocomplete="off"
         />
         <button id="clear-search" class="clear-btn" aria-label="Limpiar búsqueda">
@@ -31,7 +32,7 @@
         const resultsDiv = document.getElementById('search-results') as HTMLDivElement;
         const planchaCards = document.querySelectorAll('.plancha-card');
 
-        if (!searchInput) return;
+        if (!searchInput || planchaCards.length === 0) return;
 
         let searchTimeout: number;
 
@@ -46,9 +47,9 @@
                     resultsDiv.innerHTML = '';
                     planchaCards.forEach(card => {
                         (card as HTMLElement).style.display = '';
-                    });
+                        });
                     return;
-                }
+                    }
 
                 let matchCount = 0;
                 planchaCards.forEach(card => {
@@ -61,16 +62,16 @@
                     if (matches) {
                         (card as HTMLElement).style.display = '';
                         matchCount++;
-                    } else {
+                        } else {
                         (card as HTMLElement).style.display = 'none';
-                    }
-                });
+                        }
+                    });
 
                 resultsDiv.innerHTML = matchCount
                     ? `<p>${matchCount} plancha${matchCount !== 1 ? 's' : ''} encontrada${matchCount !== 1 ? 's' : ''}</p>`
                     : '<p class="no-results">No se encontraron planchas con ese criterio</p>';
-            }, 300);
-        });
+                }, 300);
+            });
 
         clearBtn.addEventListener('click', () => {
             searchInput.value = '';
@@ -78,16 +79,16 @@
             resultsDiv.innerHTML = '';
             planchaCards.forEach(card => {
                 (card as HTMLElement).style.display = '';
-            });
+                });
             searchInput.focus();
-        });
-    }
+            });
+        }
 
-    // Init en carga inicial
-    initSearch();
+        // Init en carga inicial
+        initSearch();
 
-    // Reinit en cada navegación con View Transitions
-    document.addEventListener('astro:page-load', initSearch);
+        // Reinit en cada navegación con View Transitions
+        document.addEventListener('astro:page-load', initSearch);
 </script>
 
 <style>
@@ -106,29 +107,33 @@
         left: var(--spacing-sm);
         top: 50%;
         transform: translateY(-50%);
-        color: var(--damero-gold);
+        color: var(--damero-gold-primary);
         pointer-events: none;
+        stroke-width: 2;
     }
 
     #search-input {
         width: 100%;
         padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) 3rem;
-        background: var(--damero-darker);
-        border: 2px solid var(--damero-gold);
-        color: var(--damero-white);
+        background: var(--damero-charcoal);
+        border: 1px solid var(--damero-line);
+        color: var(--damero-gray-light);
         font-family: var(--font-serif-body);
         font-size: 1rem;
         outline: none;
-        transition: var(--transition-smooth);
+        border-radius: var(--radius-md);
+        transition: all var(--transition-smooth);
     }
 
     #search-input:focus {
-        border-color: var(--damero-gold-light);
-        box-shadow: 0 0 15px rgba(201, 169, 97, 0.3);
+        border-color: var(--damero-gold-primary);
+        background: var(--damero-dark);
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+        color: var(--damero-gray-pale);
     }
 
     #search-input::placeholder {
-        color: var(--damero-gray);
+        color: var(--damero-gray-dark);
     }
 
     .clear-btn {
@@ -138,24 +143,28 @@
         transform: translateY(-50%);
         background: none;
         border: none;
-        color: var(--damero-gray);
+        color: var(--damero-gray-dark);
         cursor: pointer;
         padding: 0.25rem;
         display: none;
         align-items: center;
         justify-content: center;
-        transition: var(--transition-smooth);
+        transition: color var(--transition-fast);
+        width: 28px;
+        height: 28px;
+        border-radius: var(--radius-xs);
     }
 
     .clear-btn:hover {
-        color: var(--damero-gold);
+        color: var(--damero-gold-primary);
+        background: rgba(212, 175, 55, 0.1);
     }
 
     .search-results {
         text-align: center;
         margin-top: var(--spacing-sm);
         font-size: 0.9rem;
-        color: var(--damero-gray);
+        color: var(--damero-gray-dark);
     }
 
     .search-results p {
@@ -163,13 +172,24 @@
     }
 
     .no-results {
-        color: var(--damero-gray-light);
+        color: var(--damero-gray-mid);
+        font-style: italic;
     }
 
     @media (max-width: 768px) {
         #search-input {
             font-size: 0.9rem;
-            padding-right: 2.5rem;
+            padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) 2.5rem;
+        }
+
+        .search-icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .clear-btn {
+            width: 24px;
+            height: 24px;
         }
     }
 </style>

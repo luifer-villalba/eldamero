@@ -15,11 +15,15 @@ interface Props {
 const { data, slug, prev, next } = Astro.props;
 const { title, date, grado, tema, autor, tags = [], orden } = data;
 
+// Guard para date
+if (!date) {
+    console.error(`PlanchaLayout: date es undefined para ${slug}`);
+}
+
+const publishedTime = date ? date.toISOString() : new Date().toISOString();
 const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
 const keywords = [tema, grado, 'masonería', 'Lavagnini', autor, ...tags].join(', ');
-const publishedTime = date.toISOString();
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const pageUrl = `/planchas/${slug}`;
 
 // Máximo 3 tags
 const displayTags = tags.slice(0, 3);
@@ -43,340 +47,464 @@ const displayTags = tags.slice(0, 3);
         <Breadcrumbs grado={grado} title={title} />
 
         <article class="plancha">
-            <!-- HEADER LIMPIO -->
-            <header>
+            {/* HEADER ARTÍCULO */}
+            <header class="plancha-header">
                 <div class="header-meta">
                     <span class="numero">Plancha Nº {orden.toString().padStart(2, '0')}</span>
                     <span class="grado">{grado}</span>
                 </div>
 
-                <h1>{title}</h1>
+                <h1 class="plancha-title">{title}</h1>
 
-                <p class="tema">{tema}</p>
+                <p class="plancha-tema">{tema}</p>
+
+                <div class="header-info">
+                    <span class="autor-info">{autor}</span>
+                    {date && (
+                            <time class="date-info" datetime={publishedTime}>
+                                {date.toLocaleDateString('es-AR', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                })}
+                            </time>
+                    )}
+                </div>
             </header>
 
-            <!-- CONTENIDO -->
-            <div class="contenido">
+            {/* CONTENIDO PRINCIPAL */}
+            <div class="plancha-contenido">
                 <slot />
             </div>
 
-            <!-- TAGS AL FINAL (máximo 3) -->
+            {/* TAGS */}
             {displayTags.length > 0 && (
-                    <footer class="tags-footer">
-                        {displayTags.map(tag => (
-                                <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="tag">
-                                    {tag}
-                                </a>
-                        ))}
+                    <footer class="plancha-tags">
+                        <span class="tags-label">Temas:</span>
+                        <div class="tags-list">
+                            {displayTags.map(tag => (
+                                    <a
+                                            href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}
+                                            class="tag-link"
+                                    >
+                                        {tag}
+                                    </a>
+                            ))}
+                        </div>
                     </footer>
             )}
 
-            <!-- FIRMA -->
-            <div class="firma">
-                <div class="autor">{autor}</div>
-                <div class="rango">M∴ M∴</div>
-                <div class="despedida">S∴ F∴ U∴</div>
+            {/* FIRMA MASÓNICA */}
+            <div class="plancha-firma">
+                <div class="firma-autor">{autor}</div>
+                <div class="firma-grado">M∴ M∴</div>
+                <div class="firma-cierre">S∴ F∴ U∴</div>
             </div>
 
-            <!-- NAVEGACIÓN -->
+            {/* NAVEGACIÓN */}
             <nav class="plancha-nav no-print">
-                {prev ? (
-                        <a href={`/planchas/${prev.slug}`} class="nav-link prev">
-                            <span class="arrow">←</span>
-                            <span class="nav-title">{prev.data.title}</span>
+                {prev && (
+                        <a href={`/planchas/${prev.slug}`} class="nav-button prev">
+                            <span class="nav-label">← Anterior</span>
+                            <span class="nav-text">{prev.data.title}</span>
                         </a>
-                ) : <div class="nav-placeholder"></div>}
-
-                <a href="/" class="nav-link home">
-                    <span>⌂</span>
-                </a>
-
-                {next ? (
-                        <a href={`/planchas/${next.slug}`} class="nav-link next">
-                            <span class="nav-title">{next.data.title}</span>
-                            <span class="arrow">→</span>
+                )}
+                <div></div>
+                {next && (
+                        <a href={`/planchas/${next.slug}`} class="nav-button next">
+                            <span class="nav-label">Siguiente →</span>
+                            <span class="nav-text">{next.data.title}</span>
                         </a>
-                ) : <div class="nav-placeholder"></div>}
+                )}
             </nav>
         </article>
     </div>
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": title,
-        "description": description,
-        "author": { "@type": "Person", "name": autor },
-        "datePublished": publishedTime,
-        "inLanguage": "es-AR",
-        "keywords": keywords,
-        "articleSection": grado,
-        "about": { "@type": "Thing", "name": tema },
-        "publisher": {
-            "@type": "Organization",
-            "name": "El Damero",
-            "url": "https://eldamero.com"
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": canonicalURL.toString()
-        }
-    })} />
 </BaseLayout>
 
 <style>
+    /* ═══════════════════════════════════════════
+       WRAPPER PLANCHA
+       ═══════════════════════════════════════════ */
+
     .plancha-wrapper {
         max-width: 1100px;
         margin: 0 auto;
         padding: var(--spacing-lg);
     }
 
+    /* ═══════════════════════════════════════════
+       ARTÍCULO
+       ═══════════════════════════════════════════ */
+
     .plancha {
-        background: var(--damero-dark);
-        border: 2px solid var(--damero-gold);
-        padding: var(--spacing-xl);
+        background: var(--damero-charcoal);
+        border: 1px solid var(--damero-line);
+        border-radius: var(--radius-md);
+        padding: 3rem;
+        line-height: 1.9;
     }
 
-    /* ========== HEADER LIMPIO ========== */
-    header {
-        text-align: center;
-        margin-bottom: var(--spacing-xl);
-        padding-bottom: var(--spacing-lg);
-        border-bottom: 1px solid var(--damero-gold);
+    /* ═══════════════════════════════════════════
+       HEADER: Metadata y Título
+       ═══════════════════════════════════════════ */
+
+    .plancha-header {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--damero-line);
     }
 
     .header-meta {
         display: flex;
-        gap: var(--spacing-md);
-        justify-content: center;
         align-items: center;
-        margin-bottom: var(--spacing-md);
+        gap: 1rem;
+        margin-bottom: 1.5rem;
         font-size: 0.85rem;
-        color: var(--damero-gray);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
     }
 
     .numero {
-        letter-spacing: 0.2em;
-        font-weight: 600;
+        color: var(--damero-gray-dark);
+        font-weight: var(--fw-semibold);
+        letter-spacing: 0.1em;
     }
 
     .grado {
-        padding: 4px 12px;
-        border: 1px solid var(--damero-gold);
-        color: var(--damero-gold);
+        border: 1px solid var(--damero-gold-primary);
+        color: var(--damero-gold-primary);
+        padding: 0.4rem 1rem;
+        border-radius: var(--radius-xs);
+        font-weight: var(--fw-semibold);
     }
 
-    h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-        margin: var(--spacing-md) 0;
-        color: var(--damero-gold);
-    }
-
-    .tema {
-        color: var(--damero-gray);
-        font-style: italic;
-        font-size: 1rem;
-    }
-
-    /* ========== CONTENIDO ========== */
-    .contenido {
-        line-height: 1.8;
-        font-size: 1.05rem;
-        margin-bottom: var(--spacing-xl);
-    }
-
-    .contenido :global(p) {
-        margin-bottom: var(--spacing-md);
-        text-align: justify;
-    }
-
-    .contenido :global(h2) {
-        color: var(--damero-gold);
-        margin-top: var(--spacing-lg);
-        margin-bottom: var(--spacing-sm);
-        font-size: 1.3rem;
-        text-transform: uppercase;
+    .plancha-title {
+        font-size: 2.2rem;
+        line-height: 1.15;
+        margin: 0 0 1rem 0;
+        color: var(--damero-gold-primary);
         letter-spacing: 0.05em;
     }
 
-    .contenido :global(h3) {
-        color: var(--damero-gray-light);
-        margin-top: var(--spacing-md);
-        margin-bottom: var(--spacing-sm);
-        font-size: 1.1rem;
-    }
-
-    .contenido :global(ul),
-    .contenido :global(ol) {
-        margin-left: var(--spacing-lg);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .contenido :global(li) {
-        margin-bottom: var(--spacing-xs);
-    }
-
-    .contenido :global(em) {
-        color: var(--damero-gold);
+    .plancha-tema {
+        color: var(--damero-gray-dark);
         font-style: italic;
-    }
-
-    .contenido :global(strong) {
-        color: var(--damero-gold-light);
-    }
-
-    /* ========== TAGS AL FINAL ========== */
-    .tags-footer {
-        display: flex;
-        gap: var(--spacing-sm);
-        justify-content: center;
-        margin: var(--spacing-xl) 0;
-        padding-top: var(--spacing-md);
-        border-top: 1px solid var(--damero-gold);
-    }
-
-    .tag {
-        font-size: 0.8rem;
-        padding: 4px 12px;
-        border: 1px solid var(--damero-gold);
-        color: var(--damero-gold);
-        text-decoration: none;
-        transition: var(--transition-smooth);
-    }
-
-    .tag:hover {
-        background: var(--damero-gold);
-        color: var(--damero-black);
-    }
-
-    /* ========== FIRMA ========== */
-    .firma {
-        text-align: center;
-        margin: var(--spacing-xl) 0;
-        padding-top: var(--spacing-md);
-        border-top: 1px solid var(--damero-gold);
-        font-size: 0.9rem;
+        font-size: 1.05rem;
+        margin: 0 0 1.5rem 0;
         line-height: 1.6;
     }
 
-    .autor {
-        color: var(--damero-gold);
-        font-weight: 600;
-    }
-
-    .rango {
-        color: var(--damero-gold);
-        font-size: 0.85rem;
-    }
-
-    .despedida {
-        color: var(--damero-gray);
-        font-size: 0.85rem;
-    }
-
-    /* ========== NAVEGACIÓN ========== */
-    .plancha-nav {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        gap: var(--spacing-sm);
-        margin-top: var(--spacing-xl);
-        padding-top: var(--spacing-md);
-        border-top: 1px solid var(--damero-gold);
-    }
-
-    .nav-link {
+    .header-info {
         display: flex;
-        align-items: center;
-        gap: var(--spacing-xs);
-        padding: var(--spacing-sm);
-        border: 1px solid var(--damero-gold);
-        color: var(--damero-gold);
-        text-decoration: none;
-        transition: var(--transition-smooth);
+        gap: 2rem;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--damero-line-dark);
         font-size: 0.9rem;
     }
 
-    .nav-link:hover {
-        background: var(--damero-gold);
-        color: var(--damero-black);
+    .autor-info {
+        color: var(--damero-gray-light);
+        font-weight: var(--fw-semibold);
+        letter-spacing: 0.03em;
     }
 
-    .nav-link.prev {
-        justify-content: flex-start;
-    }
-
-    .nav-link.next {
-        justify-content: flex-end;
-    }
-
-    .nav-link.home {
-        justify-content: center;
-        font-size: 1.2rem;
-    }
-
-    .arrow {
-        font-size: 1.2rem;
-        line-height: 1;
-    }
-
-    .nav-title {
+    .date-info {
+        color: var(--damero-gray-dark);
         font-size: 0.85rem;
-        max-width: 200px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
-    .nav-placeholder {
-        visibility: hidden;
+    /* ═══════════════════════════════════════════
+       CONTENIDO PRINCIPAL
+       ═══════════════════════════════════════════ */
+
+    .plancha-contenido {
+        margin-bottom: 3rem;
+        color: var(--damero-gray-light);
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
+        word-spacing: 0.15em;
     }
 
-    /* ========== RESPONSIVE ========== */
+    /* Typography refinado dentro del contenido */
+    .plancha-contenido :global(h2) {
+        color: var(--damero-gold-primary);
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 1.4rem;
+        border-top: 1px solid var(--damero-line);
+        padding-top: 1.5rem;
+    }
+
+    .plancha-contenido :global(h3) {
+        color: var(--damero-gold-accent);
+        margin-top: 1.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.15rem;
+        letter-spacing: 0.04em;
+    }
+
+    .plancha-contenido :global(p) {
+        margin-bottom: 1.75rem;
+        text-align: justify;
+        line-height: 1.85;
+        hyphens: auto;
+    }
+
+    .plancha-contenido :global(h2 + p::first-letter) {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--damero-gold-primary);
+        float: left;
+        line-height: 0.8;
+        margin-right: 0.1em;
+        margin-top: 0.1em;
+    }
+
+    .plancha-contenido :global(ul),
+    .plancha-contenido :global(ol) {
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .plancha-contenido :global(li) {
+        margin-bottom: 0.75rem;
+    }
+
+    .plancha-contenido :global(em) {
+        color: var(--damero-gold-accent);
+        font-style: italic;
+    }
+
+    .plancha-contenido :global(strong) {
+        color: var(--damero-gray-pale);
+        font-weight: var(--fw-bold);
+    }
+
+    .plancha-contenido :global(blockquote) {
+        border-left: 4px solid var(--damero-gold-primary);
+        padding-left: var(--spacing-md);
+        color: var(--damero-gray-dark);
+        font-style: italic;
+        margin: var(--spacing-md) 0;
+    }
+
+    .plancha-contenido :global(aside) {
+        border-left: 4px solid var(--damero-gold-primary);
+        background: rgba(212, 175, 55, 0.08);
+        padding: 1.5rem;
+        border-radius: var(--radius-md);
+        margin: 2rem 0;
+        font-size: 1.05rem;
+        color: var(--damero-gray-light);
+        line-height: 1.8;
+    }
+
+    .plancha-contenido :global(aside strong) {
+        color: var(--damero-gold-primary);
+        font-weight: var(--fw-bold);
+    }
+
+    /* ═══════════════════════════════════════════
+       TAGS
+       ═══════════════════════════════════════════ */
+
+    .plancha-tags {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 2rem 0;
+        padding: 1.5rem 0;
+        border-top: 1px solid var(--damero-line);
+        border-bottom: 1px solid var(--damero-line);
+        flex-wrap: wrap;
+    }
+
+    .tags-label {
+        color: var(--damero-gray-dark);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: var(--fw-semibold);
+    }
+
+    .tags-list {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .tag-link {
+        background: var(--damero-dark);
+        border: 1px solid var(--damero-line);
+        color: var(--damero-gold-accent);
+        padding: 0.5rem 1rem;
+        border-radius: var(--radius-xs);
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition: all var(--transition-fast);
+    }
+
+    .tag-link:hover {
+        border-color: var(--damero-gold-primary);
+        background: var(--damero-charcoal);
+        color: var(--damero-gold-primary);
+    }
+
+    /* ═══════════════════════════════════════════
+       FIRMA MASÓNICA
+       ═══════════════════════════════════════════ */
+
+    .plancha-firma {
+        text-align: center;
+        margin: 3rem 0 2rem 0;
+        padding: 2rem 0;
+        border-top: 1px solid var(--damero-line);
+        border-bottom: 1px solid var(--damero-line);
+    }
+
+    .firma-autor {
+        font-family: var(--font-serif-header);
+        font-size: 1.1rem;
+        font-weight: var(--fw-bold);
+        color: var(--damero-gray-light);
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5rem;
+    }
+
+    .firma-grado {
+        font-size: 1rem;
+        color: var(--damero-gold-primary);
+        letter-spacing: 0.3em;
+        margin-bottom: 0.5rem;
+    }
+
+    .firma-cierre {
+        font-size: 0.95rem;
+        color: var(--damero-gold-accent);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+
+    /* ═══════════════════════════════════════════
+       NAVEGACIÓN
+       ═══════════════════════════════════════════ */
+
+    .plancha-nav {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--damero-line);
+    }
+
+    .nav-button {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.5rem;
+        border: 1px solid var(--damero-line);
+        border-radius: var(--radius-md);
+        text-decoration: none;
+        transition: all var(--transition-smooth);
+        background: var(--damero-dark);
+    }
+
+    .nav-button:hover {
+        border-color: var(--damero-gold-primary);
+        background: var(--damero-charcoal);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-label {
+        font-size: 0.8rem;
+        color: var(--damero-gray-dark);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: var(--fw-semibold);
+    }
+
+    .nav-text {
+        font-size: 1rem;
+        font-family: var(--font-serif-header);
+        color: var(--damero-gold-primary);
+        font-weight: var(--fw-bold);
+        line-height: 1.3;
+    }
+
+    .nav-button:hover .nav-text {
+        color: var(--damero-gold-accent);
+    }
+
+    .nav-button.prev {
+        text-align: left;
+    }
+
+    .nav-button.next {
+        text-align: right;
+    }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════════ */
+
     @media (max-width: 768px) {
-        .plancha {
+        .plancha-wrapper {
             padding: var(--spacing-md);
         }
 
-        h1 {
-            font-size: 1.6rem;
+        .plancha {
+            padding: 2rem 1.5rem;
         }
 
-        .header-meta {
-            flex-direction: column;
-            gap: var(--spacing-xs);
+        .plancha-title {
+            font-size: 1.8rem;
         }
 
         .plancha-nav {
             grid-template-columns: 1fr;
-            gap: var(--spacing-xs);
         }
 
-        .nav-link.home {
-            order: -1;
+        .nav-button {
+            text-align: center;
         }
 
-        .nav-title {
-            max-width: none;
+        .header-info {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .plancha-tags {
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 
-    /* ========== IMPRESIÓN ========== */
-    @media print {
-        .no-print,
-        .plancha-nav,
-        .tags-footer {
-            display: none !important;
-        }
-
+    @media (max-width: 480px) {
         .plancha {
-            border: none;
-            padding: 0;
+            padding: 1.5rem 1rem;
         }
 
-        .contenido :global(p) {
-            text-align: left;
+        .plancha-title {
+            font-size: 1.5rem;
+        }
+
+        .plancha-contenido :global(h2) {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* ═══════════════════════════════════════════
+       PRINT
+       ═══════════════════════════════════════════ */
+
+    @media print {
+        .plancha-nav,
+        .no-print {
+            display: none;
         }
     }
 </style>

@@ -1,62 +1,27 @@
-/* ═══════════════════════════════════════════
-   EL DAMERO - Estilos Globales: OBRA FINAL CON CORRECCIÓN DE ANCHO
-   ═══════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════════════════
+   EL DAMERO — Estilos Globales
+   Reset + Base Styles + Tipografía Editorial
+   ═══════════════════════════════════════════════════════════════════ */
 
-/* Importar fuentes de Google Fonts (Optimizado con font-display: swap) */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
-:root {
-    /* Colores Base Oscuros */
-    --damero-black: #0c0c0c; /* Fondo Absoluto */
-    --damero-dark: #141414; /* Color de Fondo Principal (Body) */
-    --damero-darker: #1c1c1c; /* Fondo de Componentes (Plancha) - MÁS OSCURO */
-    --damero-border: #2a2a2a;
-
-    /* Colores Acento (Oro - Ajustado para ser más rico) */
-    --damero-gold: #ccaa66;
-    --damero-gold-light: #f0dfc5;
-
-    /* Colores de Contenido (Ligeramente menos brillante para modo oscuro) */
-    --damero-white: #e8e8e8;
-    --damero-gray: #9a9a9a;
-    --damero-gray-light: #bdbdbd;
-
-    /* Patrón Damero (Gris oscuro para mejor contraste) */
-    --damero-pattern-color: #242424;
-
-    /* Tipografía */
-    --font-serif-header: 'Cinzel', serif;
-    --font-serif-body: 'Crimson Text', serif;
-    --font-mono: 'Courier New', monospace;
-
-    /* Espaciado */
-    --spacing-xs: 0.5rem; /* 8px */
-    --spacing-sm: 1rem;   /* 16px */
-    --spacing-md: 1.5rem; /* 24px */
-    --spacing-lg: 2rem;   /* 32px */
-    --spacing-xl: 3rem;   /* 48px */
-
-    /* Transiciones */
-    --transition-smooth: all 0.3s ease-in-out;
-}
+/* Importar variables */
+@import './variables.css';
 
 /* ═══════════════════════════════════════════
-   Reset y Base
+   RESET CSS
    ═══════════════════════════════════════════ */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: color var(--transition-smooth),
-    background-color var(--transition-smooth),
-    box-shadow var(--transition-smooth);
 }
 
 html {
     font-family: var(--font-serif-body);
     background: var(--damero-black);
-    color: var(--damero-white);
+    color: var(--damero-gray-light);
     font-size: 17px;
     line-height: 1.8;
     scroll-behavior: smooth;
@@ -64,15 +29,15 @@ html {
 
 body {
     position: relative;
-    /* CORRECCIÓN FINAL: Body solo tiene padding vertical en escritorio,
-       permitiendo que los fondos del Footer y Header se extiendan al 100%. */
-    padding: var(--spacing-lg) 0;
-    min-height: 100vh;
+    background: var(--damero-black);
+    color: var(--damero-gray-light);
     overflow-x: hidden;
-    background: var(--damero-dark);
 }
 
-/* Patrón damero de fondo - MÁS SUTIL */
+/* ═══════════════════════════════════════════
+   PATRÓN DAMERO (Fondo sutil)
+   ═══════════════════════════════════════════ */
+
 body::before {
     content: '';
     position: fixed;
@@ -81,321 +46,256 @@ body::before {
     width: 100%;
     height: 100%;
     background-image:
-            linear-gradient(45deg, var(--damero-pattern-color) 25%, transparent 25%),
-            linear-gradient(-45deg, var(--damero-pattern-color) 25%, transparent 25%),
-            linear-gradient(45deg, transparent 75%, var(--damero-pattern-color) 75%),
-            linear-gradient(-45deg, transparent 75%, var(--damero-pattern-color) 75%);
-    background-size: 80px 80px;
-    background-position: 0 0, 0 40px, 40px -40px, -40px 0;
-    opacity: 0.05;
-    z-index: -1;
+            repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 60px,
+                    rgba(212, 175, 55, 0.02) 60px,
+                    rgba(212, 175, 55, 0.02) 120px
+            );
     pointer-events: none;
-    background-attachment: fixed;
+    z-index: -1;
 }
 
 /* ═══════════════════════════════════════════
-   Tipografía (Focus en Legibilidad y Dimensión)
+   TIPOGRAFÍA BASE
    ═══════════════════════════════════════════ */
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--damero-gold);
-    font-weight: 600;
     font-family: var(--font-serif-header);
+    font-weight: var(--fw-bold);
     line-height: 1.2;
-    transition: color 0.2s ease;
+    letter-spacing: 0.05em;
+    color: var(--damero-gold-primary);
 }
 
 h1 {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 5px rgba(204, 170, 102, 0.1);
-    margin-bottom: var(--spacing-md);
+    font-size: 2.2rem;
+    letter-spacing: 0.08em;
+    margin: 0 0 1rem 0;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: var(--spacing-lg);
-    margin-bottom: var(--spacing-sm);
-    border-bottom: 1px solid var(--damero-border);
-    padding-bottom: var(--spacing-xs);
-}
-
-h2:has(+ h3) {
-    margin-bottom: var(--spacing-xs);
+    margin: 2.5rem 0 1rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--damero-line);
 }
 
 h3 {
-    font-size: 1.3rem;
-    color: var(--damero-gray-light);
-    margin-top: var(--spacing-sm);
-    margin-bottom: var(--spacing-xs);
-    letter-spacing: 0.05em;
-    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+    margin: 1.8rem 0 0.8rem 0;
+    color: var(--damero-gold-accent);
+}
+
+h4, h5, h6 {
+    font-size: 1rem;
+    margin: 1.5rem 0 0.8rem 0;
 }
 
 p {
     margin-bottom: var(--spacing-md);
+    line-height: 1.85;
     text-align: justify;
-    font-size: 1rem;
-}
-
-a {
-    /* BAJO CONTRASTE: Usamos un gris cálido para que los enlaces no compitan con el H1 */
     color: var(--damero-gray-light);
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: var(--transition-smooth);
 }
 
-a:hover {
-    /* El dorado se reserva para el hover, guiando la interactividad */
-    color: var(--damero-gold);
-    text-decoration: underline;
-    text-decoration-color: var(--damero-gold);
+p:last-child {
+    margin-bottom: 0;
 }
 
 /* ═══════════════════════════════════════════
-   Utilidades
+   LISTAS
    ═══════════════════════════════════════════ */
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    /* CORRECCIÓN FINAL: El container maneja el padding horizontal en desktop */
-    padding: 0 var(--spacing-lg);
-}
-
-.invocacion {
-    font-size: 0.9rem;
-    letter-spacing: 0.3em;
-    color: var(--damero-gold);
-    font-family: var(--font-serif-header);
-    text-align: center;
-    margin: var(--spacing-sm) 0;
-    text-transform: uppercase;
-    opacity: 0.7;
-}
-
-.divider {
-    border: none;
-    border-top: 1px solid var(--damero-gold);
-    margin: var(--spacing-xl) 0;
-    opacity: 0.4;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* ═══════════════════════════════════════════
-   Componentes (La Plancha/Tarjeta - Con Mayor Brillo de Enfoque)
-   ═══════════════════════════════════════════ */
-
-.plancha-card {
-    background-color: var(--damero-darker);
-    padding: var(--spacing-lg);
-    margin: var(--spacing-lg) auto;
-    border: 2px solid var(--damero-gold);
-    box-shadow: 0 0 18px rgba(204, 170, 102, 0.5),
-    0 0 8px rgba(204, 170, 102, 0.3);
-    max-width: 600px;
-    width: 100%;
-}
-
-.plancha-card h1 {
-    font-size: 2.5rem;
-    margin-bottom: var(--spacing-sm);
-}
-
-.plancha-card .subtitulo {
-    font-style: italic;
-    color: var(--damero-gray-light);
+ul, ol {
+    margin-left: var(--spacing-lg);
     margin-bottom: var(--spacing-md);
 }
 
-.plancha-card .separador-interno {
-    border: none;
-    border-top: 1px solid var(--damero-gold);
-    margin: var(--spacing-lg) 0;
-    opacity: 0.6;
-}
-
-/* Estilo para el botón "Maestro" - Tipo Sello/Relieve */
-.plancha-card .tag-button {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    border: 1px solid var(--damero-gold);
-    color: var(--damero-gold);
-    font-family: var(--font-serif-header);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+li {
     margin-bottom: var(--spacing-sm);
-    text-decoration: none;
-    background-color: transparent;
-    transition: var(--transition-smooth);
+    color: var(--damero-gray-light);
 }
-
-.plancha-card .tag-button:hover {
-    background-color: var(--damero-gold);
-    color: var(--damero-darker);
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
-}
-
 
 /* ═══════════════════════════════════════════
-   Responsive (Con Padding Mínimo Ajustado)
+   LINKS
    ═══════════════════════════════════════════ */
 
-@media (max-width: 992px) {
-    h1 {
-        font-size: 2.2rem;
-        letter-spacing: 0.08em;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .container {
-        /* Padding lateral intermedio para tablets */
-        padding: 0 var(--spacing-md);
-    }
+a {
+    color: var(--damero-gold-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    position: relative;
 }
 
+a:hover {
+    color: var(--damero-gold-accent);
+}
+
+/* Subrayado animado para links */
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--damero-gold-primary);
+    transition: width var(--transition-fast);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* ═══════════════════════════════════════════
+   CÓDIGO y MONOESPACIADO
+   ═══════════════════════════════════════════ */
+
+code {
+    font-family: var(--font-mono);
+    background: var(--damero-charcoal);
+    border: 1px solid var(--damero-line);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-xs);
+    font-size: 0.9rem;
+    color: var(--damero-gold-accent);
+}
+
+pre {
+    background: var(--damero-charcoal);
+    border: 1px solid var(--damero-line);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+    margin-bottom: var(--spacing-md);
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--damero-gray-pale);
+}
+
+/* ═══════════════════════════════════════════
+   TABLAS
+   ═══════════════════════════════════════════ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--spacing-md);
+}
+
+th, td {
+    padding: var(--spacing-sm);
+    text-align: left;
+    border-bottom: 1px solid var(--damero-line);
+}
+
+th {
+    background: var(--damero-charcoal);
+    color: var(--damero-gold-primary);
+    font-weight: var(--fw-bold);
+}
+
+tr:hover {
+    background: var(--damero-charcoal);
+}
+
+/* ═══════════════════════════════════════════
+   BLOQUES DE CITA (BLOCKQUOTE)
+   ═══════════════════════════════════════════ */
+
+blockquote {
+    border-left: 4px solid var(--damero-gold-primary);
+    padding-left: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    color: var(--damero-gray-dark);
+    font-style: italic;
+    font-size: 1.05rem;
+}
+
+/* ═══════════════════════════════════════════
+   CONTENEDOR BASE
+   ═══════════════════════════════════════════ */
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* ═══════════════════════════════════════════
+   UTILIDADES
+   ═══════════════════════════════════════════ */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Línea divisora */
+hr {
+    border: none;
+    height: 1px;
+    background: var(--damero-line);
+    margin: var(--spacing-lg) 0;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
 
 @media (max-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-
-    body {
-        padding: var(--spacing-sm) 0;
-    }
-
-    .container {
-        /* Padding lateral ajustado (12px) para que el texto respire. */
-        padding: 0 0.75rem;
-    }
-
-    .plancha-card {
-        padding: var(--spacing-md) 0.75rem;
-        margin: var(--spacing-md) 0;
-        max-width: none;
-    }
-
     h1 {
         font-size: 1.8rem;
-        letter-spacing: 0.05em;
     }
 
     h2 {
         font-size: 1.3rem;
     }
 
-    .invocacion {
-        letter-spacing: 0.2em;
+    h3 {
+        font-size: 1.1rem;
     }
 
-    body::before {
-        background-size: 60px 60px;
-        background-position: 0 0, 0 30px, 30px -30px, -30px 0;
-    }
-}
-
-
-/* Padding mínimo para pantallas muy pequeñas (ancho < 420px) */
-@media (max-width: 420px) {
-    body {
-        padding: 0.5rem 0;
-    }
-
-    .container {
-        padding: 0 var(--spacing-xs);
-    }
-
-    .plancha-card {
-        padding: var(--spacing-sm) var(--spacing-xs);
+    p {
+        font-size: 1rem;
+        line-height: 1.8;
     }
 }
-
 
 /* ═══════════════════════════════════════════
-   Modo Impresión Global
+   PRINT STYLES
    ═══════════════════════════════════════════ */
 
 @media print {
-    @page {
-        margin: 2cm;
-    }
-
-    * {
-        background: white !important;
-        color: black !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-        transition: none !important;
-    }
-
-    body {
-        padding: 0;
-    }
-
     body::before {
         display: none;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-        font-size: 80%;
-        color: #555 !important;
-    }
-
     a {
-        text-decoration: underline !important;
+        color: inherit;
     }
 
-    .plancha-card {
-        border: 1px solid #999 !important;
-        box-shadow: none !important;
-        margin: 1rem 0 !important;
+    a::after {
+        display: none;
     }
 
-    h1, h2, h3 {
-        page-break-after: avoid;
-        color: #333 !important;
-        border-bottom: 1px solid #ccc !important;
-        padding-bottom: 0.3rem;
-    }
-
-    p, ul, ol {
-        orphans: 3;
-        widows: 3;
-        margin-bottom: 0.5rem;
-    }
-
-    ul, ol {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-        page-break-inside: avoid;
-    }
-
-    /* Ocultar elementos de navegación */
-    .no-print,
-    nav,
-    .filter-bar,
-    .search-container,
-    button,
-    .share-buttons,
-    .internal-links,
-    .divider {
+    .no-print {
         display: none !important;
     }
 }

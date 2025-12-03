@@ -7,11 +7,12 @@ import FilterBar from '../components/FilterBar.astro';
 import PlanchaCard from '../components/PlanchaCard.astro';
 import Footer from '../components/Footer.astro';
 
-// 1. Desestructuración para obtener 'data' directamente en el map
+// Obtener y ordenar planchas
 const planchas = await getCollection('planchas');
 const sorted = planchas.sort((a, b) => a.data.orden - b.data.orden);
 const grados = [...new Set(planchas.map(p => p.data.grado))].sort();
 
+// Schema.org para SEO
 const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -30,23 +31,68 @@ const websiteSchema = {
 };
 ---
 
-<BaseLayout title="El Damero | El Damero | Planchas Masónicas">
+<BaseLayout title="El Damero | Planchas Masónicas">
     <Header />
 
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
+    {/* ═══════════════════════════════════════════
+        HERO SECTION — Impacto visual + Contexto
+        ═══════════════════════════════════════════ */}
+    <section class="hero">
+        <div class="container hero-content">
+            {/* Invocar Masónico */}
+            <div class="invocar">
+                A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴
+            </div>
+
+            {/* Título Principal */}
+            <h1 class="hero-title">
+                Un Viaje Operativo
+            </h1>
+
+            {/* Subtítulo */}
+            <p class="hero-subtitle">
+                Del Aprendiz hasta el Maestro
+            </p>
+
+            {/* Descripción contextual */}
+            <div class="hero-description">
+                <p>
+                    Explorando los tres grados simbólicos a través de <em>Lavagnini</em>.
+                    Cada plancha descodifica símbolos, herramientas y enseñanzas masónicas,
+                    conectándolas con dos realidades: el trabajo en logia y la vida profana diaria.
+                </p>
+                <p>
+                    Geometría, hermetismo y construcción interior sin mambo. Solo práctica.
+                </p>
+            </div>
+
+            {/* CTA implícito (scroll) */}
+            <div class="hero-cta">
+                <span class="cta-text">Desciende al Taller</span>
+                <div class="cta-arrow">↓</div>
+            </div>
+        </div>
+
+        {/* Background decorativo sutil */}
+        <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
     {sorted.length > 0 && (
             <>
-                {/* ═══════════════════════════════════════════ */}
-                {/* CORRECCIÓN: SearchBar y FilterBar envueltos para fondo de 100% */}
-                {/* ═══════════════════════════════════════════ */}
-
+                {/* ═══════════════════════════════════════════
+                BUSCADOR
+                ═══════════════════════════════════════════ */}
                 <div class="search-wrapper">
                     <div class="container">
                         <SearchBar />
                     </div>
                 </div>
 
+                {/* ═══════════════════════════════════════════
+                FILTROS POR GRADO
+                ═══════════════════════════════════════════ */}
                 <div class="filter-wrapper">
                     <div class="container">
                         <FilterBar grados={grados} />
@@ -55,11 +101,22 @@ const websiteSchema = {
             </>
     )}
 
+    {/* ═══════════════════════════════════════════
+        GRID DE PLANCHAS
+        ═══════════════════════════════════════════ */}
     <div class="container planchas-grid-container">
+        {/* Título de sección */}
+        <div class="section-header">
+            <h2>Planchas del Taller</h2>
+            <p class="section-intro">
+                {sorted.length} estudios masónicos organizados por grado de iniciación
+            </p>
+        </div>
+
         {sorted.length > 0 ? (
                 <div class="planchas-grid">
-                    {sorted.map(({ data, slug }) => ( // <- MEJORA: Desestructuración
-                    <PlanchaCard
+                    {sorted.map(({ data, slug }) => (
+                            <PlanchaCard
                                     title={data.title}
                                     slug={slug}
                                     grado={data.grado}
@@ -71,7 +128,7 @@ const websiteSchema = {
                     ))}
                 </div>
         ) : (
-                <div class="empty">
+                <div class="empty-state">
                     <p>Sin planchas aún. Comenzá a agregar tus trazados.</p>
                 </div>
         )}
@@ -82,14 +139,153 @@ const websiteSchema = {
 
 <style>
     /* ═══════════════════════════════════════════
-       Estilos de los Wrappers (Fondo 100%)
+       HERO SECTION — Impacto Premium
        ═══════════════════════════════════════════ */
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        padding: var(--spacing-2xl) 0;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--damero-black);
+        border-bottom: 1px solid var(--damero-line);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* ─────────────────────────────────────────
+       Invocar Masónico
+       ───────────────────────────────────────── */
+
+    .invocar {
+        font-family: var(--font-serif-header);
+        font-size: 1.2rem;
+        letter-spacing: 0.2em;
+        color: var(--damero-gold-accent);
+        margin-bottom: var(--spacing-xl);
+        text-transform: uppercase;
+        font-weight: var(--fw-semibold);
+        animation: fadeInDown 0.8s ease-out;
+    }
+
+    /* ─────────────────────────────────────────
+       Título Principal
+       ───────────────────────────────────────── */
+
+    .hero-title {
+        font-family: var(--font-serif-header);
+        font-size: 3.5rem;
+        font-weight: var(--fw-bold);
+        color: var(--damero-gold-primary);
+        letter-spacing: 0.06em;
+        margin: 0 0 var(--spacing-md) 0;
+        line-height: 1.1;
+        animation: fadeInDown 0.8s ease-out 0.2s both;
+    }
+
+    /* ─────────────────────────────────────────
+       Subtítulo
+       ───────────────────────────────────────── */
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+        color: var(--damero-gray-light);
+        margin-bottom: var(--spacing-lg);
+        font-style: italic;
+        letter-spacing: 0.03em;
+        animation: fadeInDown 0.8s ease-out 0.4s both;
+    }
+
+    /* ─────────────────────────────────────────
+       Descripción Contextual
+       ───────────────────────────────────────── */
+
+    .hero-description {
+        margin: var(--spacing-lg) 0 var(--spacing-2xl) 0;
+        font-size: 1.1rem;
+        line-height: 1.85;
+        color: var(--damero-gray-light);
+        animation: fadeInUp 0.8s ease-out 0.6s both;
+    }
+
+    .hero-description p {
+        margin-bottom: var(--spacing-md);
+        text-align: center;
+    }
+
+    .hero-description p:last-child {
+        margin-bottom: 0;
+        color: var(--damero-gray-pale);
+        font-weight: var(--fw-semibold);
+    }
+
+    .hero-description em {
+        color: var(--damero-gold-accent);
+        font-style: italic;
+    }
+
+    /* ─────────────────────────────────────────
+       CTA Scroll
+       ───────────────────────────────────────── */
+
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-xl);
+        animation: fadeIn 1s ease-out 0.8s both;
+    }
+
+    .cta-text {
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--damero-gray-dark);
+        font-weight: var(--fw-semibold);
+    }
+
+    .cta-arrow {
+        font-size: 1.5rem;
+        color: var(--damero-gold-primary);
+        animation: bounce 2s infinite;
+    }
+
+    /* ─────────────────────────────────────────
+       Background Decorativo
+       ───────────────────────────────────────── */
+
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════
+       SEARCH y FILTER WRAPPERS
+       ═══════════════════════════════════════════ */
+
     .search-wrapper,
     .filter-wrapper {
-        /* CAMBIO CLAVE: Fondo transparente */
-        background-color: transparent;
-        /* Ajustamos la sombra para que se note sobre el fondo unificado */
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        background: var(--damero-black);
+        border-bottom: 1px solid var(--damero-line);
+        padding: var(--spacing-lg) 0;
     }
 
     .filter-wrapper {
@@ -97,26 +293,184 @@ const websiteSchema = {
     }
 
     /* ═══════════════════════════════════════════
-       Estilos del Grid
+       CONTENEDOR GRID
        ═══════════════════════════════════════════ */
+
     .planchas-grid-container {
-        padding-top: var(--spacing-lg);
+        padding-top: var(--spacing-2xl);
+        padding-bottom: var(--spacing-2xl);
     }
+
+    /* ─────────────────────────────────────────
+       Section Header
+       ───────────────────────────────────────── */
+
+    .section-header {
+        text-align: center;
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    .section-header h2 {
+        font-size: 2.2rem;
+        color: var(--damero-gold-primary);
+        margin-bottom: var(--spacing-md);
+        letter-spacing: 0.05em;
+    }
+
+    .section-intro {
+        font-size: 1.05rem;
+        color: var(--damero-gray-light);
+        margin: 0;
+        font-style: italic;
+    }
+
+    /* ═══════════════════════════════════════════
+       GRID: Responsive, moderno
+       ═══════════════════════════════════════════ */
 
     .planchas-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: var(--spacing-md);
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: var(--spacing-lg);
         margin-bottom: var(--spacing-xl);
     }
 
-    /* El diseño de la caja "empty" ahora usa el color más oscuro (damero-darker) */
-    .empty {
+    @media (max-width: 1024px) {
+        .planchas-grid {
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: var(--spacing-md);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .planchas-grid {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+        }
+    }
+
+    /* ═══════════════════════════════════════════
+       EMPTY STATE
+       ═══════════════════════════════════════════ */
+
+    .empty-state {
         text-align: center;
-        padding: var(--spacing-xl);
-        color: var(--damero-gray);
-        border: 1px dashed var(--damero-gray);
-        background: var(--damero-darker); /* CORREGIDO: Usamos el mismo color que las bandas */
-        border-radius: 5px;
+        padding: var(--spacing-2xl);
+        border: 1px dashed var(--damero-line);
+        border-radius: var(--radius-md);
+        background: var(--damero-charcoal);
+        color: var(--damero-gray-dark);
+    }
+
+    .empty-state p {
+        font-size: 1.1rem;
+        margin: 0;
+        color: var(--damero-gray-mid);
+    }
+
+    /* ═══════════════════════════════════════════
+       ANIMACIONES
+       ═══════════════════════════════════════════ */
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE — HERO
+       ═══════════════════════════════════════════ */
+
+    @media (max-width: 768px) {
+        .hero {
+            min-height: 500px;
+            padding: var(--spacing-xl) 0;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+        }
+
+        .section-header h2 {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero {
+            min-height: 450px;
+            padding: var(--spacing-lg) 0;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+        }
+
+        .invocar {
+            font-size: 0.95rem;
+            letter-spacing: 0.15em;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .hero-description {
+            font-size: 0.95rem;
+            margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+        }
+
+        .section-intro {
+            font-size: 0.95rem;
+        }
     }
 </style>
