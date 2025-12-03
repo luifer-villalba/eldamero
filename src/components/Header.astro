@@ -19,9 +19,9 @@ const { title } = Astro.props;
                     class="logo-icon"
             >
                 <title id="dameroIconTitle">Icono El Damero</title>
-                {/* Partes Doradas (Usando variables CSS) */}
+                {/* Partes Doradas */}
                 <path d="M50 0 L75 25 L50 50 L25 25 Z M50 50 L75 75 L50 100 L25 75 Z" fill="var(--damero-gold-primary)"/>
-                {/* Partes Carbón (Usando variables CSS) */}
+                {/* Partes Carbón */}
                 <path d="M25 25 L50 50 L25 75 L0 50 Z M75 25 L100 50 L75 75 L50 50 Z" fill="var(--damero-charcoal)"/>
             </svg>
             {/* FIN: SVG del Damero Diamante */}
@@ -59,15 +59,13 @@ const { title } = Astro.props;
     }
 
     /* ═══════════════════════════════════════════
-       LOGO (Estilos Ajustados para incluir el SVG)
+       LOGO
        ═══════════════════════════════════════════ */
 
     .logo {
-        display: flex; /* Añadido: Activa Flexbox para alinear icono y texto */
-        align-items: center; /* Añadido: Centra el icono y el texto verticalmente */
-        gap: 0.5rem; /* Añadido: Espacio entre el icono y el texto */
-
-        /* Estilos originales */
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
         font-family: var(--font-serif-header);
         font-size: 1.3rem;
         font-weight: var(--fw-bold);
@@ -76,20 +74,20 @@ const { title } = Astro.props;
         text-decoration: none;
         transition: color var(--transition-fast);
         white-space: nowrap;
+        line-height: 1;
+        margin: 0; /* Aseguramos reset */
     }
 
-    /* Estilo del texto del logo (lo separamos del .logo principal) */
     .logo-text {
-        /* Mantiene la fuente, el color, etc. definidos en .logo */
-        line-height: 1; /* Asegura un mejor centrado vertical */
+        line-height: 1;
+        padding-top: 2px;
     }
 
-    /* Nuevo estilo para el icono SVG */
     .logo-icon {
-        height: 1.25em; /* Ajusta el tamaño del icono a un poco menos que el tamaño de la fuente */
+        height: 1.25em;
         width: auto;
-        flex-shrink: 0; /* Evita que el SVG se encoja en pantallas pequeñas */
-        margin-bottom: -1px; /* Ajuste óptico fino para alinear con el texto */
+        flex-shrink: 0;
+        margin-bottom: -1px;
     }
 
     .logo:hover {
@@ -99,23 +97,38 @@ const { title } = Astro.props;
     /* ═══════════════════════════════════════════
        NAVEGACIÓN PRINCIPAL
        ═══════════════════════════════════════════ */
-    /* ... (El resto de los estilos de navegación son los mismos) ... */
 
     .nav-primary {
         flex: 1;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        margin: 0;
     }
 
     .nav-list {
         display: flex;
+        align-items: center;
         list-style: none;
         gap: 2.5rem;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .nav-list li {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        /* CORRECCIÓN CRÍTICA: Eliminamos cualquier margen global heredado (el culpable del 17px) */
         margin: 0;
         padding: 0;
     }
 
     .nav-link {
+        display: flex;
+        align-items: center;
         font-size: 0.95rem;
         letter-spacing: 0.05em;
         color: var(--damero-gray-light);
@@ -124,12 +137,15 @@ const { title } = Astro.props;
         transition: color var(--transition-fast);
         text-transform: uppercase;
         font-weight: var(--fw-semibold);
+        line-height: 1;
+        height: 100%;
+        margin: 0; /* Reset adicional por seguridad */
     }
 
     .nav-link::after {
         content: '';
         position: absolute;
-        bottom: -3px;
+        bottom: 28px;
         left: 0;
         width: 0;
         height: 1px;
@@ -160,11 +176,11 @@ const { title } = Astro.props;
         .logo {
             font-size: 1rem;
             flex-shrink: 0;
-            gap: 0.3rem; /* Ajuste de espacio en móvil */
+            gap: 0.3rem;
         }
 
         .logo-icon {
-            height: 1.2em; /* Ajuste de tamaño de icono en móvil */
+            height: 1.2em;
         }
 
         .nav-primary {
@@ -178,6 +194,11 @@ const { title } = Astro.props;
         .nav-link {
             font-size: 0.8rem;
             letter-spacing: 0.04em;
+            height: auto;
+        }
+
+        .nav-link::after {
+            bottom: -3px;
         }
     }
 
@@ -193,11 +214,11 @@ const { title } = Astro.props;
             font-size: 0.9rem;
             letter-spacing: 0.12em;
             flex-shrink: 0;
-            gap: 0.25rem; /* Ajuste de espacio en móvil pequeño */
+            gap: 0.25rem;
         }
 
         .logo-icon {
-            height: 1.1em; /* Ajuste de tamaño de icono en móvil pequeño */
+            height: 1.1em;
         }
 
         .nav-list {

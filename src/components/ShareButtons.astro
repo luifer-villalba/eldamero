@@ -1,66 +1,60 @@
 ---
 interface Props {
     title: string;
-    url: string;
+    description?: string;
 }
 
-const { title, url } = Astro.props;
-const fullUrl = new URL(url, Astro.site).toString();
+const { title, description = '' } = Astro.props;
+const url = Astro.url.href; // Obtiene la URL actual automáticamente
 ---
 
-<div class="share-buttons">
-    <p class="share-label">Compartir:</p>
+<div class="share-buttons no-print">
+    <span class="share-label">Compartir:</span>
+
     <div class="share-icons">
+        {/* Botón Nativo (Móvil) */}
         <button
                 class="share-btn share-native"
                 data-title={title}
-                data-url={fullUrl}
-                aria-label="Compartir"
+                data-text={description}
+                data-url={url}
+                aria-label="Compartir sistema nativo"
         >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="18" cy="5" r="3"></circle>
-                <circle cx="6" cy="12" r="3"></circle>
-                <circle cx="18" cy="19" r="3"></circle>
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
         </button>
 
-
-        href={`https://wa.me/?text=${encodeURIComponent(title + ' - ' + fullUrl)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="share-btn share-whatsapp"
-        aria-label="Compartir en WhatsApp"
+        {/* WhatsApp */}
+        <a
+                href={`https://wa.me/?text=${encodeURIComponent(title + ' ' + url)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="share-btn share-whatsapp"
+                aria-label="Compartir en WhatsApp"
         >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         </a>
 
-
-        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(fullUrl)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="share-btn share-twitter"
-        aria-label="Compartir en Twitter"
+        {/* Twitter / X */}
+        <a
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="share-btn share-twitter"
+                aria-label="Compartir en X (Twitter)"
         >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
 
+        {/* Copiar Enlace */}
         <button
                 class="share-btn share-copy"
-                data-url={fullUrl}
+                data-url={url}
                 aria-label="Copiar enlace"
         >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         </button>
     </div>
+
     <span class="share-feedback"></span>
 </div>
 
@@ -70,36 +64,43 @@ const fullUrl = new URL(url, Astro.site).toString();
         const copyBtn = document.querySelector('.share-copy') as HTMLButtonElement;
         const feedback = document.querySelector('.share-feedback') as HTMLSpanElement;
 
-        if (!nativeBtn || !copyBtn) return;
+        // --- WEB SHARE API (Móvil) ---
+        if (nativeBtn) {
+            // Si el navegador soporta compartir nativo, mostramos el botón, si no, lo ocultamos visualmente
+            if (!navigator.share) {
+                nativeBtn.style.display = 'none';
+            }
 
-        // Web Share API
-        nativeBtn.addEventListener('click', async () => {
-            const title = nativeBtn.dataset.title || '';
-            const url = nativeBtn.dataset.url || '';
+            nativeBtn.addEventListener('click', async () => {
+                const title = nativeBtn.dataset.title || '';
+                const text = nativeBtn.dataset.text || '';
+                const url = nativeBtn.dataset.url || '';
 
-            if (navigator.share) {
-                try {
-                    await navigator.share({ title, url });
-                } catch (err) {
-                    console.log('Share cancelled');
+                if (navigator.share) {
+                    try {
+                        await navigator.share({ title, text, url });
+                    } catch (err) {
+                        console.log('Compartir cancelado');
+                    }
                 }
-            } else {
-                showFeedback('Función no disponible en este navegador');
-            }
-        });
+            });
+        }
 
-        // Copiar enlace
-        copyBtn.addEventListener('click', async () => {
-            const url = copyBtn.dataset.url || '';
-            try {
-                await navigator.clipboard.writeText(url);
-                showFeedback('✓ Enlace copiado');
-            } catch (err) {
-                showFeedback('Error al copiar');
-            }
-        });
+        // --- COPIAR ENLACE ---
+        if (copyBtn) {
+            copyBtn.addEventListener('click', async () => {
+                const url = copyBtn.dataset.url || '';
+                try {
+                    await navigator.clipboard.writeText(url);
+                    showFeedback('Enlace copiado');
+                } catch (err) {
+                    showFeedback('Error al copiar');
+                }
+            });
+        }
 
         function showFeedback(message: string) {
+            if (!feedback) return;
             feedback.textContent = message;
             feedback.style.opacity = '1';
             setTimeout(() => {
@@ -108,6 +109,7 @@ const fullUrl = new URL(url, Astro.site).toString();
         }
     }
 
+    // Ejecutar en carga inicial y en navegación de Astro
     initShare();
     document.addEventListener('astro:page-load', initShare);
 </script>
@@ -116,65 +118,61 @@ const fullUrl = new URL(url, Astro.site).toString();
     .share-buttons {
         display: flex;
         align-items: center;
-        gap: var(--spacing-sm);
-        padding: var(--spacing-sm) 0;
-        border-top: 1px solid var(--damero-border);
-        margin-top: var(--spacing-md);
+        justify-content: center; /* Centrado */
+        gap: 1rem;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
     }
 
     .share-label {
-        font-size: 0.9rem;
-        color: var(--damero-gray);
-        margin: 0;
+        font-size: 0.85rem;
+        color: var(--damero-gray-mid);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: var(--fw-semibold);
     }
 
     .share-icons {
         display: flex;
-        gap: var(--spacing-xs);
+        gap: 0.8rem;
     }
 
     .share-btn {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        background: var(--damero-darker);
-        border: 1px solid var(--damero-gold);
-        color: var(--damero-gold);
+        width: 38px;
+        height: 38px;
+        /* Usamos tus variables globales correctas */
+        background: var(--damero-charcoal);
+        border: 1px solid var(--damero-line);
+        color: var(--damero-gold-primary);
+        border-radius: var(--radius-xs); /* Borde sutil, gentleman style */
         cursor: pointer;
-        transition: var(--transition-smooth);
+        transition: all 0.2s ease;
         text-decoration: none;
+        padding: 0;
     }
 
     .share-btn:hover {
-        background: var(--damero-gold);
-        color: var(--damero-black);
+        background: var(--damero-gold-primary);
+        color: var(--damero-black); /* Contraste negro sobre oro */
+        border-color: var(--damero-gold-primary);
         transform: translateY(-2px);
     }
 
     .share-feedback {
-        font-size: 0.85rem;
-        color: var(--damero-gold);
-        margin-left: var(--spacing-xs);
+        font-size: 0.8rem;
+        color: var(--damero-gold-accent);
+        margin-left: 0.5rem;
         opacity: 0;
         transition: opacity 0.3s ease;
+        pointer-events: none;
     }
 
     @media print {
         .share-buttons {
-            display: none;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .share-buttons {
-            flex-wrap: wrap;
-        }
-
-        .share-btn {
-            width: 36px;
-            height: 36px;
+            display: none !important;
         }
     }
 </style>

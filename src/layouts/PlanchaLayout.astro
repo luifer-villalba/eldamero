@@ -16,7 +16,6 @@ interface Props {
 const { data, slug, prev, next } = Astro.props;
 const { title, date, grado, tema, autor, tags = [], orden } = data;
 
-// Guard para date
 if (!date) {
     console.error(`PlanchaLayout: date es undefined para ${slug}`);
 }
@@ -24,9 +23,15 @@ if (!date) {
 const publishedTime = date ? date.toISOString() : new Date().toISOString();
 const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
 const keywords = [tema, grado, 'masonería', 'Lavagnini', autor, ...tags].join(', ');
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-// Máximo 3 tags
+const getGradoAbbr = (g: string) => {
+    const lower = g.toLowerCase();
+    if (lower.includes('aprendiz')) return 'A∴ M∴';
+    if (lower.includes('compañero')) return 'C∴ M∴';
+    return 'M∴ M∴';
+};
+
+const gradoAbbr = getGradoAbbr(grado);
 const displayTags = tags.slice(0, 3);
 ---
 
@@ -48,7 +53,7 @@ const displayTags = tags.slice(0, 3);
         <Breadcrumbs grado={grado} title={title} />
 
         <article class="plancha">
-            {/* HEADER ARTÍCULO */}
+            {/* ════════════ HEADER ════════════ */}
             <header class="plancha-header">
                 <div class="header-meta">
                     <span class="numero">Plancha Nº {orden.toString().padStart(2, '0')}</span>
@@ -58,27 +63,19 @@ const displayTags = tags.slice(0, 3);
                 <h1 class="plancha-title">{title}</h1>
 
                 <p class="plancha-tema">{tema}</p>
-
-                <div class="header-info">
-                    <span class="autor-info">{autor}</span>
-                    {date && (
-                            <time class="date-info" datetime={publishedTime}>
-                                {date.toLocaleDateString('es-AR', {
-                                    year: 'numeric',
-                                    month: 'long',
-                                    day: 'numeric'
-                                })}
-                            </time>
-                    )}
-                </div>
             </header>
 
-            {/* CONTENIDO PRINCIPAL */}
+            {/* ════════════ CONTENIDO ════════════ */}
             <div class="plancha-contenido">
                 <slot />
             </div>
 
-            {/* TAGS */}
+            {/* ════════════ SHARE ════════════ */}
+            <div class="share-section no-print">
+                <ShareButtons title={title} description={description} />
+            </div>
+
+            {/* ════════════ TAGS ════════════ */}
             {displayTags.length > 0 && (
                     <footer class="plancha-tags">
                         <span class="tags-label">Temas:</span>
@@ -95,14 +92,51 @@ const displayTags = tags.slice(0, 3);
                     </footer>
             )}
 
-            {/* FIRMA MASÓNICA */}
-            <div class="plancha-firma">
-                <div class="firma-autor">{autor}</div>
-                <div class="firma-grado">M∴ M∴</div>
-                <div class="firma-cierre">S∴ F∴ U∴</div>
-            </div>
+            {/* ════════════ FOOTER ÉPICO (MERGE) ════════════ */}
+            <footer class="plancha-footer-epico">
+                <div class="footer-divider">
+                    <span class="divider-icon">∴</span>
+                </div>
 
-            {/* NAVEGACIÓN */}
+                <div class="footer-grid">
+                    {/* COLUMNA IZQ: FECHA */}
+                    <div class="footer-col side-col">
+                        <span class="footer-label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            Trazado
+                        </span>
+                        {date && (
+                                <time class="footer-value" datetime={publishedTime}>
+                                    {date.toLocaleDateString('es-AR', {
+                                        year: 'numeric',
+                                        month: 'long',
+                                        day: 'numeric'
+                                    })}
+                                </time>
+                        )}
+                    </div>
+
+                    {/* COLUMNA CENTRAL: FIRMA */}
+                    <div class="footer-col center-col">
+                        <div class="firma-sfu">S∴ F∴ U∴</div>
+                        <div class="firma-nombre">{autor}</div>
+                        <div class="firma-grado-badge">{gradoAbbr}</div>
+                    </div>
+
+                    {/* COLUMNA DER: FOLIACIÓN */}
+                    <div class="footer-col side-col">
+                        <span class="footer-label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            Foliación
+                        </span>
+                        <span class="footer-value">Plancha Nº {orden.toString().padStart(2, '0')}</span>
+                    </div>
+                </div>
+
+                <div class="footer-ornament"></div>
+            </footer>
+
+            {/* ════════════ NAV ════════════ */}
             <nav class="plancha-nav no-print">
                 {prev && (
                         <a href={`/planchas/${prev.slug}`} class="nav-button prev">
@@ -110,7 +144,10 @@ const displayTags = tags.slice(0, 3);
                             <span class="nav-text">{prev.data.title}</span>
                         </a>
                 )}
+                {!prev && <div></div>}
+
                 <div></div>
+
                 {next && (
                         <a href={`/planchas/${next.slug}`} class="nav-button next">
                             <span class="nav-label">Siguiente →</span>
@@ -119,26 +156,19 @@ const displayTags = tags.slice(0, 3);
                 )}
             </nav>
 
-            {/* SCROLL TO TOP + HOME BUTTONS */}
             <ScrollToTopHome />
         </article>
     </div>
 </BaseLayout>
 
 <style>
-    /* ═══════════════════════════════════════════
-       WRAPPER PLANCHA
-       ═══════════════════════════════════════════ */
+    /* ════════════ LAYOUT ════════════ */
 
     .plancha-wrapper {
         max-width: 1100px;
         margin: 0 auto;
         padding: var(--spacing-lg);
     }
-
-    /* ═══════════════════════════════════════════
-       ARTÍCULO
-       ═══════════════════════════════════════════ */
 
     .plancha {
         background: var(--damero-charcoal);
@@ -148,18 +178,18 @@ const displayTags = tags.slice(0, 3);
         line-height: 1.9;
     }
 
-    /* ═══════════════════════════════════════════
-       HEADER: Metadata y Título
-       ═══════════════════════════════════════════ */
+    /* ════════════ HEADER ════════════ */
 
     .plancha-header {
         margin-bottom: 3rem;
         padding-bottom: 2rem;
         border-bottom: 1px solid var(--damero-line);
+        text-align: center; /* Centrado para estilo épico */
     }
 
     .header-meta {
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 1rem;
         margin-bottom: 1.5rem;
@@ -194,33 +224,12 @@ const displayTags = tags.slice(0, 3);
         color: var(--damero-gray-light);
         font-style: italic;
         font-size: 1.05rem;
-        margin: 0 0 1.5rem 0;
+        margin: 0;
         line-height: 1.6;
+        opacity: 0.8;
     }
 
-    .header-info {
-        display: flex;
-        gap: 2rem;
-        margin-top: 1.5rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--damero-line-dark);
-        font-size: 0.9rem;
-    }
-
-    .autor-info {
-        color: var(--damero-gray-light);
-        font-weight: var(--fw-semibold);
-        letter-spacing: 0.03em;
-    }
-
-    .date-info {
-        color: var(--damero-gray-light);
-        font-size: 0.85rem;
-    }
-
-    /* ═══════════════════════════════════════════
-       CONTENIDO PRINCIPAL
-       ═══════════════════════════════════════════ */
+    /* ════════════ CONTENIDO ════════════ */
 
     .plancha-contenido {
         margin-bottom: 3rem;
@@ -230,7 +239,6 @@ const displayTags = tags.slice(0, 3);
         word-spacing: 0.15em;
     }
 
-    /* Typography refinado dentro del contenido */
     .plancha-contenido :global(h2) {
         color: var(--damero-gold-primary);
         margin-top: 3rem;
@@ -285,7 +293,6 @@ const displayTags = tags.slice(0, 3);
         margin: var(--spacing-md) 0;
     }
 
-    /* Dropcap: Primera letra de h2 + p */
     .plancha-contenido :global(h2 + p::first-letter) {
         font-size: 3.5rem;
         font-weight: bold;
@@ -296,7 +303,6 @@ const displayTags = tags.slice(0, 3);
         margin-top: 0.1em;
     }
 
-    /* Callout boxes */
     .plancha-contenido :global(aside) {
         border-left: 4px solid var(--damero-gold-primary);
         background: rgba(212, 175, 55, 0.08);
@@ -308,14 +314,28 @@ const displayTags = tags.slice(0, 3);
         line-height: 1.8;
     }
 
-    .plancha-contenido :global(aside strong) {
-        color: var(--damero-gold-primary);
-        font-weight: var(--fw-bold);
+    .plancha-contenido :global(img) {
+        max-width: 100%;
+        height: auto;
+        border-radius: var(--radius-sm);
+        margin: 1.5rem 0;
     }
 
-    /* ═══════════════════════════════════════════
-       TAGS
-       ═══════════════════════════════════════════ */
+    .plancha-contenido :global(table) {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+        display: block;
+        overflow-x: auto;
+    }
+
+    /* ════════════ SHARE & TAGS ════════════ */
+
+    .share-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 
     .plancha-tags {
         display: flex;
@@ -324,7 +344,6 @@ const displayTags = tags.slice(0, 3);
         margin: 2rem 0;
         padding: 1.5rem 0;
         border-top: 1px solid var(--damero-line);
-        border-bottom: 1px solid var(--damero-line);
         flex-wrap: wrap;
     }
 
@@ -359,44 +378,125 @@ const displayTags = tags.slice(0, 3);
         color: var(--damero-gold-primary);
     }
 
-    /* ═══════════════════════════════════════════
-       FIRMA MASÓNICA
-       ═══════════════════════════════════════════ */
+    /* ════════════ FOOTER ÉPICO ════════════ */
 
-    .plancha-firma {
-        text-align: center;
-        margin: 3rem 0 2rem 0;
-        padding: 2rem 0;
+    .plancha-footer-epico {
+        margin-top: 2rem;
+        padding: 3rem 0;
+        position: relative;
         border-top: 1px solid var(--damero-line);
         border-bottom: 1px solid var(--damero-line);
+        background: rgba(255, 255, 255, 0.01);
     }
 
-    .firma-autor {
-        font-family: var(--font-serif-header);
-        font-size: 1.1rem;
-        font-weight: var(--fw-bold);
-        color: var(--damero-gray-light);
-        letter-spacing: 0.05em;
-        margin-bottom: 0.5rem;
+    .footer-divider {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--damero-charcoal);
+        padding: 0 1rem;
     }
 
-    .firma-grado {
-        font-size: 1rem;
+    .divider-icon {
         color: var(--damero-gold-primary);
-        letter-spacing: 0.3em;
-        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
     }
 
-    .firma-cierre {
-        font-size: 0.95rem;
-        color: var(--damero-gold-accent);
-        letter-spacing: 0.15em;
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .side-col {
+        gap: 0.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .footer-grid > .side-col:first-child {
+        border-right: 1px solid var(--damero-line-dark);
+    }
+    .footer-grid > .side-col:last-child {
+        border-left: 1px solid var(--damero-line-dark);
+    }
+
+    .footer-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        font-size: 0.75rem;
         text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--damero-gray-mid);
+        font-weight: var(--fw-semibold);
     }
 
-    /* ═══════════════════════════════════════════
-       NAVEGACIÓN
-       ═══════════════════════════════════════════ */
+    .footer-label svg {
+        opacity: 0.6;
+        color: var(--damero-gold-primary);
+    }
+
+    .footer-value {
+        font-family: var(--font-serif-body);
+        color: var(--damero-gray-light);
+        font-style: italic;
+    }
+
+    .center-col {
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .firma-sfu {
+        font-size: 0.85rem;
+        letter-spacing: 0.3em;
+        color: var(--damero-gold-dark);
+        margin-bottom: 0.2rem;
+        opacity: 0.9;
+    }
+
+    .firma-nombre {
+        font-family: var(--font-serif-header);
+        font-size: 1.8rem;
+        color: var(--damero-gold-primary);
+        font-weight: var(--fw-bold);
+        letter-spacing: 0.05em;
+        line-height: 1.2;
+    }
+
+    .firma-grado-badge {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.2rem 0.8rem;
+        border: 1px solid var(--damero-line);
+        border-radius: var(--radius-xs);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--damero-gold-accent);
+    }
+
+    .footer-ornament {
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--damero-gold-primary), transparent);
+        opacity: 0.3;
+    }
+
+    /* ════════════ NAV ════════════ */
 
     .plancha-nav {
         display: grid;
@@ -404,7 +504,6 @@ const displayTags = tags.slice(0, 3);
         gap: 2rem;
         margin-top: 3rem;
         padding-top: 2rem;
-        border-top: 1px solid var(--damero-line);
     }
 
     .nav-button {
@@ -453,9 +552,7 @@ const displayTags = tags.slice(0, 3);
         text-align: right;
     }
 
-    /* ═══════════════════════════════════════════
-       RESPONSIVE
-       ═══════════════════════════════════════════ */
+    /* ════════════ RESPONSIVE ════════════ */
 
     @media (max-width: 768px) {
         .plancha-wrapper {
@@ -470,22 +567,31 @@ const displayTags = tags.slice(0, 3);
             font-size: 1.8rem;
         }
 
+        /* Responsive Footer */
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .footer-grid > .side-col:first-child,
+        .footer-grid > .side-col:last-child {
+            border: none;
+            border-bottom: 1px dashed var(--damero-line-dark);
+            padding-bottom: 1rem;
+        }
+
+        .center-col {
+            order: -1; /* Firma primero en móvil */
+            margin-bottom: 1rem;
+        }
+
         .plancha-nav {
             grid-template-columns: 1fr;
+            gap: 1rem;
         }
 
         .nav-button {
             text-align: center;
-        }
-
-        .header-info {
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .plancha-tags {
-            flex-direction: column;
-            align-items: flex-start;
         }
     }
 
@@ -498,19 +604,53 @@ const displayTags = tags.slice(0, 3);
             font-size: 1.5rem;
         }
 
-        .plancha-contenido :global(h2) {
-            font-size: 1.2rem;
+        .firma-nombre {
+            font-size: 1.4rem;
         }
     }
 
-    /* ═══════════════════════════════════════════
-       PRINT
-       ═══════════════════════════════════════════ */
+    /* ════════════ PRINT ════════════ */
 
     @media print {
         .plancha-nav,
-        .no-print {
-            display: none;
+        .no-print,
+        .share-section {
+            display: none !important;
+        }
+
+        .plancha {
+            background: white !important;
+            border: none !important;
+            color: black !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .plancha-title,
+        .plancha-contenido :global(h2),
+        .plancha-contenido :global(h3),
+        .card-grado,
+        .tag-link,
+        .firma-grado-badge,
+        .footer-value,
+        .firma-nombre {
+            color: black !important;
+            border-color: black !important;
+        }
+
+        .plancha-footer-epico,
+        .plancha-header,
+        .plancha-tags {
+            border-color: #ddd !important;
+            background: transparent !important;
+        }
+
+        .plancha-contenido {
+            color: black !important;
+        }
+
+        body {
+            background: white !important;
         }
     }
 </style>

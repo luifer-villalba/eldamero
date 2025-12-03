@@ -16,6 +16,8 @@ const formattedDate = date.toLocaleDateString('es-AR', {
     month: 'long',
     day: 'numeric'
 });
+
+const paddedOrden = orden.toString().padStart(2, '0');
 ---
 
 <a
@@ -26,28 +28,32 @@ const formattedDate = date.toLocaleDateString('es-AR', {
         data-grado={grado.toLowerCase()}
 >
     <div class="card-inner">
-        {/* NÚMERO DECORATIVO DE FONDO */}
-        <div class="card-numero-bg">{orden.toString().padStart(2, '0')}</div>
+        {/* NÚMERO DE FONDO CON ESTILO "OUTLINE" */}
+        <div class="card-numero-bg">{paddedOrden}</div>
 
         {/* CONTENIDO PRINCIPAL */}
         <div class="card-content">
-            {/* META: Número + Grado */}
-            <div class="card-meta">
-                <span class="card-numero">Nº {orden.toString().padStart(2, '0')}</span>
+            {/* CABEZAL: Grado a la izq | Número a la der */}
+            <div class="card-header-row">
                 <span class="card-grado">{grado}</span>
+
+                {/* NÚMERO DESTACADO EN ORO Y SERIF */}
+                <div class="card-orden-badge">
+                    <span class="orden-label">Nº</span>
+                    <span class="orden-value">{paddedOrden}</span>
+                </div>
             </div>
 
             {/* TÍTULO */}
             <h3 class="card-title">{title}</h3>
 
-            {/* TEMA (SUBTÍTULO) */}
+            {/* TEMA */}
             {tema && <p class="card-tema">{tema}</p>}
         </div>
 
-        {/* FOOTER: Metadata */}
+        {/* FOOTER: Solo fecha */}
         <div class="card-footer">
-            <span class="card-fecha">📅 {formattedDate}</span>
-            <span class="card-label">Plancha</span>
+            <span class="card-fecha">{formattedDate}</span>
         </div>
 
         {/* OVERLAY HOVER */}
@@ -56,15 +62,12 @@ const formattedDate = date.toLocaleDateString('es-AR', {
 </a>
 
 <style>
-    /* ═══════════════════════════════════════════
-       CARD CONTAINER
-       ═══════════════════════════════════════════ */
-
     .plancha-card {
         display: block;
         text-decoration: none;
         color: inherit;
-        transition: all var(--transition-smooth);
+        transition: transform var(--transition-fast);
+        height: 100%;
     }
 
     .plancha-card:focus-visible {
@@ -72,28 +75,29 @@ const formattedDate = date.toLocaleDateString('es-AR', {
         outline-offset: 4px;
     }
 
+    /* Efecto sutil de elevación al pasar el mouse */
+    .plancha-card:hover {
+        transform: translateY(-2px);
+    }
+
     .card-inner {
         position: relative;
         background: var(--damero-dark);
-        border: 1px solid var(--damero-line);
+        border: 1px solid transparent;
         border-radius: var(--radius-md);
         padding: 2rem;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.2rem;
         height: 100%;
         overflow: hidden;
         transition: all var(--transition-smooth);
     }
 
-    /* ═══════════════════════════════════════════
-       HOVER EFFECT
-       ═══════════════════════════════════════════ */
-
     .plancha-card:hover .card-inner {
-        border-color: var(--damero-gold-primary);
+        border-color: var(--damero-line);
         background: var(--damero-charcoal);
-        box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15);
+        box-shadow: var(--shadow-md);
     }
 
     .plancha-card:hover .card-overlay {
@@ -101,116 +105,137 @@ const formattedDate = date.toLocaleDateString('es-AR', {
     }
 
     /* ═══════════════════════════════════════════
-       NÚMERO DECORATIVO DE FONDO
+       NÚMERO DE FONDO "OUTLINE" (AJUSTADO)
        ═══════════════════════════════════════════ */
 
     .card-numero-bg {
         position: absolute;
-        top: -20px;
-        right: -20px;
-        font-size: 5rem;
-        font-weight: var(--fw-bold);
-        color: var(--damero-gray-dark);
-        opacity: 0.04;
-        letter-spacing: -0.05em;
+        top: -15px;
+        right: -10px;
+        font-size: 7rem;
+        font-weight: 800;
+        font-family: var(--font-serif-header);
+        line-height: 1;
+        color: transparent;
+        /* Aumentada la opacidad del contorno para mejor definición */
+        -webkit-text-stroke: 2px rgba(255, 255, 255, 0.05);
         user-select: none;
         pointer-events: none;
+        transition: all var(--transition-slow);
+    }
+
+    .plancha-card:hover .card-numero-bg {
+        -webkit-text-stroke: 2px rgba(212, 175, 55, 0.15);
     }
 
     /* ═══════════════════════════════════════════
-       META: Número + Grado
+       CABEZAL (Grado + Número) (COLORES MEJORADOS)
        ═══════════════════════════════════════════ */
 
-    .card-meta {
+    .card-header-row {
         display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-    }
-
-    .card-numero {
-        color: var(--damero-gray-light);
-        font-weight: var(--fw-semibold);
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
     }
 
     .card-grado {
-        border: 1px solid var(--damero-gold-primary);
-        color: var(--damero-gold-primary);
-        padding: 0.3rem 0.8rem;
-        border-radius: var(--radius-xs);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        /* CAMBIO: Color más claro y dorado para mejor contraste */
+        color: var(--damero-gold-accent);
         font-weight: var(--fw-semibold);
+        margin-top: 4px;
+    }
+
+    .card-orden-badge {
+        display: flex;
+        align-items: baseline;
+        gap: 2px;
+        color: var(--damero-gold-primary);
+        font-family: var(--font-serif-header);
+    }
+
+    .orden-label {
+        font-size: 0.8rem;
+        font-style: italic;
+        /* CAMBIO: Mayor opacidad */
+        opacity: 0.9;
+    }
+
+    .orden-value {
+        font-size: 1.4rem;
+        font-weight: var(--fw-bold);
+        line-height: 1;
     }
 
     /* ═══════════════════════════════════════════
-       TITLE
+       CONTENIDO (COLORES MEJORADOS)
        ═══════════════════════════════════════════ */
 
     .card-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: var(--fw-bold);
         font-family: var(--font-serif-header);
-        line-height: 1.3;
+        line-height: 1.2;
+        /* CAMBIO: Usamos el color dorado principal por defecto */
         color: var(--damero-gold-primary);
         margin: 0;
         transition: color var(--transition-fast);
+        margin-bottom: 0.5rem;
     }
 
     .plancha-card:hover .card-title {
-        color: var(--damero-gold-accent);
+        /* Sutil brillo al hacer hover */
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
     }
-
-    /* ═══════════════════════════════════════════
-       TEMA (SUBTÍTULO)
-       ═══════════════════════════════════════════ */
 
     .card-tema {
+        /* CAMBIO: Color mucho más claro para legibilidad */
         color: var(--damero-gray-light);
         font-style: italic;
-        font-size: 0.95rem;
+        font-size: 1rem;
         margin: 0;
-        line-height: 1.6;
+        line-height: 1.5;
+        /* CAMBIO: Mayor opacidad */
+        opacity: 0.9;
     }
 
     /* ═══════════════════════════════════════════
-       FOOTER
+       FOOTER (COLORES MEJORADOS)
        ═══════════════════════════════════════════ */
 
     .card-footer {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
         margin-top: auto;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        /* Línea separadora más visible */
         border-top: 1px solid var(--damero-line);
-        font-size: 0.8rem;
-        color: var(--damero-gray-dark);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
     }
 
     .card-fecha {
-        color: var(--damero-gray-light);
         font-size: 0.75rem;
-    }
-
-    .card-label {
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        /* CAMBIO: Color intermedio, más legible */
+        color: var(--damero-gray-mid);
         font-weight: var(--fw-semibold);
     }
 
     /* ═══════════════════════════════════════════
-       OVERLAY HOVER
+       OVERLAY
        ═══════════════════════════════════════════ */
 
     .card-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, transparent 0%, rgba(212, 175, 55, 0.08) 100%);
+        /* Degradado más sutil */
+        background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.3) 100%);
         opacity: 0;
         transition: opacity var(--transition-smooth);
         pointer-events: none;
-        border-radius: var(--radius-md);
     }
 
     /* ═══════════════════════════════════════════
@@ -220,40 +245,14 @@ const formattedDate = date.toLocaleDateString('es-AR', {
     @media (max-width: 768px) {
         .card-inner {
             padding: 1.5rem;
-            gap: 1rem;
-        }
-
-        .card-title {
-            font-size: 1.15rem;
-        }
-
-        .card-tema {
-            font-size: 0.9rem;
         }
 
         .card-numero-bg {
-            font-size: 4rem;
-            top: -15px;
-            right: -15px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .card-inner {
-            padding: 1.2rem;
-            gap: 0.8rem;
+            font-size: 5rem;
         }
 
         .card-title {
-            font-size: 1rem;
-        }
-
-        .card-tema {
-            font-size: 0.85rem;
-        }
-
-        .card-numero-bg {
-            font-size: 3rem;
+            font-size: 1.3rem;
         }
     }
 </style>
