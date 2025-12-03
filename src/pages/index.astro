@@ -3,14 +3,13 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import SearchBar from '../components/SearchBar.astro';
-import FilterBar from '../components/FilterBar.astro';
 import PlanchaCard from '../components/PlanchaCard.astro';
 import Footer from '../components/Footer.astro';
 
 // Obtener y ordenar planchas
 const planchas = await getCollection('planchas');
 const sorted = planchas.sort((a, b) => a.data.orden - b.data.orden);
-const grados = [...new Set(planchas.map(p => p.data.grado))].sort();
+// La lógica de grados fue eliminada
 
 // Schema.org para SEO
 const websiteSchema = {
@@ -51,7 +50,7 @@ const websiteSchema = {
                 A∴ L∴ G∴ D∴ G∴ A∴ D∴ U∴
             </div>
 
-            {/* 2. TÍTULO DE IMPACTO (Texto Mejorado) */}
+            {/* 2. TÍTULO DE IMPACTO */}
             <h1 class="hero-title">
                 <span class="title-highlight">Masonería Operativa</span>
             </h1>
@@ -82,34 +81,15 @@ const websiteSchema = {
         </div>
     </section>
 
-    {sorted.length > 0 && (
-            <>
-                {/* ═══════════════════════════════════════════
-                BUSCADOR
-                ═══════════════════════════════════════════ */}
-                <div class="search-wrapper">
-                    <div class="container">
-                        <SearchBar />
-                    </div>
-                </div>
-
-                {/* ═══════════════════════════════════════════
-                FILTROS POR GRADO
-                ═══════════════════════════════════════════ */}
-                <div class="filter-wrapper">
-                    <div class="container">
-                        <FilterBar grados={grados} />
-                    </div>
-                </div>
-            </>
-    )}
-
     {/* ═══════════════════════════════════════════
         GRID DE PLANCHAS
         ═══════════════════════════════════════════ */}
     <div class="container planchas-grid-container">
         {/* Título de sección */}
         <div class="section-header">
+            {sorted.length > 0 && (
+                    <SearchBar />
+            )}
             <h2>Planchas del Taller</h2>
             <p class="section-intro">
                 {sorted.length} estudios masónicos organizados por grado de iniciación
@@ -133,7 +113,7 @@ const websiteSchema = {
         ) : (
                 <div class="empty-state">
                     <p>Sin planchas aún. Comenzá a agregar tus trazados.</p>
-                </div>
+                </div >
         )}
     </div>
 
@@ -142,12 +122,11 @@ const websiteSchema = {
 
 <style>
     /* ═══════════════════════════════════════════
-       HERO SECTION — Estilo "Gentleman Mason"
+       HERO SECTION
        ═══════════════════════════════════════════ */
 
     .hero {
         position: relative;
-        /* Ocupa el 85% de la altura de la pantalla para impacto */
         min-height: 85vh;
         display: flex;
         align-items: center;
@@ -212,7 +191,6 @@ const websiteSchema = {
     /* Título (Visualmente corregido) */
     .hero-title {
         font-family: var(--font-serif-header);
-        /* Clamp hace que el texto sea gigante pero no rompa en móvil */
         font-size: clamp(3.5rem, 10vw, 6.5rem);
         line-height: 1.1;
         margin: 0 0 1.5rem 0;
@@ -224,7 +202,7 @@ const websiteSchema = {
         color: var(--damero-gold-primary);
         font-weight: var(--fw-bold);
         text-shadow: 0 0 40px rgba(212, 175, 55, 0.25);
-        display: block; /* Asegura que ocupe su propia línea si es necesario */
+        display: block;
     }
 
     /* Subtítulo */
@@ -292,47 +270,27 @@ const websiteSchema = {
         color: var(--damero-gold-primary);
     }
 
-    /* Animación de la flecha */
     .cta-icon {
         color: var(--damero-gold-primary);
         animation: bounce 2s infinite;
     }
 
-    /* ════════════ ANIMACIONES ════════════ */
-
-    @keyframes fadeInDown {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-        40% {transform: translateY(-5px);}
-        60% {transform: translateY(-3px);}
-    }
-
     /* ════════════ WRAPPERS & GRID ════════════ */
 
-    .search-wrapper,
-    .filter-wrapper {
+    /* Contenedor unificado para Search (Simplificado) */
+    .control-panel-wrapper {
         background: var(--damero-black);
         border-bottom: 1px solid var(--damero-line);
         padding: var(--spacing-lg) 0;
     }
 
-    .filter-wrapper {
-        margin-bottom: var(--spacing-lg);
+    .control-panel-content {
+        display: flex;
+        flex-direction: column; /* Mantener la dirección flex para centrado */
+        align-items: center; /* Centrar el SearchBar si tiene ancho limitado */
     }
+
+    /* Eliminado: .panel-divider { ... } */
 
     .planchas-grid-container {
         padding-top: var(--spacing-2xl);
