@@ -8,9 +8,25 @@ const { title } = Astro.props;
 
 <header class="header">
     <div class="container header-content">
-        {/* Logo/Título */}
+        {/* Logo/Título con Icono SVG */}
         <a href="/" class="logo" transition:name="logo">
-            EL DAMERO
+            {/* INICIO: SVG del Damero Diamante */}
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                    aria-labelledby="dameroIconTitle"
+                    role="img"
+                    class="logo-icon"
+            >
+                <title id="dameroIconTitle">Icono El Damero</title>
+                {/* Partes Doradas (Usando variables CSS) */}
+                <path d="M50 0 L75 25 L50 50 L25 25 Z M50 50 L75 75 L50 100 L25 75 Z" fill="var(--damero-gold-primary)"/>
+                {/* Partes Carbón (Usando variables CSS) */}
+                <path d="M25 25 L50 50 L25 75 L0 50 Z M75 25 L100 50 L75 75 L50 50 Z" fill="var(--damero-charcoal)"/>
+            </svg>
+            {/* FIN: SVG del Damero Diamante */}
+
+            <span class="logo-text">EL DAMERO</span>
         </a>
 
         {/* Navegación Principal */}
@@ -43,10 +59,15 @@ const { title } = Astro.props;
     }
 
     /* ═══════════════════════════════════════════
-       LOGO
+       LOGO (Estilos Ajustados para incluir el SVG)
        ═══════════════════════════════════════════ */
 
     .logo {
+        display: flex; /* Añadido: Activa Flexbox para alinear icono y texto */
+        align-items: center; /* Añadido: Centra el icono y el texto verticalmente */
+        gap: 0.5rem; /* Añadido: Espacio entre el icono y el texto */
+
+        /* Estilos originales */
         font-family: var(--font-serif-header);
         font-size: 1.3rem;
         font-weight: var(--fw-bold);
@@ -57,6 +78,20 @@ const { title } = Astro.props;
         white-space: nowrap;
     }
 
+    /* Estilo del texto del logo (lo separamos del .logo principal) */
+    .logo-text {
+        /* Mantiene la fuente, el color, etc. definidos en .logo */
+        line-height: 1; /* Asegura un mejor centrado vertical */
+    }
+
+    /* Nuevo estilo para el icono SVG */
+    .logo-icon {
+        height: 1.25em; /* Ajusta el tamaño del icono a un poco menos que el tamaño de la fuente */
+        width: auto;
+        flex-shrink: 0; /* Evita que el SVG se encoja en pantallas pequeñas */
+        margin-bottom: -1px; /* Ajuste óptico fino para alinear con el texto */
+    }
+
     .logo:hover {
         color: var(--damero-gold-accent);
     }
@@ -64,6 +99,7 @@ const { title } = Astro.props;
     /* ═══════════════════════════════════════════
        NAVEGACIÓN PRINCIPAL
        ═══════════════════════════════════════════ */
+    /* ... (El resto de los estilos de navegación son los mismos) ... */
 
     .nav-primary {
         flex: 1;
@@ -124,6 +160,11 @@ const { title } = Astro.props;
         .logo {
             font-size: 1rem;
             flex-shrink: 0;
+            gap: 0.3rem; /* Ajuste de espacio en móvil */
+        }
+
+        .logo-icon {
+            height: 1.2em; /* Ajuste de tamaño de icono en móvil */
         }
 
         .nav-primary {
@@ -152,6 +193,11 @@ const { title } = Astro.props;
             font-size: 0.9rem;
             letter-spacing: 0.12em;
             flex-shrink: 0;
+            gap: 0.25rem; /* Ajuste de espacio en móvil pequeño */
+        }
+
+        .logo-icon {
+            height: 1.1em; /* Ajuste de tamaño de icono en móvil pequeño */
         }
 
         .nav-list {
