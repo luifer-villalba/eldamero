@@ -1,0 +1,195 @@
+---
+// Componente: ScrollToTopHome.astro
+// Botones para volver arriba o ir a inicio
+// Se coloca antes del footer en PlanchaLayout
+---
+
+<div class="scroll-actions">
+    <button id="scroll-top" class="action-btn" aria-label="Ir al inicio de la plancha" title="Ir arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+        <span>Arriba</span>
+    </button>
+
+    <a href="/" class="action-btn" aria-label="Volver al inicio" title="Volver a planchas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Inicio</span>
+    </a>
+</div>
+
+<script>
+    function initScrollActions() {
+        const scrollTopBtn = document.getElementById('scroll-top') as HTMLButtonElement;
+
+        if (!scrollTopBtn) return;
+
+        // Scroll to top smooth
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mostrar/ocultar botón según scroll
+        const updateButtonVisibility = () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.style.opacity = '1';
+                scrollTopBtn.style.pointerEvents = 'auto';
+            } else {
+                scrollTopBtn.style.opacity = '0.5';
+                scrollTopBtn.style.pointerEvents = 'none';
+            }
+        };
+
+        window.addEventListener('scroll', updateButtonVisibility);
+        updateButtonVisibility(); // Init
+    }
+
+    initScrollActions();
+    document.addEventListener('astro:page-load', initScrollActions);
+</script>
+
+<style>
+    /* ═══════════════════════════════════════════
+       CONTENEDOR ACCIONES
+       ═══════════════════════════════════════════ */
+
+    .scroll-actions {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 2rem 0;
+        padding: 2rem 0;
+        border-top: 1px solid var(--damero-line);
+        border-bottom: 1px solid var(--damero-line);
+    }
+
+    /* ═══════════════════════════════════════════
+       BOTONES — IDÉNTICOS Y CENTRADOS
+       ═══════════════════════════════════════════ */
+
+    .action-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+        padding: 0.85rem 1.8rem;
+        background: var(--damero-dark);
+        border: 1px solid var(--damero-line);
+        color: var(--damero-gold-primary);
+        font-size: 0.95rem;
+        font-weight: var(--fw-semibold);
+        font-family: var(--font-serif-body);
+        cursor: pointer;
+        border-radius: var(--radius-md);
+        transition: all var(--transition-smooth);
+        text-decoration: none;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        min-width: 160px;
+        height: 50px;
+        line-height: 1;
+    }
+
+    /* SVG centrado verticalmente */
+    .action-btn svg {
+        width: 20px;
+        height: 20px;
+        stroke-width: 2;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Texto centrado verticalmente */
+    .action-btn span {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .action-btn:hover {
+        border-color: var(--damero-gold-primary);
+        background: var(--damero-charcoal);
+        box-shadow: 0 4px 12px rgba(212, 175, 55, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .action-btn:active {
+        transform: translateY(0);
+    }
+
+    .action-btn:focus-visible {
+        outline: 2px solid var(--damero-gold-primary);
+        outline-offset: 2px;
+    }
+
+    /* Estado del botón Arriba */
+    #scroll-top {
+        transition: opacity var(--transition-smooth), all var(--transition-smooth);
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    #scroll-top:hover {
+        color: var(--damero-gray-pale);
+    }
+
+    /* Estado del botón Inicio */
+    .action-btn[href="/"] {
+        color: var(--damero-gray-light);
+    }
+
+    .action-btn[href="/"]:hover {
+        color: var(--damero-gray-pale);
+    }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════════ */
+
+    @media (max-width: 768px) {
+        .scroll-actions {
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .action-btn {
+            width: 100%;
+            min-width: unset;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .scroll-actions {
+            gap: 0.75rem;
+            padding: 1.5rem 0;
+        }
+
+        .action-btn {
+            padding: 0.75rem 1.2rem;
+            font-size: 0.85rem;
+            height: 44px;
+            min-width: unset;
+        }
+
+        .action-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .action-btn span {
+            height: 18px;
+            line-height: 18px;
+        }
+    }
+</style>

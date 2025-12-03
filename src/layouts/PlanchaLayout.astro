@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ShareButtons from '../components/ShareButtons.astro';
+import ScrollToTopHome from '../components/ScrollToTopHome.astro';
 
 interface Props {
     data: CollectionEntry<'planchas'>['data'];
@@ -117,6 +118,9 @@ const displayTags = tags.slice(0, 3);
                         </a>
                 )}
             </nav>
+
+            {/* SCROLL TO TOP + HOME BUTTONS */}
+            <ScrollToTopHome />
         </article>
     </div>
 </BaseLayout>
@@ -253,16 +257,6 @@ const displayTags = tags.slice(0, 3);
         hyphens: auto;
     }
 
-    .plancha-contenido :global(h2 + p::first-letter) {
-        font-size: 3.5rem;
-        font-weight: bold;
-        color: var(--damero-gold-primary);
-        float: left;
-        line-height: 0.8;
-        margin-right: 0.1em;
-        margin-top: 0.1em;
-    }
-
     .plancha-contenido :global(ul),
     .plancha-contenido :global(ol) {
         margin-left: 2rem;
@@ -291,6 +285,18 @@ const displayTags = tags.slice(0, 3);
         margin: var(--spacing-md) 0;
     }
 
+    /* Dropcap: Primera letra de h2 + p */
+    .plancha-contenido :global(h2 + p::first-letter) {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--damero-gold-primary);
+        float: left;
+        line-height: 0.8;
+        margin-right: 0.1em;
+        margin-top: 0.1em;
+    }
+
+    /* Callout boxes */
     .plancha-contenido :global(aside) {
         border-left: 4px solid var(--damero-gold-primary);
         background: rgba(212, 175, 55, 0.08);
