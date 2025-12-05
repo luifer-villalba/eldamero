@@ -22,4 +22,4 @@ A publication system for "planchas" (Masonic philosophical studies) based on Ald
 ---
 
 ## 🛠️ Tech Stack
-... (el resto del archivo es el mismo)
+... (more to come)
