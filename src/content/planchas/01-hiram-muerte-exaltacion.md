@@ -12,29 +12,35 @@ orden: 1
 tags: ["Salario del Maestro", "Muerte Iniciática", "Geometría Sagrada", "Leyenda de Hiram", "Cámara del Medio", "Grado Compañero", "Templo Interior", "Grado Aprendiz"]
 ---
 
+# La Muerte y Exaltación de Hiram Abiff
+
 Mis QQ∴ HH∴,
 
-Cuando fuiste exaltado al grado de Maestro, viviste la leyenda de Hiram Abiff. No fue un paseo simbólico. Fuiste golpeado, encerrado en un féretro, buscado durante días y finalmente levantado de la muerte.
+Cuando **fuimos** exaltados al grado de Maestro, **vivimos** la leyenda de Hiram Abiff. No **fue** un paseo simbólico. **Fuimos** golpeados, encerrados en un féretro, buscados durante días y finalmente levantados de la muerte.
 
-Esta plancha es un recordatorio de qué pasó y **por qué es el misterio más importante que enfrentarás**.
+Esta plancha es un recordatorio de qué pasó y **por qué es el misterio más importante que enfrentaremos**.
 
-Visualiza: el féretro. Tú dentro. Oscuridad total. Tres golpes resonando en tu cuerpo. Luego, el silencio de la muerte.
+**Visualicemos**: el féretro. **Nosotros** dentro. Oscuridad total. Tres golpes resonando en **nuestro** cuerpo. Luego, el silencio de la muerte.
 
-Después, manos que te buscan. Finalmente te encuentran. Te levantan con ese toque de maestro, ese agarre de garra que se siente como si la carne se desprendiera de los huesos.
+Después, manos que **nos** buscan. Finalmente **nos** encuentran. **Nos** levantan con ese toque de maestro, ese agarre de garra que se siente como si la carne se desprendiera de los huesos.
 
 Eso no es teatro. Es **iniciación a la muerte real mediante la vivencia del cuerpo**.
 
-## La Historia: Hiram Abiff y el Templo
+---
 
-Hiram Abiff era el **Arquitecto y Gran Maestro** de la construcción del Templo de Salomón. No era un constructor ordinario. Era el hombre que conocía los secretos de la geometría sagrada. Podía levantar columnas de bronce fundidas y coordinaba setenta mil aprendices, ocho mil compañeros y tres mil seiscientos maestros.
+## Hiram Abiff y la Construcción del Templo
+
+Hiram Abiff era el **Arquitecto y Gran Maestro** de la construcción del Templo de Salomón. No era un constructor ordinario. Él conocía los secretos de la geometría sagrada. Podía levantar columnas de bronce fundidas. Coordinaba setenta mil aprendices, ocho mil compañeros y tres mil seiscientos maestros.
 
 Lavagnini enfatiza: Hiram era **exacto, justo, siempre el primero en llegar**. Su palabra era ley. Su integridad era absoluta.
 
-Para mantener el orden en una obra tan inmensa, él instituyó los **signos, toques y palabras secretos**. Así, cada categoría de obrero se reconocía y recibía el salario según su grado y capacidad.
+Para mantener el orden en una obra tan inmensa, él instituyó los **signos, toques y palabras secretos**. Así, cada categoría de obrero se reconocía. Recibían el salario según su grado y capacidad.
 
 Este es un punto crucial: **el secreto masónico nace de la necesidad de orden**, no del capricho. Hiram creó jerarquía no para dominar, sino para que cada uno recibiera lo que merecía según su comprensión.
 
-## El Crimen: Los Tres Asesinos y sus Herramientas
+---
+
+## El Crimen: Los Tres Asesinos y Sus Herramientas
 
 Tres compañeros celosos decidieron obtener los secretos de maestro por la fuerza. Sabían que solo Hiram los poseía. Pensaron: "Si lo obligamos, revelará".
 
@@ -50,246 +56,260 @@ Los asesinos lo escondieron provisionalmente detrás de escombros. Por la noche,
 
 Lavagnini señala: **El occidente es el lado donde muere el Sol**. Hiram muere hacia el lado donde muere la luz. No es casualidad de narración: es geometría simbólica.
 
-## Lo Que Viviste en el Ritual: Los Siete Momentos
+---
 
-Ahora entenderás por qué el ritual de exaltación es tan intenso. No se explica, se **vive corporalmente**.
+## El Ritual: Los Siete Momentos del Levantamiento
+
+Ahora **comprenderemos** por qué el ritual de exaltación es tan intenso. No se explica, se **vive corporalmente**.
 
 ### Momento 1: El Juicio Inicial
 
-Los maestros te recibieron como **jueces inexorables**. Examinaron tu mandil blanco (tu conciencia, tu pureza). Examinaron tus manos (tu voluntad, tus actos).
+Los maestros **nos** recibieron como **jueces inexorables**. Examinaron **nuestro** mandil blanco (nuestra conciencia, nuestra pureza). Examinaron **nuestras** manos (nuestra voluntad, **nuestros** actos).
 
-La pregunta no era teórica: "¿Eres culpable?". La pregunta es a tus manos: ¿Qué construiste? ¿A quién golpeaste? ¿Qué manchaste?
+La pregunta no era teórica: "¿Eres culpable?". La pregunta es a **nuestras** manos: ¿Qué construimos? ¿A quién golpeamos? ¿Qué manchamos?
 
-Esto representa el momento donde la personalidad (tu ego, tu identidad social) es **puesta en juicio por fuerzas mayores que ella**. Te das cuenta: no eres juez de ti mismo. Hay un tribunal.
+Esto representa el momento donde la **Personalidad** (nuestro ego, **nuestra** identidad social) es **puesta en juicio por fuerzas mayores que ella**. **Nos damos** cuenta: no **somos** jueces de **nosotros mismos**. Hay un tribunal.
 
 ### Momento 2: La Retrogradación Simbólica
 
-Fuiste despojado del mandil de compañero. Temporalmente, retrocediste. Esto representa que en la muerte, **pierdes todos los grados, todas las posiciones, todo lo que construiste externamente**.
+**Fuimos** despojados del mandil de compañero. Temporalmente, retrocedimos. Esto representa que en la muerte, **perdemos todos los grados, todas las posiciones, todo lo que construimos externamente**.
 
-Un CEO, un maestro reconocido, un padre respetado; en la muerte, todos pierden los títulos simultáneamente. Eres reducido a nada.
+Un CEO, un maestro reconocido, un padre respetado; en la muerte, todos pierden los títulos simultáneamente. **Somos** reducidos a nada.
 
-### Momento 3: La Cámara del Medio, Rostro a Rostro con la Muerte
+### Momento 3: La Cámara del Medio y la Muerte
 
-Entraste a oscuras. Viste una calavera iluminada sobre un cadáver. Se te hicieron preguntas sobre la vida y la muerte. No eran filosóficas: eran **existenciales**.
+**Entramos** a oscuras. Vimos una calavera iluminada sobre un cadáver. Se **nos** hicieron preguntas sobre la vida y la muerte. No eran filosóficas: eran **existenciales**.
 
-"¿Qué es la vida?". No significa "define vida". Significa: **¿Dónde reside tu vida real?** ¿En tu cuerpo? ¿En tu fama? ¿En tus pensamientos? ¿En qué permanece cuando todo muere?
+"¿Qué es la vida?". No significa "define vida". Significa: **¿Dónde reside nuestra vida real?** ¿En **nuestro** cuerpo? ¿En **nuestra** fama? ¿En **nuestros** pensamientos? ¿En qué permanece cuando todo muere?
 
-Este es el momento donde la mente consciente **toca el abismo**. Ve la calavera y siente miedo primordial. Eso es necesario. Sin ese miedo, no hay transformación real.
+Este es el momento donde la mente consciente **toca el abismo**. Vemos la calavera y sentimos miedo primordial. Eso es necesario. Sin ese miedo, no hay transformación real.
 
-### Momento 4: El Ataque, Los Tres Golpes
+### Momento 4: El Ataque y los Tres Golpes
 
-Los tres asesinos te atacaron tal como atacaron a Hiram. Los golpes fueron **físicos**, no metafóricos.
+Los tres asesinos **nos** atacaron tal como atacaron a Hiram. Los golpes fueron **físicos**, no metafóricos.
 
-* **Golpe a la voluntad:** Te paralizas. ¿Puedes actuar?
-* **Golpe al corazón:** Sientes pánico. ¿Puedes amar?
-* **Golpe a la mente:** Oscuridad. ¿Puedes pensar?
+* **Golpe a la voluntad:** **Nos** paralizamos. ¿Podemos actuar?
+* **Golpe al corazón:** Sentimos pánico. ¿Podemos amar?
+* **Golpe a la mente:** Oscuridad. ¿Podemos pensar?
 
-En ese momento, **caíste**. Fuiste colocado en el féretro "muerto". Los tres asesinos te escondieron bajo hojas. Eras el cadáver de Hiram.
+En ese momento, **caímos**. **Fuimos** colocados en el féretro "**muertos**". Los tres asesinos **nos** escondieron bajo hojas. **Éramos** el cadáver de Hiram.
 
-### Momento 5: La Búsqueda, Los Nueve Maestros
+### Momento 5: La Búsqueda por los Nueve Maestros
 
-Durante días, los nueve maestros te buscaron. Tú permaneciste "muerto" en el féretro, escondido, invisible.
+Durante días, los nueve maestros **nos** buscaron. **Permanecimos** "**muertos**" en el féretro, escondidos, invisibles.
 
-Esto representa algo crucial: cuando caes a la muerte (crisis, pérdida, fracaso), permaneces invisible para el mundo ordinario. Pero **hay fuerzas interiores (los nueve maestros) que no cesan de buscarte**.
+Esto representa algo crucial: cuando caemos a la muerte (crisis, pérdida, fracaso), permanecemos invisibles para el mundo ordinario. Pero **hay fuerzas interiores (los nueve maestros) que no cesan de buscarnos**.
 
-Los nueve no son externos. Son tus mejores intenciones, tu verdadera voluntad, tu Individualidad luchando por recuperar tu Ideal perdido (Hiram).
+Los nueve no son externos. Son **nuestras** mejores intenciones, **nuestra** verdadera voluntad, **nuestra Individualidad** luchando por recuperar **nuestro** Ideal perdido (Hiram).
 
-### Momento 6: El Levantamiento, El Toque de Maestro
+### Momento 6: El Levantamiento con el Toque de Maestro
 
-Finalmente te encontraron. Te levantaron con el **toque de maestro**, ese agarre especial en forma de garra.
+Finalmente **nos** encontraron. **Nos** levantaron con el **toque de maestro**, ese agarre especial en forma de garra.
 
-Lavagnini es explícito: no es casual que la mano forme garra. Representa que **la carne se desprende de los huesos durante la descomposición**. Es un reconocimiento brutal de que el cuerpo se disuelve, pero que algo en ti permanece vivo.
+Lavagnini es explícito: no es casual que la mano forme garra. Representa que **la carne se desprende de los huesos durante la descomposición**. Es un reconocimiento brutal de que el cuerpo se disuelve. Sin embargo, algo en **nosotros** permanece vivo.
 
-Cuando recibes ese toque, tu cuerpo siente la muerte íntima. Y luego, la resurrección.
+Cuando recibimos ese toque, **nuestro** cuerpo siente la muerte íntima. Y luego, la resurrección.
 
-### Momento 7: La Exaltación, "El Hijo de la Viuda"
+### Momento 7: La Exaltación como "Hijo de la Viuda"
 
-Fuiste presentado como "el hijo de la viuda", resucitado, iniciado en el misterio de la **vida que trasciende la muerte física**.
+**Fuimos** presentados como "**el hijo de la viuda**", resucitados, iniciados en el misterio de la **vida que trasciende la muerte física**.
 
-"Hijo de viuda" te conecta con la tradición del viudo (que perdió esposa) buscando continuidad. Pero también: **tú eres la viuda**, llorando a tu personalidad muerta, buscando a tu Individualidad resucitada.
+"Hijo de viuda" **nos** conecta con la tradición del viudo buscando continuidad. Pero también: **nosotros somos la viuda**, llorando **nuestra Personalidad** muerta, buscando a **nuestra Individualidad** resucitada.
 
-## El Significado: Los Tres Enemigos Son Partes de Ti
+---
+
+## El Significado: Los Tres Enemigos Son Partes de Nosotros
 
 Aquí Lavagnini es radical y debe quedar claro para siempre:
 
-**Los tres asesinos no son personajes externos. Son tus propios enemigos internos.**
+**Los tres asesinos no son personajes externos. Son nuestros propios enemigos internos.**
 
-### El Primer Asesino: La Ignorancia
+### Primer Asesino: La Ignorancia
 
-Ignorancia no significa "no saber datos". Significa **ceguera a tu verdadera naturaleza**.
+**Ignorancia** no significa "no saber datos". Significa **ceguera a nuestra verdadera naturaleza**.
 
-Vives identificado con la personalidad (el cuerpo, el ego, la máscara social). Ignoras que hay una Individualidad eterna dentro. Esa ignorancia mata a Hiram en ti.
+Vivimos identificados con la **Personalidad** (el cuerpo, el ego, la máscara social). Ignoramos que hay una **Individualidad** eterna dentro. Esa ignorancia mata a Hiram en **nosotros**.
 
-**Operativamente:** ¿En dónde hoy actúas desde la ignorancia de quién realmente eres? ¿Desde una falsa identidad?
+**Operativamente:** ¿En dónde hoy actuamos desde la ignorancia de quién realmente **somos**? ¿Desde una falsa identidad?
 
-### El Segundo Asesino: El Fanatismo
+### Segundo Asesino: El Fanatismo
 
-Fanatismo es apego extremo a **una verdad parcial** como si fuera la verdad completa.
+**Fanatismo** es apego extremo a **una verdad parcial** como si fuera la verdad completa.
 
-Defiendes tu interpretación del ritual como la única válida. Insistes en tu visión masónica como si fuera la Verdad Absoluta. Te vuelves rígido, intolerante, cerrado a otras perspectivas.
+Defendemos **nuestra** interpretación del ritual como la única válida. Insistimos en **nuestra** visión masónica como si fuera la Verdad Absoluta. **Nos volvemos** rígidos, intolerantes, cerrados a otras perspectivas.
 
-El fanatismo **mata la flexibilidad** que Hiram (el arquitecto real) necesitaba para crear.
+El **Fanatismo** **mata la flexibilidad** que Hiram (el arquitecto real) necesitaba para crear.
 
-**Operativamente:** ¿Dónde eres fanático? ¿Sobre qué creencia has endurecido tu corazón?
+**Operativamente:** ¿Dónde **somos** fanáticos? ¿Sobre qué creencia **hemos** endurecido **nuestro** corazón?
 
-### El Tercer Asesino: La Ambición
+### Tercer Asesino: La Ambición
 
-Ambición es buscar **poder, reconocimiento y elevación personal** por sobre el servicio.
+**Ambición** es buscar **poder, reconocimiento y elevación personal** por sobre el servicio.
 
-Quieres ser reconocido como maestro. Quieres autoridad. Quieres que otros vean tu sabiduría. Esa ambición no es mala per se, pero cuando domina, **mata el propósito real**.
+Queremos ser reconocidos como maestros. Queremos autoridad. Queremos que otros vean **nuestra** sabiduría. Esa ambición no es mala *per se*, pero cuando domina, **mata el propósito real**.
 
 Hiram no buscaba reconocimiento. Buscaba construir el Templo. Su ser estaba alineado con la obra, no con su ego.
 
-**Operativamente:** ¿Enseñas porque amas enseñar, o porque quieres verte como maestro? ¿Sirves porque quieres servir, o porque quieres verte como servidor?
+**Operativamente:** ¿Enseñamos porque amamos enseñar, o porque queremos **vernos** como maestros? ¿Servimos porque queremos servir, o porque queremos **vernos** como servidores?
 
-## El Misterio Central: Personalidad vs Individualidad
+---
+
+## El Misterio Central: Personalidad vs. Individualidad
 
 Lavagnini enfatiza una distinción que define **todo el grado de Maestro**:
 
-### Personalidad
+### La Personalidad
 
-* Es tu máscara, tu rol social, tu cuerpo, tu ego.
+* Es **nuestra** máscara, **nuestro** rol social, **nuestro** cuerpo, **nuestro** ego.
 * Nace con el nacimiento, muere con la muerte.
 * Es temporal, cambiante, frágil.
-* Es lo que otros ven de ti.
+* Es lo que otros ven de **nosotros**.
 * **Se puede perder en una noche** (crisis, enfermedad, fracaso).
 
-### Individualidad
+### La Individualidad
 
-* Es lo que hay en ti de eterno, permanente, inmortal.
+* Es lo que hay en **nosotros** de eterno, permanente, inmortal.
 * Es el Ser real detrás de la máscara.
 * Nunca nace, nunca muere (solo cambia de forma).
 * Es lo que persiste cuando todo lo externo se desmorona.
-* Es tu verdadero nombre (que el mundo profano nunca sabe).
+* Es **nuestro** verdadero nombre (que el mundo profano nunca sabe).
 
 **El ritual de exaltación es la transición de la identificación con la Personalidad a la identificación con la Individualidad.**
 
-Cuando caes en el féretro, muere tu Personalidad (tu máscara, tu rol, tu ego). Cuando te levantan, renace tu Individualidad (tu Ser eterno, tu verdadera capacidad, tu propósito cósmico).
+Cuando caemos en el féretro, muere **nuestra Personalidad** (nuestra máscara, **nuestro** rol, **nuestro** ego). Cuando **nos** levantan, renace **nuestra Individualidad** (nuestro Ser eterno, **nuestra** verdadera capacidad, **nuestro** propósito cósmico).
 
-Lavagnini lo dice así: *"Morir para la ilusión de la personalidad y renacer a la Luz de la Realidad que constituye la Individualidad."*
+Lavagnini lo dice así: *"Morir para la ilusión de la Personalidad y renacer a la Luz de la Realidad que constituye la Individualidad."*
 
-Eso **no es una metáfora bonita**. Es una inversión total de perspectiva sobre quién eres realmente.
+Eso **no es una metáfora bonita**. Es una inversión total de perspectiva sobre quiénes **somos** realmente.
 
-## Aplicación Profana: Las Crisis Cotidianas Como Pequeñas Muertes
+---
 
-En la vida profana, experimentas constantemente "muertes pequeñas" de la personalidad:
+## Aplicación Profana: Las Crisis Como Pequeñas Muertes
+
+En la vida profana, experimentamos constantemente "**muertes pequeñas**" de la **Personalidad**:
 
 ### Ejemplo 1: Pérdida de Empleo
 
-**Crisis de personalidad:** Fuiste "ejecutivo", "profesional exitoso", "proveedor". De repente, eres desempleado. Tu máscara se cae.
+**Crisis de Personalidad:** **Éramos** "ejecutivos", "profesionales exitosos", "proveedores". De repente, **somos** desempleados. **Nuestra** máscara se cae.
 
-**Muerte y resurrección:** Durante semanas (el equivalente a "los nueve días de búsqueda"), permaneces en el féretro psicológico: sin identidad clara, sin rol social, sin definición.
+**Muerte y Resurrección:** Durante semanas (el equivalente a "los nueve días de búsqueda"), permanecemos en el féretro psicológico. Estamos sin identidad clara, sin rol social, sin definición.
 
-Luego, el **levantamiento**: Descubres que tu valor no era el cargo. Era tu capacidad. Tu Individualidad persiste. Encuentras nuevo trabajo, a veces mejor, porque ahora basas tu identidad en quién eres, no en qué haces.
+Luego, el **levantamiento**: Descubrimos que **nuestro** valor no era el cargo. Era **nuestra** capacidad. **Nuestra Individualidad** persiste. Encontramos nuevo trabajo, a veces mejor. Esto sucede porque ahora basamos **nuestra** identidad en quiénes **somos**, no en qué hacemos.
 
-**La pregunta masónica:** ¿Quién eres sin tu empleo? Eso es tu Individualidad.
+**La pregunta masónica:** ¿Quiénes **somos** sin **nuestro** empleo? Eso es **nuestra Individualidad**.
 
 ### Ejemplo 2: Ruptura de Relación Significativa
 
-**Crisis de personalidad:** Eras "en pareja", "protector", "amado". De repente, estás solo. Tu rol desaparece.
+**Crisis de Personalidad:** **Éramos** "en pareja", "protectores", "amados". De repente, estamos solos. **Nuestro** rol desaparece.
 
-**Muerte y resurrección:** El féretro son semanas de soledad, de no saber quién eres sin esa persona. La búsqueda es larga. Parece infinita.
+**Muerte y Resurrección:** El féretro son semanas de soledad. De no saber quiénes **somos** sin esa persona. La búsqueda es larga. Parece infinita.
 
-Luego, el **levantamiento**: Reconocimiento de que tu capacidad de amar no dependía de esa persona. Era tuya. Tu Individualidad está intacta. Puedes amar nuevamente, o puedes estar solo y estar bien. Eres libre porque no eres la personalidad que necesitaba a alguien.
+Luego, el **levantamiento**: Reconocimiento de que **nuestra** capacidad de amar no dependía de esa persona. Era **nuestra**. **Nuestra Individualidad** está intacta. Podemos amar nuevamente, o podemos estar solos y estar bien. **Somos** libres porque no **somos** la **Personalidad** que necesitaba a alguien.
 
-**La pregunta masónica:** ¿Quién eres sin esa relación? Eso es tu Individualidad.
+**La pregunta masónica:** ¿Quiénes **somos** sin esa relación? Eso es **nuestra Individualidad**.
 
 ### Ejemplo 3: Fracaso de Proyecto Grande
 
-**Crisis de personalidad:** Fuiste "emprendedor", "innovador", "alguien que hace cosas". El proyecto colapsa. Tu identidad se desmorona.
+**Crisis de Personalidad:** **Fuimos** "emprendedores", "innovadores", "alguien que hace cosas". El proyecto colapsa. **Nuestra** identidad se desmorona.
 
-**Muerte y resurrección:** El féretro son los meses donde nada funciona, donde cuestionas si tienes capacidad, donde la duda te atrapa.
+**Muerte y Resurrección:** El féretro son los meses donde nada funciona. Cuestionamos si tenemos capacidad. La duda **nos** atrapa.
 
-Luego, el **levantamiento**: Reconocimiento de que una idea fallida no significa que seas un fracaso. Tu capacidad de crear sigue intacta. Tu Individualidad generó esa idea. Generará otras.
+Luego, el **levantamiento**: Reconocimiento de que una idea fallida no significa que **seamos** un fracaso. **Nuestra** capacidad de crear sigue intacta. **Nuestra Individualidad** generó esa idea. Generará otras.
 
-**La pregunta masónica:** ¿Quién eres sin ese proyecto? Eso es tu Individualidad.
+**La pregunta masónica:** ¿Quiénes **somos** sin ese proyecto? Eso es **nuestra Individualidad**.
 
-## Aplicación Masónica: Dónde Actúan los Tres Enemigos
+---
 
-En tu vida masónica, reconoce específicamente dónde los tres asesinos atacan:
+## Aplicación Masónica: Dónde Atacan los Tres Enemigos
 
-### Ignorancia en Logia
+En **nuestra** vida masónica, **reconozcamos** específicamente dónde los tres asesinos atacan:
 
-¿Ignoras que hay otras perspectivas masónicas válidas? ¿Asumes que tu rito es el "correcto"? ¿Rechazas aprender de HH∴ con diferente trasfondo?
+### La Ignorancia en Logia
 
-**Operativamente esta semana:** Pregunta a un H∴ de diferente trasfondo: "¿Cómo entienden ustedes este símbolo?". Escucha sin juzgar.
+¿Ignoramos que hay otras perspectivas masónicas válidas? ¿Asumimos que **nuestro** rito es el "**correcto**"? ¿Rechazamos aprender de HH∴ con diferente trasfondo?
 
-### Fanatismo en Logia
+**Operativamente esta semana:** Preguntemos a un H∴ de diferente trasfondo: "¿Cómo entienden ustedes este símbolo?". Escuchemos sin juzgar.
 
-¿Defiendes apasionadamente tu interpretación como si fuera dogma? ¿Te molesta cuando cuestionan tus certezas? ¿Te vuelves rígido ante cambios rituales?
+### El Fanatismo en Logia
 
-**Operativamente esta semana:** Identifica una creencia masónica que defiendes "sin dudas". Ahora, intenta argumentar lo opuesto (juego de perspectivas). ¿Qué descubres?
+¿Defendemos apasionadamente **nuestra** interpretación como si fuera dogma? ¿**Nos** molesta cuando cuestionan **nuestras** certezas? ¿**Nos volvemos** rígidos ante cambios rituales?
 
-### Ambición en Logia
+**Operativamente esta semana:** Identifiquemos una creencia masónica que defendemos "sin dudas". Ahora, intentemos argumentar lo opuesto (juego de perspectivas). ¿Qué descubrimos?
 
-¿Esperas que te reconozcan como maestro "sabio"? ¿Buscas cargo o autoridad? ¿Enseñas para verte como maestro, o para ayudar al otro a crecer?
+### La Ambición en Logia
 
-**Operativamente esta semana:** Realiza una acción de servicio en Logia **sin que nadie lo sepa o agradezca**. Si sientes frustración porque no te lo reconocen, tocaste la ambición.
+¿Esperamos que **nos** reconozcan como maestros "**sabios**"? ¿Buscamos cargo o autoridad? ¿Enseñamos para **vernos** como maestros, o para ayudar al otro a crecer?
 
-## Los Seis Pilares Fundacionales
+**Operativamente esta semana:** Realicemos una acción de servicio en Logia **sin que nadie lo sepa o agradezca**. Si sentimos frustración porque no **nos** lo reconocen, tocamos la **Ambición**.
+
+---
+
+## Los Seis Pilares Fundacionales del Grado
 
 Estos conceptos deben estar claros para todo lo demás del grado:
 
-### Pilar 1: Los Tres Enemigos son Partes de Ti Mismo
+### Pilar 1: Los Tres Enemigos son Partes de Nosotros
 
-No son demonios externos. Son fragmentos de tu psique: **Ignorancia, Fanatismo, Ambición**. Cada plancha futura tocará cómo neutralizarlos. Pero comienza reconociéndolos en ti ahora.
+No son demonios externos. Son fragmentos de **nuestra** psique: **Ignorancia, Fanatismo, Ambición**. Cada plancha futura tocará cómo neutralizarlos. Pero comencemos reconociéndolos en **nosotros** ahora.
 
 ### Pilar 2: Personalidad No es Igual a Individualidad
 
-Tu personalidad muere y se regenera constantemente. Tu cuerpo cambia cada siete años. Tu rol social se transforma. Tu ego revienta y se reconstruye.
+**Nuestra Personalidad** muere y se regenera constantemente. **Nuestro** cuerpo cambia cada siete años. **Nuestro** rol social se transforma. **Nuestro** ego revienta y se reconstruye.
 
-Tu Individualidad es eterna. **Toda la obra del Maestro es identificarte con la Individualidad, no con la personalidad.**
+**Nuestra Individualidad** es eterna. **Toda la obra del Maestro es identificarnos con la Individualidad, no con la Personalidad.**
 
 ### Pilar 3: La Muerte es Aparente, no Real
 
-Lavagnini es radical: la muerte no es el fin. Es un **cambio de forma**. Cuando tu vida exterior se desmorona, tu vida interior continúa.
+Lavagnini es radical: la muerte no es el fin. Es un **cambio de forma**. Cuando **nuestra** vida exterior se desmorona, **nuestra** vida interior continúa.
 
-Comprender esto profundamente es liberador. Ya no temes los cambios. Ya no te aferras a formas que mueren. Conoces lo que persiste.
+Comprender esto profundamente es liberador. Ya no tememos los cambios. Ya no **nos** aferramos a formas que mueren. Conocemos lo que persiste.
 
 ### Pilar 4: Vida y Muerte son el Misterio Central
 
-Hasta que no entiendas qué es la **Vida** (manifestándose desde adentro hacia afuera) y qué es la **Muerte** (cambio de manifestación), no entiendes el grado.
+Hasta que no entendamos qué es la **Vida** (manifestándose desde adentro hacia afuera) y qué es la **Muerte** (cambio de manifestación), no entendemos el grado.
 
 Volveremos a esto repetidamente. Cada plancha subsecuente es un capítulo de este mismo misterio.
 
 ### Pilar 5: El Levantamiento es el Toque de Maestro
 
-Ese agarre en forma de garra que experimentaste en el ritual no es simbólico abstracto. Es **reconocimiento mutuo** entre quien está en la Verdad y quien busca la Verdad.
+Ese agarre en forma de garra que experimentamos en el ritual no es simbólico abstracto. Es **reconocimiento mutuo** entre quien está en la Verdad y quien busca la Verdad.
 
-Es la firma del grado. Cuando un verdadero Maestro toca a otro, ambos saben: "Está despierto. Ha pasado por la muerte. Es uno de nosotros."
+Es la firma del grado. Cuando un verdadero Maestro toca a otro, ambos saben: "Está despierto. Ha pasado por la muerte. Es uno de **nosotros**."
 
 ### Pilar 6: El Salario del Maestro es Amor y Servicio
 
 A diferencia del aprendiz (cuyo salario es instrucción) y el compañero (cuyo salario es progreso), el maestro no busca recompensa externa.
 
-**El servicio amoroso es su salario.** Esto te cambia internamente si lo vives genuinamente. No es bondad forzada. Es la consecuencia natural de haber pasado por la muerte de la personalidad.
+**El servicio amoroso es nuestro salario.** Esto **nos** cambia internamente si lo vivimos genuinamente. No es bondad forzada. Es la consecuencia natural de haber pasado por la muerte de la **Personalidad**.
 
-## Reflexión Personal Final
+---
 
-Mis QQ∴ HH∴, la leyenda de Hiram no es historia antigua. Es **tu historia, repetida en cada maestro que se exalta**.
+## Reflexión Final y Acciones
 
-Es la historia de cómo **toda muerte aparente es un llamado a despertar a tu verdadera naturaleza**.
+Mis QQ∴ HH∴, la leyenda de Hiram no es historia antigua. Es **nuestra historia, repetida en cada maestro que se exalta**.
 
-Los tres asesinos (Ignorancia, Fanatismo, Ambición) seguirán atacándote. No desaparecen. Se vuelven más sutiles a medida que avanzas.
+Es la historia de cómo **toda muerte aparente es un llamado a despertar a nuestra verdadera naturaleza**.
 
-Los nueve maestros (tus mejores intenciones, tu verdadera voluntad) seguirán buscándote cuando caigas.
+Los tres asesinos (**Ignorancia, Fanatismo, Ambición**) seguirán atacándonos. No desaparecen. Se vuelven más sutiles a medida que avanzamos.
 
-La pregunta es simple: **¿Permitirás ser levantado?**
+Los nueve maestros (**nuestras** mejores intenciones, **nuestra** verdadera voluntad) seguirán buscándonos cuando caigamos.
+
+La pregunta es simple: **¿Permitiremos ser levantados?**
 
 No solo una vez en el ritual. Sino constantemente, en cada crisis, en cada muerte pequeña.
 
-Porque eso es la vida de un Maestro: morir a la ilusión, ser levantado a la realidad, nuevamente y nuevamente, hasta que finalmente entiendas que **nunca moriste realmente. Solo despertaste.**
+Porque eso es la vida de un Maestro: morir a la ilusión, ser levantado a la realidad, nuevamente y nuevamente, hasta que finalmente entendamos que **nunca morimos realmente. Solo despertamos.**
 
 **Acción de esta semana:**
 
-1.  **Identifica los Tres Asesinos en ti:** ¿Dónde actúan Ignorancia, Fanatismo, Ambición en tu vida ahora? Escribe una página.
-2.  **Una pequeña muerte:** Permite que algo de tu personalidad muera esta semana. Renuncia a un rol, a una certeza, a una necesidad de reconocimiento. Observa qué permanece.
-3.  **Una búsqueda consciente:** Cuando algo en ti "caiga" esta semana, en lugar de huir del dolor, permanece en él 3 días. Observa: ¿qué te busca? ¿Quién es el "nueve maestros" que intenta levantarte?
-4.  **Meditación del Féretro:** 10 minutos en silencio total, en espacio oscuro si es posible. Imagina el féretro. Luego, imagina manos levantándote. Siente la diferencia.
+1.  **Identificar los Tres Asesinos en nosotros:** ¿Dónde actúan **Ignorancia, Fanatismo, Ambición** en **nuestra** vida ahora? Escribamos una página.
+2.  **Una pequeña muerte:** Permitamos que algo de **nuestra Personalidad** muera esta semana. Renunciemos a un rol, a una certeza, a una necesidad de reconocimiento. Observemos qué permanece.
+3.  **Una búsqueda consciente:** Cuando algo en **nosotros** "**caiga**" esta semana, en lugar de huir del dolor, permanezcamos en él 3 días. Observemos: ¿qué **nos** busca? ¿Quién es el "nueve maestros" que intenta levantarnos?
+4.  **Meditación del Féretro:** 10 minutos en silencio total, en espacio oscuro si es posible. Imaginemos el féretro. Luego, imaginemos manos levantándonos. Sintamos la diferencia.
 
 **Pregunta para la reflexión interna:**
 
-¿Quién eres sin tu máscara? ¿Quién permanece cuando todo cae?
+¿Quiénes **somos** sin **nuestra** máscara? ¿Quién permanece cuando todo cae?
 
 ---
 
@@ -297,4 +317,4 @@ Porque eso es la vida de un Maestro: morir a la ilusión, ser levantado a la rea
 
 *Que los Nueve Maestros continúen su búsqueda.*
 
-*Que seas levantado, nuevamente y nuevamente.*
+*Que seamos levantados, nuevamente y nuevamente.*
