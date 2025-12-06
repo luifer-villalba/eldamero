@@ -14,15 +14,16 @@ interface Props {
 }
 
 const { data, slug, prev, next } = Astro.props;
-const { title, date, grado, tema, autor, tags = [], orden } = data;
+// Extraemos los nuevos campos: logia, valle, simbolo
+const { title, date, grado, tema, simbolo, autor, logia, valle, tags = [], orden } = data;
 
 if (!date) {
     console.error(`PlanchaLayout: date es undefined para ${slug}`);
 }
 
 const publishedTime = date ? date.toISOString() : new Date().toISOString();
-const description = `Plancha ${orden} sobre ${tema} - Grado ${grado}. ${title}`;
-const keywords = [tema, grado, 'masonería', 'Lavagnini', autor, ...tags].join(', ');
+const description = `Plancha Nº ${orden}: "${title}". Tema: ${tema}. Grado: ${grado}.`;
+const keywords = [tema, grado, 'masonería', 'esoterismo', autor, ...tags].join(', ');
 
 const getGradoAbbr = (g: string) => {
     const lower = g.toLowerCase();
@@ -32,7 +33,7 @@ const getGradoAbbr = (g: string) => {
 };
 
 const gradoAbbr = getGradoAbbr(grado);
-const displayTags = tags.slice(0, 3);
+const displayTags = tags.slice(0, 5);
 ---
 
 <BaseLayout
@@ -55,14 +56,31 @@ const displayTags = tags.slice(0, 3);
         <article class="plancha">
             {/* ════════════ HEADER ════════════ */}
             <header class="plancha-header">
+                {/* Contexto de Logia */}
+                {(logia || valle) && (
+                        <div class="header-context">
+                            {logia && <span>{logia}</span>}
+                            {logia && valle && <span class="separator">•</span>}
+                            {valle && <span>Vall∴ de {valle}</span>}
+                        </div>
+                )}
+
                 <div class="header-meta">
                     <span class="numero">Plancha Nº {orden.toString().padStart(2, '0')}</span>
-                    <span class="grado">{grado}</span>
+                    <span class="grado-badge">{grado}</span>
                 </div>
 
                 <h1 class="plancha-title">{title}</h1>
 
-                <p class="plancha-tema">{tema}</p>
+                <div class="header-tematica">
+                    <p class="plancha-tema"><span class="label">Tema:</span> {tema}</p>
+                    {simbolo && (
+                            <p class="plancha-simbolo">
+                                <span class="simbolo-icon">☡</span>
+                                {simbolo}
+                            </p>
+                    )}
+                </div>
             </header>
 
             {/* ════════════ CONTENIDO ════════════ */}
@@ -78,7 +96,7 @@ const displayTags = tags.slice(0, 3);
             {/* ════════════ TAGS ════════════ */}
             {displayTags.length > 0 && (
                     <footer class="plancha-tags">
-                        <span class="tags-label">Temas:</span>
+                        <span class="tags-label">Claves:</span>
                         <div class="tags-list">
                             {displayTags.map(tag => (
                                     <a
@@ -92,7 +110,7 @@ const displayTags = tags.slice(0, 3);
                     </footer>
             )}
 
-            {/* ════════════ FOOTER ÉPICO (MERGE) ════════════ */}
+            {/* ════════════ FOOTER ÉPICO ════════════ */}
             <footer class="plancha-footer-epico">
                 <div class="footer-divider">
                     <span class="divider-icon">∴</span>
@@ -102,7 +120,6 @@ const displayTags = tags.slice(0, 3);
                     {/* COLUMNA IZQ: FECHA */}
                     <div class="footer-col side-col">
                         <span class="footer-label">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                             Trazado
                         </span>
                         {date && (
@@ -123,13 +140,12 @@ const displayTags = tags.slice(0, 3);
                         <div class="firma-grado-badge">{gradoAbbr}</div>
                     </div>
 
-                    {/* COLUMNA DER: FOLIACIÓN */}
+                    {/* COLUMNA DER: ORDEN */}
                     <div class="footer-col side-col">
                         <span class="footer-label">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                            Foliación
+                            Orden
                         </span>
-                        <span class="footer-value">Plancha Nº {orden.toString().padStart(2, '0')}</span>
+                        <span class="footer-value">#{orden.toString().padStart(3, '0')}</span>
                     </div>
                 </div>
 
@@ -138,22 +154,19 @@ const displayTags = tags.slice(0, 3);
 
             {/* ════════════ NAV ════════════ */}
             <nav class="plancha-nav no-print">
-                {prev && (
+                {prev ? (
                         <a href={`/planchas/${prev.slug}`} class="nav-button prev">
                             <span class="nav-label">← Anterior</span>
                             <span class="nav-text">{prev.data.title}</span>
                         </a>
-                )}
-                {!prev && <div></div>}
+                ) : (<div></div>)}
 
-                <div></div>
-
-                {next && (
+                {next ? (
                         <a href={`/planchas/${next.slug}`} class="nav-button next">
                             <span class="nav-label">Siguiente →</span>
                             <span class="nav-text">{next.data.title}</span>
                         </a>
-                )}
+                ) : (<div></div>)}
             </nav>
 
             <ScrollToTopHome />
@@ -163,7 +176,6 @@ const displayTags = tags.slice(0, 3);
 
 <style>
     /* ════════════ LAYOUT ════════════ */
-
     .plancha-wrapper {
         max-width: 1100px;
         margin: 0 auto;
@@ -176,15 +188,30 @@ const displayTags = tags.slice(0, 3);
         border-radius: var(--radius-md);
         padding: 3rem;
         line-height: 1.9;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
     /* ════════════ HEADER ════════════ */
-
     .plancha-header {
-        margin-bottom: 3rem;
-        padding-bottom: 2rem;
+        margin-bottom: 3.5rem;
+        padding-bottom: 2.5rem;
         border-bottom: 1px solid var(--damero-line);
-        text-align: center; /* Centrado para estilo épico */
+        text-align: center;
+        position: relative;
+    }
+
+    .header-context {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--damero-gray-mid);
+        margin-bottom: 1rem;
+        opacity: 0.7;
+    }
+
+    .header-context .separator {
+        margin: 0 0.5rem;
+        color: var(--damero-gold-primary);
     }
 
     .header-meta {
@@ -192,7 +219,7 @@ const displayTags = tags.slice(0, 3);
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-size: 0.85rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
@@ -200,137 +227,189 @@ const displayTags = tags.slice(0, 3);
 
     .numero {
         color: var(--damero-gray-light);
+        opacity: 0.8;
+    }
+
+    .grado-badge {
+        border: 1px solid var(--damero-gold-primary);
+        color: var(--damero-gold-primary);
+        padding: 0.2rem 0.8rem;
+        border-radius: 2px;
+        font-size: 0.75rem;
         font-weight: var(--fw-semibold);
         letter-spacing: 0.1em;
     }
 
-    .grado {
-        border: 1px solid var(--damero-gold-primary);
+    .plancha-title {
+        font-family: var(--font-serif-header);
+        font-size: 3rem;
+        line-height: 1.1;
+        margin: 0.5rem 0 1.5rem 0;
         color: var(--damero-gold-primary);
-        padding: 0.4rem 1rem;
-        border-radius: var(--radius-xs);
-        font-weight: var(--fw-semibold);
+        letter-spacing: -0.02em;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
-    .plancha-title {
-        font-size: 2.2rem;
-        line-height: 1.15;
-        margin: 0 0 1rem 0;
-        color: var(--damero-gold-primary);
-        letter-spacing: 0.05em;
+    .header-tematica {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
     }
 
     .plancha-tema {
         color: var(--damero-gray-light);
-        font-style: italic;
-        font-size: 1.05rem;
+        font-size: 1.15rem;
         margin: 0;
-        line-height: 1.6;
-        opacity: 0.8;
-        text-align: center;
+        line-height: 1.4;
+    }
+
+    .plancha-tema .label {
+        color: var(--damero-gold-accent);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-right: 0.5rem;
+    }
+
+    .plancha-simbolo {
+        color: var(--damero-gray-mid);
+        font-size: 1rem;
+        font-style: italic;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .simbolo-icon {
+        color: var(--damero-gold-primary);
+        font-size: 1.2rem;
     }
 
     /* ════════════ CONTENIDO ════════════ */
-
     .plancha-contenido {
-        margin-bottom: 3rem;
         color: var(--damero-gray-light);
-        font-size: 1.1rem;
-        letter-spacing: 0.3px;
-        word-spacing: 0.15em;
+        font-size: 1.15rem;
+        font-family: var(--font-serif-body);
+    }
+
+    /* --- CORRECCIÓN: OCULTAR HR --- */
+    /* El markdown genera <hr> con '---', pero usamos H2 para separar secciones */
+    .plancha-contenido :global(hr) {
+        display: none;
+    }
+
+    /* Ocultar H1 duplicados del markdown */
+    .plancha-contenido :global(h1) {
+        display: none;
     }
 
     .plancha-contenido :global(h2) {
         color: var(--damero-gold-primary);
-        margin-top: 3rem;
-        margin-bottom: 1rem;
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
         text-transform: uppercase;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.08em;
         font-size: 1.4rem;
-        border-top: 1px solid var(--damero-line);
-        padding-top: 1.5rem;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        padding-bottom: 0.5rem;
+        text-align: center;
     }
 
     .plancha-contenido :global(h3) {
         color: var(--damero-gold-accent);
-        margin-top: 1.8rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.15rem;
-        letter-spacing: 0.04em;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: 0.02em;
     }
 
     .plancha-contenido :global(p) {
-        margin-bottom: 1.75rem;
+        margin-bottom: 1.8rem;
         text-align: justify;
-        line-height: 1.85;
-        hyphens: auto;
+        text-justify: inter-word;
     }
 
-    .plancha-contenido :global(ul),
-    .plancha-contenido :global(ol) {
-        margin-left: 2rem;
-        margin-bottom: 1.5rem;
+    .plancha-contenido :global(ul) {
+        list-style: none;
+        padding-left: 1rem;
     }
 
-    .plancha-contenido :global(li) {
-        margin-bottom: 0.75rem;
+    .plancha-contenido :global(ul li) {
+        position: relative;
+        padding-left: 1.8rem;
+        margin-bottom: 0.8rem;
     }
 
-    .plancha-contenido :global(em) {
-        color: var(--damero-gold-accent);
-        font-style: italic;
-    }
-
-    .plancha-contenido :global(strong) {
-        color: var(--damero-gray-pale);
-        font-weight: var(--fw-bold);
+    .plancha-contenido :global(ul li::before) {
+        content: "∴";
+        position: absolute;
+        left: 0;
+        color: var(--damero-gold-primary);
+        font-size: 0.9rem;
+        top: 0.4rem;
     }
 
     .plancha-contenido :global(blockquote) {
-        border-left: 4px solid var(--damero-gold-primary);
-        padding-left: var(--spacing-md);
-        color: var(--damero-gray-dark);
+        position: relative;
+        border: 1px solid var(--damero-gold-primary);
+        padding: 2.5rem;
+        margin: 3rem 0;
+        background: rgba(18, 18, 18, 0.4);
         font-style: italic;
-        margin: var(--spacing-md) 0;
+        color: var(--damero-gray-pale);
     }
 
-    .plancha-contenido :global(h2 + p::first-letter) {
-        font-size: 3.5rem;
-        font-weight: bold;
+    .plancha-contenido :global(blockquote::before) {
+        content: "“";
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--damero-charcoal);
+        padding: 0 1rem;
+        font-size: 3rem;
         color: var(--damero-gold-primary);
-        float: left;
-        line-height: 0.8;
-        margin-right: 0.1em;
-        margin-top: 0.1em;
+        font-family: serif;
+        line-height: 1;
     }
 
-    .plancha-contenido :global(aside) {
-        border-left: 4px solid var(--damero-gold-primary);
-        background: rgba(212, 175, 55, 0.08);
-        padding: 1.5rem;
-        border-radius: var(--radius-md);
-        margin: 2rem 0;
-        font-size: 1.05rem;
-        color: var(--damero-gray-light);
-        line-height: 1.8;
+    .plancha-contenido :global(strong) {
+        color: white;
+        font-weight: 600;
     }
 
-    .plancha-contenido :global(img) {
-        max-width: 100%;
-        height: auto;
-        border-radius: var(--radius-sm);
-        margin: 1.5rem 0;
-    }
-
+    /* Tablas responsivas */
     .plancha-contenido :global(table) {
         width: 100%;
         border-collapse: collapse;
-        margin: 1.5rem 0;
+        margin: 2.5rem 0;
+        font-size: 1rem;
+        border: 1px solid var(--damero-line);
         display: block;
         overflow-x: auto;
     }
 
-    /* ════════════ SHARE & TAGS ════════════ */
+    .plancha-contenido :global(th) {
+        background: rgba(212, 175, 55, 0.1);
+        color: var(--damero-gold-primary);
+        padding: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 0.9rem;
+        border-bottom: 1px solid var(--damero-gold-primary);
+        text-align: left;
+    }
+
+    .plancha-contenido :global(td) {
+        padding: 1.2rem;
+        border-bottom: 1px solid var(--damero-line);
+        color: var(--damero-gray-light);
+    }
+
+    /* ════════════ TAGS & FOOTER ════════════ */
 
     .share-section {
         display: flex;
@@ -342,15 +421,15 @@ const displayTags = tags.slice(0, 3);
         display: flex;
         align-items: center;
         gap: 1.5rem;
-        margin: 2rem 0;
-        padding: 1.5rem 0;
+        margin-top: 3rem;
+        padding-top: 2rem;
         border-top: 1px solid var(--damero-line);
         flex-wrap: wrap;
     }
 
     .tags-label {
         color: var(--damero-gray-dark);
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         font-weight: var(--fw-semibold);
@@ -368,9 +447,11 @@ const displayTags = tags.slice(0, 3);
         color: var(--damero-gold-accent);
         padding: 0.5rem 1rem;
         border-radius: var(--radius-xs);
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         text-decoration: none;
         transition: all var(--transition-fast);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
 
     .tag-link:hover {
@@ -382,7 +463,7 @@ const displayTags = tags.slice(0, 3);
     /* ════════════ FOOTER ÉPICO ════════════ */
 
     .plancha-footer-epico {
-        margin-top: 2rem;
+        margin-top: 3rem;
         padding: 3rem 0;
         position: relative;
         border-top: 1px solid var(--damero-line);
@@ -420,7 +501,7 @@ const displayTags = tags.slice(0, 3);
     .side-col {
         gap: 0.5rem;
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 
     .footer-grid > .side-col:first-child {
@@ -431,20 +512,11 @@ const displayTags = tags.slice(0, 3);
     }
 
     .footer-label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.4rem;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         color: var(--damero-gray-mid);
         font-weight: var(--fw-semibold);
-    }
-
-    .footer-label svg {
-        opacity: 0.6;
-        color: var(--damero-gold-primary);
     }
 
     .footer-value {
@@ -459,7 +531,7 @@ const displayTags = tags.slice(0, 3);
     }
 
     .firma-sfu {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         letter-spacing: 0.3em;
         color: var(--damero-gold-dark);
         margin-bottom: 0.2rem;
@@ -468,7 +540,7 @@ const displayTags = tags.slice(0, 3);
 
     .firma-nombre {
         font-family: var(--font-serif-header);
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: var(--damero-gold-primary);
         font-weight: var(--fw-bold);
         letter-spacing: 0.05em;
@@ -478,10 +550,10 @@ const displayTags = tags.slice(0, 3);
     .firma-grado-badge {
         display: inline-block;
         margin-top: 0.5rem;
-        padding: 0.2rem 0.8rem;
+        padding: 0.2rem 1rem;
         border: 1px solid var(--damero-line);
         border-radius: var(--radius-xs);
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.2em;
         color: var(--damero-gold-accent);
@@ -501,8 +573,8 @@ const displayTags = tags.slice(0, 3);
 
     .plancha-nav {
         display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
         margin-top: 3rem;
         padding-top: 2rem;
     }
@@ -526,7 +598,7 @@ const displayTags = tags.slice(0, 3);
     }
 
     .nav-label {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         color: var(--damero-gray-light);
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -534,7 +606,7 @@ const displayTags = tags.slice(0, 3);
     }
 
     .nav-text {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-family: var(--font-serif-header);
         color: var(--damero-gold-primary);
         font-weight: var(--fw-bold);
@@ -555,20 +627,32 @@ const displayTags = tags.slice(0, 3);
 
     /* ════════════ RESPONSIVE ════════════ */
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         .plancha-wrapper {
             padding: var(--spacing-md);
         }
 
+        .plancha-title { font-size: 2.5rem; }
+    }
+
+    @media (max-width: 768px) {
         .plancha {
             padding: 2rem 1.5rem;
         }
 
         .plancha-title {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
-        /* Responsive Footer */
+        .header-context {
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .header-context .separator {
+            display: none;
+        }
+
         .footer-grid {
             grid-template-columns: 1fr;
             gap: 2rem;
@@ -582,7 +666,7 @@ const displayTags = tags.slice(0, 3);
         }
 
         .center-col {
-            order: -1; /* Firma primero en móvil */
+            order: -1;
             margin-bottom: 1rem;
         }
 
@@ -593,20 +677,6 @@ const displayTags = tags.slice(0, 3);
 
         .nav-button {
             text-align: center;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .plancha {
-            padding: 1.5rem 1rem;
-        }
-
-        .plancha-title {
-            font-size: 1.5rem;
-        }
-
-        .firma-nombre {
-            font-size: 1.4rem;
         }
     }
 
@@ -630,7 +700,7 @@ const displayTags = tags.slice(0, 3);
         .plancha-title,
         .plancha-contenido :global(h2),
         .plancha-contenido :global(h3),
-        .card-grado,
+        .grado-badge,
         .tag-link,
         .firma-grado-badge,
         .footer-value,

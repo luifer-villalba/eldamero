@@ -9,103 +9,105 @@ simbolo: "Las Dos Columnas, B y J, Fuego y Agua, Fuerza y Forma"
 tags: ["Columnas Masónicas", "Dualidad", "Geometría Sagrada", "Templo Interior"]
 ---
 
+# Las Dos Columnas: Boaz y Jakin
+
 Mis QQ∴ HH∴,
 
-Ves las Dos Columnas en cada Logia. Parecen decoración simétrica.
+Vemos las Dos Columnas en cada Logia. Parecen decoración simétrica.
 
-**No son.**
+**No lo son.**
 
-Son **estructura que sostiene todo lo demás.** Sin ellas, el Templo colapsa. Sin ellas, tu vida se desequilibra.
+Son la **estructura que sostiene todo lo demás.** Sin ellas, el **Templo** colapsa. Sin ellas, **nuestra** vida se desequilibra.
 
-Boaz (izquierda): Fuerza bruta, expansión, fuego, lo masculino.
+**Boaz** (izquierda) es Fuerza bruta, expansión, fuego, lo masculino.
 
-Jakin (derecha): Forma contenedora, contracción, agua, lo femenino.
+**Jakin** (derecha) es Forma contenedora, contracción, agua, lo femenino.
 
-Ambas son **necesarias.** Ninguna es superior. La maestría es **caminar entre ellas sin caer a ningún lado.**
+Ambas son **necesarias.** Ninguna es superior a la otra. La maestría es **caminar entre ellas sin caer a ningún lado.**
 
 ---
 
-## Descodificación: Boaz (Fuerza Bruta)
+## Descodificación: Boaz (La Fuerza)
 
-**Significado hebreo:** "En él está la fuerza"
+**Significado hebreo:** "En él está la fuerza".
 
-**Energía:** Expansion, acción, poder, fuego, lo activo, lo generador.
+**Energía:** Expansión, acción, poder, fuego, lo activo, lo generador.
 
-**En ti:** Tu capacidad de **actuar, conquistar, empujar, crear, destruir si es necesario.**
+**En nosotros:** **Nuestra** capacidad de **actuar, conquistar, empujar, crear, destruir si es necesario.**
 
-**Ubicación en Templo:** Izquierda de quien entra (tu lado derecho cuando miras desde el Oriente).
+**Ubicación en Templo:** Izquierda de quien entra. Es **nuestro** lado derecho cuando miramos desde el **Oriente**.
 
 ### Boaz en la Vida Profana
 
 **Aplicaciones positivas:**
-- Emprendimiento (tomas riesgos)
-- Liderazgo (impones dirección)
-- Creación (manifiestas ideas)
-- Defensa (proteges lo tuyo)
+* Emprendimiento (tomamos riesgos).
+* Liderazgo (imponemos dirección).
+* Creación (manifestamos ideas).
+* Defensa (protegemos lo **nuestro**).
 
-**Distorsiones (cuando Boaz se excede):**
-- Tiranía (impones sin escuchar)
-- Destrucción (arrasas sin construir)
-- Violencia (resuelves con fuerza bruta)
-- Adicción al poder
+**Distorsiones (exceso de Boaz):**
+* Tiranía (imponemos sin escuchar).
+* Destrucción (arrasamos sin construir).
+* Violencia (resolvemos con fuerza bruta).
+* Adicción al poder.
 
-**Señal de desequilibrio Boaz:** Siempre tienes que ganar. No toleras que otro tenga razón. Te mueves sin pensar.
+**Señal de desequilibrio Boaz:** Siempre **tenemos** que ganar. No toleramos que otro tenga razón. **Nos** movemos sin reflexionar.
 
 ### Boaz en la Vida Masónica
 
-En Logia, Boaz es la **capacidad de los HH∴ de enfrentarse a la ignorancia y la tiranía.**
+En Logia, **Boaz** es la **capacidad de los HH∴ de enfrentarse a la Ignorancia y la tiranía.**
 
 No es agresión. Es **potencia justa.**
 
-Un Maestro sin Boaz es débil: se deja pisotear, no se defiende, no construye nada.
+Un Maestro sin **Boaz** es débil. Se deja pisotear, no se defiende. No construye nada sólido.
 
-**Práctica:** Cada día, identifica dónde necesitas más Boaz:
-- ¿Dónde callas cuando deberías hablar?
-- ¿Dónde no actúas cuando es hora de actuar?
+**Práctica:** Cada día, **identifiquemos** dónde **necesitamos** más **Boaz**:
+* ¿Dónde callamos cuando deberíamos hablar?
+* ¿Dónde no actuamos cuando es hora de actuar?
 
 ---
 
-## Descodificación: Jakin (Forma, Contención)
+## Descodificación: Jakin (La Forma)
 
-**Significado hebreo:** "Él establecerá"
+**Significado hebreo:** "Él establecerá".
 
 **Energía:** Contracción, contención, forma, agua, lo receptivo, lo consolidador.
 
-**En ti:** Tu capacidad de **escuchar, contener, estructurar, permitir, integrar.**
+**En nosotros:** **Nuestra** capacidad de **escuchar, contener, estructurar, permitir, integrar.**
 
-**Ubicación en Templo:** Derecha de quien entra (tu lado izquierdo cuando miras desde Oriente).
+**Ubicación en Templo:** Derecha de quien entra. Es **nuestro** lado izquierdo cuando miramos desde el **Oriente**.
 
 ### Jakin en la Vida Profana
 
 **Aplicaciones positivas:**
-- Receptividad (escuchas sin juzgar)
-- Disciplina (mantienes forma)
-- Cuidado (atiendes detalles)
-- Consolidación (lo que construyes, permanece)
+* Receptividad (escuchamos sin juzgar).
+* Disciplina (mantenemos la forma).
+* Cuidado (atendemos detalles).
+* Consolidación (lo que construimos, permanece).
 
-**Distorsiones (cuando Jakin se excede):**
-- Pasividad (nunca actúas)
-- Rigidez (no adaptas)
-- Control obsesivo (todo debe ser "perfecto")
-- Debilidad (permites abuso)
+**Distorsiones (exceso de Jakin):**
+* Pasividad (nunca actuamos).
+* Rigidez (no **nos** adaptamos).
+* Control obsesivo (todo debe ser "perfecto").
+* Debilidad (permitimos el abuso).
 
-**Señal de desequilibrio Jakin:** Siempre cedes. Dejas que otros decidan. Te paraliza el análisis.
+**Señal de desequilibrio Jakin:** Siempre cedemos. Dejamos que otros decidan. **Nos** paraliza el análisis.
 
 ### Jakin en la Vida Masónica
 
-En Logia, Jakin es la **capacidad de los HH∴ de mantener estructura, tradición, continuidad.**
+En Logia, **Jakin** es la **capacidad de los HH∴ de mantener estructura, tradición y continuidad.**
 
 No es fanatismo. Es **preservación justa.**
 
-Un Maestro sin Jakin es caótico: no transmite nada sólido, todo cambia constantemente, nada permanece.
+Un Maestro sin **Jakin** es caótico. No transmite nada sólido. Todo cambia constantemente. Nada permanece.
 
-**Práctica:** Cada día, identifica dónde necesitas más Jakin:
-- ¿Dónde actúas sin reflexionar?
-- ¿Dónde necesitas consolidar antes de lanzarte a lo nuevo?
+**Práctica:** Cada día, **identifiquemos** dónde **necesitamos** más **Jakin**:
+* ¿Dónde actuamos sin reflexionar?
+* ¿Dónde **necesitamos** consolidar antes de lanzarnos a lo nuevo?
 
 ---
 
-## El Equilibrio: El Espacio Entre Columnas
+## El Equilibrio: El Espacio Central
 
 **Lo crítico:** No es estar EN una columna. Es **caminar entre ambas.**
 
@@ -113,56 +115,56 @@ Lavagnini escribe: *"El Maestro que pisa firme en el centro entre Boaz y Jakin, 
 
 ### Visualización Operativa
 
-Imagina el Templo:
-- Boaz a tu izquierda (Fuerza, expansión, caos potencial)
-- Jakin a tu derecha (Forma, contención, rigidez potencial)
-- Centro: donde está el Pavimento Mosaico, donde caminas
+Imaginemos el **Templo**:
+* **Boaz** a **nuestra** izquierda (Fuerza, expansión, caos potencial).
+* **Jakin** a **nuestra** derecha (Forma, contención, rigidez potencial).
+* **Centro:** Donde está el **Pavimento Mosaico**, donde caminamos.
 
-Cuando necesitas acción: **giras hacia Boaz**, tomas su fuerza, actúas.
+Cuando **necesitamos** acción: **giramos hacia Boaz**, tomamos su fuerza, actuamos.
 
-Cuando necesitas consolidar: **giras hacia Jakin**, tomas su forma, estructuras.
+Cuando **necesitamos** consolidar: **giramos hacia Jakin**, tomamos su forma, estructuramos.
 
-Pero siempre regresas al **centro.** No te quedas en ninguna.
+Pero siempre regresamos al **centro.** No **nos** quedamos en ninguna.
 
-### En Relaciones
+### Equilibrio en Relaciones
 
 **Boaz desbordante + Jakin pasivo = relación tóxica**
-- Uno domina, otro se somete
-- Eventual ruptura o resentimiento
+* Uno domina, el otro se somete.
+* Resultado: eventual ruptura o resentimiento.
 
 **Boaz pasivo + Jakin rígido = relación muerta**
-- Nada ocurre
-- Ambos se atrofian
+* Nada ocurre.
+* Ambos se atrofian.
 
-**Boaz ≈ Jakin en equilibrio = relación viva**
-- Ambos actúan cuando es hora
-- Ambos ceden cuando es hora
-- Dinámico, no estático ni caótico
+**Boaz $\leftrightarrow$ Jakin en equilibrio = relación viva**
+* Ambos actúan cuando es hora.
+* Ambos ceden cuando es hora.
+* Dinámico, no estático ni caótico.
 
-### En Profesión
+### Equilibrio en la Profesión
 
-**Boaz desbordante:** Empresario que innova constantemente pero quiebra por falta de estructura.
+**Boaz desbordante:** Empresario que innova constantemente. Quiebra por falta de estructura.
 
-**Jakin rígido:** Ejecutivo que mantiene proceso pero muere ante cambio de mercado.
+**Jakin rígido:** Ejecutivo que mantiene proceso. Muere ante un cambio de mercado.
 
-**Equilibrio:** Líder que innova dentro de estructura. Mantiene lo que funciona, cambia lo que no.
+**Equilibrio:** Líder que innova dentro de una estructura. Mantiene lo que funciona, cambia lo que no.
 
 ---
 
-## Los Nombres Secretos de las Columnas
+## Los Nombres Esotéricos
 
-Hebreo clásico revela capas:
+El hebreo clásico revela capas:
 
 | Columna | Nombre | Traducción | Significado Profundo |
 |---------|--------|------------|---------------------|
-| **Boaz** | בוֹעַז | "En él fuerza" | La potencia que crea mundo |
-| **Jakin** | יָכִין | "Establecerá" | Lo que persiste eternamente |
+| **Boaz** | בוֹעַז | "En él fuerza" | La potencia que crea el mundo. |
+| **Jakin** | יָכִין | "Establecerá" | Lo que persiste eternamente. |
 
 Juntas dicen: *"La fuerza crea. Lo establecido permanece."*
 
-Alternancia: crear (Boaz), consolidar (Jakin), crear (Boaz), consolidar (Jakin)...
+**Alternancia:** Crear (**Boaz**), consolidar (**Jakin**), crear (**Boaz**), consolidar (**Jakin**).
 
-Eso es ciclo de toda vida: expansión y contracción, movimiento y descanso.
+Ese es el ciclo de toda vida: expansión y contracción, movimiento y descanso.
 
 ---
 
@@ -181,7 +183,7 @@ Eso es ciclo de toda vida: expansión y contracción, movimiento y descanso.
 | Edad de vida | Juventud | Madurez |
 | Nota musical | Do agudo | Do grave |
 
-**Interpretación:** Cada columna es **orquesta completa.** No es simple dualidad. Es dos universos operativos distintos, necesarios ambos.
+**Interpretación:** Cada columna es una **orquesta completa.** No es simple dualidad. Son dos universos operativos distintos, necesarios ambos.
 
 ---
 
@@ -189,80 +191,68 @@ Eso es ciclo de toda vida: expansión y contracción, movimiento y descanso.
 
 ### Día 1-2: Observación de Desequilibrio
 
-¿Hacia cuál columna tiendes naturalmente?
+¿Hacia cuál columna tendemos naturalmente?
 
-- ¿Eres más Boaz (activo, impulsivo, fuerte)?
-- ¿Eres más Jakin (receptivo, cuidadoso, estructurado)?
+* ¿**Somos** más **Boaz** (activos, impulsivos, fuertes)?
+* ¿**Somos** más **Jakin** (receptivos, cuidadosos, estructurados)?
 
-Anota honestamente. Sin juzgarte.
+Anotemos honestamente. No **debemos** juzgarnos.
 
 ### Día 3-4: Fortalecimiento de la Débil
 
-Si eres exceso Boaz: **practica Jakin.**
-- Un día entero sin decidir impulsivamente
-- Escucha más, habla menos
-- Consolida antes de lanzar
+Si **somos** exceso **Boaz**: **practiquemos Jakin.**
+* Un día entero sin decidir impulsivamente.
+* Escuchemos más, hablemos menos.
+* Consolidemos antes de lanzar.
 
-Si eres exceso Jakin: **practica Boaz.**
-- Un día entero sin pedir permiso
-- Actúa primero, piensa después
-- Toma una decisión osada
+Si **somos** exceso **Jakin**: **practiquemos Boaz.**
+* Un día entero sin pedir permiso.
+* Actuemos primero, pensemos después.
+* Tomemos una decisión osada.
 
 ### Día 5-7: Integración
 
-Practica ir **conscientemente de una columna a la otra.**
+Practiquemos ir **conscientemente de una columna a la otra.**
 
-Mañana en el trabajo: problema que requiere acción (Boaz). Actúas.
+Mañana en el trabajo: problema que requiere acción (**Boaz**). Actuemos.
 
-Tarde: resultado de la acción requiere consolidación (Jakin). Estructuras.
+Tarde: resultado de la acción requiere consolidación (**Jakin**). Estructuremos.
 
-Noche: siguiente proyecto requiere innovación (Boaz). Ideás.
+Noche: siguiente proyecto requiere innovación (**Boaz**). Ideemos.
 
-**Ritmo natural:** no quedas en una. Fluyes entre ambas según la hora y necesidad.
-
----
-
-## Conexión con Planchas Anteriores
-
-- **Orden 5 (Pavimento Mosaico):** Dualidad blanco/negro
-- **Orden 5.5 (Esta):** Dualidad Boaz/Jakin (estructura de esa dualidad)
-- **Orden 6 (Integración Semanal):** Síntesis práctica
-
-Sin Boaz/Jakin: el Pavimento es abstracto.
-
-Con ellas: comprendes que **toda dualidad necesita equilibrio para construir.**
+**Ritmo natural:** No **nos** quedamos en una. Fluimos entre ambas según la hora y la necesidad.
 
 ---
 
 ## Transmutación de Cuatro Semanas
 
 ### Semana 1: Identificación
-¿Exceso Boaz o Jakin? Anota comportamientos que lo prueban.
+¿Exceso **Boaz** o **Jakin**? Anotemos **nuestros** comportamientos que lo prueban.
 
 ### Semana 2: Corrección Consciente
-Un día entero practicando la columna débil. Observa qué cambia.
+Un día entero practicando la columna débil. Observemos qué cambia.
 
 ### Semana 3: Ritmo Natural
-Practica alternar conscientemente: acción → consolidación → acción.
+Practiquemos alternar conscientemente: acción $\rightarrow$ consolidación $\rightarrow$ acción.
 
 ### Semana 4: Maestría
-Vive una semana completa. ¿Cómo fluyes entre columnas naturalmente?
+Vivamos una semana completa. ¿Cómo fluimos entre columnas naturalmente?
 
 ---
 
 ## Reflexión Personal Final
 
-Mis QQ∴ HH∴, el Templo no se sostiene con una columna.
+Mis QQ∴ HH∴, el **Templo** no se sostiene con una columna.
 
-Necesita dos. Y la capstone en el centro que las conecta.
+Necesita dos. Y el centro que las conecta.
 
-Tu vida es igual.
+**Nuestra** vida es igual.
 
-Boaz sin Jakin: vida de caos, promesas sin consolidación, energía dispersa.
+**Boaz** sin **Jakin**: vida de caos, promesas sin consolidación, energía dispersa.
 
-Jakin sin Boaz: vida estancada, forma vacía, muerte lenta.
+**Jakin** sin **Boaz**: vida estancada, forma vacía, muerte lenta.
 
-Boaz ↔ Jakin alternados: vida viva, construcción duradera, maestría.
+**Boaz** $\leftrightarrow$ **Jakin** alternados: vida viva, construcción duradera, maestría.
 
 El Maestro no elige una columna. **Las usa ambas.**
 
@@ -270,8 +260,8 @@ El Maestro no elige una columna. **Las usa ambas.**
 
 **Pregunta para reflexión:**
 
-*¿Cuál columna me falta? ¿Y qué construiría si tuviera ambas en equilibrio?*
+*¿Cuál columna nos falta? ¿Y qué construiríamos si tuviéramos ambas en equilibrio?*
 
 ---
 
-*Que las columnas sostengan tu Templo en equilibrio eterno.*
+*Que las columnas sostengan nuestro Templo en equilibrio eterno.*
