@@ -661,10 +661,38 @@ const displayTags = tags.slice(0, 5);
     @media (max-width: 768px) {
         .plancha {
             padding: 2rem 1.5rem;
+            line-height: 1.6;
         }
 
         .plancha-title {
             font-size: 2rem;
+        }
+
+        .plancha-contenido {
+            font-size: 1.05rem;
+        }
+
+        .plancha-contenido :global(p) {
+            text-align: left;
+        }
+
+        .plancha-contenido :global(blockquote) {
+            padding: 2rem 1rem;
+            font-size: 1.2rem;
+        }
+
+        .plancha-contenido :global(ul) {
+            padding-left: 0;
+            margin-left: 0;
+            margin-bottom: 2rem;
+        }
+
+        .plancha-contenido :global(ul li) {
+            padding-left: 1.2rem;
+        }
+
+        .plancha-contenido :global(ul li::before) {
+            top: 0.5rem;
         }
 
         .header-context {
