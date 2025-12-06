@@ -305,16 +305,30 @@ const displayTags = tags.slice(0, 5);
         display: none;
     }
 
+    /* Ocultar elementos redundantes */
+    .plancha-contenido :global(h1),
+    .plancha-contenido :global(hr) {
+        display: none;
+    }
+
+    /* Estilos para los H2 (Subtítulos) */
     .plancha-contenido :global(h2) {
         color: var(--damero-gold-primary);
-        margin-top: 3.5rem;
+        margin-top: 3.5rem; /* Margen normal para H2 intermedios */
         margin-bottom: 1.5rem;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         font-size: 1.4rem;
-        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2); /* Línea DEBAJO del texto */
+        border-top: none; /* Aseguramos que no haya línea arriba */
         padding-bottom: 0.5rem;
         text-align: center;
+    }
+
+    /* CORRECCIÓN CLAVE: El primer H2 del texto no necesita tanto margen ni líneas arriba */
+    .plancha-contenido :global(h2:first-of-type) {
+        margin-top: 0; /* Eliminamos el hueco gigante */
+        padding-top: 1rem;
     }
 
     .plancha-contenido :global(h3) {
@@ -355,11 +369,20 @@ const displayTags = tags.slice(0, 5);
     .plancha-contenido :global(blockquote) {
         position: relative;
         border: 1px solid var(--damero-gold-primary);
-        padding: 2.5rem;
+        /* Reduje un poco el padding (de 2.5rem a 2rem) */
+        padding: 2rem 2.5rem;
         margin: 3rem 0;
         background: rgba(18, 18, 18, 0.4);
         font-style: italic;
         color: var(--damero-gray-pale);
+        font-size: 1.35rem;
+        line-height: 1.6;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .plancha-contenido :global(blockquote p) {
+        margin: 0;
     }
 
     .plancha-contenido :global(blockquote::before) {
