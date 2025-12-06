@@ -55,6 +55,10 @@ const socialImage = new URL(image, Astro.site);
     {/* FAVICON: Usará el archivo SVG de public/ */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 
+    {/* REFUERZO EN GOOGLE Y MÓVILES */}
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+
     <ViewTransitions/>
 
     <slot name="head"/>
