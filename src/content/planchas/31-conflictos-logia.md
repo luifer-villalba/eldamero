@@ -1,6 +1,6 @@
 ---
 title: "Conflictos en Logia: Resolución Operativa"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 31
 grado: "Maestro"

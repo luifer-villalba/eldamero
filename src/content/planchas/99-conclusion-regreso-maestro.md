@@ -1,6 +1,6 @@
 ---
 title: "Conclusión: La Transmutación Completa"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 99
 grado: "Maestro"

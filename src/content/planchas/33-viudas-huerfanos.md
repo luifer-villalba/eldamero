@@ -1,6 +1,6 @@
 ---
 title: "Viudas y Huérfanos del Maestro: Responsabilidad Social Masónica"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 33
 grado: "Maestro"

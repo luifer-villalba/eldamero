@@ -1,6 +1,6 @@
 ---
 title: "La Palabra Perdida: Su Verdadero Significado"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 23
 grado: "Maestro"

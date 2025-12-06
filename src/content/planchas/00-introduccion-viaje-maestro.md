@@ -1,6 +1,6 @@
 ---
 title: "Introducción: El Viaje del Maestro"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 0
 grado: "Maestro"

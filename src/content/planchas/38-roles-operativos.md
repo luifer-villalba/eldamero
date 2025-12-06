@@ -1,6 +1,6 @@
 ---
 title: "Roles Operativos en Logia: Secretario y Maestro de Ceremonias"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 38
 grado: "Maestro"

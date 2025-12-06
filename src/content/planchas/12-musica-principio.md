@@ -12,111 +12,128 @@ orden: 12
 tags: ["Grado Maestro", "Siete Metales", "Herramientas", "Septenario", "Escuadra", "Compás", "Vibración Armónica", "Sinfonía Universal"]
 ---
 
-Mis QQ∴ HH∴, la Música no es "arte sonoro" para el Maestro. Es el **principio que conecta todas las cosas en el tiempo**. Es la ley invisible que mantiene unido el universo visible.
+# La Música: Principio de Armonía Constructora
 
-Lavagnini escribe: *"Como todo es vibración, y toda vibración es sonido musical, la misma Construcción del Universo es una Obra Musical."*
+Mis QQ∴ HH∴, la Música no es un simple "arte sonoro" para el Maestro.
 
-**Visualización Mental:**
+Es el **principio que conecta todas las cosas en el tiempo**. Es la ley invisible que mantiene unido el universo visible.
 
-Tu vida es una sinfonía. Cada decisión es una nota. Cada acción es un compás. ¿Estás tocando armonía o cacofonía?
+Lavagnini escribe:
 
-La mayoría de la gente vive en disonancia perpetua: notas que luchan entre sí, ritmo erático, tempo inconsistente. El Maestro aprende a **vibrar en armonía**, a convertir su vida en música que construye, no en ruido que destruye.
+> *"Como todo es vibración, y toda vibración es sonido musical, la misma Construcción del Universo es una Obra Musical."*
+
+### Visualización Mental
+
+**Visualicemos nuestra** vida como una sinfonía. Cada decisión es una nota. Cada acción es un compás. ¿**Estamos** tocando armonía o cacofonía?
+
+La mayoría de la gente vive en disonancia perpetua. Notas que luchan entre sí, ritmo errático, tempo inconsistente.
+
+El Maestro aprende a **vibrar en armonía**. Aprende a convertir su vida en música que construye, no en ruido que destruye.
+
+---
 
 ## Música como Principio Constructor
 
 ### Definición Operativa
 
-Lavagnini define: *"La Música enseña la 'conexión armónica' que une a todos los seres en la Sinfonía Universal, unidad en la multiplicidad."*
+Lavagnini define:
+
+> *"La Música enseña la 'conexión armónica' que une a todos los seres en la Sinfonía Universal, unidad en la multiplicidad."*
 
 **Descodificación Profunda:**
 
-La Música no son notas aisladas. Es la *relación entre notas*. Un Do aislado es solo sonido. Do-Mi-Sol es acorde, es creación de realidad nueva que no existía en las notas individuales.
+La Música no consiste en notas aisladas. Es la *relación entre las notas*. Un Do aislado es solo sonido. Do-Mi-Sol es un acorde. Es la creación de una realidad nueva que no existía en las notas individuales.
 
-Así es la vida del Maestro: no eres nota aislada. Eres **parte de sinfonía mayor**. Tu armonía con otros crea realidades que ninguno podría crear solo.
+Así es la vida del Maestro: no **somos** notas aisladas. **Somos parte de una sinfonía mayor**. **Nuestra** armonía con los otros crea realidades que ninguno podría crear solo.
 
 **Enseñanza Clave:**
 
-Lavagnini lo puntualiza: *"Toda actividad constructora es obra y resultado de una armonía interior, que la dirige, cuyas notas se expresan en las formas visibles."*
+Lavagnini lo puntualiza:
 
-Esto significa: Tu obra externa (lo que construís, lo que generás, lo que manifestás) es la **expresión audible** de tu armonía interior.
+> *"Toda actividad constructora es obra y resultado de una armonía interior, que la dirige, cuyas notas se expresan en las formas visibles."*
 
-Si tu interior es caos (emociones descontroladas, pensamientos contradictorios, voluntad fragmentada), tu obra externa es caos.
+Esto significa: **Nuestra** obra externa (lo que construimos, lo que generamos, lo que manifestamos) es la **expresión audible** de **nuestra** armonía interior.
 
-Si tu interior es armonía (alineamiento interno, coherencia, voluntad unificada), tu obra externa es belleza operativa.
+Si **nuestro** interior es caos (emociones descontroladas, pensamientos contradictorios, voluntad fragmentada), **nuestra** obra externa será caos.
+
+Si **nuestro** interior es armonía (alineamiento interno, coherencia, voluntad unificada), **nuestra** obra externa será belleza operativa.
 
 ### La Armonía como Fuerza Constructiva
 
 El Maestro no construye solo con mallete y escuadra. Construye con **vibración armónica**.
 
-Cuando hablas desde armonía interior, tu palabra tiene peso.
-
-Cuando actúas desde armonía interior, tu acción tiene poder.
-
-Cuando piensas desde armonía interior, tus ideas tienen gravedad.
+* Cuando **hablamos** desde la armonía interior, **nuestra** palabra tiene peso.
+* Cuando **actuamos** desde la armonía interior, **nuestra** acción tiene poder.
+* Cuando **pensamos** desde la armonía interior, **nuestras** ideas tienen gravedad.
 
 Sin armonía, todo es esfuerzo vacío.
 
+---
+
 ## Música + Retórica = Armonía Constructora
 
-Lavagnini conecta explícitamente estos dos artes: *"La aplicación de la música a la retórica hace que la Palabra de los Maestros se halle constantemente animada por un espíritu de armonía constructora, que tiene el poder de unir y sintetizar en un esfuerzo común las tendencias más diferentes."*
+Lavagnini conecta explícitamente estos dos artes:
+
+> *"La aplicación de la música a la retórica hace que la Palabra de los Maestros se halle constantemente animada por un espíritu de armonía constructora, que tiene el poder de unir y sintetizar en un esfuerzo común las tendencias más diferentes."*
 
 **Descodificación:**
 
-Tu palabra no debe ser solo clara (retórica). Debe ser **armónica** (música).
+**Nuestra** palabra no debe ser solo clara (retórica). Debe ser **armónica** (música).
 
-Una palabra clara pero inarmónica **divide**. "Tienes razón, pero él no". Dos notas que luchan.
+Una palabra clara pero inarmónica **divide**. "Tienes razón, pero él no". Son dos notas que luchan.
 
-Una palabra armónica **une**. "Veo verdad en ambas perspectivas. ¿Cómo las integramos?" Una sinfonía donde cada perspectiva es instrumento de la solución.
+Una palabra armónica **une**. "Vemos verdad en ambas perspectivas. ¿Cómo las integramos?". Es una sinfonía donde cada perspectiva es un instrumento de la solución.
 
 **Enseñanza Profunda:**
 
-La armonía constructora no es consenso forzado. Es **síntesis genuina** donde cada parte mantiene su verdad individual pero se alinea hacia propósito común.
+La armonía constructora no es consenso forzado. Es una **síntesis genuina**. Cada parte mantiene su verdad individual, pero se alinea hacia un propósito común.
 
-En música: cada instrumento toca su nota distinta, pero todas convergen en la misma melodía.
-
-En Logia: cada Maestro ve desde perspectiva única, pero todos vibran hacia el mismo Ideal.
+* En la música: cada instrumento toca su nota distinta, pero todas convergen en la misma melodía.
+* En la Logia: cada Maestro ve desde una perspectiva única, pero todos vibran hacia el mismo Ideal.
 
 ### Ejemplo Práctico: Comunicación Armónica
 
 **Sin Música (solo Retórica):**
 
-"El ritmo debe cambiar. Así lo decidimos. Punto". Claro. Pero inarmónico. Genera resistencia silenciosa.
+"El ritmo debe cambiar. Así lo decidimos. Punto". Claro, pero inarmónico. Genera resistencia silenciosa.
 
 **Con Música (Retórica + Armonía):**
 
-"El ritmo actual no nos lleva donde queremos. Propongo cambio. ¿Qué sienten? ¿Qué les falta? Integro perspectivas. Luego decides". Claro AND armónico. Genera alineamiento genuino.
+"El ritmo actual no nos lleva a donde queremos. Proponemos un cambio. ¿Qué sienten? ¿Qué les falta? Integramos perspectivas. Luego decidimos". Claro Y armónico. Genera alineamiento genuino.
 
-**En tu vida profana:**
+**En nuestra vida profana:**
 
-Tu comunicación tiene ritmo: tono, pausa, crescendo, diminución. En reunión tensa, cambiar el ritmo (pausa consciente + tono más bajo + tempo más lento) **desarma el conflicto** sin que nadie sepa por qué.
+**Nuestra** comunicación tiene ritmo: tono, pausa, *crescendo*, diminución.
+
+En una reunión tensa, cambiar el ritmo (pausa consciente + tono más bajo + tempo más lento) **desarma el conflicto** sin que nadie sepa por qué.
 
 Eso es armonía constructora en acción.
 
+---
+
 ## El Milagro de Orfeo
 
-Lavagnini dedica párrafo completo a esto: *"El milagro de Orfeo, que con su lira hace acercar los árboles y las rocas, detener los ríos en su curso, apaciguar las tempestades y reunir a sus pies, amansadas, a las más temibles fieras, ha de ser profundamente meditado por los Maestros."*
+Lavagnini dedica un párrafo completo a esto:
+
+> *"El milagro de Orfeo, que con su lira hace acercar los árboles y las rocas, detener los ríos en su curso, apaciguar las tempestades y reunir a sus pies, amansadas, a las más temibles fieras, ha de ser profundamente meditado por los Maestros."*
 
 ### ¿Qué Significa el Milagro de Orfeo?
 
-No es magia literaria. Es **demostración de ley operativa**: Cuando vibrás en armonía interior (tu "lira del corazón"), **cambiás la actitud de seres, cosas y circunstancias**.
+No es magia literaria. Es la **demostración de una ley operativa**: Cuando **vibramos** en armonía interior (**nuestra** "lira del corazón"), **cambiamos la actitud de seres, cosas y circunstancias**.
 
 **Enseñanza Profunda:**
 
-Los árboles no literalmente "se acercan". Representa cambio en la realidad.
-
-Las rocas no "escuchan música". Representan lo inmóvil, lo denso, lo que parece inalcanzable, y sin embargo, la armonía lo transforma.
-
-El río no se "detiene". La armonía crea espacio donde fluye diferente.
-
-Las fieras no se "amansan" por sensibilidad. La armonía reduce la vibración de amenaza en Orfeo, por lo que los animales no se defienden.
+* Los árboles no se "acercan" literalmente. Representa un cambio en la realidad.
+* Las rocas no "escuchan música". Representan lo inmóvil, lo denso. Sin embargo, la armonía lo transforma.
+* El río no se "detiene". La armonía crea un espacio donde fluye diferente.
+* Las fieras no se "amansan" por sensibilidad. La armonía reduce la vibración de amenaza en Orfeo, por lo que los animales no se defienden.
 
 **Interpretación Operativa:**
 
-Tu estado vibratoria **afecta el entorno**.
+**Nuestro** estado vibratorio **afecta el entorno**.
 
-Entrás a reunión ansioso > contagiás ansiedad > todo se tensa.
-
-Entrás sereno > contagiás serenidad > todo se calma.
+* **Entramos** a una reunión ansiosos → contagiamos ansiedad → todo se tensa.
+* **Entramos** serenos → contagiamos serenidad → todo se calma.
 
 No es magia. Es vibración contagiosa.
 
@@ -124,151 +141,146 @@ No es magia. Es vibración contagiosa.
 
 **Situación: Negociación difícil**
 
-Sin armonía (Orfeo desafinado):
-- Entrás tenso > el otro percibe amenaza > se defiende > negocia de poder
-- Resultado: gana uno, pierde otro (o ambos pierden)
+* **Sin armonía (Orfeo desafinado):**
+    * **Entramos** tensos → el otro percibe amenaza → se defiende → negocia desde el poder.
+    * Resultado: gana uno, pierde otro (o ambos pierden).
 
-Con armonía (Orfeo afinado):
-- Entrás sereno, genuinamente interesado en solución común > el otro baja defensas > negocia desde colaboración
-- Resultado: ambos ganan
+* **Con armonía (Orfeo afinado):**
+    * **Entramos** serenos, genuinamente interesados en la solución común → el otro baja defensas → negocia desde la colaboración.
+    * Resultado: ambos ganan.
 
-No cambió nada objetivamente. Cambió tu **vibración interior**, tu música interna.
+No cambió nada objetivamente. Cambió **nuestra vibración interior**, **nuestra** música interna.
 
 **Situación: Conflicto familiar**
 
-Sin armonía:
-- Defensiva > escalada > todos heridos
+* **Sin armonía:** Defensiva → escalada → todos heridos.
+* **Con armonía:** Presencia genuina → apertura → conexión → solución.
 
-Con armonía:
-- Presencia genuina > apertura > conexión > solución
-
-**Nota Crítica:** No es fingir. Orfeo no *pretende* estar en paz. *Está* en paz vibratoria. Eso es lo que transforma.
+**Nota Crítica:** No es fingir. Orfeo no *finge* estar en paz. *Está* en paz vibratoria. Eso es lo que transforma.
 
 ### Aplicación en Vida Masónica
 
 En ritual:
 
 **V∴M∴ sin armonía interior:**
-- Dirige desde irritación/control
-- Los HH∴ lo sienten
-- El ritual se vuelve mecánico, sin poder
+* Dirige desde la irritación o el control.
+* Los HH∴ lo sienten.
+* El ritual se vuelve mecánico, sin poder.
 
 **V∴M∴ con armonía interior:**
-- Dirige desde claridad serena
-- Los HH∴ sincronizan naturalmente
-- El ritual es música viva que transforma
+* Dirige desde la claridad serena.
+* Los HH∴ sincronizan naturalmente.
+* El ritual es música viva que transforma.
 
-Una Logia donde los Maestros vibran armónicamente es **orquesta sinfónica**. Una donde luchan es **cacofonía**.
+Una Logia donde los Maestros vibran armónicamente es una **orquesta sinfónica**. Una donde luchan es una **cacofonía**.
+
+---
 
 ## Vibraciones Armónicas vs. Inarmónicas
 
 ### La Ley Fundamental
 
-Lavagnini escribe: *"Todo indistintamente es producto de vibraciones que construyen cuando son armónicas y destruyen cuando son inarmónicas."*
+Lavagnini escribe:
 
-**Aplicación en Estructura de Vida:**
+> *"Todo indistintamente es producto de vibraciones que construyen cuando son armónicas y destruyen cuando son inarmónicas."*
+
+### Aplicación en Estructura de Vida
 
 **Rutina Armónica:**
-- Sueño consistente > mente clara
-- Comida consciente > cuerpo vitalizante
-- Trabajo alineado con propósito > energía generativa
-- Descanso genuino > recuperación integral
-
-Resultado: Construcción lenta pero sólida de salud, paz, productividad.
+* Sueño consistente → mente clara.
+* Comida consciente → cuerpo vitalizado.
+* Trabajo alineado con propósito → energía generativa.
+* Descanso genuino → recuperación integral.
+* **Resultado:** Construcción sólida de salud, paz y productividad.
 
 **Rutina Inarmónica:**
-- Sueño irregular > mente confusa
-- Comida reactiva > cuerpo agotado
-- Trabajo por obligación > energía drenada
-- Descanso culposo > recuperación nula
-
-Resultado: Destrucción lenta pero segura de salud, paz, capacidad.
+* Sueño irregular → mente confusa.
+* Comida reactiva → cuerpo agotado.
+* Trabajo por obligación → energía drenada.
+* Descanso culposo → recuperación nula.
+* **Resultado:** Destrucción lenta de salud, paz y capacidad.
 
 ### En Contexto Relacional
 
 **Pareja Armónica:**
-- Ritmo de comunicación sincronizado
-- Emociones que convergen
-- Voluntades alineadas hacia proyecto común
-
-Resultado: Construcción de unidad.
+* Ritmo de comunicación sincronizado.
+* Emociones que convergen.
+* Voluntades alineadas hacia un proyecto común.
+* **Resultado:** Construcción de unidad.
 
 **Pareja Inarmónica:**
-- Ritmo desincronizado (uno quiere hablar, otro huye)
-- Emociones que chocan (uno furioso, otro triste)
-- Voluntades divergentes
-
-Resultado: Destrucción de unidad.
+* Ritmo desincronizado (uno quiere hablar, otro huye).
+* Emociones que chocan (uno furioso, otro triste).
+* Voluntades divergentes.
+* **Resultado:** Destrucción de unidad.
 
 ### En Ritmo del Trabajo
 
 **Proyecto Armónico:**
-- Equipo que vibra en mismo tempo
-- Decisiones que convergen
-- Energía que fluye
-
-Resultado: Obra construida.
+* Equipo que vibra en el mismo tempo.
+* Decisiones que convergen.
+* Energía que fluye.
+* **Resultado:** Obra construida.
 
 **Proyecto Inarmónico:**
-- Equipo desincronizado (algunos quieren correr, otros frenar)
-- Decisiones que contradicen
-- Energía fragmentada
+* Equipo desincronizado (algunos quieren correr, otros frenar).
+* Decisiones que se contradicen.
+* Energía fragmentada.
+* **Resultado:** Obra destruida (o nunca terminada).
 
-Resultado: Obra destruida (o nunca terminada).
+---
 
 ## Aplicación Práctica: Armonía Diaria
 
 ### Antes de Actuar: Pregunta Clave
 
-Antes de tomar decisión importante, preguntate:
+Antes de tomar una decisión importante, **preguntémonos**:
 
 **¿Esto construye armonía o destruye?**
 
-No es pregunta moral (bien/mal). Es pregunta operativa (constructivo/destructivo).
+No es una pregunta moral (bien/mal). Es una pregunta operativa (constructivo/destructivo).
 
-Si no claro que construye armonía, espera. El silencio también es nota en la sinfonía.
+Si no está claro que construye armonía, **esperemos**. El silencio también es una nota en la sinfonía.
 
 ### En Conflictos: Cambiar el Ritmo
 
-Cuando estés en conflicto, **no cambies el contenido inmediatamente**. Cambia el **ritmo**:
+Cuando estemos en conflicto, **no cambiemos el contenido inmediatamente**. Cambiemos el **ritmo**:
 
-**1. Pausa:** Respira. Baja tempo. Deja que la tensión disminuya.
+1.  **Pausa:** Respiremos. Bajemos el tempo. Dejemos que la tensión disminuya.
+2.  **Tono:** Bajemos el volumen. Hablemos más lentamente. La calma es contagiosa.
+3.  **Intención:** Hablemos desde la "solución común", no desde "tener razón".
 
-**2. Tono:** Baja volumen. Habla más lentamente. La calma es contagiosa.
-
-**3. Intención:** Habla desde "solución común", no desde "tengo razón".
-
-Resultado: Otro baja defensas porque tu vibración cambió.
+**Resultado:** El otro baja las defensas porque **nuestra** vibración cambió.
 
 **Caso Real:**
 
 Dos personas en Logia en desacuerdo. Sin cambio de ritmo: escalada.
 
-Con cambio: El más sereno (ritmo lento, tono bajo) pregunta al otro: "¿Qué necesitás que se escuche de tu perspectiva?" La tensión cae 70%.
+Con cambio: El más sereno (ritmo lento, tono bajo) pregunta al otro: *"¿Qué necesitas que se escuche de tu perspectiva?"*. La tensión cae un 70%.
 
-### En Tu Rutina: Sincroniza Ritmos
+### En Nuestra Rutina: Sincronizar Ritmos
 
-Observa tu día:
+**Observemos nuestro** día:
 
-- ¿Qué hora te sientes más armónico?
-- ¿Cuándo entras en cacofonía?
-- ¿Hay patrón?
+* ¿A qué hora **nos sentimos** más armónicos?
+* ¿Cuándo **entramos** en cacofonía?
+* ¿Hay un patrón?
 
-Luego **diseña tu día alrededor de eso**, no contra eso.
+Luego **diseñemos nuestro día alrededor de eso**, no en contra.
 
-Si sos más claro a la mañana, haz decisiones críticas en la mañana.
+Si **somos** más claros por la mañana, tomemos decisiones críticas en la mañana. Si necesitamos movimiento físico para descargar tensión, hagámoslo antes de reuniones difíciles.
 
-Si necesitás movimento físico para descargar tensión, hazlo antes de reuniones difíciles.
+---
 
 ## Aplicación Práctica: Vida Masónica
 
 ### El Ritual como Partitura Musical
 
-El ritual no es "teatro". Es **partitura musical**. Cada gesto, cada palabra, cada pausa tiene tempo específico.
+El ritual no es "teatro". Es una **partitura musical**. Cada gesto, cada palabra, cada pausa tiene un tempo específico.
 
 **Maestría en Ritual:**
 
-No se trata de "saber las palabras". Se trata de **vibrar en ritmo correcto**.
+No se trata de "saber las palabras". Se trata de **vibrar en el ritmo correcto**.
 
 Un ritual hecho apresuradamente pierde poder (tempo acelerado). Hecho lentamente pierde impacto (tempo muerto). Hecho armónicamente es transformador.
 
@@ -276,72 +288,77 @@ Un ritual hecho apresuradamente pierde poder (tempo acelerado). Hecho lentamente
 
 **Principio:**
 
-Cada HH∴ es instrumento. El V∴M∴ es director. La Logia es orquesta.
+Cada HH∴ es un instrumento. El V∴M∴ es el director. La Logia es la orquesta.
 
-Un orchestra donde cada músico toca su partitura pero escucha los otros = música.
-
+Una orquesta donde cada músico toca su partitura pero escucha a los otros = música.
 Una donde cada uno toca "su canción" = cacofonía.
 
-**Tu rol como Maestro:**
+**Nuestro rol como Maestro:**
 
-No es "ser el mejor músico". Es **sincronizar tu nota con la sinfonía mayor**.
+No es "ser el mejor músico". Es **sincronizar nuestra nota con la sinfonía mayor**.
 
 Esto significa:
-- Escuchar los otros HH∴
-- Ajustar tu ritmo al de la Logia
-- Alinearte hacia Ideal común
-- Permitir que el V∴M∴ dirija
+* Escuchar a los otros HH∴.
+* Ajustar **nuestro** ritmo al de la Logia.
+* Alinearnos hacia el Ideal común.
+* Permitir que el V∴M∴ dirija.
 
-### Antes de Dar Plancha: Verifica Armonía
+### Antes de Dar Plancha: Verificar Armonía
 
-1. **¿La estructura fluye?** (ritmo correcto)
-2. **¿Las ideas convergen?** (no se contradicen)
-3. **¿Emana de servicio?** (no de ego)
-4. **¿Alineada con Ideal de Logia?** (no diverge)
+1.  **¿La estructura fluye?** (ritmo correcto).
+2.  **¿Las ideas convergen?** (no se contradicen).
+3.  **¿Emana de servicio?** (no de ego).
+4.  **¿Alineada con el Ideal de Logia?** (no diverge).
 
-Si hay disonancia en cualquiera, revisa antes de presentar.
+Si hay disonancia en cualquiera, revisemos antes de presentar.
+
+---
 
 ## Conexión con Planchas Anteriores
 
-- **Orden 7 (Siete Metales):** Purificación interna (qué vibras)
-- **Orden 8 (Siete Artes):** Herramientas de construcción (cómo manifiestas)
-- **Orden 9 (Retórica):** Palabra creativa (manifestación verbal)
-- **Orden 10 (Música):** Armonía integral (forma armónica de manifestar todo)
+* **Orden 7 (Siete Metales):** Purificación interna (qué vibras).
+* **Orden 8 (Siete Artes):** Herramientas de construcción (cómo manifiestas).
+* **Orden 9 (Retórica):** Palabra creativa (manifestación verbal).
+* **Orden 10 (Música):** Armonía integral (forma armónica de manifestar todo).
 
-Sin Música, tu Retórica es clara pero divide. Sin Música, tu Obra es correcta pero no construye. Sin Música, tu Maestría es técnica pero sin alma.
+Sin Música, **nuestra** Retórica es clara pero divide.
+Sin Música, **nuestra** Obra es correcta pero no construye.
+Sin Música, **nuestra** Maestría es técnica pero sin alma.
 
-Música es el **alma de toda construcción**.
+La Música es el **alma de toda construcción**.
+
+---
 
 ## Conclusión: La Lira del Corazón
 
-Mis QQ∴ HH∴, Orfeo no era mago. Era **maestro de la vibración**.
+Mis QQ∴ HH∴, Orfeo no era un mago. Era un **maestro de la vibración**.
 
-Cuando tu corazón vibra en armonía (lira afinada):
-- Tu palabra atrae
-- Tu presencia calma
-- Tu acción construye
-- Tu Logia fluye
+Cuando **nuestro** corazón vibra en armonía (lira afinada):
+* **Nuestra** palabra atrae.
+* **Nuestra** presencia calma.
+* **Nuestra** acción construye.
+* **Nuestra** Logia fluye.
 
 Cuando vibra en disonancia (lira desafinada):
-- Tu palabra repele
-- Tu presencia tensa
-- Tu acción destruye
-- Tu Logia fragmenta
+* **Nuestra** palabra repele.
+* **Nuestra** presencia tensa.
+* **Nuestra** acción destruye.
+* **Nuestra** Logia fragmenta.
 
-No es misterio. Es **ley operativa**.
+No es un misterio. Es una **ley operativa**.
 
-La Música no es lujo. Es fundamento. Sin armonía interior, eres constructor que edifica sobre arena. Con armonía interior, eres arquitecto que edifica sobre roca.
+La Música no es un lujo. Es el fundamento. Sin armonía interior, **somos constructores** que edifican sobre arena. Con armonía interior, **somos arquitectos** que edifican sobre roca.
 
 ## Pregunta para Reflexión Personal
 
-**¿Qué nota tocaste hoy?**
+**¿Qué nota tocamos hoy?**
 
-- ¿En qué momento vibraste en armonía?
-- ¿En qué momento entraste en disonancia?
-- ¿Cómo afectó cada vibración al entorno?
+* ¿En qué momento vibramos en armonía?
+* ¿En qué momento entramos en disonancia?
+* ¿Cómo afectó cada vibración al entorno?
 
-Esa es tu práctica de Maestría esta semana: ser consciente del ritmo, ajustar la vibración, construir en armonía.
+Esa es **nuestra** práctica de Maestría esta semana: ser conscientes del ritmo, ajustar la vibración, construir en armonía.
 
-Esa es tu lira del corazón esperando ser afinada.
+Esa es **nuestra** lira del corazón esperando ser afinada.
 
 Ahora.

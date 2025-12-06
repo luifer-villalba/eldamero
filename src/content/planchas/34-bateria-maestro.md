@@ -1,6 +1,6 @@
 ---
 title: "Batería del Maestro: Los Cinco Puntos de Comunión"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 34
 grado: "Maestro"

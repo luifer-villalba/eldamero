@@ -1,6 +1,6 @@
 ---
 title: "Chakras y Grados: Correlación Energética Iniciática"
-date: 2025-01-15
+date: 2025-01-06
 autor: "El Damero"
 orden: 28
 grado: "Maestro"
