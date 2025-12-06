@@ -38,7 +38,7 @@ Lavagnini lo aclara: *"Todos estos **Metales** se encuentran dentro de **nosotro
 
 Cada **Metal** tiene su correspondencia planetaria, virtud (estado puro) y vicio (degeneración). La clave fundamental: **no destruir, sino purificar**. No eliminamos la ira, la transmutamos en fortaleza. No negamos la pasión, la elevamos en amor consciente.
 
-### 1. Plomo $\rightarrow$ Saturno $\rightarrow$ Prudencia vs. Pereza
+### 1. Plomo → Saturno → Prudencia vs. Pereza
 
 **Virtud (Estado Puro):** Prudencia, concentración, paciencia, perseverancia, fundamento sólido.
 
@@ -50,7 +50,7 @@ El **Plomo** es el más denso de los **Metales**. Representa la gravedad que **n
 
 **Transmutación Semanal:** Identifiquemos dónde **somos** perezosos. Convirtamos esa pesantez en prudencia. Tomemos una decisión postergada con análisis real (no impulsivo).
 
-### 2. Cobre $\rightarrow$ Venus $\rightarrow$ Amor vs. Lujuria
+### 2. Cobre → Venus → Amor vs. Lujuria
 
 **Virtud (Estado Puro):** Amor creativo, fecundidad productiva, arte que perdura, vínculo generativo.
 
@@ -62,7 +62,7 @@ El **Cobre** es rojo, cercano al **Oro** por su color. Es el **amor que eleva** 
 
 **Transmutación Semanal:** Donde sintamos apego o posesión (lujuria), introduzcamos libertad consciente. Probemos amar sin necesitar.
 
-### 3. Hierro $\rightarrow$ Marte $\rightarrow$ Fortaleza vs. Cólera
+### 3. Hierro → Marte → Fortaleza vs. Cólera
 
 **Virtud (Estado Puro):** Fortaleza, actividad constructiva, herramienta útil, valor sin arrogancia.
 
@@ -74,7 +74,7 @@ El **Hierro** es el **Metal del trabajo**. Forja herramientas útiles o armas de
 
 **Transmutación Semanal:** La próxima vez que sintamos cólera, **preguntémonos**: ¿Hay una fortaleza legítima aquí? ¿Cómo expresamos esto sin atacar?
 
-### 4. Estaño $\rightarrow$ Júpiter $\rightarrow$ Justicia vs. Gula
+### 4. Estaño → Júpiter → Justicia vs. Gula
 
 **Virtud (Estado Puro):** Justicia, benevolencia, cohesión social, templanza, abundancia compartida.
 
@@ -86,7 +86,7 @@ El **Estaño** **liga otros Metales**. Es el cemento del ser. Sin **Estaño** pu
 
 **Transmutación Semanal:** **Identifiquemos** dónde **guleamos** (sin satisfacción real). Probemos la moderación consciente. Observemos si la satisfacción aumenta.
 
-### 5. Mercurio $\rightarrow$ Mercurio $\rightarrow$ Sabiduría vs. Envidia
+### 5. Mercurio → Mercurio → Sabiduría vs. Envidia
 
 **Virtud (Estado Puro):** Sabiduría, equilibrio, templanza, reflejo fiel de la realidad.
 
@@ -98,7 +98,7 @@ El **Mercurio** **amalgama todos los Metales**. Es espejo claro o espejo distors
 
 **Transmutación Semanal:** La próxima vez que sintamos envidia, practiquemos la pregunta: ¿Qué podemos aprender?
 
-### 6. Plata $\rightarrow$ Luna $\rightarrow$ Esperanza vs. Avaricia
+### 6. Plata → Luna → Esperanza vs. Avaricia
 
 **Virtud (Estado Puro):** Esperanza, iluminación mística, asimilación fecunda, fe en el proceso.
 
@@ -110,7 +110,7 @@ La **Plata** se acerca al **Oro** pero no alcanza su perfección. Es **fe activa
 
 **Transmutación Semanal:** Donde hoy **sentimos** avaricia, introduzcamos generosidad consciente. Observemos si la abundancia aumenta o disminuye.
 
-### 7. Oro $\rightarrow$ Sol $\rightarrow$ Fe vs. Orgullo
+### 7. Oro → Sol → Fe vs. Orgullo
 
 **Virtud (Estado Puro):** Fe incorruptible, dignidad, nobleza, identidad inmutable.
 

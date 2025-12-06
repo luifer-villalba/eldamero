@@ -52,9 +52,9 @@ Lavagnini conecta con filosofía hindú antigua: *"Los tres malos compañeros so
 
 **Descodificación (Tres Gunas):**
 
-* *Tamas* (inercia, pesantez, oscuridad) $\rightarrow$ **Ignorancia**.
-* *Rajas* (actividad, pasión, movimiento ciego) $\rightarrow$ **Fanatismo**.
-* *Sattvas* (equilibrio, armonía, claridad) $\rightarrow$ **Conciencia desplegada**.
+* *Tamas* (inercia, pesantez, oscuridad) → **Ignorancia**.
+* *Rajas* (actividad, pasión, movimiento ciego) → **Fanatismo**.
+* *Sattvas* (equilibrio, armonía, claridad) → **Conciencia desplegada**.
 
 El texto dice: *"Hiram representa el principio de la Conciencia, o Vida Espiritual de la Naturaleza"*.
 

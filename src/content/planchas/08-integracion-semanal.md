@@ -16,12 +16,12 @@ tags: ["Marcha del Maestro", "Pavimento Mosaico", "Muerte Iniciática", "Leyenda
 
 Mis QQ∴ HH∴, **completamos** la primera semana. Seis planchas. Seis llaves:
 
-1.  **La Muerte y Exaltación de Hiram** $\rightarrow$ El misterio central.
-2.  **El Juicio Inicial** $\rightarrow$ Acusación y **Cámara del Medio**.
-3.  **Los Tres Enemigos** $\rightarrow$ La anatomía del crimen interior.
-4.  **La Marcha del Maestro** $\rightarrow$ El camino sobre la muerte.
-5.  **El Mediodía de la Muerte** $\rightarrow$ El sacrificio necesario.
-6.  **El Pavimento Mosaico** $\rightarrow$ La dualidad inevitable.
+1.  **La Muerte y Exaltación de Hiram** → El misterio central.
+2.  **El Juicio Inicial** → Acusación y **Cámara del Medio**.
+3.  **Los Tres Enemigos** → La anatomía del crimen interior.
+4.  **La Marcha del Maestro** → El camino sobre la muerte.
+5.  **El Mediodía de la Muerte** → El sacrificio necesario.
+6.  **El Pavimento Mosaico** → La dualidad inevitable.
 
 Hoy no hay concepto nuevo. Hoy **integramos** lo aprendido. El conocimiento sin integración es *acumulación*, no *transformación*.
 
@@ -54,12 +54,12 @@ No es muerte física. Es la muerte del ego, de la ilusión de separación. Es el
 
 La secuencia de planchas no es accidental. Sigue el desarrollo psicológico-espiritual exacto:
 
-* **Paso 1: Muerte de Hiram (VISIÓN)** $\rightarrow$ Vemos al Ideal muerto. Shock inicial: "¿**Nuestro** ideal puede morir?".
-* **Paso 2: Juicio Inicial (INTROSPECCIÓN)** $\rightarrow$ **Reconocemos nuestra** complicidad. Pregunta: "¿**Nosotros** matamos **nuestro** ideal?".
-* **Paso 3: Los Tres Enemigos (DESCODIFICACIÓN)** $\rightarrow$ **Identificamos** cómo lo matamos. Pregunta: "¿Cómo funcionan **nuestros** enemigos internos?".
-* **Paso 4: La Marcha del Maestro (MÉTODO)** $\rightarrow$ **Aprendemos** el camino de la transmutación. Pregunta: "¿Cómo transmutamos **nuestros** enemigos?".
-* **Paso 5: El Mediodía de la Muerte (ACEPTACIÓN)** $\rightarrow$ **Entendemos** que la muerte es necesaria y cósmica. Pregunta: "¿Por qué es inevitable?".
-* **Paso 6: El Pavimento Mosaico (MAESTRÍA)** $\rightarrow$ **Reconocemos** que **estamos** siempre entre opuestos. Pregunta: "¿Cómo permanecemos ecuánimes?".
+* **Paso 1: Muerte de Hiram (VISIÓN)** → Vemos al Ideal muerto. Shock inicial: "¿**Nuestro** ideal puede morir?".
+* **Paso 2: Juicio Inicial (INTROSPECCIÓN)** → **Reconocemos nuestra** complicidad. Pregunta: "¿**Nosotros** matamos **nuestro** ideal?".
+* **Paso 3: Los Tres Enemigos (DESCODIFICACIÓN)** → **Identificamos** cómo lo matamos. Pregunta: "¿Cómo funcionan **nuestros** enemigos internos?".
+* **Paso 4: La Marcha del Maestro (MÉTODO)** → **Aprendemos** el camino de la transmutación. Pregunta: "¿Cómo transmutamos **nuestros** enemigos?".
+* **Paso 5: El Mediodía de la Muerte (ACEPTACIÓN)** → **Entendemos** que la muerte es necesaria y cósmica. Pregunta: "¿Por qué es inevitable?".
+* **Paso 6: El Pavimento Mosaico (MAESTRÍA)** → **Reconocemos** que **estamos** siempre entre opuestos. Pregunta: "¿Cómo permanecemos ecuánimes?".
 
 **Próxima semana:** Resurrección. Hiram vuelve a vivir en **nosotros**. Pregunta: "¿Cómo renacemos?".
 
@@ -88,17 +88,17 @@ La secuencia de planchas no es accidental. Sigue el desarrollo psicológico-espi
 
 **Nuestra decisión es:** _______________________________
 
-**Etapa 1 (Occidente $\rightarrow$ Sur): Vencer la Ignorancia**
+**Etapa 1 (Occidente → Sur): Vencer la Ignorancia**
 * ¿Qué creencia heredada debemos cuestionar?
 * ¿Qué **necesitamos** estudiar para tener claridad?
 * ¿Qué suposiciones **estamos** haciendo sin verificar?
 
-**Etapa 2 (Sur $\rightarrow$ Norte): Vencer el Fanatismo**
+**Etapa 2 (Sur → Norte): Vencer el Fanatismo**
 * ¿Qué pasión ciega **nos** mueve?
 * ¿De cuántas formas podría resolverse esto (no solo **nuestra** forma)?
 * ¿A quién **necesitamos** escuchar que tenga otra perspectiva?
 
-**Etapa 3 (Norte $\rightarrow$ Oriente): Vencer la Ambición**
+**Etapa 3 (Norte → Oriente): Vencer la Ambición**
 * ¿Qué beneficio personal buscamos?
 * ¿Cómo esta decisión serviría a otros, no solo a **nosotros**?
 * ¿Podríamos tomar la opción contraria si fuera por el bien mayor?

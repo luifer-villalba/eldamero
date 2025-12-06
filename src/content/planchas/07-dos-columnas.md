@@ -233,7 +233,7 @@ Noche: siguiente proyecto requiere innovación (**Boaz**). Ideemos.
 Un día entero practicando la columna débil. Observemos qué cambia.
 
 ### Semana 3: Ritmo Natural
-Practiquemos alternar conscientemente: acción $\rightarrow$ consolidación $\rightarrow$ acción.
+Practiquemos alternar conscientemente: acción → consolidación → acción.
 
 ### Semana 4: Maestría
 Vivamos una semana completa. ¿Cómo fluimos entre columnas naturalmente?
