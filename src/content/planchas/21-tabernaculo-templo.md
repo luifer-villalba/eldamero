@@ -1,6 +1,6 @@
 ---
 title: "Tabernáculo vs. Templo: Madurez y Consolidación"
-date: 2025-01-06
+date: 2025-12-06
 autor: "El Damero"
 orden: 21
 grado: "Maestro"

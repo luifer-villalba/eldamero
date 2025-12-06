@@ -1,6 +1,6 @@
 ---
 title: "Las Dos Columnas: Boaz y Jakin - Polaridad Estructurante"
-date: 2025-01-06
+date: 2025-12-06
 autor: "El Damero"
 orden: 7
 grado: "Maestro"

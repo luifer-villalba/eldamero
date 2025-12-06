@@ -1,6 +1,6 @@
 ---
 title: "La Edad del Maestro: 31 Años Masónicos y Madurez Iniciática"
-date: 2025-01-06
+date: 2025-12-06
 autor: "El Damero"
 orden: 41
 grado: "Maestro"

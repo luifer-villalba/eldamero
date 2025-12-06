@@ -1,6 +1,6 @@
 ---
 title: "Planetas, Días y Virtudes: El Septenario Operativo Diario"
-date: 2025-01-06
+date: 2025-12-06
 autor: "El Damero"
 orden: 15
 grado: "Maestro"
