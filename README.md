@@ -1,6 +1,6 @@
 # ◆ El Damero
 
-> Plataforma educativa masónica: del símbolo a la práctica operativa.
+> Plataforma educativa masónica: del símbolo a la práctica operativa
 
 [![Astro](https://img.shields.io/badge/Astro-4.0-FF5D01?style=flat&logo=astro)](https://astro.build)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
